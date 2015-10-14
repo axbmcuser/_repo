@@ -1,3 +1,6 @@
+[B]2.7.44[/B]
+- Minor fix
+
 [B]2.7.43[/B]
 - Minor improvements
 

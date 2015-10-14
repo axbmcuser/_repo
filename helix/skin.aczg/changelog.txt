@@ -1,3 +1,6 @@
+[B]2.5.14[/B]
+- Minor fix
+
 [B]2.5.13[/B]
 - Minor improvements
 
