@@ -1,7 +1,10 @@
+[B]2.7.43[/B]
+- Minor improvements
+
 [B]2.7.42[/B]
 
-- While in the wall view (Thumbnails view), the KODI sidebar can now be opened again by going all left. 
-I had this disabled for myself because i want to be able to jump to the most right object by going left. I have a dedicated key for the KODI sidebar on my remote. -> SetFocus(9000)
+- While in the wall view (Thumbnail view), the KODI sidebar can now be opened again by going all left. 
+I had this disabled because i want to be able to jump to the most right object by going all left. Some ppl may have a dedicated key for the KODI sidebar on a remote. -> SetFocus(9000) (remote.xml)
 
 [B]2.7.41[/B]
 
