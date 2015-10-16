@@ -1,3 +1,7 @@
+[B]2.5.15[/B]
+- Redone all main menu icons since they were a little blurry before. Now they are very sharp and FullHD optimized.
+- Wall view (Thumbnail view) optimizations
+
 [B]2.5.14[/B]
 - Minor fix
 
