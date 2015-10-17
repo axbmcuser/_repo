@@ -1,8 +1,14 @@
+[B]2.7.47[/B]
+- Redone top left global KODI-Logo (now 1080p optimized)
+- Redone DefaultFolderBack Icon (now 1080p optimized)
+- Redone DefaultVideo and DefaultVideoCover Icon (now 1080p optimized)
+- Minor improvements
+
 [B]2.7.46[/B]
 - Redone main menu icon for "Movies"
 
 [B]2.7.45[/B]
-- Redone all main menu icons since they were a little blurry before. Now they are very sharp and FullHD optimized.
+- Redone all main menu icons since they were a little blurry before. Now they are very sharp and 1080p optimized.
 - Wall view (Thumbnail view) optimizations
 
 [B]2.7.44[/B]
