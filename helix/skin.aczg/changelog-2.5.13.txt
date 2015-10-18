@@ -1,3 +1,6 @@
+[B]2.5.18[/B]
+- Minor improvements
+
 [B]2.5.17[/B]
 - Redone top left global KODI-Logo (now 1080p optimized)
 - Redone DefaultFolderBack Icon (now 1080p optimized)
