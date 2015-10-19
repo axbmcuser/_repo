@@ -1,3 +1,4 @@
+[B]2.5.19[/B]
 [B]2.5.18[/B]
 - Minor improvements
 
