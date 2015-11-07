@@ -1,3 +1,9 @@
+[B]2.5.21[/B]
+- Reworked all OSD-Buttons (now 1080p optimized)
+- Reworked main menu icons TV and Radio
+- Reworked Header Icons for different Sections (Movies, TV-Shows, Files ...) (now they are matching the main menu icons)
+- Minor fixes and improvements
+
 [B]2.5.20[/B]
 - Added another Wall View with more items (Now: Wall View 1 & Wall View 2)
 - Added "Clean library" button in sidebar (below "Update Library")
@@ -8,16 +14,16 @@
 - Minor improvements
 
 [B]2.5.17[/B]
-- Redone top left global KODI-Logo (now 1080p optimized)
-- Redone DefaultFolderBack Icon (now 1080p optimized)
-- Redone DefaultVideo and DefaultVideoCover Icon (now 1080p optimized)
+- Reworked top left global KODI-Logo (now 1080p optimized)
+- Reworked DefaultFolderBack Icon (now 1080p optimized)
+- Reworked DefaultVideo and DefaultVideoCover Icon (now 1080p optimized)
 - Minor improvements
 
 [B]2.5.16[/B]
-- Redone main menu icon for "Movies"
+- Reworked main menu icon for "Movies"
 
 [B]2.5.15[/B]
-- Redone all main menu icons since they were a little blurry before. Now they are very sharp and FullHD optimized.
+- Reworked all main menu icons since they were a little blurry before. Now they are very sharp and FullHD optimized.
 - Wall view (Thumbnail view) optimizations
 
 [B]2.5.14[/B]
