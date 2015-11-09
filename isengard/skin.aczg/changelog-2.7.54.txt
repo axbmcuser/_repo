@@ -1,6 +1,18 @@
+[B]2.7.55[/B]
+- Reworked and optimized OSD-Keyboard(s)
+- Minor improvements and optimizations (including):
+"PVR-EpgProgressIndicator.png", 
+"DefaultActor.png", 
+Added header label above "Clean Library..."-Button in Sidebar
+
 [B]2.7.54[/B]
 - Optimized "DialogVideoInfo.xml"
-- Minor improvements and optimizations (Removed additional font-faces in "Font.xml" , removed "GlassOverlay.png" code+image, removed "HasSub.png" code+image)
+- Minor improvements and optimizations (including):
+Removed additional font-faces in "Font.xml" , 
+removed "GlassOverlay.png" code+image, 
+removed "HasSub.png" code+image, 
+"DefaultAddSource.png", 
+"DialogVideoInfo.xml" Plot height fix
 
 [B]2.7.53[/B]
 - Fixed "Dialog Header Image" widths and left-positions for all files
