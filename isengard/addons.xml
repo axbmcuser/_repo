@@ -35,7 +35,7 @@
   </extension>
 </addon>
 
-<addon id="skin.aczg" version="2.7.52" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="2.7.53" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
   <requires>
     <import addon="xbmc.gui" version="5.9.0"/>
   </requires>
