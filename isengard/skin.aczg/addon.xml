@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="2.7.55" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="2.7.56" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
   <requires>
     <import addon="xbmc.gui" version="5.9.0"/>
   </requires>
