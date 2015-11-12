@@ -49,6 +49,17 @@
   </extension>
 </addon>
 
+<addon id="script.module.xbmcswift2" name="xbmcswift2" provider-name="Jonathan Beluch (jbel)" version="2.4.01">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+  </requires>
+  <extension library="lib" point="xbmc.python.module" />
+  <extension point="xbmc.addon.metadata">
+    <language />
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="skin.aczg" version="2.7.61" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
   <requires>
     <import addon="xbmc.gui" version="5.9.0"/>
