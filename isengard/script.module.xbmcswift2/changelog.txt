@@ -2,7 +2,7 @@ CHANGES
 =======
 
 
-Version 2.4.01
+Version 2.4.1
 -------------
 - Add viewtype support for Confluence-Skin fork "A Confluence ZEITGEIST" (skin.aczg)
 
