@@ -35,12 +35,11 @@
   </extension>
 </addon>
 
-<addon id="script.duration_axbmcuser" name="Duration script (axbmcuser MOD)" version="0.3" provider-name="Twolaw, axbmcuser (MOD only)">
+<addon id="script.duration_axbmcuser" name="Duration script (axbmcuser MOD)" version="0.3.1" provider-name="Twolaw, axbmcuser (MOD only)">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
   </requires>
-  <extension point="xbmc.python.script" library="default.py">
-    <provides>executable</provides>
+  <extension library="default.py" point="xbmc.service" start="login">
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Duration converter from MMM to H:MM</summary>
@@ -60,7 +59,7 @@
   </extension>
 </addon>
 
-<addon id="skin.aczg" version="2.7.66" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="2.7.67" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
   <requires>
     <import addon="xbmc.gui" version="5.9.0"/>
   </requires>

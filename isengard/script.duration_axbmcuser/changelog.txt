@@ -1,3 +1,6 @@
+[B]0.3.1[/B]
+- axbmcuser MOD: Minor improvements and optimizations
+
 [B]0.3[/B]
 - axbmcuser MOD: Script now outputs H:MM
 
