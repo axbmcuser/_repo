@@ -34,4 +34,28 @@
     <platform>all</platform>
   </extension>
 </addon>
+
+<addon id="script.duration_axbmcuser" name="Duration script (axbmcuser MOD)" version="0.3.1" provider-name="Twolaw, axbmcuser (MOD only)">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0"/>
+  </requires>
+  <extension library="default.py" point="xbmc.service" start="login">
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Duration converter from MMM to H:MM</summary>
+    <description lang="en">Converts movie durations from format MMM to H:MM[CR]Example: 113 minutes will be converted to 1:53[CR][CR]Known supported Skins:[CR]A Confluence ZEITGEIST</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.module.xbmcswift2" name="xbmcswift2" provider-name="Jonathan Beluch (jbel)" version="2.4.01">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+  </requires>
+  <extension library="lib" point="xbmc.python.module" />
+  <extension point="xbmc.addon.metadata">
+    <language />
+    <platform>all</platform>
+  </extension>
+</addon>
 </addons>
