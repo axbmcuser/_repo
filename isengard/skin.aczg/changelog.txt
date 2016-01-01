@@ -1,3 +1,6 @@
+[B]2.7.86[/B] (2016-01-01)
+- Minor improvements and optimizations
+
 [B]2.7.85[/B] (2016-01-01)
 - New Option under SKIN SETTINGS -> BACKGROUND OPTIONS -> "Use Original Confluence Default Background "Blue Bubbles" instead of Black"
 (Disabled by default)
