@@ -1,3 +1,21 @@
+[B]2.7.84[/B] (2016-01-01)
+- Reworked US MPAA Icons (now colored)
+- Added MPAA FSK-certification support for Germany in "Video Information Dialog" (including textures)
+- "Video Information Dialog": Header label is now scrolling if title name is too long
+
+[B]2.7.83[/B] (2016-01-01)
+- Reworked "DialogVideoInfo.xml" (Video Information Dialog) !
+- Moved movie release-year on homescreen within the "now playing" info. BEFORE: MovieName (YYYY) NOW: StudioName (YYYY)
+- Reworked textures: icon-rss.png, DefaultAddonNone.png
+- Removed option for windowed trailer in "Video Information Dialog"
+
+[B]2.7.82[/B] (2015-12-29)
+- Increased maximum no. of home screen addons (from 5 to 7)
+- Added movie release-year in VideoOSD > BEFORE: StudioName NOW: StudioName (YYYY)
+
+[B]2.7.81[/B] (2015-12-28)
+- Visually optimized home screen addons
+
 [B]2.7.80[/B] (2015-12-27)
 - Visually optimized home screen addons
 - Added home screen addons option for "TV/Radio"
