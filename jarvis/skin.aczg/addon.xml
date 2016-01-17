@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon
+  id="skin.aczg"
+  version="2.8.61"
+  name="A Confluence ZEITGEIST"
+  provider-name="axbmcuser">
+  <requires>
+    <import addon="xbmc.gui" version="5.10.0"/>
+  </requires>
+  <extension
+    point="xbmc.gui.skin"
+    debugging="false"
+    effectslowdown="0.2">
+    <res width="1280" height="720" aspect="16:9" default="true" folder="720p" />
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>"A Confluence ZEITGEIST" is a clean and modern MOD of the Confluence skin.</summary>
+    <description>"A Confluence ZEITGEIST" is a clean and modern MOD of the Confluence skin. It mainly features an icon-based main menu without the need for scrolling and an all new wall view, which replaces the old thumbnail view. Many other small graphics updates and optimizations are included.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
