@@ -1,6 +1,3 @@
-[B]2.8.62[/B] (2016-01-19)
-- Minor fixes and improvements
-
 [B]2.8.61[/B] (2016-01-17)
 - First release for KODI 16 / Jarvis
 - New version based on clean KODI 16 / Jarvis Confluence 2.8.6 (GIT 2015-01-15 - no Isengard leftovers)
