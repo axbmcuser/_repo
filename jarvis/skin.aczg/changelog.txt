@@ -1,3 +1,7 @@
+[B]2.8.63[/B] (2016-01-19)
+- Minor fixes and improvements, including:
+Conditional plot height in DialogVideoInfo (Linux/Windows) due to different font rendering
+
 [B]2.8.62[/B] (2016-01-19)
 - Minor fixes and improvements
 
