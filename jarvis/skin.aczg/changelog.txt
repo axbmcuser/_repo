@@ -1,7 +1,16 @@
-[B]2.8.67[/B] (2016-02-01)
+[B]2.8.68[/B] (2016-01-31)
+- Minor fixes and improvements, including:
+Removed inconsistent MouseControl Close-Buttons for SYSTEM, SETTINGS, SKIN SETTINGS, ...,
+DialogBack slightly reworked,
+DialogContextXXX slightly reworked,
+MouseControl Close-Buttons corrections for Shutdown- and ContextMenu-Dialog (including hitrect fixes),
+Slightly increased fade-in time for neutral LoginScreen
+
+[B]2.8.67[/B] (2016-31-01)
 - Minor fixes and improvements, including:
 Close-Button now 1080p optimized,
-Reworked all Dialog headers and Dialog Header Close-button position
+Reworked all Dialog headers and Dialog Header Close-button position,
+DialogBack slightly reworked
 
 [B]2.8.66[/B] (2016-01-24)
 - Minor fixes and improvements, including:
