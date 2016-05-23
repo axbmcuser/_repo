@@ -1,3 +1,17 @@
+[B]2.8.73[/B] (2016-05-23)
+- Added small "disc-image"-indicator for ListItems within both WallView view types
+- Added support for LibreELEC (KODI exit helper script + LibreELEC-Settings submenu item)
+- Removed redundant main-submenu items: SYSTEM -> Settings, TV -> Channels, Radio -> Channels
+- Added Genre-Icons support/graphics for both WallView view types
+Reworked Genre Icons are based on the great work by the following authors:
+limav > most icons
+http://limav.deviantart.com/art/Movie-Genres-Folders-432790953/
+sonerbyzt > comedy, war, ...
+http://sonerbyzt.deviantart.com/art/Movie-Genres-Folders-593250046/
+xzener > sci-fi, ...
+http://addons.kodi.tv/show/resource.images.moviegenreicons.xzener-flat/
+(Disclaimer: The images used to create the folders are not mine, all image rights are reserved to their owners, firms and creators.)
+
 [B]2.8.72[/B] (2016-04-23)
 - Reworked standard main List view (50): Poster/thumb now right again
 
