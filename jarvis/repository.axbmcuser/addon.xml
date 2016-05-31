@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="repository.axbmcuser"
        name="axbmcuser REPO"
-       version="1.0.8"
+       version="1.1.0"
        provider-name="axbmcuser">
   <requires>
     <import addon="xbmc.addon" version="12.0.0"/>
@@ -24,6 +24,12 @@
       <info compressed="false">https://github.com/axbmcuser/_repo/raw/master/jarvis/addons.xml</info>
       <checksum>https://github.com/axbmcuser/_repo/raw/master/jarvis/addons.xml.md5</checksum>
       <datadir zip="true">https://github.com/axbmcuser/_repo/raw/master/jarvis</datadir>
+      <hashes>false</hashes>
+    </dir>
+    <dir minversion="16.9.0">
+      <info compressed="false">https://github.com/axbmcuser/_repo/raw/master/krypton/addons.xml</info>
+      <checksum>https://github.com/axbmcuser/_repo/raw/master/krypton/addons.xml.md5</checksum>
+      <datadir zip="true">https://github.com/axbmcuser/_repo/raw/master/krypton</datadir>
       <hashes>false</hashes>
     </dir>
   </extension>
