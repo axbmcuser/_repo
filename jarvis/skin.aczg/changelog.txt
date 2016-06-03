@@ -1,3 +1,8 @@
+[B]2.8.74[/B] (2016-06-03)
+- Small changes in: DialogVideoInfo including ratingstars, rating, duration, poster-aspectratio fixes
+- Small changes in WallViews (poster not scaled+cropped for plugins-Containers anymore because they are no real posters in many cases but wider graphics which would be cut off)
+- Changes in PVR-Section (Added small channel thumbnails on the right)
+
 [B]2.8.73[/B] (2016-05-23)
 - Added small "disc-image"-indicator for ListItems within both WallView view types
 - Added support for LibreELEC (KODI exit helper script + LibreELEC-Settings submenu item)
