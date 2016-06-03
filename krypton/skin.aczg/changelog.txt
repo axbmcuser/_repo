@@ -1,3 +1,8 @@
+[B]3.0.18[/B] (2016-06-03)
+- Synced changes from Confluence 3.0.18
+- Changes in PVR-Section (Added small channel thumbnails on the right)
+- Small changes in: DialogVideoInfo including rating, duration, poster-aspectratio fixes
+
 [B]3.0.17[/B] (2016-06-01)
 - Initial Skin version for KODI 17.x (Krypton)
 - Restored old height for DialogSettings (way too small in height in Stock Krypton Confluence)
