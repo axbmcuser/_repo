@@ -1,3 +1,6 @@
+[B]2.8.75[/B] (2016-06-06)
+- Optimized MyVideoNav: Actions "Search" + "Update Library" moved to the top of the sidebar. Default sidebar-focus still remains on viewtype selection
+
 [B]2.8.74[/B] (2016-06-03)
 - Small changes in: DialogVideoInfo including ratingstars, rating, duration, poster-aspectratio fixes
 - Small changes in WallViews (poster not scaled+cropped for plugins-Containers anymore because they are no real posters in many cases but wider graphics which would be cut off)
