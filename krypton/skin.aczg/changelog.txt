@@ -1,3 +1,6 @@
+[B]3.0.21[/B] (2016-06-13)
+- Minor improvements
+
 [B]3.0.20[/B] (2016-06-13)
 - Synced changes from Confluence 3.0.22
 - Minor improvements
