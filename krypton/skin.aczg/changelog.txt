@@ -1,3 +1,10 @@
+[B]3.0.23[/B] (2016-06-14)
+- Added "Extended Info" Script Support to "DialogVideoInfo" similar to "Estuary"-Skin:
+Move DOWN on selected Actor to start Extended Info with additional Actor Information;
+Added "Extended Info" Button
+- "DialogVideoInfo" changes including: Addition of "Director"-Button (Same Director Search)
+- Minor improvements
+
 [B]3.0.22[/B] (2016-06-13)
 - Minor improvements
 
