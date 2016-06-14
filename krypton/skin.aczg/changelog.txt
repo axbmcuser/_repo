@@ -1,3 +1,7 @@
+[B]3.0.24[/B] (2016-06-14)
+- Reworked almost all flagging-graphics (DD, DD+, THD, DTS, DTS-MA, DTS-HRA, aspect ratios, video formats, audio language)
+- Minor improvements
+
 [B]3.0.23[/B] (2016-06-14)
 - Added "Extended Info" Script Support to "DialogVideoInfo" similar to "Estuary"-Skin:
 Move DOWN on selected Actor to start Extended Info with additional Actor Information;
