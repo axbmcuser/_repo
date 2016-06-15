@@ -1,3 +1,11 @@
+[B]2.8.76[/B] (2016-06-15)
+- Reworked almost all flagging-graphics (DD, DD+, THD, DTS, DTS-MA, DTS-HRA, aspect ratios, video formats, audio language)
+- Added "Extended Info" Script Support to "DialogVideoInfo" similar to "Estuary"-Skin:
+Move DOWN on selected Actor to start Extended Info with additional Actor Information;
+Added "Extended Info" Button
+- "DialogVideoInfo" changes including: Addition of "Director"-Button (Same Director Search)
+- Minor improvements
+
 [B]2.8.75[/B] (2016-06-06)
 - Optimized MyVideoNav: Actions "Search" + "Update Library" moved to the top of the sidebar. Default sidebar-focus still remains on viewtype selection
 
