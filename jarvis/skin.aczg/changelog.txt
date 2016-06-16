@@ -1,3 +1,6 @@
+[B]2.8.77[/B] (2016-06-16)
+- Moved Sidebar Action "Clean library..." to the top (where other Actions like "Update Library" are)
+
 [B]2.8.76[/B] (2016-06-15)
 - Reworked almost all flagging-graphics (DD, DD+, THD, DTS, DTS-MA, DTS-HRA, aspect ratios, video formats, audio language)
 - Added "Extended Info" Script Support to "DialogVideoInfo" similar to "Estuary"-Skin:
