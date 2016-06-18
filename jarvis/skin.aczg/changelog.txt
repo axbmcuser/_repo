@@ -1,3 +1,9 @@
+[B]2.8.78[/B] (2016-06-19)
+- Improved PlayerControls "Record"-button
+- Smaller "DialogVideoInfo" changes
+- Reworked graphics:
+VolumeIcon.png, GoFullscreen.png, PVR-IsRecording.png, DefaultIconWarning.png, DefaultIconError.png, DefaultIconInfo.png
+
 [B]2.8.77[/B] (2016-06-16)
 - Moved Sidebar Action "Clean library..." to the top (where other Actions like "Update Library" are)
 

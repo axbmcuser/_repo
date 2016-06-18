@@ -1,3 +1,12 @@
+[B]3.0.26[/B] (2016-06-19)
+- Synced changes from Confluence 3.0.23 (language files + other Confluence 3.x changes)
+- Small usability <onup>-change in "DialogSettings.xml"
+- ListView SortByYear: Changes for label2/year display
+- Improved PlayerControls "Record"-button
+- Smaller "DialogVideoInfo" changes
+- Reworked graphics:
+VolumeIcon.png, GoFullscreen.png, PVR-IsRecording.png, PVR-HasTimerScheduleDisabled.png, PVR-HasTimerError.png, PVR-HasTimerConflict.png, PVR-HasTimerDisabled.png, PVR-HasTimerScheduleError.png, PVR-HasTimerScheduleConflict.png, DefaultIconWarning.png, DefaultIconError.png, DefaultIconInfo.png, OSDRateNF.png, OSDRateFO.png
+
 [B]3.0.25[/B] (2016-06-16)
 - Moved Sidebar Action "Clean library..." to the top (where other Actions like "Update Library" are)
 - Fixed tiny Confluence KODI 17 bug in "DialogSelect.xml" (Chapters and runtime of DISC-Image playlists were not shown)
