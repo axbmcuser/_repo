@@ -1,6 +1,15 @@
+[B]3.0.27[/B] (2016-06-19)
+- Optimizations of flagging-graphics
+- Smaller "DialogVideoInfo" changes, including: View Plot in TextViewer Button,
+- Year/Studio display change in: "Home.xml", "VideoFulllScreen.xml", "DialogVideoInfo.xml"
+- "VideoOSDBookmarks.xml": Added scrollbar
+- Support for latest Addon "changelog becomes news" changes (ListItem.AddonNews - old changelogs won't be available anymore after this KODI 17 change)
+- Added "Custom_1102_TextViewer.xml" (like Estuary) - used for AddonInfo "Changelog/What's new" and "Plot"
+- "MyVideoNav.xml": Moved "Hide Watched" from "Misc Options" to "View Options", Fixed "Playing" Label if only "Current Playlist is visible" (Confluence Bug), moved "Get more" (Video Addons) to "Actions"
+
 [B]3.0.26[/B] (2016-06-19)
 - Synced changes from Confluence 3.0.23 (language files + other Confluence 3.x changes)
-- Small usability <onup>-change in "DialogSettings.xml"
+- Small usability onup-change in "DialogSettings.xml"
 - ListView SortByYear: Changes for label2/year display
 - Improved PlayerControls "Record"-button
 - Smaller "DialogVideoInfo" changes
@@ -50,14 +59,14 @@ Added "Extended Info" Button
 [B]2.8.73[/B] (2016-05-23)
 - Added small "disc-image"-indicator for ListItems within both WallView view types
 - Added support for LibreELEC (KODI exit helper script + LibreELEC-Settings submenu item)
-- Removed redundant main-submenu items: SYSTEM -> Settings, TV -> Channels, Radio -> Channels
+- Removed redundant main-submenu items: SYSTEM -&gt; Settings, TV -&gt; Channels, Radio -&gt; Channels
 - Added Genre-Icons support/graphics for both WallView view types
 Reworked Genre Icons are based on the great work by the following authors:
-limav > most icons
+limav &gt; most icons
 http://limav.deviantart.com/art/Movie-Genres-Folders-432790953/
-sonerbyzt > comedy, war, ...
+sonerbyzt &gt; comedy, war, ...
 http://sonerbyzt.deviantart.com/art/Movie-Genres-Folders-593250046/
-xzener > sci-fi, ...
+xzener &gt; sci-fi, ...
 http://addons.kodi.tv/show/resource.images.moviegenreicons.xzener-flat/
 (Disclaimer: The images used to create the folders are not mine, all image rights are reserved to their owners, firms and creators.)
 
@@ -133,7 +142,7 @@ Conditional plot height in DialogVideoInfo (Linux/Windows) due to different font
 - Minor improvements and optimizations
 
 [B]2.7.85[/B] (2016-01-01)
-- New Option under SKIN SETTINGS -> BACKGROUND OPTIONS -> "Use Original Confluence Default Background "Blue Bubbles" instead of Black"
+- New Option under SKIN SETTINGS -&gt; BACKGROUND OPTIONS -&gt; "Use Original Confluence Default Background "Blue Bubbles" instead of Black"
 (Disabled by default)
 If you really like the Original Confluence Default Background "Blue Bubbles" better than plain black, you may enable this option.
 
@@ -150,7 +159,7 @@ If you really like the Original Confluence Default Background "Blue Bubbles" bet
 
 [B]2.7.82[/B] (2015-12-29)
 - Increased maximum no. of home screen addons (from 5 to 7)
-- Added movie release-year in VideoOSD > BEFORE: StudioName NOW: StudioName (YYYY)
+- Added movie release-year in VideoOSD &gt; BEFORE: StudioName NOW: StudioName (YYYY)
 
 [B]2.7.81[/B] (2015-12-28)
 - Visually optimized home screen addons
@@ -307,7 +316,7 @@ removed "HasSub.png" code+image,
 - Minor fixes and improvements
 
 [B]2.7.50[/B]
-- Added another Wall View with more items (Now: Wall View 1 & Wall View 2)
+- Added another Wall View with more items (Now: Wall View 1 &amp; Wall View 2)
 - Added "Clean library" button in sidebar (below "Update Library")
 - Minor improvements and optimizations
 
@@ -336,7 +345,7 @@ removed "HasSub.png" code+image,
 
 [B]2.7.42[/B]
 - While in the wall view (Thumbnail view), the KODI sidebar can now be opened again by going all left. 
-I had this disabled because i want to be able to jump to the most right object by going all left. Some ppl may have a dedicated key for the KODI sidebar on a remote. -> SetFocus(9000) (remote.xml)
+I had this disabled because i want to be able to jump to the most right object by going all left. Some ppl may have a dedicated key for the KODI sidebar on a remote. -&gt; SetFocus(9000) (remote.xml)
 
 [B]2.7.41[/B]
 - Initial Release based on Confluence 2.7.4
