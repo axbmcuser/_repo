@@ -95,11 +95,12 @@ http://addons.kodi.tv/show/resource.images.moviegenreicons.xzener-flat/
 <news>[B]3.0.27[/B] (2016-06-19)
 - Optimizations of flagging-graphics
 - Smaller "DialogVideoInfo" changes, including: View Plot in TextViewer Button,
-- Year/Studio display change in: "Home.xml", "VideoFulllScreen.xml", "DialogVideoInfo.xml"
+- Year/Studio display change in: "Home.xml", "VideoFullScreen.xml", "DialogVideoInfo.xml"
 - "VideoOSDBookmarks.xml": Added scrollbar
 - Support for latest Addon "changelog becomes news" changes (ListItem.AddonNews - old changelogs won't be available anymore after this KODI 17 change)
 - Added "Custom_1102_TextViewer.xml" (like Estuary) - used for AddonInfo "Changelog/What's new" and "Plot"
 - "MyVideoNav.xml": Moved "Hide Watched" from "Misc Options" to "View Options", Fixed "Playing" Label if only "Current Playlist is visible" (Confluence Bug), moved "Get more" (Video Addons) to "Actions"
+- "DialogTextViewer.xml": Removed Clock, text align changed from justify to left
 
 [B]3.0.26[/B] (2016-06-19)
 - Synced changes from Confluence 3.0.23 (language files + other Confluence 3.x changes)
@@ -442,7 +443,8 @@ removed "HasSub.png" code+image,
 I had this disabled because i want to be able to jump to the most right object by going all left. Some ppl may have a dedicated key for the KODI sidebar on a remote. -&gt; SetFocus(9000) (remote.xml)
 
 [B]2.7.41[/B]
-- Initial Release based on Confluence 2.7.4</news>
+- Initial Release based on Confluence 2.7.4
+</news>
   </extension>
 </addon>
 </addons>

@@ -5,6 +5,7 @@
 - "VideoOSDBookmarks.xml": Added scrollbar
 - Added "Custom_1102_TextViewer.xml" (like Estuary) - used for AddonInfo "Changelog/What's new" and "Plot"
 - "MyVideoNav.xml": Moved "Hide Watched" from "Misc Options" to "View Options", Fixed "Playing" Label if only "Current Playlist is visible" (Confluence Bug)
+- "DialogTextViewer.xml": Removed Clock, text align changed from justify to left
 
 [B]2.8.78[/B] (2016-06-19)
 - Improved PlayerControls "Record"-button
