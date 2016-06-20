@@ -1,3 +1,10 @@
+[B]2.8.80[/B] (2016-06-21)
+- Home.xml: Shortened "Now Playing" labels (they were far too wide), Optimized "Now Playing" Music/Video/Movie/Episode Information display
+- DialogAlbumInfo.xml: Removed Clock
+- IncludesHomeRecentlyAdded.xml: Reworked Home "Recently Added" (Movies, Episodes, Albums), Reworked graphics: RecentAddedBack.png, RecentAddedBack_hover.png
+- DialogTextViewer.xml: Hide scrollbar if no scrolling needed
+- IncludesBackgroundBuilding.xml: WallViews Background slightly more transparent
+
 [B]2.8.79[/B] (2016-06-19)
 - Optimizations of flagging-graphics
 - Smaller "DialogVideoInfo" changes, including: View Plot in TextViewer Button,

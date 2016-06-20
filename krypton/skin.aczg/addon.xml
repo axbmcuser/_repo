@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
   id="skin.aczg"
-  version="3.0.27"
+  version="3.0.28"
   name="A Confluence ZEITGEIST"
   provider-name="axbmcuser">
   <requires>
@@ -26,7 +26,15 @@ xzener > sci-fi, ...
 http://addons.kodi.tv/show/resource.images.moviegenreicons.xzener-flat/
 (Disclaimer: The images used to create the folders are not mine, all image rights are reserved to their owners, firms and creators.)</description>
   <platform>all</platform>
-<news>[B]3.0.27[/B] (2016-06-19)
+<news>[B]3.0.28[/B] (2016-06-21)
+- Home.xml: Shortened "Now Playing" labels (they were far too wide), Optimized "Now Playing" Music/Video/Movie/Episode Information display
+- DialogAddonInfo.xml: Added Addon Size
+- DialogMusicInfo.xml: Removed Clock
+- IncludesHomeRecentlyAdded.xml: Reworked Home "Recently Added" (Movies, Episodes, Albums), Reworked graphics: RecentAddedBack.png, RecentAddedBack_hover.png
+- DialogTextViewer.xml: Hide scrollbar if no scrolling needed
+- IncludesBackgroundBuilding.xml: WallViews Background slightly more transparent
+
+[B]3.0.27[/B] (2016-06-19)
 - Optimizations of flagging-graphics
 - Smaller "DialogVideoInfo" changes, including: View Plot in TextViewer Button,
 - Year/Studio display change in: "Home.xml", "VideoFullScreen.xml", "DialogVideoInfo.xml"
