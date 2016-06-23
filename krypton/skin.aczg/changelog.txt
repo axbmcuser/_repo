@@ -1,3 +1,6 @@
+[B]3.0.31[/B] (2016-06-24)
+- Added Option to make "Super Folder" first item instead of last (Default)
+
 [B]3.0.30[/B] (2016-06-24)
 - New Feature: "Super Folder" as "Home Addon"-Widget (for MOVIES / TV SHOWS / VIDEOS main menu item)
 Now you can choose a Special Folder which is displayed along the "Home Addon"-Widgets on the Homescreen. 
