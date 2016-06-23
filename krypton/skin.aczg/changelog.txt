@@ -1,3 +1,11 @@
+[B]3.0.29[/B] (2016-06-23)
+- VideoFulllScreen.xml: Change TV-Show Episode Format to match "Now Playing" on Home Screen (Season X - Episode X) 
+- Moved Sidebar "Get more"-Buttons to match MyVideoNav.xml, added "Clean Library" to Music Sidebar like in Video Sidebar
+- Small usability ondown-change in "DialogSettings.xml"
+- Fix "Weather Settings" button
+- Remove deprecated window names + corrected window names for (visual) case sensitivity
+- Cleaned and simplified Skin Settings
+
 [B]3.0.28[/B] (2016-06-21)
 - Home.xml: Shortened "Now Playing" labels (they were far too wide), Optimized "Now Playing" Music/Video/Movie/Episode Information display
 - DialogAddonInfo.xml: Added Addon Size
