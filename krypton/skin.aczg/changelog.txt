@@ -1,3 +1,8 @@
+[B]3.0.30[/B] (2016-06-24)
+- New Feature: "Super Folder" as "Home Addon"-Widget (for MOVIES / TV SHOWS / VIDEOS main menu item)
+Now you can choose a Special Folder which is displayed along the "Home Addon"-Widgets on the Homescreen. 
+Select up to 6 Addons + 1 Super Folder or a max. of 7 Addons and no Super Folder. (Note: Enabled "Super Folder" disables Addon No. 7)
+
 [B]3.0.29[/B] (2016-06-23)
 - VideoFulllScreen.xml: Change TV-Show Episode Format to match "Now Playing" on Home Screen (Season X - Episode X) 
 - Moved Sidebar "Get more"-Buttons to match MyVideoNav.xml, added "Clean Library" to Music Sidebar like in Video Sidebar
