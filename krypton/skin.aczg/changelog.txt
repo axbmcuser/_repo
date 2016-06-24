@@ -1,3 +1,7 @@
+[B]3.0.32[/B] (2016-06-25)
+- Skin Setting cosmetics
+- VideoFullScreen.xml: Display existing TV Show Name and Episode even if "VideoPlayer.Content(Episodes)" is false
+
 [B]3.0.31[/B] (2016-06-24)
 - Added Option to make "Super Folder" first item instead of last (Default)
 

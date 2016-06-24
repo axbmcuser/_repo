@@ -1,3 +1,12 @@
+[B]2.8.81[/B] (2016-06-25)
+- New Feature: "Super Folder" as "Home Addon"-Widget (for MOVIES / TV SHOWS / VIDEOS main menu item)
+Now you can choose a Special Folder which is displayed along the "Home Addon"-Widgets on the Homescreen. 
+Select up to 6 Addons + 1 Super Folder or a max. of 7 Addons and no Super Folder. (Note: Enabled "Super Folder" disables Addon No. 7)
+- Added Option to make "Super Folder" first item instead of last (Default)
+- Cleaned and simplified Skin Settings
+- VideoFullScreen.xml: Display existing TV Show Name and Episode even if "VideoPlayer.Content(Episodes)" is false
+- VideoFulllScreen.xml: Change TV-Show Episode Format to match "Now Playing" on Home Screen (Season X - Episode X) 
+
 [B]2.8.80[/B] (2016-06-21)
 - Home.xml: Shortened "Now Playing" labels (they were far too wide), Optimized "Now Playing" Music/Video/Movie/Episode Information display
 - DialogAlbumInfo.xml: Removed Clock

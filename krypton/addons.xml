@@ -67,7 +67,7 @@
 
 <addon
   id="skin.aczg"
-  version="3.0.31"
+  version="3.0.32"
   name="A Confluence ZEITGEIST"
   provider-name="axbmcuser">
   <requires>
@@ -92,7 +92,11 @@ xzener > sci-fi, ...
 http://addons.kodi.tv/show/resource.images.moviegenreicons.xzener-flat/
 (Disclaimer: The images used to create the folders are not mine, all image rights are reserved to their owners, firms and creators.)</description>
   <platform>all</platform>
-<news>[B]3.0.31[/B] (2016-06-24)
+<news>[B]3.0.32[/B] (2016-06-25)
+- Skin Setting cosmetics
+- VideoFullScreen.xml: Display existing TV Show Name and Episode even if "VideoPlayer.Content(Episodes)" is false
+
+[B]3.0.31[/B] (2016-06-24)
 - Added Option to make "Super Folder" first item instead of last (Default)
 
 [B]3.0.30[/B] (2016-06-24)
