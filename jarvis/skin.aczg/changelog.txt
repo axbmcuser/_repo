@@ -1,3 +1,11 @@
+[B]2.8.82[/B] (2016-06-26)
+- Reworked and cleaned Footer Page/Item Count for simplicity and less overcrowded usability
+- Reworked NowPlaying display (Home, CommonNowPlaying, VideoFullscreen)
+- Complete rework of "Favorites" Dialog
+- Skin Settings: Added Option "Make Favorites Button first main menu item"
+- DialogVideoInfo: Added Year to TV Show Title (Header)
+- Other minor improvements
+
 [B]2.8.81[/B] (2016-06-25)
 - New Feature: "Super Folder" as "Home Addon"-Widget (for MOVIES / TV SHOWS / VIDEOS main menu item)
 Now you can choose a Special Folder which is displayed along the "Home Addon"-Widgets on the Homescreen. 

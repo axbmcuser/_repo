@@ -67,7 +67,7 @@
 
 <addon
   id="skin.aczg"
-  version="3.0.32"
+  version="3.0.33"
   name="A Confluence ZEITGEIST"
   provider-name="axbmcuser">
   <requires>
@@ -92,7 +92,15 @@ xzener > sci-fi, ...
 http://addons.kodi.tv/show/resource.images.moviegenreicons.xzener-flat/
 (Disclaimer: The images used to create the folders are not mine, all image rights are reserved to their owners, firms and creators.)</description>
   <platform>all</platform>
-<news>[B]3.0.32[/B] (2016-06-25)
+<news>[B]3.0.33[/B] (2016-06-26)
+- Reworked and cleaned Footer Page/Item Count for simplicity and less overcrowded usability
+- Reworked NowPlaying display (Home, CommonNowPlaying, VideoFullscreen)
+- Complete rework of "Favorites" Dialog
+- Skin Settings: Added Option "Make Favorites Button first main menu item"
+- DialogVideoInfo: Added Year to TV Show Title (Header)
+- Other minor improvements
+
+[B]3.0.32[/B] (2016-06-25)
 - Skin Setting cosmetics
 - VideoFullScreen.xml: Display existing TV Show Name and Episode even if "VideoPlayer.Content(Episodes)" is false
 
