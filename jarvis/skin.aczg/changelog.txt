@@ -1,3 +1,6 @@
+[B]2.8.83[/B] (2016-06-26)
+- Reworked DialogTextViewer to match Custom TextViewer
+
 [B]2.8.82[/B] (2016-06-26)
 - Reworked and cleaned Footer Page/Item Count for simplicity and less overcrowded usability
 - Reworked NowPlaying display (Home, CommonNowPlaying, VideoFullscreen)

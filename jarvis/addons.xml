@@ -67,7 +67,7 @@
 
 <addon
   id="skin.aczg"
-  version="2.8.82"
+  version="2.8.83"
   name="A Confluence ZEITGEIST"
   provider-name="axbmcuser">
   <requires>
@@ -80,15 +80,15 @@
     <res width="1280" height="720" aspect="16:9" default="true" folder="720p" />
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary>"A Confluence ZEITGEIST" is a clean and modern MOD of the Confluence skin.</summary>
-    <description>"A Confluence ZEITGEIST" is a clean and modern MOD of the Confluence skin. It mainly features an icon-based main menu without the need for scrolling and an all new wall view, which replaces the old thumbnail view. Many other small graphics updates and optimizations are included.
+    <summary>"A Confluence ZEITGEIST" is a clean and modern rework of the Confluence skin.</summary>
+    <description>"A Confluence ZEITGEIST" is a clean and modern rework of the Confluence skin. It mainly features an icon-based main menu without the need for scrolling and two all new wall views, which replace the old thumbnail view. Many other small graphics updates and optimizations are included.
 
 Reworked Genre Icons are based on the great work by the following authors:
-limav > most icons
+limav > most genre icons
 http://limav.deviantart.com/art/Movie-Genres-Folders-432790953/
-sonerbyzt > comedy, war, ...
+sonerbyzt > comedy/war genre icons
 http://sonerbyzt.deviantart.com/art/Movie-Genres-Folders-593250046/
-xzener > sci-fi, ...
+xzener > sci-fi genre icon
 http://addons.kodi.tv/show/resource.images.moviegenreicons.xzener-flat/
 (Disclaimer: The images used to create the folders are not mine, all image rights are reserved to their owners, firms and creators.)</description>
     <platform>all</platform>
