@@ -67,7 +67,7 @@
 
 <addon
   id="skin.aczg"
-  version="3.0.34"
+  version="3.0.35"
   name="A Confluence ZEITGEIST"
   provider-name="axbmcuser">
   <requires>
@@ -92,7 +92,12 @@ xzener > sci-fi genre icon
 http://addons.kodi.tv/show/resource.images.moviegenreicons.xzener-flat/
 (Disclaimer: The images used to create the folders are not mine, all image rights are reserved to their owners, firms and creators.)</description>
     <platform>all</platform>
-<news>[B]3.0.34[/B] (2016-06-26)
+<news>[B]3.0.35[/B] (2016-07-08)
+- VideoFullScreen: Black gradient (bottom) slightly more transparent now
+- Minor improvements (main menu item focus vertical line +1px)
+- Added and fixed Skin support for AudioDSP-Plugins adsp.basic/adsp.freesurround/adsp.biquad.filters (broken in Original Confluence)
+
+[B]3.0.34[/B] (2016-06-26)
 - Reworked DialogTextViewer to match Custom TextViewer
 
 [B]3.0.33[/B] (2016-06-26)
