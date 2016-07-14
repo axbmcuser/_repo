@@ -67,7 +67,7 @@
 
 <addon
   id="skin.aczg"
-  version="2.8.83"
+  version="2.8.84"
   name="A Confluence ZEITGEIST"
   provider-name="axbmcuser">
   <requires>

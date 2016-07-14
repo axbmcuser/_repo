@@ -1,3 +1,12 @@
+[B]3.0.36[/B] (2016-07-15)
+- Added new Media Process Dialog (Open via keymap ActivateWindow(1100)) [Custom_1100_DialogMediaProcessInfo.xml]
+- Video OSD / Video FullScreen changes [VideoFullScreen.xml, VideoOSD.xml]
+- Reworked Seek Bar Dialog [DialogSeekBar.xml]
+- Notification Hack until fixed in KODI VideoPlayer [DialogNotification.xml]: 
+Hide annoying and often faulty messages #21454 #21455 ("Source too slow", "Read rate too low for continuous playback") They don't appear very often because some fixes have been made in KODI, but it's still an existing (rare) problem.
+- Other minor improvements
+- Fixes from Confluence 3.0.28/.29/(.30)
+
 [B]3.0.35[/B] (2016-07-08)
 - VideoFullScreen: Black gradient (bottom) slightly more transparent now
 - Minor improvements (main menu item focus vertical line +1px)

@@ -1,3 +1,13 @@
+[B]2.8.84[/B] (2016-07-15)
+- Video OSD / Video FullScreen changes [VideoFullScreen.xml, VideoOSD.xml]
+- Reworked Seek Bar Dialog [DialogSeekBar.xml]
+- Notification Hack until fixed in KODI VideoPlayer [DialogNotification.xml]: 
+Hide annoying and often faulty messages #21454 #21455 ("Source too slow", "Read rate too low for continuous playback") They don't appear very often because some fixes have been made in KODI, but it's still an existing (rare) problem.
+- Other minor improvements
+
+- VideoFullScreen: Black gradient (bottom) slightly more transparent now
+- Minor improvements (main menu item focus vertical line +1px)
+
 [B]2.8.83[/B] (2016-06-26)
 - Reworked DialogTextViewer to match Custom TextViewer
 

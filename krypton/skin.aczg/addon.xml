@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
   id="skin.aczg"
-  version="3.0.35"
+  version="3.0.36"
   name="A Confluence ZEITGEIST"
   provider-name="axbmcuser">
   <requires>
@@ -26,7 +26,16 @@ xzener > sci-fi genre icon
 http://addons.kodi.tv/show/resource.images.moviegenreicons.xzener-flat/
 (Disclaimer: The images used to create the folders are not mine, all image rights are reserved to their owners, firms and creators.)</description>
     <platform>all</platform>
-<news>[B]3.0.35[/B] (2016-07-08)
+<news>[B]3.0.36[/B] (2016-07-15)
+- Added new Media Process Dialog (Open via keymap ActivateWindow(1100)) [Custom_1100_DialogMediaProcessInfo.xml]
+- Video OSD / Video FullScreen changes [VideoFullScreen.xml, VideoOSD.xml]
+- Reworked Seek Bar Dialog [DialogSeekBar.xml]
+- Notification Hack until fixed in KODI VideoPlayer [DialogNotification.xml]: 
+Hide annoying and often faulty messages #21454 #21455 ("Source too slow", "Read rate too low for continuous playback") They don't appear very often because some fixes have been made in KODI, but it's still an existing (rare) problem.
+- Other minor improvements
+- Fixes from Confluence 3.0.28/.29/(.30)
+
+[B]3.0.35[/B] (2016-07-08)
 - VideoFullScreen: Black gradient (bottom) slightly more transparent now
 - Minor improvements (main menu item focus vertical line +1px)
 - Added and fixed Skin support for AudioDSP-Plugins adsp.basic/adsp.freesurround/adsp.biquad.filters (broken in Original Confluence)
