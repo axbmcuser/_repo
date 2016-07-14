@@ -1,3 +1,6 @@
+[B]2.8.85[/B] (2016-07-15)
+- Other minor improvements
+
 [B]2.8.84[/B] (2016-07-15)
 - Video OSD / Video FullScreen changes [VideoFullScreen.xml, VideoOSD.xml]
 - Reworked Seek Bar Dialog [DialogSeekBar.xml]

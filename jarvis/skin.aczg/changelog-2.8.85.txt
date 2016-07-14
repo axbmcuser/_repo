@@ -1,0 +1,367 @@
+[B]2.8.85[/B] (2016-07-15)
+- Other minor improvements
+
+[B]2.8.84[/B] (2016-07-15)
+- Video OSD / Video FullScreen changes [VideoFullScreen.xml, VideoOSD.xml]
+- Reworked Seek Bar Dialog [DialogSeekBar.xml]
+- Notification Hack until fixed in KODI VideoPlayer [DialogNotification.xml]: 
+Hide annoying and often faulty messages #21454 #21455 ("Source too slow", "Read rate too low for continuous playback") They don't appear very often because some fixes have been made in KODI, but it's still an existing (rare) problem.
+- Other minor improvements
+
+- VideoFullScreen: Black gradient (bottom) slightly more transparent now
+- Minor improvements (main menu item focus vertical line +1px)
+
+[B]2.8.83[/B] (2016-06-26)
+- Reworked DialogTextViewer to match Custom TextViewer
+
+[B]2.8.82[/B] (2016-06-26)
+- Reworked and cleaned Footer Page/Item Count for simplicity and less overcrowded usability
+- Reworked NowPlaying display (Home, CommonNowPlaying, VideoFullscreen)
+- Complete rework of "Favorites" Dialog
+- Skin Settings: Added Option "Make Favorites Button first main menu item"
+- DialogVideoInfo: Added Year to TV Show Title (Header)
+- Other minor improvements
+
+[B]2.8.81[/B] (2016-06-25)
+- New Feature: "Super Folder" as "Home Addon"-Widget (for MOVIES / TV SHOWS / VIDEOS main menu item)
+Now you can choose a Special Folder which is displayed along the "Home Addon"-Widgets on the Homescreen. 
+Select up to 6 Addons + 1 Super Folder or a max. of 7 Addons and no Super Folder. (Note: Enabled "Super Folder" disables Addon No. 7)
+- Added Option to make "Super Folder" first item instead of last (Default)
+- Cleaned and simplified Skin Settings
+- VideoFullScreen.xml: Display existing TV Show Name and Episode even if "VideoPlayer.Content(Episodes)" is false
+- VideoFulllScreen.xml: Change TV-Show Episode Format to match "Now Playing" on Home Screen (Season X - Episode X) 
+
+[B]2.8.80[/B] (2016-06-21)
+- Home.xml: Shortened "Now Playing" labels (they were far too wide), Optimized "Now Playing" Music/Video/Movie/Episode Information display
+- DialogAlbumInfo.xml: Removed Clock
+- IncludesHomeRecentlyAdded.xml: Reworked Home "Recently Added" (Movies, Episodes, Albums), Reworked graphics: RecentAddedBack.png, RecentAddedBack_hover.png
+- DialogTextViewer.xml: Hide scrollbar if no scrolling needed
+- IncludesBackgroundBuilding.xml: WallViews Background slightly more transparent
+
+[B]2.8.79[/B] (2016-06-19)
+- Optimizations of flagging-graphics
+- Smaller "DialogVideoInfo" changes, including: View Plot in TextViewer Button,
+- Year/Studio display change in: "Home.xml", "VideoFullScreen.xml", "DialogVideoInfo.xml"
+- "VideoOSDBookmarks.xml": Added scrollbar
+- Added "Custom_1102_TextViewer.xml" (like Estuary) - used for AddonInfo "Changelog/What's new" and "Plot"
+- "MyVideoNav.xml": Moved "Hide Watched" from "Misc Options" to "View Options", Fixed "Playing" Label if only "Current Playlist is visible" (Confluence Bug)
+- "DialogTextViewer.xml": Removed Clock, text align changed from justify to left
+
+[B]2.8.78[/B] (2016-06-19)
+- Improved PlayerControls "Record"-button
+- Smaller "DialogVideoInfo" changes
+- Reworked graphics:
+VolumeIcon.png, GoFullscreen.png, PVR-IsRecording.png, DefaultIconWarning.png, DefaultIconError.png, DefaultIconInfo.png
+
+[B]2.8.77[/B] (2016-06-16)
+- Moved Sidebar Action "Clean library..." to the top (where other Actions like "Update Library" are)
+
+[B]2.8.76[/B] (2016-06-15)
+- Reworked almost all flagging-graphics (DD, DD+, THD, DTS, DTS-MA, DTS-HRA, aspect ratios, video formats, audio language)
+- Added "Extended Info" Script Support to "DialogVideoInfo" similar to "Estuary"-Skin:
+Move DOWN on selected Actor to start Extended Info with additional Actor Information;
+Added "Extended Info" Button
+- "DialogVideoInfo" changes including: Addition of "Director"-Button (Same Director Search)
+- Minor improvements
+
+[B]2.8.75[/B] (2016-06-06)
+- Optimized MyVideoNav: Actions "Search" + "Update Library" moved to the top of the sidebar. Default sidebar-focus still remains on viewtype selection
+
+[B]2.8.74[/B] (2016-06-03)
+- Small changes in: DialogVideoInfo including ratingstars, rating, duration, poster-aspectratio fixes
+- Small changes in WallViews (poster not scaled+cropped for plugins-Containers anymore because they are no real posters in many cases but wider graphics which would be cut off)
+- Changes in PVR-Section (Added small channel thumbnails on the right)
+
+[B]2.8.73[/B] (2016-05-23)
+- Added small "disc-image"-indicator for ListItems within both WallView view types
+- Added support for LibreELEC (KODI exit helper script + LibreELEC-Settings submenu item)
+- Removed redundant main-submenu items: SYSTEM -&gt; Settings, TV -&gt; Channels, Radio -&gt; Channels
+- Added Genre-Icons support/graphics for both WallView view types
+Reworked Genre Icons are based on the great work by the following authors:
+limav &gt; most icons
+http://limav.deviantart.com/art/Movie-Genres-Folders-432790953/
+sonerbyzt &gt; comedy, war, ...
+http://sonerbyzt.deviantart.com/art/Movie-Genres-Folders-593250046/
+xzener &gt; sci-fi, ...
+http://addons.kodi.tv/show/resource.images.moviegenreicons.xzener-flat/
+(Disclaimer: The images used to create the folders are not mine, all image rights are reserved to their owners, firms and creators.)
+
+[B]2.8.72[/B] (2016-04-23)
+- Reworked standard main List view (50): Poster/thumb now right again
+
+[B]2.8.71[/B] (2016-02-12)
+- Visual changes in "DialogVideoInfo.xml" (Video Information Dialog)
+
+[B]2.8.70[/B] (2016-02-11)
+- Slightly cleaned up Settings area KODI logo graphic (no messy border anymore within the Skin)
+- Cleaned up global dialog header background graphic (no gradient anymore)
+- Reworked standard main List view (50). Poster/thumb now left, list-Panel now wider (making more labels readable without scrolling)
+- Some changes in "DialogVideoInfo.xml" (Video Information Dialog) (visual changes + removed conditonal plot height for Windows Platform, slightly optimized cast view)
+- Added two additional Roboto-Font variants (Light, Medium) (for now only used in "DialogVideoInfo.xml" to make the text less bulky)
+
+[B]2.8.69[/B] (2016-02-03)
+- Reworked floor graphics height and transparency
+- Added OPTIONAL setting for removal/replacement of floor-graphics (see Skin Settings)
+- Added clean KODI logo for SYSTEM area (native for 1080p)
+- Reworked DialogCloseButton.png (now native for 1080p)
+- Removed RDS and ProgrammeInfo player control buttons outside of FullscreenVideo (because of inconsistency and problems with ActivateWindow(PVRGuideInfo) - known KODI Bug)
+- Reworked standard folder icons like DefaultAddonLyrics.png etc. (just removed the strange border which was "hardcoded" within the graphics - icons itself untouched)
+
+[B]2.8.68[/B] (2016-01-31)
+- Minor fixes and improvements, including:
+Removed inconsistent MouseControl Close-Buttons for SYSTEM, SETTINGS, SKIN SETTINGS, ...,
+DialogBack slightly reworked,
+DialogContextXXX slightly reworked,
+MouseControl Close-Buttons corrections for Shutdown- and ContextMenu-Dialog (including hitrect fixes),
+Slightly increased fade-in time for neutral LoginScreen
+
+[B]2.8.67[/B] (2016-31-01)
+- Minor fixes and improvements, including:
+Close-Button now 1080p optimized,
+Reworked all Dialog headers and Dialog Header Close-button position,
+DialogBack slightly reworked
+
+[B]2.8.66[/B] (2016-01-24)
+- Minor fixes and improvements, including:
+Corrected KODI logo size on LoginScreen (now same as on home screen),
+Corrected Confluence CommonNowPlaying_Controls,
+Removed CommonBackground for LoginScreen and Startup,
+Changed OpenELEC "Exit KODI" helper script (now does a clean application restart instead of killing the app too aggressive),
+Global animation duration increased by a very small amount (compared to last version)
+
+[B]2.8.65[/B] (2016-01-19)
+- Minor fixes and improvements
+
+[B]2.8.64[/B] (2016-01-19)
+- Minor fixes and improvements, including:
+Restored Exit-Button functionality for OpenELEC (Note: Officially unsupported by OpenELEC)
+
+[B]2.8.63[/B] (2016-01-19)
+- Minor fixes and improvements, including:
+Conditional plot height in DialogVideoInfo (Linux/Windows) due to different font rendering
+
+[B]2.8.62[/B] (2016-01-19)
+- Minor fixes and improvements
+
+[B]2.8.61[/B] (2016-01-17)
+- First release for KODI 16 / Jarvis
+- New version based on clean KODI 16 / Jarvis Confluence 2.8.6 (GIT 2015-01-15 - no Isengard leftovers)
+
+
+[B]2.7.88[/B] (2016-01-02)
+- Minor improvements and optimizations
+
+[B]2.7.87[/B] (2016-01-02)
+- Added visual stars-rating (0-5 stars) in "Video Information Dialog"
+
+[B]2.7.86[/B] (2016-01-01)
+- Minor improvements and optimizations
+
+[B]2.7.85[/B] (2016-01-01)
+- New Option under SKIN SETTINGS -&gt; BACKGROUND OPTIONS -&gt; "Use Original Confluence Default Background "Blue Bubbles" instead of Black"
+(Disabled by default)
+If you really like the Original Confluence Default Background "Blue Bubbles" better than plain black, you may enable this option.
+
+[B]2.7.84[/B] (2016-01-01)
+- Reworked US MPAA Icons (now colored)
+- Added MPAA FSK-certification support for Germany in "Video Information Dialog" (including textures)
+- "Video Information Dialog": Header label is now scrolling if title name is too long
+
+[B]2.7.83[/B] (2016-01-01)
+- Reworked "DialogVideoInfo.xml" (Video Information Dialog) !
+- Moved movie release-year on homescreen within the "now playing" info. BEFORE: MovieName (YYYY) NOW: StudioName (YYYY)
+- Reworked textures: icon-rss.png, DefaultAddonNone.png
+- Removed option for windowed trailer in "Video Information Dialog"
+
+[B]2.7.82[/B] (2015-12-29)
+- Increased maximum no. of home screen addons (from 5 to 7)
+- Added movie release-year in VideoOSD &gt; BEFORE: StudioName NOW: StudioName (YYYY)
+
+[B]2.7.81[/B] (2015-12-28)
+- Visually optimized home screen addons
+
+[B]2.7.80[/B] (2015-12-27)
+- Visually optimized home screen addons
+- Added home screen addons option for "TV/Radio"
+- Visually optimized home screen RSS Feed
+- Reworked textures: PVR-EpgProgressIndicator.png
+
+[B]2.7.79[/B] (2015-12-26)
+- Reworked textures:
+arrow-big-left.png, 
+arrow-big-right.png, 
+PVR-IsRecording.png, 
+PVR-HasTimer.png,
+icon-mute.png
+
+[B]2.7.78[/B]
+- Reworked up/down left/right control graphics/arrows (type 1 + 2)
+
+[B]2.7.77[/B]
+- New MINI Weather Information for home screen:
+Reworked home screen option "Show weather information" (it does NOT replace the KODI logo with that large weather information anymore - mini info is added right to the KODI logo)
+- Fixed Video OSD Subtitle tooltip position (X-position slightly off because of the reworked OSD buttons)
+Textures:
+- Reworked "radio buttons" (AKA on/off button)
+- OSD Keyboard focus key optimized
+- OSD Keyboard radio buttons optimized to match radio button change
+
+[B]2.7.76[/B]
+- Home screen PVR recording/timer info position fix (very minor)
+
+[B]2.7.75[/B]
+- Reworked all OSD-Button graphics again (no focus + focus state changed)
+- More reworked gradients with near to no banding
+- Many smaller textures updates and icon size optimization
+
+[B]2.7.74[/B]
+- Small home main menu focus-item fix
+- Reworked backgrounds for main menu and bottom floor image (Containing new, much better, almost banding free gradients)
+
+[B]2.7.73[/B]
+- Reworked Home main menu (items now have text labels)
+- Some home main menu icons now smaller (have been too bulky before)
+- Don't hide "recently added [...]" on home screen if favorites sidebar is open
+- Small textures update (includes: removed strange 0.0 audio indicator like in Jarvis)
+
+[B]2.7.72[/B]
+- Added global home screen PVR recording/timer indicator
+- Fixed Recording OSD Button togglebutton states
+- Minor improvements and optimizations (including):
+VideoOSD, MusicOSD: Dim disabled items more,
+Home screen "Recently added ..." font size corrections,
+Small optimization in OSD Buttons: AudioSettings, VideoSettings, Record, EPG, TXT
+
+[B]2.7.71[/B]
+- Reworked home screen icons for Shutdown Menu and Favorites
+- Minor improvements and optimizations
+
+[B]2.7.70[/B]
+- New optional setting "Move Favorites Button to main menu (ONLY works if main menu isn't full!)"
+
+[B]2.7.69[/B]
+- Reworked Home Widgets/Addons
+- Added 5% home main menu, home sub menu and floor transparency
+- Minor improvements and optimizations
+
+[B]2.7.68[/B]
+- Optimized animation/transition timings
+- Minor improvements and optimizations
+
+[B]2.7.67[/B]
+- Some viewtypes a now hidden by default for more simplicity. (All stock-views can be simply re-activated in Skin Settings.)
+- Home: Switched Shutdown and Favorites Button
+- Minor improvements and optimizations
+
+[B]2.7.66[/B]
+- Wall Views now use a semi-transparent background like the other ViewsTypes to match Confluence typical background-video-style (Can be disabled in Skin Settings!)
+
+[B]2.7.65[/B]
+- Minor improvements and optimizations (including):
+Reworked TV/Radio-Channel-Section, Wall Views
+
+[B]2.7.64[/B]
+- Reworked TV/Radio-Channel-Section (Larger Plot, removed minimized window, enable background video for TV/Radio-Channel-Section)
+
+[B]2.7.63[/B]
+- Minor improvements and optimizations (including):
+Removed "MediaItemDetailBG.png" code+image,
+Reworked "DefaultAddon.png",
+Cosmetic px fixes within "Settings.xml", "SettingsCategory.xml"
+
+[B]2.7.62[/B]
+- Minor viewtypes fix ("script.module.xbmcswift2" MOD to version 2.4.01)
+
+[B]2.7.61[/B]
+- Added Settings Option to make the "Wall View" with more items default ("Wall View" with fewer items is default - enable option for change/switch)
+- Minor improvements and optimizations
+
+[B]2.7.60[/B]
+- Settings sub menu item "OpenELEC" now conditional
+- Fixed "logfile-cosmetic" error regarding missing "settings.jpg"
+- Minor improvements and optimizations (including):
+DefaultAlbumCover.png, DefaultAudio.png, DefaultAudio.png, 
+further optimized main menu icons
+
+[B]2.7.59[/B]
+- Some small but important viewtype fixes
+- Minor improvements and optimizations (including):
+"DefaultArtist.png"
+
+[B]2.7.58[/B]
+- Reworked Favorites-Sidebar
+- Minor improvements and optimizations (including):
+Subtitle Download Dialog
+
+[B]2.7.57[/B]
+- Added option to hide main menu item "TV-Radio"
+- Minor improvements and optimizations (including):
+Subtitle Download Dialog
+
+[B]2.7.56[/B]
+- Reworked OSD Subtitle Download Dialog
+
+[B]2.7.55[/B]
+- Reworked and optimized OSD-Keyboard(s)
+- Minor improvements and optimizations (including):
+"PVR-EpgProgressIndicator.png", 
+"DefaultActor.png", 
+Added header label above "Clean Library..."-Button in Sidebar
+
+[B]2.7.54[/B]
+- Optimized "DialogVideoInfo.xml"
+- Minor improvements and optimizations (including):
+Removed additional font-faces in "Font.xml" , 
+removed "GlassOverlay.png" code+image, 
+removed "HasSub.png" code+image, 
+"DefaultAddSource.png", 
+"DialogVideoInfo.xml" Plot height fix
+
+[B]2.7.53[/B]
+- Fixed "Dialog Header Image" widths and left-positions for all files
+- Integrate support for optional custom movie duration script
+- Minor improvements
+
+[B]2.7.52[/B]
+- Minor improvements
+
+[B]2.7.51[/B]
+- Reworked all OSD-Buttons (now 1080p optimized)
+- Reworked main menu icons TV and Radio
+- Reworked Header Icons for different Sections (Movies, TV-Shows, Files ...) (now they are matching the main menu icons)
+- Minor fixes and improvements
+
+[B]2.7.50[/B]
+- Added another Wall View with more items (Now: Wall View 1 &amp; Wall View 2)
+- Added "Clean library" button in sidebar (below "Update Library")
+- Minor improvements and optimizations
+
+[B]2.7.49[/B]
+[B]2.7.48[/B]
+- Minor improvements
+
+[B]2.7.47[/B]
+- Reworked top left global KODI-Logo (now 1080p optimized)
+- Reworked DefaultFolderBack Icon (now 1080p optimized)
+- Reworked DefaultVideo and DefaultVideoCover Icon (now 1080p optimized)
+- Minor improvements
+
+[B]2.7.46[/B]
+- Reworked main menu icon for "Movies"
+
+[B]2.7.45[/B]
+- Reworked all main menu icons since they were a little blurry before. Now they are very sharp and 1080p optimized.
+- Wall view (Thumbnail view) optimizations
+
+[B]2.7.44[/B]
+- Minor fix
+
+[B]2.7.43[/B]
+- Minor improvements
+
+[B]2.7.42[/B]
+- While in the wall view (Thumbnail view), the KODI sidebar can now be opened again by going all left. 
+I had this disabled because i want to be able to jump to the most right object by going all left. Some ppl may have a dedicated key for the KODI sidebar on a remote. -&gt; SetFocus(9000) (remote.xml)
+
+[B]2.7.41[/B]
+- Initial Release based on Confluence 2.7.4
