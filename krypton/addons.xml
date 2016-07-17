@@ -72,7 +72,10 @@ xzener > sci-fi genre icon
 http://addons.kodi.tv/show/resource.images.moviegenreicons.xzener-flat/
 (Disclaimer: The images used to create the folders are not mine, all image rights are reserved to their owners, firms and creators.)</description>
     <platform>all</platform>
-<news>[B]3.0.36[/B] (2016-07-15)
+<news>[B]3.0.37[/B] (2016-07-17)
+- Other minor improvements
+
+[B]3.0.36[/B] (2016-07-15)
 - Added new Media Process Dialog (Open via keymap ActivateWindow(1100)) [Custom_1100_DialogMediaProcessInfo.xml]
 - Video OSD / Video FullScreen changes [VideoFullScreen.xml, VideoOSD.xml]
 - Reworked Seek Bar Dialog [DialogSeekBar.xml]
