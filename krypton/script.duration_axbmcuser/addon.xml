@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.duration_axbmcuser" name="Duration script (axbmcuser MOD)" version="0.3.1" provider-name="Twolaw, axbmcuser (MOD only)">
+<addon id="script.duration_axbmcuser" name="Duration script (axbmcuser MOD)" version="0.3.2" provider-name="Twolaw, axbmcuser (MOD only)">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
   </requires>
@@ -9,5 +9,20 @@
     <summary lang="en">Duration converter from MMM to H:MM</summary>
     <description lang="en">Converts movie durations from format MMM to H:MM[CR]Example: 113 minutes will be converted to 1:53[CR][CR]Known supported Skins:[CR]A Confluence ZEITGEIST</description>
     <platform>all</platform>
+<news>[B]0.3.2[/B] (2016-07-23)
+- axbmcuser MOD: Fix for KODI 17 (Krypton): "videolibrary" renamed to "videos" [default.py]
+
+[B]0.3.1[/B]
+- axbmcuser MOD: Minor improvements and optimizations
+
+[B]0.3[/B]
+- axbmcuser MOD: Script now outputs H:MM
+
+[B]0.2[/B]
+- Correction of crash when duration value isn't properly written in database
+
+[B]0.1[/B]
+- Initial release
+</news>
   </extension>
 </addon>
