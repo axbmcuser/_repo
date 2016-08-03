@@ -1,60 +1,75 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="repository.axbmcuser"
-       name="axbmcuser REPO"
-       version="1.1.2"
-       provider-name="axbmcuser">
-  <requires>
-    <import addon="xbmc.addon" version="12.0.0"/>
-  </requires>
-  <extension point="xbmc.addon.repository"
-             name="axbmcuser REPO">
-    <dir minversion="14.0.0">
-      <info compressed="false">https://github.com/axbmcuser/_repo/raw/master/helix/addons.xml</info>
-      <checksum>https://github.com/axbmcuser/_repo/raw/master/helix/addons.xml.md5</checksum>
-      <datadir zip="true">https://github.com/axbmcuser/_repo/raw/master/helix</datadir>
-      <hashes>false</hashes>
-    </dir>
-    <dir minversion="14.9.0">
-      <info compressed="false">https://github.com/axbmcuser/_repo/raw/master/isengard/addons.xml</info>
-      <checksum>https://github.com/axbmcuser/_repo/raw/master/isengard/addons.xml.md5</checksum>
-      <datadir zip="true">https://github.com/axbmcuser/_repo/raw/master/isengard</datadir>
-      <hashes>false</hashes>
-    </dir>
-    <dir minversion="15.9.0">
-      <info compressed="false">https://github.com/axbmcuser/_repo/raw/master/jarvis/addons.xml</info>
-      <checksum>https://github.com/axbmcuser/_repo/raw/master/jarvis/addons.xml.md5</checksum>
-      <datadir zip="true">https://github.com/axbmcuser/_repo/raw/master/jarvis</datadir>
-      <hashes>false</hashes>
-    </dir>
-    <dir minversion="16.9.0">
-      <info compressed="false">https://github.com/axbmcuser/_repo/raw/master/krypton/addons.xml</info>
-      <checksum>https://github.com/axbmcuser/_repo/raw/master/krypton/addons.xml.md5</checksum>
-      <datadir zip="true">https://github.com/axbmcuser/_repo/raw/master/krypton</datadir>
-      <hashes>false</hashes>
-    </dir>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>This repository contains KODI addons from user "axbmcuser".</summary>
-    <description>This repository contains KODI addons from user "axbmcuser".</description>
-    <platform>all</platform>
-<news>[B]1.1.2[/B] (2016-07-23)
-- Changes for KODI 17 (Krypton): Repo is now multi-dir based again (for now)
-</news>
-  </extension>
+<addon id="repository.axbmcuser" name="axbmcuser REPO" version="1.1.3" provider-name="axbmcuser">
+	<requires>
+		<import addon="xbmc.addon" version="12.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.repository" name="axbmcuser REPO">
+		<dir minversion="14.0.0">
+			<info compressed="false">https://github.com/axbmcuser/_repo/raw/master/helix/addons.xml</info>
+			<checksum>https://github.com/axbmcuser/_repo/raw/master/helix/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/axbmcuser/_repo/raw/master/helix</datadir>
+			<hashes>false</hashes>
+		</dir>
+		<dir minversion="14.9.0">
+			<info compressed="false">https://github.com/axbmcuser/_repo/raw/master/isengard/addons.xml</info>
+			<checksum>https://github.com/axbmcuser/_repo/raw/master/isengard/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/axbmcuser/_repo/raw/master/isengard</datadir>
+			<hashes>false</hashes>
+		</dir>
+		<dir minversion="15.9.0">
+			<info compressed="false">https://github.com/axbmcuser/_repo/raw/master/jarvis/addons.xml</info>
+			<checksum>https://github.com/axbmcuser/_repo/raw/master/jarvis/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/axbmcuser/_repo/raw/master/jarvis</datadir>
+			<hashes>false</hashes>
+		</dir>
+		<dir minversion="16.9.0">
+			<info compressed="false">https://github.com/axbmcuser/_repo/raw/master/krypton/addons.xml</info>
+			<checksum>https://github.com/axbmcuser/_repo/raw/master/krypton/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/axbmcuser/_repo/raw/master/krypton</datadir>
+			<hashes>false</hashes>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">This repository contains KODI addons from user "axbmcuser".</summary>
+		<description lang="en">This repository contains KODI addons from user "axbmcuser".</description>
+		<platform>all</platform>
+		<license/>
+		<forum>http://forum.kodi.tv/showthread.php?tid=242892</forum>
+		<website/>
+		<email/>
+		<source/>
+		<news>[B]1.1.3[/B] (2016-08-03)
+- Minor cleanup
+
+[B]1.1.2[/B] (2016-07-23)
+- Changes for KODI 17 (Krypton): Repo is multi-dir based again (for now)
+		</news>
+		<assets>
+			<icon>resources/icon.png</icon>
+		</assets>
+	</extension>
 </addon>
 
-<addon id="script.duration_axbmcuser" name="Duration script (axbmcuser MOD)" version="0.3.2" provider-name="Twolaw, axbmcuser (MOD only)">
-  <requires>
-    <import addon="xbmc.python" version="2.14.0"/>
-  </requires>
-  <extension library="default.py" point="xbmc.service" start="login">
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Duration converter from MMM to H:MM</summary>
-    <description lang="en">Converts movie durations from format MMM to H:MM[CR]Example: 113 minutes will be converted to 1:53[CR][CR]Known supported Skins:[CR]A Confluence ZEITGEIST</description>
-    <platform>all</platform>
-<news>[B]0.3.2[/B] (2016-07-23)
+<addon id="script.duration_axbmcuser" name="Duration script (axbmcuser MOD)" version="0.3.3" provider-name="Twolaw, axbmcuser (MOD+FIX)">
+	<requires>
+		<import addon="xbmc.python" version="2.14.0"/>
+	</requires>
+	<extension library="default.py" point="xbmc.service" start="login">
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Duration converter from MMM to H:MM</summary>
+		<description lang="en">Converts movie durations from format MMM to H:MM[CR]Example: 113 minutes will be converted to 1:53[CR][CR]Known supported Skins:[CR]A Confluence ZEITGEIST</description>
+		<platform>all</platform>
+		<license/>
+		<forum>http://forum.kodi.tv/showthread.php?tid=242892</forum>
+		<website/>
+		<email/>
+		<source/>
+		<news>[B]0.3.3[/B] (2016-08-03)
+- Minor cleanup
+
+[B]0.3.2[/B] (2016-07-23)
 - axbmcuser MOD: Fix for KODI 17 (Krypton): "videolibrary" renamed to "videos" [default.py]
 
 [B]0.3.1[/B]
@@ -68,8 +83,11 @@
 
 [B]0.1[/B]
 - Initial release
-</news>
-  </extension>
+		</news>
+		<assets>
+			<icon>resources/icon.png</icon>
+		</assets>
+	</extension>
 </addon>
 
 <addon id="script.module.xbmcswift2" name="xbmcswift2" provider-name="Jonathan Beluch (jbel)" version="2.4.01">
@@ -81,6 +99,35 @@
     <language />
     <platform>all</platform>
   </extension>
+</addon>
+
+<addon id="service.nfo.watchedstate.updater_axbmcuser" name="NFO Watchedstate Updater (axbmcuser MOD)" version="1.1.11" provider-name="4lb3rtO, axbmcuser (MOD+FIX)">
+	<requires>
+		<!-- Those are the version on final release. Just depend on the python version for Betas/RCs -->
+		<import addon="xbmc.python" version="2.19.0"/>
+		<import addon="xbmc.json"   version="6.20.0"/>
+		<import addon="xbmc.addon"  version="14.0.0"/>
+	</requires>
+	<extension point="xbmc.service" library="default.py" start="login"/>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Watchedstate .NFO Updater</summary>
+		<description lang="en">This addon writes the watchedstate to the corresponding .nfo file as soon as it updated within the KODI library.</description>
+		<platform>all</platform>
+		<license/>
+		<forum>http://forum.kodi.tv/showthread.php?tid=242892</forum>
+		<website/>
+		<email/>
+		<source/>
+		<news>[B]1.1.11[/B] (2016-08-03)
+- Minor cleanup
+
+[B]1.1.10[/B] (2016-07-23)
+- axbmcuser MOD: Fix for KODI 17 (Krypton): "videolibrary" renamed to "Videos" [default.py]
+		</news>
+		<assets>
+			<icon>resources/icon.png</icon>
+		</assets>
+	</extension>
 </addon>
 
 <addon id="skin.aczg" version="3.0.38" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
