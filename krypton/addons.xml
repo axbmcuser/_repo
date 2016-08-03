@@ -83,25 +83,18 @@
   </extension>
 </addon>
 
-<addon
-  id="skin.aczg"
-  version="3.0.37"
-  name="A Confluence ZEITGEIST"
-  provider-name="axbmcuser">
-  <requires>
-    <import addon="xbmc.gui" version="5.12.0"/>
-  </requires>
-  <extension
-    point="xbmc.gui.skin"
-    debugging="false"
-    effectslowdown="0.22">
-    <res width="1280" height="720" aspect="16:9" default="true" folder="720p" />
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>"A Confluence ZEITGEIST" is a clean and modern rework of the Confluence skin.</summary>
-    <description>"A Confluence ZEITGEIST" is a clean and modern rework of the Confluence skin. It mainly features an icon-based main menu without the need for scrolling and two all new wall views, which replace the old thumbnail view. Many other small graphics updates and optimizations are included.
+<addon id="skin.aczg" version="3.0.38" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
+	<requires>
+		<import addon="xbmc.gui" version="5.12.0"/>
+	</requires>
+	<extension point="xbmc.gui.skin" debugging="false" effectslowdown="0.22">
+		<res width="1280" height="720" aspect="16:9" default="true" folder="720p" />
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">"A Confluence ZEITGEIST" is a clean and modern rework of the Confluence skin.</summary>
+		<description lang="en">"A Confluence ZEITGEIST" is a clean and modern rework of the Confluence skin. It mainly features an icon-based main menu without the need for scrolling and two all new wall views, which replace the old thumbnail view. Many other small graphics updates and optimizations are included.
 
-Reworked Genre Icons are based on the great work by the following authors:
+Reworked Genre Icons are based on the great work by:
 limav > most genre icons
 http://limav.deviantart.com/art/Movie-Genres-Folders-432790953/
 sonerbyzt > comedy/war genre icons
@@ -109,8 +102,37 @@ http://sonerbyzt.deviantart.com/art/Movie-Genres-Folders-593250046/
 xzener > sci-fi genre icon
 http://addons.kodi.tv/show/resource.images.moviegenreicons.xzener-flat/
 (Disclaimer: The images used to create the folders are not mine, all image rights are reserved to their owners, firms and creators.)</description>
-    <platform>all</platform>
-<news>[B]3.0.36[/B] (2016-07-15)
+		<platform>all</platform>
+		<license/>
+		<forum>http://forum.kodi.tv/showthread.php?tid=242892</forum>
+		<website/>
+		<email/>
+		<source/>
+		<news>[B]3.0.38[/B] (2016-08-03)
+- Support for recent KODI Krypton changes regarding [DialogPlayerProcessInfo.xml] (replaces CodecInfo)
+- Reworked OSD player button graphics
+- Added all new uniform search-selection-dialog on home screen based on internal search functions (search button can be hidden in Skin Settings, workaround for broken youtube add-on search, dropped direct script.globalsearch add-on support (still can be used as widget!))
+- Reworked footer area regarding item count and mouse buttons
+- Reworked home screen "player controls" including fullscreen button and search button position
+- Floor graphics now plain color
+- Improved Option "Remove floor-graphics"
+- Reworked Bookmarks/Chapters-Dialog to timeline-style [VideoOSDBookmarks.xml]
+- Added submenu items "Special Lists" for Movies + TV shows main menu items [Home.xml] [IncludesHomeMenuItems.xml]
+- Added submenu item "Refresh" for Weather main menu item [Home.xml] [IncludesHomeMenuItems.xml]
+- Added submenu for main menu item "Add-ons" and changed click target [Home.xml] [IncludesHomeMenuItems.xml]
+- Reworked Addon Info Dialog [DialogAddonInfo.xml]
+- Improvements for Weather [MyWeather.xml] [ViewsWeather.xml]
+- Improved Fanart support
+- Weather focus fix (Bug in Original Confluence)
+- Sidebar player controls improvements including default focus fixes, added playlist button icon
+- Improved script.globalsearch support (only as widget! - see above) Use default skin provided by the addon itself, overwrite background
+- Sync latest Original Confluence changes
+- Other improvements including minor fix "black out everything behind playing video"
+
+[B]3.0.37[/B] (2016-07-17)
+- Other minor improvements
+
+[B]3.0.36[/B] (2016-07-15)
 - Added new Media Process Dialog (Open via keymap ActivateWindow(1100)) [Custom_1100_DialogMediaProcessInfo.xml]
 - Video OSD / Video FullScreen changes [VideoFullScreen.xml, VideoOSD.xml]
 - Reworked Seek Bar Dialog [DialogSeekBar.xml]
@@ -166,7 +188,7 @@ Select up to 6 Addons + 1 Super Folder or a max. of 7 Addons and no Super Folder
 [B]3.0.27[/B] (2016-06-19)
 - Optimizations of flagging-graphics
 - Smaller "DialogVideoInfo" changes, including: View Plot in TextViewer Button,
-- Year/Studio display change in: "Home.xml", "VideoFullScreen.xml", "DialogVideoInfo.xml"
+- Year/Studio display change in: "Home.xml", "VideoFulllScreen.xml", "DialogVideoInfo.xml"
 - "VideoOSDBookmarks.xml": Added scrollbar
 - Support for latest Addon "changelog becomes news" changes (ListItem.AddonNews - old changelogs won't be available anymore after this KODI 17 change)
 - Added "Custom_1102_TextViewer.xml" (like Estuary) - used for AddonInfo "Changelog/What's new" and "Plot"
@@ -516,6 +538,9 @@ I had this disabled because i want to be able to jump to the most right object b
 [B]2.7.41[/B]
 - Initial Release based on Confluence 2.7.4
 </news>
-  </extension>
+		<assets>
+			<icon>resources/icon.png</icon>
+		</assets>
+	</extension>
 </addon>
 </addons>
