@@ -1,0 +1,25 @@
+1.1.01
+axbmcuser FIX for ACTION_PLAYER_DEBUG
+
+1.1.0
+
+- add context() decorator
+
+1.0.3
+
+- fixed usage for MediaWindows
+
+1.0.2
+
+- fixed silly .gitignore error
+
+1.0.1
+
+- added README
+- fixed onFocus functionality
+
+1.0.0
+
+- Initial release
+
+

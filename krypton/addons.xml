@@ -90,6 +90,39 @@
 	</extension>
 </addon>
 
+<addon id="script.module.actionhandler" name="ActionHandler" version="1.1.01" provider-name="Philipp Temminghoff (phil65)">
+	<requires>
+		<import addon="xbmc.python" version="2.25.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Helper module for Event handling in WindowXMLs</summary>
+		<description lang="en">Helper module to allow mapping Actions, Onfocus and click events via decorators</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE Version 2.1, February 1999</license>
+		<source>https://github.com/phil65/script.module.actionhandler</source>
+	</extension>
+</addon>
+
+<addon id="script.module.kodi65" name="Kodi65 Library" version="1.0.31" provider-name="Philipp Temminghoff (phil65)">
+	<requires>
+		<import addon="xbmc.python" version="2.25.0"/>
+		<import addon="script.module.youtube.dl" version="14.519.1"/>
+		<import addon="script.module.pil" version="1.1.7"/>
+		<import addon="script.module.t9.search" version="1.0.0"/>
+		<import addon="script.module.requests" version="2.9.1"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Helper module</summary>
+		<description lang="en">Helper module for all kind of stuff</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE Version 2.1, February 1999</license>
+		<source>https://github.com/phil65/script.module.kodi65</source>
+		<news>Fixed: Listitems not appearing for browser windows</news>
+	</extension>
+</addon>
+
 <addon id="script.module.xbmcswift2" name="xbmcswift2" provider-name="Jonathan Beluch (jbel)" version="2.4.01">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
