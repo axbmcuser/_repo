@@ -1,2 +1,0 @@
-[B]1.1.2[/B] (2016-07-23)
-- Changes for KODI 17 (Krypton): Repo is now multi-dir based again (for now)
