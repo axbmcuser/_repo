@@ -1,3 +1,6 @@
+[B]1.1.12[/B] (2016-08-05)
+- Minor cleanup
+
 [B]1.1.11[/B] (2016-08-03)
 - Minor cleanup
 

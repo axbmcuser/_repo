@@ -101,7 +101,7 @@
   </extension>
 </addon>
 
-<addon id="service.nfo.watchedstate.updater_axbmcuser" name="NFO Watchedstate Updater (axbmcuser MOD)" version="1.1.11" provider-name="4lb3rtO, axbmcuser (MOD+FIX)">
+<addon id="service.nfo.watchedstate.updater_axbmcuser" name="NFO Watchedstate Updater (axbmcuser MOD)" version="1.1.12" provider-name="4lb3rtO, axbmcuser (MOD+FIX)">
 	<requires>
 		<!-- Those are the version on final release. Just depend on the python version for Betas/RCs -->
 		<import addon="xbmc.python" version="2.19.0"/>
@@ -118,7 +118,10 @@
 		<website/>
 		<email/>
 		<source/>
-		<news>[B]1.1.11[/B] (2016-08-03)
+		<news>[B]1.1.12[/B] (2016-08-05)
+- Minor cleanup
+
+[B]1.1.11[/B] (2016-08-03)
 - Minor cleanup
 
 [B]1.1.10[/B] (2016-07-23)
