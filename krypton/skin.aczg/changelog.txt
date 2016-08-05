@@ -1,3 +1,9 @@
+[B]3.0.39[/B] (2016-08-05)
+- Reworked breadcrumbs
+- Weather settings button now leads directly to weather settings
+- Reworked many views (List, Big List, LiveTV, ...)
+- Other minor improvements
+
 [B]3.0.38[/B] (2016-08-03)
 - Support for recent KODI Krypton changes regarding [DialogPlayerProcessInfo.xml] (replaces CodecInfo)
 - Reworked OSD player button graphics

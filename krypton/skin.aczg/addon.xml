@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="3.0.38" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.0.39" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 	</requires>
@@ -24,7 +24,13 @@ http://addons.kodi.tv/show/resource.images.moviegenreicons.xzener-flat/
 		<website/>
 		<email/>
 		<source/>
-		<news>[B]3.0.38[/B] (2016-08-03)
+		<news>[B]3.0.39[/B] (2016-08-05)
+- Reworked breadcrumbs
+- Weather settings button now leads directly to weather settings
+- Reworked many views (List, Big List, LiveTV, ...)
+- Other minor improvements
+
+[B]3.0.38[/B] (2016-08-03)
 - Support for recent KODI Krypton changes regarding [DialogPlayerProcessInfo.xml] (replaces CodecInfo)
 - Reworked OSD player button graphics
 - Added all new uniform search-selection-dialog on home screen based on internal search functions (search button can be hidden in Skin Settings, workaround for broken youtube add-on search, dropped direct script.globalsearch add-on support (still can be used as widget!))
@@ -453,7 +459,7 @@ I had this disabled because i want to be able to jump to the most right object b
 
 [B]2.7.41[/B]
 - Initial Release based on Confluence 2.7.4
-</news>
+		</news>
 		<assets>
 			<icon>resources/icon.png</icon>
 		</assets>
