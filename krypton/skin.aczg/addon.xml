@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="3.0.39" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.0.40" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 	</requires>
@@ -24,7 +24,11 @@ http://addons.kodi.tv/show/resource.images.moviegenreicons.xzener-flat/
 		<website/>
 		<email/>
 		<source/>
-		<news>[B]3.0.39[/B] (2016-08-05)
+		<news>[B]3.0.40[/B] (2016-08-06)
+- Optimized some views
+- Other improvements
+
+[B]3.0.39[/B] (2016-08-05)
 - Reworked breadcrumbs
 - Weather settings button now leads directly to weather settings
 - Reworked many views (List, Big List, LiveTV, ...)

@@ -1,3 +1,7 @@
+[B]3.0.40[/B] (2016-08-06)
+- Optimized some views
+- Other improvements
+
 [B]3.0.39[/B] (2016-08-05)
 - Reworked breadcrumbs
 - Weather settings button now leads directly to weather settings
