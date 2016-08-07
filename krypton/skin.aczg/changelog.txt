@@ -1,3 +1,7 @@
+[B]3.0.41[/B] (2016-08-07)
+- Added _optional_ support for Rotten Tomatoes and Metacritic Ratings (via script.skin.helper.service - if installed)
+- Other minor improvements
+
 [B]3.0.40[/B] (2016-08-06)
 - Optimized some views
 - Other improvements
