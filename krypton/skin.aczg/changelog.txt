@@ -1,3 +1,6 @@
+[B]3.0.44[/B] (2016-08-14)
+- Other minor improvements
+
 [B]3.0.43[/B] (2016-08-14)
 - Added experimental, TOTALLY OPTIONAL, BY DEFAULT DISABLED, automatic VolumeAmplification-DRC options 
 (see http://forum.kodi.tv/showthread.php?tid=242892 for more information or questions)
