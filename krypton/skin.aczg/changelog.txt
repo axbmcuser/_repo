@@ -1,3 +1,9 @@
+[B]3.0.43[/B] (2016-08-14)
+- Added experimental, TOTALLY OPTIONAL, BY DEFAULT DISABLED, automatic VolumeAmplification-DRC options 
+(see http://forum.kodi.tv/showthread.php?tid=242892 for more information or questions)
+See: System - Skin Settings - General Settings - scroll all the way down to: EXPERIMENTAL section
+WARNING: Please only enable this options if you are really really knowing what you are doing!
+
 [B]3.0.42[/B] (2016-08-09)
 - Other improvements
 
