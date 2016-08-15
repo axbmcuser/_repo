@@ -166,7 +166,7 @@
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="3.0.44" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.0.45" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 	</requires>
@@ -191,7 +191,10 @@ http://addons.kodi.tv/show/resource.images.moviegenreicons.xzener-flat/
 		<website/>
 		<email/>
 		<source/>
-		<news>[B]3.0.44[/B] (2016-08-14)
+		<news>[B]3.0.45[/B] (2016-08-15)
+- Other minor improvements
+
+[B]3.0.44[/B] (2016-08-14)
 - Other minor improvements
 
 [B]3.0.43[/B] (2016-08-14)
