@@ -166,7 +166,7 @@
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="3.0.46" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.0.47" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 	</requires>
@@ -191,7 +191,11 @@ http://addons.kodi.tv/show/resource.images.moviegenreicons.xzener-flat/
 		<website/>
 		<email/>
 		<source/>
-		<news>[B]3.0.46[/B] (2016-08-16)
+		<news>[B]3.0.47[/B] (2016-08-17)
+- [DialogVideoInfo.xml] New button: "Set" (Example: If a movie is part of a movie set, you can jump right into the set via this button. It's positioned to the right of the "Director" button and only visible, if the item is part of a set.)
+- [VideoOSD.xml] Added permanent default focus for OSD play controls for LiveTV content (Non-LiveTV content defaulted to pause button already. Now LiveTV content defaults to channel down button)
+
+[B]3.0.46[/B] (2016-08-16)
 - Other minor improvements
 
 [B]3.0.45[/B] (2016-08-15)

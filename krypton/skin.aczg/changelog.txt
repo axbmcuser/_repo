@@ -1,3 +1,7 @@
+[B]3.0.47[/B] (2016-08-17)
+- [DialogVideoInfo.xml] New button: "Set" (Example: If a movie is part of a movie set, you can jump right into the set via this button. It's positioned to the right of the "Director" button and only visible, if the item is part of a set.)
+- [VideoOSD.xml] Added permanent default focus for OSD play controls for LiveTV content (Non-LiveTV content defaulted to pause button already. Now LiveTV content defaults to channel down button)
+
 [B]3.0.46[/B] (2016-08-16)
 - Other minor improvements
 
