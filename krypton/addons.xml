@@ -166,7 +166,7 @@
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="3.0.48" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.0.49" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 	</requires>
@@ -191,7 +191,10 @@ http://addons.kodi.tv/show/resource.images.moviegenreicons.xzener-flat/
 		<website/>
 		<email/>
 		<source/>
-		<news>[B]3.0.48[/B] (2016-08-24)
+		<news>[B]3.0.49[/B] (2016-08-25)
+- Other minor improvements
+
+[B]3.0.48[/B] (2016-08-24)
 - [DialogGameControllers.xml] [language/] Sync latest Confluence changes
 - [VideoOSD.xml] Minor change of OSD player controls when playing LiveTV: Switched channel up/down button onclick-actions to match remote control and keyboard controls (this has been unituitive and inconsistent before)
 - Reworked [OverlayWatching.png] (Inspired by Estuary + un1versal)
