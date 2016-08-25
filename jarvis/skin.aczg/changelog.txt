@@ -1,3 +1,6 @@
+[B]2.8.86[/B] (2016-08-25)
+- Now for KODI 16: Partial backport of latest skin version (which is only available on KODI 17). Many small to medium changes!
+
 [B]2.8.85[/B] (2016-07-15)
 - Other minor improvements
 
