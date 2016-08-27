@@ -1,3 +1,6 @@
+[B]3.0.51[/B] (2016-08-27)
+- Other minor improvements
+
 [B]3.0.50[/B] (2016-08-27)
 - Other minor improvements including reworked [icon_back.png] [icon_home.png] mouse control buttons
 

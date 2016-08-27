@@ -1,5 +1,9 @@
+[B]2.8.89[/B] (2016-08-27)
+- Other minor improvements
+
 [B]2.8.88[/B] (2016-08-27)
 - Other minor improvements including reworked [icon_back.png] [icon_home.png] mouse control buttons
+
 
 [B]2.8.87[/B] (2016-08-27)
 - Now for KODI 16:
