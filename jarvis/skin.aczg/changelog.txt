@@ -1,3 +1,6 @@
+[B]2.8.91[/B] (2016-08-29)
+- Other minor improvements
+
 [B]2.8.90[/B] (2016-08-29)
 - Added graphics and support for UK BBFC age ratings
 - Other minor improvements
