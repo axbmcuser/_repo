@@ -1,3 +1,8 @@
+[B]3.0.54[/B] (2016-09-01)
+- Long time existing option "Hide some view types for simplicity (Disable to see all Confluence view types)"
+is now DISABLED by DEFAULT. Enable it to hide all views except both Wall Views (500 + 909) + List View (50).
+- Other minor improvements
+
 [B]3.0.53[/B] (2016-09-01)
 - Other minor improvements
 
