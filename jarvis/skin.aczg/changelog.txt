@@ -1,3 +1,6 @@
+[B]2.8.94[/B] (2016-09-09)
+- Reworked some icons [DefaultIconError.png] [DefaultIconInfo.png] [DefaultIconWarning.png]
+
 [B]2.8.93[/B] (2016-09-09)
 - Reworked uniform search-selection dialog
 - Slightly reworked Favorites Dialog, including: Favorites now have 3 items per row instead of 2 [DialogFavourites.xml]
