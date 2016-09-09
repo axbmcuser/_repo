@@ -1,3 +1,10 @@
+[B]2.8.93[/B] (2016-09-09)
+- Reworked uniform search-selection dialog
+- Slightly reworked Favorites Dialog, including: Favorites now have 3 items per row instead of 2 [DialogFavourites.xml]
+- Login screen usability improvements [LoginScreen.xml]
+- Changed user profile default picture to match KODI standard/Estuary
+- Other minor improvements
+
 [B]2.8.92[/B] (2016-09-01)
 - Long time existing option "Hide some view types for simplicity (Disable to see all Confluence view types)"
 is now DISABLED by DEFAULT. Enable it to hide all views except both Wall Views (500 + 909) + List View (50).
