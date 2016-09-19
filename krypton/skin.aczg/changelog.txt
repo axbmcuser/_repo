@@ -1,3 +1,9 @@
+[B]3.0.58[/B] (2016-09-19)
+- Large visual rework removing the dated looking "window-based style"
+- Some optimizations including mouse control fixes for Subtitle Download Dialog (Bugs in Original Confluence) [DialogSubtitles.xml]
+- Reworked Music Playlist Editor [MyMusicPlaylistEditor]
+- Many other minor improvements
+
 [B]3.0.57[/B] (2016-09-14)
 - Added support for player speed controls (tempo) (Changes adapted from from Confluence 3.0.34) [DialogSeekBar.xml] [Includes.xml]
 - Added scrollbar for LiveTV guide timeline (matching latest KODI code changes) [MyPVRGuide.xml] [ViewsPVRGuide.xml]
