@@ -237,7 +237,7 @@
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="3.0.58" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.0.59" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 	</requires>
@@ -246,7 +246,7 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">"A Confluence ZEITGEIST" is a clean and modern rework of the Confluence skin.</summary>
-		<description lang="en">"A Confluence ZEITGEIST" is a clean and modern rework of the Confluence skin. It mainly features an icon-based main menu without the need for scrolling and two all new wall views, which replace the old thumbnail view. Many other small graphics updates and optimizations are included.
+		<description lang="en">"A Confluence ZEITGEIST" is a clean and modern rework of the Confluence skin. It mainly features an icon-based main menu without the need for scrolling and two all new wall views, which replace the old thumbnail view. Countless other small graphics updates and optimizations are included.
 
 Reworked Genre Icons are based on the great work by:
 limav > most genre icons
@@ -262,7 +262,11 @@ http://addons.kodi.tv/show/resource.images.moviegenreicons.xzener-flat/
 		<website/>
 		<email/>
 		<source/>
-		<news>[B]3.0.58[/B] (2016-09-19)
+		<news>[B]3.0.59[/B] (2016-09-20)
+- Visually changed some blue bordered focus button states for UX uniformity
+- Other minor improvements
+
+[B]3.0.58[/B] (2016-09-19)
 - Large visual rework removing the dated looking "window-based style"
 - Some optimizations including mouse control fixes for Subtitle Download Dialog (Bugs in Original Confluence) [DialogSubtitles.xml]
 - Reworked Music Playlist Editor [MyMusicPlaylistEditor]

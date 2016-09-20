@@ -1,3 +1,7 @@
+[B]3.0.59[/B] (2016-09-20)
+- Visually changed some blue bordered focus button states for UX uniformity
+- Other minor improvements
+
 [B]3.0.58[/B] (2016-09-19)
 - Large visual rework removing the dated looking "window-based style"
 - Some optimizations including mouse control fixes for Subtitle Download Dialog (Bugs in Original Confluence) [DialogSubtitles.xml]
