@@ -237,7 +237,7 @@
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="3.0.60" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.0.61" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 	</requires>
@@ -262,7 +262,10 @@ http://addons.kodi.tv/show/resource.images.moviegenreicons.xzener-flat/
 		<website/>
 		<email/>
 		<source/>
-		<news>[B]3.0.60[/B] (2016-09-22)
+		<news>[B]3.0.61[/B] (2016-09-23)
+- Other minor improvements
+
+[B]3.0.60[/B] (2016-09-22)
 - Visual rework of home screen including PVR status widget, recently added items
 - Other minor improvements
 
