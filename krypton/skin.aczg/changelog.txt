@@ -1,3 +1,7 @@
+[B]3.0.60[/B] (2016-09-22)
+- Visual rework of home screen including PVR status widget, recently added items
+- Other minor improvements
+
 [B]3.0.59[/B] (2016-09-20)
 - Visually changed some blue bordered focus button states for UX uniformity
 - Other minor improvements
