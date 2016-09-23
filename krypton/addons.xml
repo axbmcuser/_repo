@@ -237,7 +237,7 @@
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="3.0.61" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.0.62" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 	</requires>
@@ -262,7 +262,13 @@ http://addons.kodi.tv/show/resource.images.moviegenreicons.xzener-flat/
 		<website/>
 		<email/>
 		<source/>
-		<news>[B]3.0.61[/B] (2016-09-23)
+		<news>[B]3.0.62[/B] (2016-09-23)
+- Reworked "Recently added" widgets on home screen:
+- - They are now dynamic lists with the possibility of showing the context menu or opening the info dialog of the selected item
+- - Showing artwork for the selected recently added item while being on the home screen also works
+- Other minor improvements
+
+[B]3.0.61[/B] (2016-09-23)
 - Other minor improvements
 
 [B]3.0.60[/B] (2016-09-22)
