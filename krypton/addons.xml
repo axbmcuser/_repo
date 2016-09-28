@@ -237,7 +237,7 @@
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="3.0.62" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.0.63" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 	</requires>
@@ -262,7 +262,16 @@ http://addons.kodi.tv/show/resource.images.moviegenreicons.xzener-flat/
 		<website/>
 		<email/>
 		<source/>
-		<news>[B]3.0.62[/B] (2016-09-23)
+		<news>[B]3.0.63[/B] (2016-09-28)
+- Added new skin option: "Hide some fullscreen VideoOSD buttons for simplicity (rewind/fforward)"
+- Added new experimental skin option: "Show INFO-button in VideoOSD (opens the info dialog for movies/episodes)"
+- Reworked Music OSD [MusicOSD.xml]
+- Add timer button to PVR info dialog
+- Many other minor improvements, including:
+- - Cleanup viewtypes in [ViewsPVRGuide.xml] for KODI v18
+- - Improve button visibility-conditions in [DialogPVRInfo.xml]
+
+[B]3.0.62[/B] (2016-09-23)
 - Reworked "Recently added" widgets on home screen:
 - - They are now dynamic lists with the possibility of showing the context menu or opening the info dialog of the selected item
 - - Showing artwork for the selected recently added item while being on the home screen also works
