@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="3.0.63" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.0.64" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 	</requires>
@@ -8,23 +8,18 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">"A Confluence ZEITGEIST" is a clean and modern rework of the Confluence skin.</summary>
-		<description lang="en">"A Confluence ZEITGEIST" is a clean and modern rework of the Confluence skin. It mainly features an icon-based main menu without the need for scrolling and two all new wall views, which replace the old thumbnail view. Countless other small graphics updates and optimizations are included.
-
-Reworked Genre Icons are based on the great work by:
-limav > most genre icons
-http://limav.deviantart.com/art/Movie-Genres-Folders-432790953/
-sonerbyzt > comedy/war genre icons
-http://sonerbyzt.deviantart.com/art/Movie-Genres-Folders-593250046/
-xzener > sci-fi genre icon
-http://addons.kodi.tv/show/resource.images.moviegenreicons.xzener-flat/
-(Disclaimer: The images used to create the folders are not mine, all image rights are reserved to their owners, firms and creators.)</description>
+		<description lang="en">"A Confluence ZEITGEIST" is a clean and modern rework of the Confluence skin. It mainly features an icon-based main menu without the need for scrolling and two all new wall views, which replace the old thumbnail view. Countless other small graphics updates and optimizations are included.</description>
 		<platform>all</platform>
 		<license/>
 		<forum>http://forum.kodi.tv/showthread.php?tid=242892</forum>
 		<website/>
 		<email/>
 		<source/>
-		<news>[B]3.0.63[/B] (2016-09-28)
+		<news>[B]3.0.64[/B] (2016-09-30)
+- Other minor improvements, including:
+- - [GUIWindowSystemInfo] - allow one more label/row to be displayed (PR10568)
+
+[B]3.0.63[/B] (2016-09-28)
 - Added new skin option: "Hide some fullscreen VideoOSD buttons for simplicity (rewind/fforward)"
 - Added new experimental skin option: "Show INFO-button in VideoOSD (opens the info dialog for movies/episodes)"
 - Reworked Music OSD [MusicOSD.xml]

@@ -1,3 +1,7 @@
+[B]3.0.64[/B] (2016-09-30)
+- Other minor improvements, including:
+- - [GUIWindowSystemInfo] - allow one more label/row to be displayed (PR10568)
+
 [B]3.0.63[/B] (2016-09-28)
 - Added new skin option: "Hide some fullscreen VideoOSD buttons for simplicity (rewind/fforward)"
 - Added new experimental skin option: "Show INFO-button in VideoOSD (opens the info dialog for movies/episodes)"
