@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="3.0.65" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.0.66" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 	</requires>
@@ -15,7 +15,11 @@
 		<website/>
 		<email/>
 		<source/>
-		<news>[B]3.0.65[/B] (2016-10-02)
+		<news>[B]3.0.66[/B] (2016-10-02)
+- Updated support for adsp addons after recent KODI core changes (slider activation) including visual rework
+- Other minor improvements
+
+[B]3.0.65[/B] (2016-10-02)
 - New skin settings option: "Shorten plot text in Video Details Dialog to prevent spoilers (5 lines)" (disabled by default)
 - Added music playlist button to MusicOSD
 - Many other diverse improvements, including:
