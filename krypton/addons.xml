@@ -237,7 +237,7 @@
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="3.0.64" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.0.65" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 	</requires>
@@ -253,7 +253,20 @@
 		<website/>
 		<email/>
 		<source/>
-		<news>[B]3.0.64[/B] (2016-09-30)
+		<news>[B]3.0.65[/B] (2016-10-02)
+- New skin settings option: "Shorten plot text in Video Details Dialog to prevent spoilers (5 lines)" (disabled by default)
+- Added music playlist button to MusicOSD
+- Many other diverse improvements, including:
+- - Dialog header font size changes
+- - Added dialog dark background fadein which has been missing for some dialogs like "Confirm"
+- - Reworked addon info dialog and addon settings dialog
+- - Standard button height changes for dialogs
+- - Improvements for subtitle download dialog
+- - Slight visual rework of system dialog backgrounds
+- - Added "Settings" button to weather home sub menu
+- - Reworked "Weather" page
+
+[B]3.0.64[/B] (2016-09-30)
 - Other minor improvements, including:
 - - [GUIWindowSystemInfo] - allow one more label/row to be displayed (PR10568)
 
