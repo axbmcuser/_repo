@@ -1,3 +1,11 @@
+[B]3.0.67[/B] (2016-10-07)
+- New option: "Show logo-screen while in progress of shutdown/reboot/logout" (See "Skin Settings" experimental section)
+- Many other minor improvements, including:
+- - Further visual optimizations in [MyWeather.xml] [ViewsWeather.xml]
+- - Changed behind dialog dark fadeout layer order in almost all files
+- - Further visual slider optimizations
+- - Textures cleanup for all language/country-flags (removed not needed shadow)
+
 [B]3.0.66[/B] (2016-10-02)
 - Updated support for adsp addons after recent KODI core changes (slider activation) including visual rework
 - Other minor improvements
