@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="3.0.67" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.0.68" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 	</requires>
@@ -15,7 +15,16 @@
 		<website/>
 		<email/>
 		<source/>
-		<news>[B]3.0.67[/B] (2016-10-07)
+		<news>[B]3.0.68[/B] (2016-10-25)
+- Changed "New smart playlist" dialog [SmartPlaylistEditor.xml] [SmartPlaylistRule.xml] according to latest KODI 17 core changes. The dialog will only work correctly, if you use an up to date version of KODI 17 from now on, of course.
+- [DialogSelect.xml] support latest KODI core changes regarding Video Information Dialog actor search results
+- New Skin Settings option: Hide Suspend / Hide Hibernate from Shutdown Dialog
+- Added stinger scene tag support duringcreditsstinger7aftercreditsstinger (shows a dark small stinger icon in Video Information Dialog left to the movie title) icon based on great addon "service.stinger.notification" icon by rmrector
+- Reworked screen calibration graphics and dialog
+- Added system/kernel info to [SettingsSystemInfo.xml]
+- Many other improvements
+
+[B]3.0.67[/B] (2016-10-07)
 - New option: "Show logo-screen while in progress of shutdown/reboot/logout" (See "Skin Settings" experimental section)
 - Many other minor improvements, including:
 - - Further visual optimizations in [MyWeather.xml] [ViewsWeather.xml]
