@@ -257,7 +257,7 @@
 - Changed "New smart playlist" dialog [SmartPlaylistEditor.xml] [SmartPlaylistRule.xml] according to latest KODI 17 core changes. The dialog will only work correctly, if you use an up to date version of KODI 17 from now on, of course.
 - [DialogSelect.xml] support latest KODI core changes regarding Video Information Dialog actor search results
 - New Skin Settings option: Hide Suspend / Hide Hibernate from Shutdown Dialog
-- Added stinger scene tag support duringcreditsstinger7aftercreditsstinger (shows a dark small stinger icon in Video Information Dialog left to the movie title) icon based on great addon "service.stinger.notification" icon by rmrector
+- Added stinger scene tag support duringcreditsstinger/aftercreditsstinger (shows a dark small stinger icon in Video Information Dialog left to the movie title) icon based on great addon "service.stinger.notification" icon by rmrector
 - Reworked screen calibration graphics and dialog
 - Added system/kernel info to [SettingsSystemInfo.xml]
 - Many other improvements
