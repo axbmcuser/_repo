@@ -1,3 +1,7 @@
+[B]3.0.69[/B] (2016-11-14)
+- Added System Info Privacy Policy support (According to latest KODI core changes)
+- VideoOSD button "INFO" which leads to the video info dialog is now improved and based on "service.library.data.provider" (and automatically shown for movies and episodes VideoOSD)
+
 [B]3.0.68[/B] (2016-10-25)
 - Changed "New smart playlist" dialog [SmartPlaylistEditor.xml] [SmartPlaylistRule.xml] according to latest KODI 17 core changes. The dialog will only work correctly, if you use an up to date version of KODI 17 from now on, of course.
 - [DialogSelect.xml] support latest KODI core changes regarding Video Information Dialog actor search results
