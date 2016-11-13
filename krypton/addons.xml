@@ -205,6 +205,32 @@
   </extension>
 </addon>
 
+<addon id="service.library.data.provider" name="Library Data Provider" provider-name="BigNoid, Martijn" version="0.2.0">
+	<requires>
+		<import addon="xbmc.json" version="7.9.0"/>
+		<import addon="xbmc.python" version="2.25.0"/>
+		<import addon="script.module.simplejson" version="3.3.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py" />
+	<extension library="service.py" point="xbmc.service" start="login" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Plugin for skins to provide library data throughout the skin.</summary>
+		<description lang="en">Plugin for skins to provide library data throughout the skin.</description>
+		<disclaimer lang="en">This plugin is not a standalone plugin, your skin must support it.</disclaimer>
+		<platform>all</platform>
+		<language />
+		<license>GNU GENERAL PUBLIC LICENSE Version 2, June 1991</license>
+		<forum>http://forum.kodi.tv/showthread.php?tid=210063</forum>
+		<website>https://github.com/BigNoid/service.library.data.provider</website>
+		<email>big.noid@kodi.tv</email>
+		<source>https://github.com/BigNoid/service.library.data.provider</source>
+		<news>Added 2 new calls to fetch a cast list or a single database item. See README.md for full details.</news>
+		<assets>
+			<icon>resources/icon.png</icon>
+		</assets>
+	</extension>
+</addon>
+
 <addon id="service.nfo.watchedstate.updater_axbmcuser" name="NFO Watchedstate Updater (axbmcuser MOD)" version="1.1.12" provider-name="4lb3rtO, axbmcuser (MOD+FIX)">
 	<requires>
 		<!-- Those are the version on final release. Just depend on the python version for Betas/RCs -->
@@ -237,10 +263,10 @@
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="3.0.69" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.0.70" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
-		<import addon="service.library.data.provider" version="0.1.6"/>
+		<import addon="service.library.data.provider" version="0.2.0"/>
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false" effectslowdown="0.22">
 		<res width="1280" height="720" aspect="16:9" default="true" folder="720p" />
@@ -254,7 +280,10 @@
 		<website/>
 		<email/>
 		<source/>
-		<news>[B]3.0.69[/B] (2016-11-14)
+		<news>[B]3.0.70[/B] (2016-11-14)
+- Other minor improvements
+
+[B]3.0.69[/B] (2016-11-14)
 - Added System Info Privacy Policy support (According to latest KODI core changes)
 - VideoOSD button "INFO" which leads to the video info dialog is now improved and based on "service.library.data.provider" (and automatically shown for movies and episodes VideoOSD)
 

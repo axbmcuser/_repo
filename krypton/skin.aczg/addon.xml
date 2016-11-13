@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="3.0.69" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.0.70" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
-		<import addon="service.library.data.provider" version="0.1.6"/>
+		<import addon="service.library.data.provider" version="0.2.0"/>
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false" effectslowdown="0.22">
 		<res width="1280" height="720" aspect="16:9" default="true" folder="720p" />
@@ -16,7 +16,10 @@
 		<website/>
 		<email/>
 		<source/>
-		<news>[B]3.0.69[/B] (2016-11-14)
+		<news>[B]3.0.70[/B] (2016-11-14)
+- Other minor improvements
+
+[B]3.0.69[/B] (2016-11-14)
 - Added System Info Privacy Policy support (According to latest KODI core changes)
 - VideoOSD button "INFO" which leads to the video info dialog is now improved and based on "service.library.data.provider" (and automatically shown for movies and episodes VideoOSD)
 
