@@ -263,7 +263,7 @@
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="3.0.70" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.0.71" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 		<import addon="service.library.data.provider" version="0.2.0"/>
@@ -280,7 +280,14 @@
 		<website/>
 		<email/>
 		<source/>
-		<news>[B]3.0.70[/B] (2016-11-14)
+		<news>[B]3.0.71[/B] (2016-11-23)
+- New optional skin setting: Automatically pause/resume playback when using INFO button in VideoOSD
+- Other minor improvements, including:
+- - Added variable "GlobalFanartVar" for a dark LibreELEC settings background
+- - [DialogMediaSource.xml] Focus fix (Sync from Confluence and Estuary)
+- - [Home.xml] Weather addon and widget minor conditional improvements
+
+[B]3.0.70[/B] (2016-11-14)
 - Other minor improvements
 
 [B]3.0.69[/B] (2016-11-14)
