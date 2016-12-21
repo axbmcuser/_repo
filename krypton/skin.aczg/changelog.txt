@@ -1,3 +1,7 @@
+[B]3.0.72[/B] (2016-12-21)
+- Fix Extended Info call on Video Info Dialog due to recent plugin changes
+- Other minor improvements
+
 [B]3.0.71[/B] (2016-11-23)
 - New optional skin setting: Automatically pause/resume playback when using INFO button in VideoOSD
 - Other minor improvements, including:
