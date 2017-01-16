@@ -1,3 +1,6 @@
+[B]4.0.74[/B] (2017-01-16)
+- New icon for KODI 18 (Leia)
+
 [B]4.0.73[/B] (2017-01-14)
 - KODI 18 (Leia) Test release
 (Identical to 3.0.73, but with some KODI 18 changes as announced in the Official KODI Skinning Forum)
