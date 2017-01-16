@@ -1,3 +1,6 @@
+[B]1.1.5[/B] (2017-01-16)
+- Minor cleanup
+
 [B]1.1.4[/B] (2017-01-16)
 - Now supporting KODI 18 (Leia)
 
