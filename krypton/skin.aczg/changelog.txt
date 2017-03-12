@@ -1,3 +1,8 @@
+[B]3.0.74[/B] (2017-03-12)
+- Sync latest Confluence changes
+- Changes/fixes for new skin.helper.service version
+- Other minor improvements
+
 [B]3.0.73[/B] (2017-01-14)
 - Sync latest Confluence changes
 - Other minor improvements

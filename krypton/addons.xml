@@ -272,7 +272,7 @@
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="3.0.73" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.0.74" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 		<import addon="service.library.data.provider" version="0.2.0"/>
@@ -289,7 +289,12 @@
 		<website/>
 		<email/>
 		<source/>
-		<news>[B]3.0.73[/B] (2017-01-14)
+		<news>[B]3.0.74[/B] (2017-03-12)
+- Sync latest Confluence changes
+- Changes/fixes for new skin.helper.service version
+- Other minor improvements
+
+[B]3.0.73[/B] (2017-01-14)
 - Sync latest Confluence changes
 - Other minor improvements
 
