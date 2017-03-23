@@ -1,3 +1,11 @@
+[B]3.0.75[/B] (2017-03-23)
+- Reworked Wall Views (Wall Views are now true Fullscreen and not cut off at the top)
+- 5 background types now included based on latest Official Estuary pattern look by phil65 (Reworked to 1080p with some banding reducing noise)
+- - Background types are: Black, Circles Blue, Circles Grey, Polygons Blue, Polygons Grey
+- Reworked "System/Settings", "Skin Settings", "Profiles", "System Info" and more areas. No more old "windowed look"
+- Reworked scrollbars (now all the same flat look)
+- Other minor improvements
+
 [B]3.0.74[/B] (2017-03-12)
 - Sync latest Confluence changes
 - Changes/fixes for new skin.helper.service version
