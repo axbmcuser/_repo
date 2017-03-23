@@ -272,7 +272,7 @@
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="3.0.75" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.0.76" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 		<import addon="service.library.data.provider" version="0.2.0"/>
@@ -289,7 +289,10 @@
 		<website/>
 		<email/>
 		<source/>
-		<news>[B]3.0.75[/B] (2017-03-23)
+		<news>[B]3.0.76[/B] (2017-03-23)
+- Other minor improvements
+
+[B]3.0.75[/B] (2017-03-23)
 - Reworked Wall Views (Wall Views are now true Fullscreen and not cut off at the top)
 - 5 background types now included based on latest Official Estuary pattern look by phil65 (Reworked to 1080p with some banding reducing noise)
 - - Background types are: Black, Circles Blue, Circles Grey, Polygons Blue, Polygons Grey
