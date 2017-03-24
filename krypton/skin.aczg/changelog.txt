@@ -1,3 +1,6 @@
+[B]3.0.77[/B] (2017-03-24)
+- Other minor improvements
+
 [B]3.0.76[/B] (2017-03-23)
 - Other minor improvements
 

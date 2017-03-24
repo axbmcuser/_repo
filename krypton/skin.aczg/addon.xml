@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="3.0.76" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.0.77" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 		<import addon="service.library.data.provider" version="0.2.0"/>
@@ -16,7 +16,10 @@
 		<website/>
 		<email/>
 		<source/>
-		<news>[B]3.0.76[/B] (2017-03-23)
+		<news>[B]3.0.77[/B] (2017-03-24)
+- Other minor improvements
+
+[B]3.0.76[/B] (2017-03-23)
 - Other minor improvements
 
 [B]3.0.75[/B] (2017-03-23)
