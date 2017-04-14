@@ -1,3 +1,9 @@
+[B]3.0.78[/B] (2017-04-14)
+- Reworked "DialogSettings.xml" (used from VideoOSD)
+- Changed display of Favorites and context menus
+- Cleanup Textures
+- Other improvements
+
 [B]3.0.77[/B] (2017-03-24)
 - Other minor improvements
 
