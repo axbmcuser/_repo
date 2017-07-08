@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="3.0.78" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.0.79" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 		<import addon="service.library.data.provider" version="0.2.0"/>
@@ -16,7 +16,12 @@
 		<website/>
 		<email/>
 		<source/>
-		<news>[B]3.0.78[/B] (2017-04-14)
+		<news>[B]3.0.79[/B] (2017-07-08)
+- Other minor improvements:
+- - Fixed not showing Music Genres/Years
+- - Changes/fixes for latest skin.helper.service version: now showing Rotten Tomatoes, Metacritic and IMDB rating (_IF_ using latest skin.helper.service _and_ API is returning results)
+
+[B]3.0.78[/B] (2017-04-14)
 - Reworked "DialogSettings.xml" (used from VideoOSD)
 - Changed display of Favorites and context menus
 - Cleanup Textures

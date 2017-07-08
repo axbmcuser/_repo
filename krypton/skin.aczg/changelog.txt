@@ -1,3 +1,8 @@
+[B]3.0.79[/B] (2017-07-08)
+- Other minor improvements:
+- - Fixed not showing Music Genres/Years
+- - Changes/fixes for latest skin.helper.service version: now showing Rotten Tomatoes, Metacritic and IMDB rating (_IF_ using latest skin.helper.service _and_ API is returning results)
+
 [B]3.0.78[/B] (2017-04-14)
 - Reworked "DialogSettings.xml" (used from VideoOSD)
 - Changed display of Favorites and context menus
