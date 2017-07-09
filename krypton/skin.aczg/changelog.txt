@@ -1,3 +1,8 @@
+[B]3.0.80[/B] (2017-07-09)
+- Other minor improvements:
+- - Home screen recent movies widget now showing disc image icon for .iso files like it's shown within the library.
+- - Changes for skin.helper.service: Ratings now working when opening DialogVideoInfo from within VideoOSD or from homescreen widget, not only when opened from library.
+
 [B]3.0.79[/B] (2017-07-08)
 - Other minor improvements:
 - - Fixed not showing Music Genres/Years
