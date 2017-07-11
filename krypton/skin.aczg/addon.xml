@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="3.0.81" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.0.82" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 		<import addon="service.library.data.provider" version="0.2.0"/>
@@ -16,7 +16,10 @@
 		<website/>
 		<email/>
 		<source/>
-		<news>[B]3.0.81[/B] (2017-07-11)
+		<news>[B]3.0.82[/B] (2017-07-11)
+- Other minor improvements
+
+[B]3.0.81[/B] (2017-07-11)
 - Other minor improvements:
 - - DialogVideoInfo: Show much nicer online movie ratings with icons (RottenTomatoes, Metacritic, IMDb) (Again: Does _only_ work with latest beta "skin.helper.service" from "marcelveldt" beta repo)
 - - Minor improvements for new version 0.3.4 of "script.duration_axbmcuser"
