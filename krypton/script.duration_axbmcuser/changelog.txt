@@ -1,3 +1,6 @@
+[B]0.3.4[/B] (2017-07-11)
+- ListItem.DBID is now also set - for verification purposes (ScriptDurationAxbmcuserDBID)
+
 [B]0.3.3[/B] (2016-08-03)
 - Minor cleanup
 

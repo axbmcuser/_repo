@@ -131,7 +131,7 @@
 	</extension>
 </addon>
 
-<addon id="script.duration_axbmcuser" name="Duration script (axbmcuser MOD)" version="0.3.3" provider-name="Twolaw, axbmcuser (MOD+FIX)">
+<addon id="script.duration_axbmcuser" name="Duration script (axbmcuser MOD)" version="0.3.4" provider-name="Twolaw, axbmcuser (MOD+FIX)">
 	<requires>
 		<import addon="xbmc.python" version="2.14.0"/>
 	</requires>
@@ -146,7 +146,10 @@
 		<website/>
 		<email/>
 		<source/>
-		<news>[B]0.3.3[/B] (2016-08-03)
+		<news>[B]0.3.4[/B] (2017-07-11)
+- ListItem.DBID is now also set - for verification purposes (ScriptDurationAxbmcuserDBID)
+
+[B]0.3.3[/B] (2016-08-03)
 - Minor cleanup
 
 [B]0.3.2[/B] (2016-07-23)
@@ -272,7 +275,7 @@
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="3.0.80" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.0.81" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 		<import addon="service.library.data.provider" version="0.2.0"/>
@@ -289,7 +292,12 @@
 		<website/>
 		<email/>
 		<source/>
-		<news>[B]3.0.80[/B] (2017-07-09)
+		<news>[B]3.0.81[/B] (2017-07-11)
+- Other minor improvements:
+- - DialogVideoInfo: Show much nicer online movie ratings with icons (RottenTomatoes, Metacritic, IMDb) (Again: Does _only_ work with latest beta "skin.helper.service" from "marcelveldt" beta repo)
+- - Minor improvements for new version 0.3.4 of "script.duration_axbmcuser"
+
+[B]3.0.80[/B] (2017-07-09)
 - Other minor improvements:
 - - Home screen recent movies widget now showing disc image icon for .iso files like it's shown within the library.
 - - Changes for skin.helper.service: Ratings now working when opening DialogVideoInfo from within VideoOSD or from homescreen widget, not only when opened from library.
