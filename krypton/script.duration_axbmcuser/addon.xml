@@ -1,20 +1,24 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.duration_axbmcuser" name="Duration script (axbmcuser MOD)" version="0.3.4" provider-name="Twolaw, axbmcuser (MOD+FIX)">
+<addon id="script.duration_axbmcuser" name="Duration script (axbmcuser)" version="0.3.5" provider-name="axbmcuser (Rework+Fixes), Twolaw">
 	<requires>
 		<import addon="xbmc.python" version="2.14.0"/>
 	</requires>
-	<extension library="default.py" point="xbmc.service" start="login">
+	<extension library="service.py" point="xbmc.service" start="login">
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Duration converter from MMM to H:MM</summary>
-		<description lang="en">Converts movie durations from format MMM to H:MM[CR]Example: 113 minutes will be converted to 1:53[CR][CR]Known supported Skins:[CR]A Confluence ZEITGEIST</description>
+		<summary lang="en">Duration converter from MMM to H:MM, H, MM</summary>
+		<description lang="en">Converts movie durations from format MMM to H:MM, H, MM[CR]Example: 113 minutes could be converted to 1:53 using DurationAxbmcuser.Duration[CR][CR]Property names:[CR](home) DurationAxbmcuser.Duration[CR](home) DurationAxbmcuser.Duration.Hours[CR](home) DurationAxbmcuser.Duration.Minutes[CR](home) DurationAxbmcuser.DBID[CR][CR]For use with other containers like home screen widgets set the following properties:[CR][CR](home) DurationAxbmcuser.WidgetContainerId[CR]to the container ID (Example: 8000)[CR](home) DurationAxbmcuser.WidgetContainerWindowName[CR]to the window name where the container resides (Example: home)[CR][CR]Known supported Skins:[CR]A Confluence ZEITGEIST</description>
 		<platform>all</platform>
 		<license/>
 		<forum>http://forum.kodi.tv/showthread.php?tid=242892</forum>
 		<website/>
 		<email/>
 		<source/>
-		<news>[B]0.3.4[/B] (2017-07-11)
+		<news>[B]0.3.5[/B] (2017-07-14)
+- Reworked script, changed/removed deprecated stuff
+- New property names (see description for details)
+
+[B]0.3.4[/B] (2017-07-11)
 - ListItem.DBID is now also set - for verification purposes (ScriptDurationAxbmcuserDBID)
 
 [B]0.3.3[/B] (2016-08-03)
