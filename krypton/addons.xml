@@ -279,7 +279,7 @@
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="3.0.83" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.0.84" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 		<import addon="service.library.data.provider" version="0.2.0"/>
@@ -296,7 +296,17 @@
 		<website/>
 		<email/>
 		<source/>
-		<news>[B]3.0.82[/B] (2017-07-11)
+		<news>[B]3.0.84[/B] (2017-08-12)
+- Other minor fixes+tweaks+improvements, including:
+- - DialogVideoInfo: Added awards as last item (works with latest "skin.helper.service" beta)
+- - Home: Addon shortcuts small texture + visual change
+- - Search dialog: Visual changes + added addon search
+
+[B]3.0.83[/B] (2017-07-14)
+- Other minor improvements, including:
+- - Changes for new version 0.3.5 of "script.duration_axbmcuser"
+
+[B]3.0.82[/B] (2017-07-11)
 - Other minor improvements
 
 [B]3.0.81[/B] (2017-07-11)
