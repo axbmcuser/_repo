@@ -1,3 +1,10 @@
+[B]3.0.85[/B] (2017-11-20)
+- Reworked main Keyboard OSD. Now supporting Auto completion via standard addon "plugin.program.autocompletion"
+- - Added better Keyboard OSD icons for "spacebar" and "moving cursor to left/right"
+- Reworked PVR channel EPG [DialogPVRGuideOSD.xml]
+- Reworked PVR channels list [DialogPVRChannelsOSD.xml]
+- Other minor improvements
+
 [B]3.0.84[/B] (2017-08-12)
 - Other minor fixes+tweaks+improvements, including:
 - - DialogVideoInfo: Added awards as last item (works with latest "skin.helper.service" beta)
