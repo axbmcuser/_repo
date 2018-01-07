@@ -279,7 +279,7 @@
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="3.0.85" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.0.86" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 		<import addon="service.library.data.provider" version="0.2.0"/>
@@ -296,7 +296,14 @@
 		<website/>
 		<email/>
 		<source/>
-		<news>[B]3.0.85[/B] (2017-11-20)
+		<news>[B]3.0.86[/B] (2018-01-07)
+- VideoFullScreen audio and subtitle language text improvements for use with external renderers like MadVR (Reason: External renderers might show too long ugly text instead of the correct 3 letter language code which KODI expects)
+- [DialogSelect.xml] Fix Cancel button label (Bug in Original Confluence)
+- Added 4K mini overlay for home screen movie widget and also to the corresponding Wall View posters
+- Added some textures for audio codec flags (dts-hd, used by external renderer/MadVR)
+- Other minor improvements
+
+[B]3.0.85[/B] (2017-11-20)
 - Reworked main Keyboard OSD. Now supporting Auto completion via standard addon "plugin.program.autocompletion"
 - - Added better Keyboard OSD icons for "spacebar" and "moving cursor to left/right"
 - Reworked PVR channel EPG [DialogPVRGuideOSD.xml]
