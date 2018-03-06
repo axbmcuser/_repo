@@ -1,3 +1,7 @@
+[B]3.0.87[/B] (2018-03-06)
+- Added some video codec textures as duplicates
+- Other minor improvements
+
 [B]3.0.86[/B] (2018-01-07)
 - VideoFullScreen audio and subtitle language text improvements for use with external renderers like MadVR (Reason: External renderers might show too long ugly text instead of the correct 3 letter language code which KODI expects)
 - [DialogSelect.xml] Fix Cancel button label (Bug in Original Confluence)
