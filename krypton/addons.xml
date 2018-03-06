@@ -177,39 +177,6 @@
 	</extension>
 </addon>
 
-<addon id="script.module.actionhandler" name="ActionHandler" version="1.1.01" provider-name="Philipp Temminghoff (phil65)">
-	<requires>
-		<import addon="xbmc.python" version="2.25.0"/>
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Helper module for Event handling in WindowXMLs</summary>
-		<description lang="en">Helper module to allow mapping Actions, Onfocus and click events via decorators</description>
-		<platform>all</platform>
-		<license>GNU GENERAL PUBLIC LICENSE Version 2.1, February 1999</license>
-		<source>https://github.com/phil65/script.module.actionhandler</source>
-	</extension>
-</addon>
-
-<addon id="script.module.kodi65" name="Kodi65 Library" version="1.0.31" provider-name="Philipp Temminghoff (phil65)">
-	<requires>
-		<import addon="xbmc.python" version="2.25.0"/>
-		<import addon="script.module.youtube.dl" version="14.519.1"/>
-		<import addon="script.module.pil" version="1.1.7"/>
-		<import addon="script.module.t9.search" version="1.0.0"/>
-		<import addon="script.module.requests" version="2.9.1"/>
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Helper module</summary>
-		<description lang="en">Helper module for all kind of stuff</description>
-		<platform>all</platform>
-		<license>GNU GENERAL PUBLIC LICENSE Version 2.1, February 1999</license>
-		<source>https://github.com/phil65/script.module.kodi65</source>
-		<news>Fixed: Listitems not appearing for browser windows</news>
-	</extension>
-</addon>
-
 <addon id="script.module.xbmcswift2" name="xbmcswift2" provider-name="Jonathan Beluch (jbel)" version="2.4.01">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
@@ -241,38 +208,6 @@
 		<email>big.noid@kodi.tv</email>
 		<source>https://github.com/BigNoid/service.library.data.provider</source>
 		<news>Added 2 new calls to fetch a cast list or a single database item. See README.md for full details.</news>
-		<assets>
-			<icon>resources/icon.png</icon>
-		</assets>
-	</extension>
-</addon>
-
-<addon id="service.nfo.watchedstate.updater_axbmcuser" name="NFO Watchedstate Updater (axbmcuser MOD)" version="1.1.12" provider-name="4lb3rtO, axbmcuser (MOD+FIX)">
-	<requires>
-		<!-- Those are the version on final release. Just depend on the python version for Betas/RCs -->
-		<import addon="xbmc.python" version="2.19.0"/>
-		<import addon="xbmc.json"   version="6.20.0"/>
-		<import addon="xbmc.addon"  version="14.0.0"/>
-	</requires>
-	<extension point="xbmc.service" library="default.py" start="login"/>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Watchedstate .NFO Updater</summary>
-		<description lang="en">This addon writes the watchedstate to the corresponding .nfo file as soon as it updated within the KODI library.</description>
-		<platform>all</platform>
-		<license/>
-		<forum>http://forum.kodi.tv/showthread.php?tid=242892</forum>
-		<website/>
-		<email/>
-		<source/>
-		<news>[B]1.1.12[/B] (2016-08-05)
-- Minor cleanup
-
-[B]1.1.11[/B] (2016-08-03)
-- Minor cleanup
-
-[B]1.1.10[/B] (2016-07-23)
-- axbmcuser MOD: Fix for KODI 17 (Krypton): "videolibrary" renamed to "Videos" [default.py]
-		</news>
 		<assets>
 			<icon>resources/icon.png</icon>
 		</assets>
