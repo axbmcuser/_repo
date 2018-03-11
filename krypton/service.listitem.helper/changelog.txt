@@ -1,2 +1,8 @@
+[B]0.2.0[/B] (2018-03-11)
+Second Test Release:
+- OMDB: Added value "boxoffice"
+- TMDB: Added multiple values
+- Other minor improvements
+
 [B]0.1.0[/B] (2018-03-06)
 - Initial test release
