@@ -1,3 +1,6 @@
+[B]3.0.90[/B] (2018-03-18)
+- Other minor improvements
+
 [B]3.0.89[/B] (2018-03-11)
 - Added Trailer Search Feature in Video Information Dialog for movies (see "Skin Settings - General Settings" for regional setting) [Feature uses plugin.video.youtube]
 - Added video resolution fallback texture for VideoPlayer.VideoResolution being empty (when playing 1440p for example)

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="3.0.89" name="A Confluence ZEITGEIST (KODI 17)" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.0.90" name="A Confluence ZEITGEIST (KODI 17)" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 		<import addon="service.library.data.provider" version="0.2.0"/>
@@ -16,7 +16,10 @@
 		<website/>
 		<email/>
 		<source/>
-		<news>[B]3.0.89[/B] (2018-03-11)
+		<news>[B]3.0.90[/B] (2018-03-18)
+- Other minor improvements
+
+[B]3.0.89[/B] (2018-03-11)
 - Added Trailer Search Feature in Video Information Dialog for movies (see "Skin Settings - General Settings" for regional setting) [Feature uses plugin.video.youtube]
 - Added video resolution fallback texture for VideoPlayer.VideoResolution being empty (when playing 1440p for example)
 - Other minor improvements
