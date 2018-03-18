@@ -1,3 +1,6 @@
+[B]3.1.2[/B] (2018-03-18)
+- Other minor improvements
+
 [B]3.1.1[/B] (2018-03-18)
 - Skin Settings: Option to hide the "Trailer" Button in Video Information Dialog for movies ("Trailer Search" Button remains visible!)
 - Other minor improvements
