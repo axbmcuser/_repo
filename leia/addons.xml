@@ -147,7 +147,7 @@
   </extension>
 </addon>
 
-<addon id="skin.aczg" version="4.1.1" name="A Confluence ZEITGEIST (KODI 18)" provider-name="axbmcuser">
+<addon id="skin.aczg" version="4.1.2" name="A Confluence ZEITGEIST (KODI 18)" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.13.0"/>
 		<import addon="service.library.data.provider" version="0.2.0"/>
@@ -164,7 +164,11 @@
 		<website/>
 		<email/>
 		<source/>
-		<news>[B]4.1.1[/B] (2018-03-24)
+		<news>[B]4.1.2[/B] (2018-03-28)
+- KODI 18 (Leia) Test release
+- Other minor improvements
+
+[B]4.1.1[/B] (2018-03-24)
 - KODI 18 (Leia) IMCOMPLETE(!) Test release
 - Other minor improvements
 
