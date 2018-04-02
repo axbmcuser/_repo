@@ -260,7 +260,7 @@ Second Test Release:
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="3.1.3" name="A Confluence ZEITGEIST (KODI 17)" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.1.4" name="A Confluence ZEITGEIST (KODI 17)" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 		<import addon="service.library.data.provider" version="0.2.0"/>
@@ -277,7 +277,13 @@ Second Test Release:
 		<website/>
 		<email/>
 		<source/>
-		<news>[B]3.1.3[/B] (2018-03-26)
+		<news>[B]3.1.4[/B] (2018-04-02)
+- Reworked automatic Dynamic Range Compression feature. Added more options: +10/12/14/16/18/20 dB (Recommended: +12 dB (+10 or +14 are also sane values))
+- Added more special playlists: UHD movies, Watched movies
+- Changed default background image to: Polygons Grey
+- Other minor improvements
+
+[B]3.1.3[/B] (2018-03-26)
 - Other minor improvements
 
 [B]3.1.2[/B] (2018-03-18)

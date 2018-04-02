@@ -1,3 +1,11 @@
+[B]4.1.3[/B] (2018-04-02)
+- Reworked automatic Dynamic Range Compression feature. Added more options: +10/12/14/16/18/20 dB (Recommended: +12 dB (+10 or +14 are also sane values))
+- Added more special playlists: UHD movies, Watched movies
+- Changed default background image to: Polygons Grey
+- Added "custom_PVRChannelNumberInput.xml" for KODI 18
+- Added "DefaultAddonVfs.png", "DefaultAddonImageDecoder.png" for KODI 18
+- Other minor improvements
+
 [B]4.1.2[/B] (2018-03-28)
 - KODI 18 (Leia) Test release
 - Other minor improvements
