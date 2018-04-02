@@ -1,3 +1,6 @@
+[B]0.3.7[/B] (2018-04-02)
+- Minor improvements and optimizations
+
 [B]0.3.6[/B] (2018-03-06)
 - Minor improvements and optimizations
 

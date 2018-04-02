@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.duration_axbmcuser" name="Duration script (KODI 17) (axbmcuser)" version="0.3.6" provider-name="axbmcuser (Rework+Fixes), Twolaw">
+<addon id="script.duration_axbmcuser" name="Duration script (KODI 17) (axbmcuser)" version="0.3.7" provider-name="axbmcuser (Rework+Fixes), Twolaw">
 	<requires>
 		<import addon="xbmc.python" version="2.24.0"/>
 	</requires>
@@ -14,7 +14,10 @@
 		<website/>
 		<email/>
 		<source/>
-		<news>[B]0.3.6[/B] (2018-03-06)
+		<news>[B]0.3.7[/B] (2018-04-02)
+- Minor improvements and optimizations
+
+[B]0.3.6[/B] (2018-03-06)
 - Minor improvements and optimizations
 
 [B]0.3.5[/B] (2017-07-14)
