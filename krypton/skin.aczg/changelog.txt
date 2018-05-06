@@ -1,3 +1,15 @@
+[B]3.1.5[/B] (2018-05-06)
+- Skin Settings: Added direct access shortcuts for easy use:
+- - "Open [COLOR=firebrick]Metadata and Artwork module[/COLOR] Settings Dialog  [Shortcut]"
+- - "Open [COLOR=firebrick]AutoCompletion for virtual keyboard[/COLOR] Settings Dialog  [Shortcut]"
+- Reworked Polygon background images (vector based with no noise)
+- Optimized Wall Views and Text View
+- Dialog Video Information: Added ListItem.Country for movies
+- List view: Optimized thumbnail position and diffuse reflection
+- Home: Removed Home Screen bottom gradient if RSS disabled
+- Home and global: Removed many borders and optimized visuals for a cleaner look
+- Reworked all default icons (based on some Estuary icons but with optimizations, some replacements and changes
+
 [B]3.1.4[/B] (2018-04-02)
 - Reworked automatic Dynamic Range Compression feature. Added more options: +10/12/14/16/18/20 dB (Recommended: +12 dB (+10 or +14 are also sane values))
 - Added more special playlists: UHD movies, Watched movies
