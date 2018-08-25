@@ -1,3 +1,10 @@
+[B]3.1.6[/B] (2018-08-25)
+- Changed no-focus and focus textures and text colors for many buttons and ListItems (Great visual improvement)
+- Slightly changed Dynamic Range Compression feature main volume values
+- Improved and added some textures (rt/rt audience/mc/imdb rating icons)
+- Added some "Internal developer options"/features in Skin Settings (Not relevant for end users)
+- Other improvements and additions
+
 [B]3.1.5[/B] (2018-05-06)
 - Skin Settings: Added direct access shortcuts for easy use:
 - - "Open [COLOR=firebrick]Metadata and Artwork module[/COLOR] Settings Dialog  [Shortcut]"
