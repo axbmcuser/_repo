@@ -259,7 +259,7 @@
 	</extension>
 </addon>
 
-<addon id="service.listitem.helper" name="ListItem Helper (KODI 17+18) (axbmcuser)" version="0.2.3" provider-name="axbmcuser">
+<addon id="service.listitem.helper" name="ListItem Helper (KODI 17+18) (axbmcuser)" version="0.2.4" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.python" version="2.24.0"/>
 		<import addon="script.module.metadatautils" version="1.0.0" />
@@ -275,7 +275,10 @@
 		<website/>
 		<email/>
 		<source/>
-		<news>[B]0.2.3[/B] (2018-08-25)
+		<news>[B]0.2.4[/B] (2018-08-29)
+- Other minor improvements
+
+[B]0.2.3[/B] (2018-08-25)
 - Improvements and internal additions
 
 [B]0.2.2[/B] (2018-04-02)
