@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="3.1.6" name="A Confluence ZEITGEIST (KODI 17)" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.1.7" name="A Confluence ZEITGEIST (KODI 17)" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 		<import addon="service.library.data.provider" version="0.2.0"/>
@@ -16,7 +16,11 @@
 		<website/>
 		<email/>
 		<source/>
-		<news>[B]3.1.6[/B] (2018-08-25)
+		<news>[B]3.1.7[/B] (2018-08-29)
+- Added home screen widget for Live-TV (recently played TV channels)
+- Other minor improvements
+
+[B]3.1.6[/B] (2018-08-25)
 - Changed no-focus and focus textures and text colors for many buttons and ListItems (Great visual improvement)
 - Slightly changed Dynamic Range Compression feature main volume values
 - Improved and added some textures (rt/rt audience/mc/imdb rating icons)

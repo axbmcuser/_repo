@@ -1,3 +1,7 @@
+[B]3.1.7[/B] (2018-08-29)
+- Added home screen widget for Live-TV (recently played TV channels)
+- Other minor improvements
+
 [B]3.1.6[/B] (2018-08-25)
 - Changed no-focus and focus textures and text colors for many buttons and ListItems (Great visual improvement)
 - Slightly changed Dynamic Range Compression feature main volume values
