@@ -302,7 +302,7 @@ Second Test Release:
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="3.1.8" name="A Confluence ZEITGEIST (KODI 17)" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.1.9" name="A Confluence ZEITGEIST (KODI 17)" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 		<import addon="service.library.data.provider" version="0.2.0"/>
@@ -319,7 +319,12 @@ Second Test Release:
 		<website/>
 		<email/>
 		<source/>
-		<news>[B]3.1.8[/B] (2018-08-30)
+		<news>[B]3.1.9[/B] (2018-09-14)
+- Reworked video/audio/codec/subtitle/language-flags images (video info dialog and fullscreen video osd)
+- Reworked and optimized video info dialog (Display of actors and more)
+- Other minor improvements
+
+[B]3.1.8[/B] (2018-08-30)
 - [Skin Settings] Added option to hide home screen widget for Live-TV (recently played TV channels)
 - Other minor improvements
 

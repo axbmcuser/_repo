@@ -1,3 +1,8 @@
+[B]3.1.9[/B] (2018-09-14)
+- Reworked video/audio/codec/subtitle/language-flags images (video info dialog and fullscreen video osd)
+- Reworked and optimized video info dialog (Display of actors and more)
+- Other minor improvements
+
 [B]3.1.8[/B] (2018-08-30)
 - [Skin Settings] Added option to hide home screen widget for Live-TV (recently played TV channels)
 - Other minor improvements
