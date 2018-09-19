@@ -192,8 +192,8 @@
 </addon>
 
 <addon id="script.module.metadatautils"
-       name="Metadata and Artwork module"
-       version="1.0.191"
+       name="Metadata and Artwork module (axbmcuser)"
+       version="1.0.20"
        provider-name="marcelveldt">
     <requires>
         <import addon="xbmc.python" version="2.24.0"/>
@@ -296,29 +296,6 @@ Second Test Release:
 [B]0.1.0[/B] (2018-03-06)
 - Initial test release
 		</news>
-		<assets>
-			<icon>resources/icon.png</icon>
-		</assets>
-	</extension>
-</addon>
-
-<addon id="service.tester" name="ListItem Tester" version="0.2.20" provider-name="axbmcuser">
-	<requires>
-		<import addon="xbmc.python" version="2.24.0"/>
-		<import addon="script.module.metadatautils" version="1.0.0" />
-	</requires>
-	<extension library="service.py" point="xbmc.service" start="login">
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Tester</summary>
-		<description lang="en">Tester</description>
-		<platform>all</platform>
-		<license/>
-		<forum>http://forum.kodi.tv/showthread.php?tid=242892</forum>
-		<website/>
-		<email/>
-		<source/>
-		<news>Tester</news>
 		<assets>
 			<icon>resources/icon.png</icon>
 		</assets>
