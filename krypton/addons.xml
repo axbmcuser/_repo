@@ -302,7 +302,7 @@ Second Test Release:
 	</extension>
 </addon>
 
-<addon id="service.tester" name="ListItem Tester" version="0.2.19" provider-name="axbmcuser">
+<addon id="service.tester" name="ListItem Tester" version="0.2.191" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.python" version="2.24.0"/>
 		<import addon="script.module.metadatautils" version="1.0.0" />
