@@ -1,3 +1,10 @@
+[B]3.2.0[/B] (2018-10-24)
+- Reworked VideoOSD
+- Added support for more ratings (TV-MA, ...)
+- Reworked and optimized video info dialog
+- 2 new Special Lists (Recently played movies/episodes)
+- Other improvements
+
 [B]3.1.9[/B] (2018-09-14)
 - Reworked video/audio/codec/subtitle/language-flags images (video info dialog and fullscreen video osd)
 - Reworked and optimized video info dialog (Display of actors and more)
