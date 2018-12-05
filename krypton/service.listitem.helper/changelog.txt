@@ -1,3 +1,10 @@
+[B]0.3.0[/B] (2018-12-03)
+- Support for OMDb/TMDb without using "script.module.metadatautils"
+- Added settings dialog for required OMDb/TMDb API keys
+
+[B]0.2.5[/B] (2018-08-19)
+- Other minor improvements
+
 [B]0.2.4[/B] (2018-08-29)
 - Other minor improvements
 

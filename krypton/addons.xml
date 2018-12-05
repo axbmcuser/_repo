@@ -122,20 +122,6 @@
 	</extension>
 </addon>
 
-<addon id="repository.marcelveldt" version="1.0.1" name="Marcelveldt's BETA repository" provider-name="marcelveldt">
-
-	<extension point="xbmc.addon.repository" name="Marcelveldt's BETA repository">
-		<info compressed="false">https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Kodi repository for beta/test versions of Marcelveldt's addons</summary>
-		<description lang="en">Kodi repository for beta/test versions of Marcelveldt's addons, for stable versions please just use the official Kodi repository. This repo is for test/beta versions of my work only</description>
-		<platform>all</platform>
-	</extension>
-</addon>
-
 <addon id="script.duration_axbmcuser" name="Duration script (KODI 17) (axbmcuser)" version="0.3.8" provider-name="axbmcuser (Rework+Fixes), Twolaw">
 	<requires>
 		<import addon="xbmc.python" version="2.24.0"/>
@@ -191,29 +177,16 @@
 	</extension>
 </addon>
 
-<addon id="script.module.metadatautils"
-       name="Metadata and Artwork module (axbmcuser)"
-       version="1.0.20"
-       provider-name="marcelveldt">
+<addon id="script.module.simplecache" name="Simple Cache Module" version="1.0.16" provider-name="marcelveldt">
     <requires>
         <import addon="xbmc.python" version="2.24.0"/>
-        <import addon="script.module.requests" version="2.3.0"/>
-        <import addon="script.module.beautifulsoup" version="3.0.8" />
-        <import addon="script.module.thetvdb" version="0.0.1" />
-        <import addon="script.module.musicbrainz" version="0.0.1" />
-        <import addon="script.module.simplecache" version="1.0.0"/>
-        <import addon="script.module.arrow" version="0.6.0"/>
     </requires>
     <extension point="xbmc.python.module" library="lib" />
     <extension point="xbmc.addon.metadata">
-        <summary>Metadata and artwork from common sources like TMDB, IMDB, TADB and fanart.tv </summary>
-        <description>
-            The metadata and artwork module for Kodi provides rich metadata, including artwork for
-            various metatypes by scraping (and caching) this information from sites like TMDB, musicbrainz and fanart.tv.[CR][CR]
-            This product uses the TMDb API but is not endorsed or certified by TMDb
-        </description>
+        <summary>Provides a simple file- and memory based cache for Kodi addons</summary>
+        <description>Provides a simple file- and memory based cache for Kodi addons</description>
         <license>Apache 2.0</license>
-        <source>https://github.com/marcelveldt/script.module.metadatautils</source>
+        <source>https://github.com/marcelveldt/script.module.simplecache</source>
         <platform>all</platform>
     </extension>
 </addon>
@@ -259,23 +232,32 @@
 	</extension>
 </addon>
 
-<addon id="service.listitem.helper" name="ListItem Helper (KODI 17+18) (axbmcuser)" version="0.2.5" provider-name="axbmcuser">
+<addon id="service.listitem.helper" name="ListItem Helper (KODI 17+18) (axbmcuser)" version="0.3.0" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.python" version="2.24.0"/>
-		<import addon="script.module.metadatautils" version="1.0.0" />
+		<import addon="script.module.requests" version="2.3.0"/>
+		<import addon="script.module.simplejson" version="3.3.0"/>
+		<import addon="script.module.simplecache" version="1.0.0"/>
+		<import addon="script.module.arrow" version="0.6.0"/>
 	</requires>
-	<extension library="service.py" point="xbmc.service" start="login">
-	</extension>
+	<extension library="service.py" point="xbmc.service" start="login"/>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">A ListItem Helper</summary>
-		<description lang="en">A ListItem Helper service which provides values from OMDB/TMDB while using script.module.metadatautils[CR][CR]Property names:[CR](home) axbmcuserData.ListItem.rating.rottentomatoes.percent[CR](home) axbmcuserData.ListItem.rating.rottentomatoes.image[CR](home) axbmcuserData.ListItem.rating.metacritic.percent[CR](home) axbmcuserData.ListItem.rating.imdb.percent[CR](home) axbmcuserData.ListItem.rating.imdb[CR](home) axbmcuserData.ListItem.rating.imdb.votes[CR](home) axbmcuserData.ListItem.awards[CR](home) axbmcuserData.ListItem.budget[CR](home) axbmcuserData.ListItem.budget.million[CR](home) axbmcuserData.ListItem.budget.formatted[CR](home) axbmcuserData.ListItem.revenue[CR](home) axbmcuserData.ListItem.revenue.million[CR](home) axbmcuserData.ListItem.revenue.formatted[CR](home) axbmcuserData.ListItem.revenue.boxoffice[CR](home) axbmcuserData.ListItem.awards[CR](home) axbmcuserData.ListItem.IMDBNumber[CR][CR]For use with other containers like home screen widgets set the following properties:[CR][CR](home) ListItemHelper.WidgetContainerId[CR]to the container ID (Example: 8000)[CR](home) ListItemHelper.WidgetContainerWindowName[CR]to the window name where the container resides (Example: home)[CR][CR]Important remarks:[CR]- Unset the WidgetContainer-properties when leaving focus from the widget.[CR]- This addon may require a beta-version of script.module.metadatautils from the developers (marcelveldt) beta repo because the version from the official KODI repo may be old and broken.[CR]- Most likely you will have to input your own OMDB API key within the script.module.metadatautils settings. (See: Addons - Settings - Manage Dependencies - Metadata and Artwork module - Configure - API keys[CR][CR]Known supported Skins:[CR]A Confluence ZEITGEIST</description>
+		<description lang="en">A ListItem Helper service which provides values from OMDb/TMDb.[CR][CR][COLOR=red]![/COLOR] Entering OMDb/TMDb API keys in the configuration dialog is required.[CR][CR]Property names:[CR](home) ListItemHelper.rating.rottentomatoes.percent[CR](home) ListItemHelper.rating.rottentomatoes.image[CR](home) ListItemHelper.rating.rottentomatoes.url[CR](home) ListItemHelper.rating.rottentomatoes.audience[CR](home) ListItemHelper.rating.metacritic.percent[CR](home) ListItemHelper.rating.imdb.percent[CR](home) ListItemHelper.rating.imdb[CR](home) ListItemHelper.rating.imdb.votes[CR](home) ListItemHelper.awards[CR](home) ListItemHelper.budget[CR](home) ListItemHelper.budget.million[CR](home) ListItemHelper.budget.formatted[CR](home) ListItemHelper.revenue[CR](home) ListItemHelper.revenue.million[CR](home) ListItemHelper.revenue.formatted[CR](home) ListItemHelper.revenue.boxoffice[CR](home) ListItemHelper.DBID[CR](home) ListItemHelper.IMDBNumber[CR][CR]For use with other containers like home screen widgets set the following properties:[CR][CR](home) ListItemHelper.WidgetContainerId[CR]to the container ID (Example: 8000)[CR](home) ListItemHelper.WidgetContainerWindowName[CR]to the window name where the container resides (Example: home)[CR][CR]Important remarks:[CR]- Unset the WidgetContainer-properties when leaving focus from the widget.[CR][CR]Known supported Skins:[CR]A Confluence ZEITGEIST[CR][CR][CR][COLOR=gray]This addon contains forked code of marcelveldt addon script.module.metadatautils which has been changed and massively stripped down for fast execution and minimal functionality.[CR] [/COLOR]</description>
 		<platform>all</platform>
-		<license/>
+		<license></license>
 		<forum>http://forum.kodi.tv/showthread.php?tid=242892</forum>
-		<website/>
-		<email/>
-		<source/>
-		<news>[B]0.2.4[/B] (2018-08-29)
+		<website></website>
+		<email></email>
+		<source>https://github.com/axbmcuser/_repo/</source>
+		<news>[B]0.3.0[/B] (2018-12-03)
+- Support for OMDb/TMDb without using "script.module.metadatautils"
+- Added settings dialog for required OMDb/TMDb API keys
+
+[B]0.2.5[/B] (2018-08-19)
+- Other minor improvements
+
+[B]0.2.4[/B] (2018-08-29)
 - Other minor improvements
 
 [B]0.2.3[/B] (2018-08-25)
@@ -302,7 +284,7 @@ Second Test Release:
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="3.2.0" name="A Confluence ZEITGEIST (KODI 17)" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.2.1" name="A Confluence ZEITGEIST (KODI 17)" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 		<import addon="service.library.data.provider" version="0.2.0"/>
@@ -314,12 +296,15 @@ Second Test Release:
 		<summary lang="en">"A Confluence ZEITGEIST" is a clean and modern rework of the Confluence skin.</summary>
 		<description lang="en">"A Confluence ZEITGEIST" is a clean and modern rework of the Confluence skin. It mainly features an icon-based main menu without the need for scrolling and two all new wall views, which replace the old thumbnail view. Countless other small graphics updates and optimizations are included.</description>
 		<platform>all</platform>
-		<license/>
+		<license></license>
 		<forum>http://forum.kodi.tv/showthread.php?tid=242892</forum>
-		<website/>
-		<email/>
-		<source/>
-		<news>[B]3.2.0[/B] (2018-10-24)
+		<website></website>
+		<email></email>
+		<source>https://github.com/axbmcuser/_repo/</source>
+		<news>[B]3.2.1[/B] (2018-12-03)
+- Other improvements
+
+[B]3.2.0[/B] (2018-10-24)
 - Reworked VideoOSD
 - Added support for more ratings (TV-MA, ...)
 - Reworked and optimized video info dialog
@@ -1064,6 +1049,7 @@ I had this disabled because i want to be able to jump to the most right object b
 		</news>
 		<assets>
 			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.png</fanart>
 		</assets>
 	</extension>
 </addon>

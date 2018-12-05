@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="3.2.0" name="A Confluence ZEITGEIST (KODI 17)" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.2.1" name="A Confluence ZEITGEIST (KODI 17)" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 		<import addon="service.library.data.provider" version="0.2.0"/>
@@ -11,12 +11,15 @@
 		<summary lang="en">"A Confluence ZEITGEIST" is a clean and modern rework of the Confluence skin.</summary>
 		<description lang="en">"A Confluence ZEITGEIST" is a clean and modern rework of the Confluence skin. It mainly features an icon-based main menu without the need for scrolling and two all new wall views, which replace the old thumbnail view. Countless other small graphics updates and optimizations are included.</description>
 		<platform>all</platform>
-		<license/>
+		<license></license>
 		<forum>http://forum.kodi.tv/showthread.php?tid=242892</forum>
-		<website/>
-		<email/>
-		<source/>
-		<news>[B]3.2.0[/B] (2018-10-24)
+		<website></website>
+		<email></email>
+		<source>https://github.com/axbmcuser/_repo/</source>
+		<news>[B]3.2.1[/B] (2018-12-03)
+- Other improvements
+
+[B]3.2.0[/B] (2018-10-24)
 - Reworked VideoOSD
 - Added support for more ratings (TV-MA, ...)
 - Reworked and optimized video info dialog
@@ -761,6 +764,7 @@ I had this disabled because i want to be able to jump to the most right object b
 		</news>
 		<assets>
 			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.png</fanart>
 		</assets>
 	</extension>
 </addon>
