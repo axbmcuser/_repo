@@ -1,3 +1,7 @@
+[B]0.3.1[/B] (2019-03-12)
+- Ensure unique caching identifier for SimpleCache Addon
+- Other minor improvements
+
 [B]0.3.0[/B] (2018-12-03)
 - Support for OMDb/TMDb without using "script.module.metadatautils"
 - Added settings dialog for required OMDb/TMDb API keys
