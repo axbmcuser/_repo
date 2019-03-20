@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="4.2.0" name="A Confluence ZEITGEIST (Beta) (KODI 18)" provider-name="axbmcuser">
+<addon id="skin.aczg" version="4.2.1" name="A Confluence ZEITGEIST (Beta) (KODI 18)" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0"/>
 		<import addon="service.library.data.provider" version="0.2.0"/>
@@ -16,7 +16,18 @@
 		<website></website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]4.2.0[/B] (2018-12-03)
+		<news>[B]4.2.1[/B] (2019-03-20)
+- KODI 18 (Leia) IMCOMPLETE(!) Beta Test release
+- Reworked Skin Settings menu
+- - Added:
+- - - Power menu options (You can now hide items from the power menu)
+- - - Option "Hide labels within Wall Views for video library content" (Recommended!)
+- - - Option "Hide Clock within Wall Views" (Recommended!)
+- Visual changes to System Info memory section
+- Fix album ratings in Fanart view (Adapted from Confluence 3.1.5)
+- Other improvements
+
+[B]4.2.0[/B] (2018-12-03)
 - New KODI 18 RC2 (Leia) IMCOMPLETE(!) Beta Test release
 
 - Added "custom_PVRChannelNumberInput.xml" for KODI 18
