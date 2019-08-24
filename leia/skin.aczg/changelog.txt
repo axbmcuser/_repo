@@ -1,3 +1,7 @@
+[B]4.2.4[/B] (2019-08-24)
+- Changed dependency "Library Data Provider" to "Library Data Provider Lite"
+- Other improvements
+
 [B]4.2.1[/B] (2019-03-20)
 - KODI 18 (Leia) IMCOMPLETE(!) Beta Test release
 - Reworked Skin Settings menu
