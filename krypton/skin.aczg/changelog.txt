@@ -1,3 +1,10 @@
+[B]3.2.4[/B] (2019-08-24)
+- Other improvements
+
+[B]3.2.3[/B] (2019-05-11)
+- Other improvements: 
+- - Changed dependency "Library Data Provider" to "Library Data Provider Lite"
+
 [B]3.2.2[/B] (2019-03-12)
 - Reworked Skin Settings menu
 - - Added:
