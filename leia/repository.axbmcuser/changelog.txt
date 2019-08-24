@@ -1,3 +1,6 @@
+[B]1.1.6[/B] (2019-08-24)
+- Added KODI 19 (Matrix) repo
+
 [B]1.1.5[/B] (2017-01-16)
 - Minor cleanup
 

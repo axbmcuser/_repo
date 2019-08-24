@@ -1,4 +1,5 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
 <addon id="repository.axbmcuser" name="axbmcuser REPO" version="1.1.6" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.addon" version="12.0.0"/>
@@ -58,3 +59,4 @@
 		</assets>
 	</extension>
 </addon>
+</addons>
