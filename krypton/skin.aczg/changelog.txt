@@ -1,3 +1,16 @@
+[B]3.2.5[/B] (2019-11-15)
+- Global rework for more simplicity
+- Added home screen "Favorites" widget
+- Added possibility to add home screen "Favorites" Addons
+- Skin Settings:
+- - Added option to remove Kodi logo
+- - Added option to Darken background (Default: "Minimal")
+- Added simple "Grey" background
+- Added UHD backgrounds for existing wallpaper "Polygons Grey" and "Polygons blue"
+- - (Higher wallpaper resolution is automatically chosen if UHD display res. is detected)
+- Reworked many graphics
+- Other improvements
+
 [B]3.2.4[/B] (2019-08-24)
 - Other improvements
 
