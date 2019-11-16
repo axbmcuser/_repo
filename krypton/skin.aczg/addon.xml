@@ -6,9 +6,6 @@
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false" effectslowdown="0.22">
 		<res width="1280" height="720" aspect="16:9" default="true" folder="720p" />
-		<!--
-		<res width="1280" height="800" aspect="16:10" default="false" folder="720p" />
-		-->
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">"A Confluence ZEITGEIST" is a clean and modern rework of the Confluence skin.</summary>
@@ -24,8 +21,12 @@
 - Added home screen "Favorites" widget
 - Added possibility to add home screen "Favorites" Addons
 - Skin Settings:
-- - Added option to remove Kodi logo
+- - Added new custom background system supporting: "Multiple Images" and (as before) a "Single Image"
 - - Added option to Darken background (Default: "Minimal")
+- - Added background misc option: "Enable Idle Timer for Home Screen UI Fade Out" (Fades out main menu if idle on home screen for X seconds
+- - Added new Experimental function: "FadeIn Kodi UI on Startup" (only use it with KODI profile manager OFF (default))
+- - Added new Experimental function: "Enable Kiosk Mode" (Hides: Sub menus, Sidebar menus)
+- - Added option to remove Kodi logo
 - Added simple "Grey" background
 - Added UHD backgrounds for existing wallpaper "Polygons Grey" and "Polygons blue"
 - - (Higher wallpaper resolution is automatically chosen if UHD display res. is detected)
