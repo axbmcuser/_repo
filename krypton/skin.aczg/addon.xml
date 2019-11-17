@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="3.2.6" name="A Confluence ZEITGEIST (KODI 17)" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.2.7" name="A Confluence ZEITGEIST (KODI 17)" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 		<import addon="service.library.data.provider.lite" version="0.3.2"/>
@@ -16,7 +16,12 @@
 		<website></website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]3.2.6[/B] (2019-11-17)
+		<news>[B]3.2.7[/B] (2019-11-18)
+- "Skin Settings":
+- - Added new home screen option "Enable Add-on Shortcuts" to globally hide all Add-on Shortcuts while keeping the already configured shortcuts
+- Other improvements
+
+[B]3.2.6[/B] (2019-11-17)
 - Additional checks for experimental function "Fade In Kodi UI on Startup"
 - "Skin Settings" now displays the skin version at the bottom of the left menu
 - Other improvements
@@ -30,7 +35,7 @@
 - - Added new custom background system supporting: "Multiple Images" and (as before) a "Single Image"
 - - Added option to Darken background (Default: "Minimal")
 - - Added background misc option: "Enable Idle Timer for Home Screen UI Fade Out" (Fades out main menu if idle on home screen for X seconds
-- - Added new Experimental function: "Fade In Kodi UI on Startup" (only use it with KODI profile manager OFF (default))
+- - Added new Experimental function: "Fade In Kodi UI on Startup"
 - - Added new Experimental function: "Enable Kiosk Mode" (Hides: Sub menus, Sidebar menus)
 - - Added option to remove Kodi logo
 - Added simple "Grey" background
