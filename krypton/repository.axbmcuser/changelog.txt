@@ -1,3 +1,6 @@
+[B]1.1.8[/B] (2019-11-17)
+- New repo icon (higher resolution)
+
 [B]1.1.7[/B] (2019-08-24)
 - Cleanup (Bye Jarvis)
 
