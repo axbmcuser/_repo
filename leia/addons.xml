@@ -71,7 +71,7 @@
   </extension>
 </addon>
 
-<addon id="repository.axbmcuser" name="axbmcuser REPO" version="1.1.7" provider-name="axbmcuser">
+<addon id="repository.axbmcuser" name="axbmcuser REPO" version="1.1.8" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.addon" version="12.0.0"/>
 	</requires>
@@ -104,7 +104,10 @@
 		<website/>
 		<email/>
 		<source/>
-		<news>[B]1.1.7[/B] (2019-08-24)
+		<news>[B]1.1.8[/B] (2019-11-17)
+- New repo icon (higher resolution)
+
+[B]1.1.7[/B] (2019-08-24)
 - Cleanup (Bye Jarvis)
 
 [B]1.1.6[/B] (2019-08-24)
