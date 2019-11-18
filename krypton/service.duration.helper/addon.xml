@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="service.duration.helper" name="Duration Helper (KODI 17) (axbmcuser)" version="1.0.0" provider-name="axbmcuser (Rework+Fixes), Twolaw">
+	<requires>
+		<import addon="xbmc.python" version="2.24.0"/>
+	</requires>
+	<extension library="service.py" point="xbmc.service" start="login">
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Duration converter from MMM to H:MM, H, MM</summary>
+		<description lang="en">Converts movie and episode durations[CR]from format MMM to H:MM, H, MM[CR][CR]Example: 113 minutes could be converted to 1:53 using DurationHelper.Duration[CR][CR]Property names:[CR](home) DurationHelper.Duration[CR](home) DurationHelper.Duration.Hours[CR](home) DurationHelper.Duration.Minutes[CR](home) DurationHelper.DBID[CR](home) DurationHelper.InputDurationMinutes[CR][CR]For use with other containers like home screen widgets set the following properties:[CR][CR](home) DurationHelper.WidgetContainerId[CR]to the container ID (Example: 8000)[CR](home) DurationHelper.WidgetContainerWindowName[CR]to the window name where the container resides (Example: home)[CR][CR]Known supported Skins:[CR]A Confluence ZEITGEIST</description>
+		<platform>all</platform>
+		<license/>
+		<forum>http://forum.kodi.tv/showthread.php?tid=242892</forum>
+		<website/>
+		<email/>
+		<source/>
+		<news>[B]1.0.0[/B] (2019-11-18)
+- Rename Addon to "Duration Helper" (service.duration.helper)
+
+[B]0.3.9[/B] (2018-10-20)
+- Minor improvements and optimizations
+
+[B]0.3.8[/B] (2018-04-26)
+- Minor improvements and optimizations
+
+[B]0.3.7[/B] (2018-04-02)
+- Minor improvements and optimizations
+
+[B]0.3.6[/B] (2018-03-06)
+- Minor improvements and optimizations
+
+[B]0.3.5[/B] (2017-07-14)
+- Reworked script, changed/removed deprecated stuff
+- New property names (see description for details)
+
+[B]0.3.4[/B] (2017-07-11)
+- ListItem.DBID is now also set - for verification purposes (ScriptDurationAxbmcuserDBID)
+
+[B]0.3.3[/B] (2016-08-03)
+- Minor cleanup
+
+[B]0.3.2[/B] (2016-07-23)
+- axbmcuser MOD: Fix for KODI 17 (Krypton): "videolibrary" renamed to "videos" [default.py]
+
+[B]0.3.1[/B]
+- axbmcuser MOD: Minor improvements and optimizations
+
+[B]0.3[/B]
+- axbmcuser MOD: Script now outputs H:MM
+
+[B]0.2[/B]
+- Correction of crash when duration value isn't properly written in database
+
+[B]0.1[/B]
+- Initial release
+		</news>
+		<assets>
+			<icon>resources/icon.png</icon>
+		</assets>
+	</extension>
+</addon>
