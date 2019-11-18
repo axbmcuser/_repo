@@ -1,3 +1,6 @@
+[B]0.3.2[/B] (2019-11-17)
+- Other minor improvements
+
 [B]0.3.1[/B] (2019-03-12)
 - Ensure unique caching identifier for SimpleCache Addon
 - Other minor improvements
