@@ -435,10 +435,11 @@ Second Test Release:
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="3.2.7" name="A Confluence ZEITGEIST (KODI 17)" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.2.8" name="A Confluence ZEITGEIST (KODI 17)" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
-		<import addon="service.library.data.provider.lite" version="0.3.2"/>
+		<import addon="service.duration.helper" version="1.0.0"/>
+		<import addon="service.library.data.provider.lite" version="0.3.4"/>
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false" effectslowdown="0.22">
 		<res width="1280" height="720" aspect="16:9" default="true" folder="720p" />
@@ -452,7 +453,11 @@ Second Test Release:
 		<website></website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]3.2.7[/B] (2019-11-18)
+		<news>[B]3.2.8[/B] (2019-11-18)
+- Added sidebar buttons "My add-ons", "Dependencies" and "Running" to AddonBrowser
+- Other improvements
+
+[B]3.2.7[/B] (2019-11-18)
 - "Skin Settings":
 - - Added new home screen option "Enable Add-on Shortcuts" to globally hide all Add-on Shortcuts while keeping the already configured shortcuts
 - Other improvements

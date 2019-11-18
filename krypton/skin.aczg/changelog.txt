@@ -1,3 +1,7 @@
+[B]3.2.8[/B] (2019-11-18)
+- Added sidebar buttons "My add-ons", "Dependencies" and "Running" to AddonBrowser
+- Other improvements
+
 [B]3.2.7[/B] (2019-11-18)
 - "Skin Settings":
 - - Added new home screen option "Enable Add-on Shortcuts" to globally hide all Add-on Shortcuts while keeping the already configured shortcuts
