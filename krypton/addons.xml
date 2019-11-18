@@ -384,7 +384,7 @@
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="script.module.requests" version="2.3.0"/>
 		<import addon="script.module.simplejson" version="3.3.0"/>
-		<import addon="script.module.simplecache" version="1.0.11"/>
+		<import addon="script.module.simplecache" version="1.0.0"/>
 		<import addon="script.module.arrow" version="0.6.0"/>
 	</requires>
 	<extension library="service.py" point="xbmc.service" start="login"/>
