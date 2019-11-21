@@ -379,7 +379,7 @@
 	</extension>
 </addon>
 
-<addon id="service.listitem.helper" name="ListItem Helper (KODI 17+18) (axbmcuser)" version="0.3.2" provider-name="axbmcuser">
+<addon id="service.listitem.helper" name="ListItem Helper (KODI 17+18) (axbmcuser)" version="0.3.3" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="script.module.requests" version="2.3.0"/>
@@ -397,7 +397,10 @@
 		<website></website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]0.3.2[/B] (2019-11-17)
+		<news>[B]0.3.3[/B] (2019-11-21)
+- Other minor improvements
+
+[B]0.3.2[/B] (2019-11-17)
 - Other minor improvements
 
 [B]0.3.1[/B] (2019-03-12)
@@ -438,7 +441,7 @@ Second Test Release:
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="3.2.8" name="A Confluence ZEITGEIST (KODI 17)" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.2.9" name="A Confluence ZEITGEIST (KODI 17)" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 		<import addon="service.duration.helper" version="1.0.0"/>
@@ -456,7 +459,10 @@ Second Test Release:
 		<website></website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]3.2.8[/B] (2019-11-18)
+		<news>[B]3.2.9[/B] (2019-11-21)
+- Other improvements
+
+[B]3.2.8[/B] (2019-11-18)
 - Added sidebar buttons "My add-ons", "Dependencies" and "Running" to AddonBrowser
 - Other improvements
 

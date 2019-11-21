@@ -1,3 +1,6 @@
+[B]3.2.9[/B] (2019-11-21)
+- Other improvements
+
 [B]3.2.8[/B] (2019-11-18)
 - Added sidebar buttons "My add-ons", "Dependencies" and "Running" to AddonBrowser
 - Other improvements
