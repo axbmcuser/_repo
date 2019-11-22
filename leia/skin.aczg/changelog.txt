@@ -1,5 +1,5 @@
 [B]4.2.5[/B] (2019-11-22)
-- Migrated all changed from the latest Krypton skin version (For details: see below). Now in sync with Krypton version 3.2.9
+- Migrated all changes from the latest Krypton skin version (For details: see below). Now in sync with Krypton version 3.2.9
 
 Migrated from Krypton skin version 3.2.9:
 - Changed and refined icons: "Add-ons" main icon, "Pictures" main icon, "DefaultAddonPicture" icon, "DefaultPicture" icon
