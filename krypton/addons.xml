@@ -379,7 +379,7 @@
 	</extension>
 </addon>
 
-<addon id="service.listitem.helper" name="ListItem Helper (KODI 17+18) (axbmcuser)" version="0.3.3" provider-name="axbmcuser">
+<addon id="service.listitem.helper" name="ListItem Helper (KODI 17+18) (axbmcuser)" version="0.3.4" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="script.module.requests" version="2.3.0"/>
@@ -397,7 +397,10 @@
 		<website></website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]0.3.3[/B] (2019-11-21)
+		<news>[B]0.3.4[/B] (2019-11-23)
+- Other minor improvements
+
+[B]0.3.3[/B] (2019-11-21)
 - Other minor improvements
 
 [B]0.3.2[/B] (2019-11-17)
