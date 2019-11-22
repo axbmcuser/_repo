@@ -263,10 +263,10 @@
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="4.2.4" name="A Confluence ZEITGEIST (Beta) (KODI 18)" provider-name="axbmcuser">
+<addon id="skin.aczg" version="4.2.5" name="A Confluence ZEITGEIST (Beta) (KODI 18)" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0"/>
-		<import addon="service.library.data.provider.lite" version="0.3.2"/>
+		<import addon="service.library.data.provider.lite" version="0.3.4"/>
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false" effectslowdown="0.22">
 		<res width="1280" height="720" aspect="16:9" default="true" folder="720p" />
@@ -280,7 +280,47 @@
 		<website></website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]4.2.4[/B] (2019-08-24)
+		<news>[B]4.2.5[/B] (2019-11-22)
+- Migrated all changed from the latest Krypton skin version (For details: see below)
+- Changed and refined icons: "Add-ons" main icon, "Pictures" main icon, "DefaultAddonPicture" icon, "DefaultPicture" icon
+- Other improvements
+
+Migrated from Krypton skin version 3.2.8:
+- Added sidebar buttons "My add-ons", "Dependencies" and "Running" to AddonBrowser
+- Other improvements
+
+Migrated from Krypton skin version 3.2.7:
+- "Skin Settings":
+- - Added new home screen option "Enable Add-on Shortcuts" to globally hide all Add-on Shortcuts while keeping the already configured shortcuts
+- Other improvements
+
+Migrated from Krypton skin version 3.2.6:
+- Additional checks for experimental function "Fade In Kodi UI on Startup"
+- "Skin Settings" now displays the skin version at the bottom of the left menu
+- Other improvements
+
+Migrated from Krypton skin version 3.2.5:
+- Global rework for more simplicity
+- Added home screen "Favorites" widget
+- Added possibility to add home screen "Favorites" Addons
+- Added support for music fanart - shown in background (while playing music)
+- Skin Settings:
+- - Added new custom background system supporting: "Multiple Images" and (as before) a "Single Image"
+- - Added option to Darken background (Default: "Minimal")
+- - Added background misc option: "Enable Idle Timer for Home Screen UI Fade Out" (Fades out main menu if idle on home screen for X seconds
+- - Added new Experimental function: "Fade In Kodi UI on Startup"
+- - Added new Experimental function: "Enable Kiosk Mode" (Hides: Sub menus, Sidebar menus)
+- - Added option to remove Kodi logo
+- Added simple "Grey" background
+- Added UHD backgrounds for existing wallpaper "Polygons Grey" and "Polygons blue"
+- - (Higher wallpaper resolution is automatically chosen if UHD display res. is detected)
+- Reworked many graphics
+- Other improvements
+
+Migrated from Krypton skin version 3.2.4:
+- Other improvements
+
+[B]4.2.4[/B] (2019-08-24)
 - Changed dependency "Library Data Provider" to "Library Data Provider Lite"
 - Other improvements
 
