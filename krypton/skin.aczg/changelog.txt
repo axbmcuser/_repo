@@ -1,4 +1,9 @@
+[B]3.3.0[/B] (2019-11-23)
+- Updated Roboto fonts version
+- Other improvements
+
 [B]3.2.9[/B] (2019-11-21)
+- Changed and refined icons: "Add-ons" main icon, "Pictures" main icon, "DefaultAddonPicture" icon, "DefaultPicture" icon
 - Other improvements
 
 [B]3.2.8[/B] (2019-11-18)

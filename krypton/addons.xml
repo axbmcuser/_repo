@@ -444,7 +444,7 @@ Second Test Release:
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="3.2.9" name="A Confluence ZEITGEIST (KODI 17)" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.3.0" name="A Confluence ZEITGEIST (KODI 17)" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 		<import addon="service.duration.helper" version="1.0.0"/>
@@ -462,7 +462,12 @@ Second Test Release:
 		<website></website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]3.2.9[/B] (2019-11-21)
+		<news>[B]3.3.0[/B] (2019-11-23)
+- Updated Roboto fonts version
+- Other improvements
+
+[B]3.2.9[/B] (2019-11-21)
+- Changed and refined icons: "Add-ons" main icon, "Pictures" main icon, "DefaultAddonPicture" icon, "DefaultPicture" icon
 - Other improvements
 
 [B]3.2.8[/B] (2019-11-18)

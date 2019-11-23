@@ -1,3 +1,9 @@
+[B]4.3.0[/B] (2019-11-23)
+- Updated Roboto fonts version
+- Updated language files (In sync with latest Original Confluence for Leia (4.6.11))
+- Other improvements
+- Now in sync with Krypton version 3.3.0
+
 [B]4.2.5[/B] (2019-11-22)
 - Migrated all changes from the latest Krypton skin version (For details: see below). Now in sync with Krypton version 3.2.9
 
