@@ -1,3 +1,6 @@
+[B]0.3.5[/B] (2019-12-04)
+- Internal improvements
+
 [B]0.3.4[/B] (2019-11-23)
 - Other minor improvements
 

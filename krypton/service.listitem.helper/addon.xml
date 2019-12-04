@@ -1,13 +1,15 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="service.listitem.helper" name="ListItem Helper (KODI 17+18) (axbmcuser)" version="0.3.4" provider-name="axbmcuser">
+<addon id="service.listitem.helper" name="ListItem Helper (KODI 17+18) (axbmcuser)" version="0.3.5" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="script.module.requests" version="2.3.0"/>
 		<import addon="script.module.simplejson" version="3.3.0"/>
 		<import addon="script.module.simplecache" version="1.0.0"/>
 		<import addon="script.module.arrow" version="0.6.0"/>
+		<import addon="script.module.pil" version="1.1.7"/>
 	</requires>
-	<extension library="service.py" point="xbmc.service" start="login"/>
+	<extension point="xbmc.python.script" library="default.py" />
+	<extension point="xbmc.service" library="service.py" start="login"/>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">A ListItem Helper</summary>
 		<description lang="en">A ListItem Helper service which provides values from OMDb/TMDb.[CR][CR][COLOR=red]![/COLOR] Entering OMDb/TMDb API keys in the configuration dialog is required.[CR][CR]Property names:[CR](home) ListItemHelper.rating.rottentomatoes.percent[CR](home) ListItemHelper.rating.rottentomatoes.image[CR](home) ListItemHelper.rating.rottentomatoes.url[CR](home) ListItemHelper.rating.rottentomatoes.audience[CR](home) ListItemHelper.rating.metacritic.percent[CR](home) ListItemHelper.rating.imdb.percent[CR](home) ListItemHelper.rating.imdb[CR](home) ListItemHelper.rating.imdb.votes[CR](home) ListItemHelper.awards[CR](home) ListItemHelper.budget[CR](home) ListItemHelper.budget.million[CR](home) ListItemHelper.budget.formatted[CR](home) ListItemHelper.revenue[CR](home) ListItemHelper.revenue.million[CR](home) ListItemHelper.revenue.formatted[CR](home) ListItemHelper.revenue.boxoffice[CR](home) ListItemHelper.DBID[CR](home) ListItemHelper.IMDBNumber[CR][CR]For use with other containers like home screen widgets set the following properties:[CR][CR](home) ListItemHelper.WidgetContainerId[CR]to the container ID (Example: 8000)[CR](home) ListItemHelper.WidgetContainerWindowName[CR]to the window name where the container resides (Example: home)[CR][CR]Important remarks:[CR]- Unset the WidgetContainer-properties when leaving focus from the widget.[CR][CR]Known supported Skins:[CR]A Confluence ZEITGEIST[CR][CR][CR][COLOR=gray]This addon contains forked code of marcelveldt addon script.module.metadatautils which has been changed and massively stripped down for fast execution and minimal functionality.[CR] [/COLOR]</description>
@@ -17,7 +19,10 @@
 		<website></website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]0.3.4[/B] (2019-11-23)
+		<news>[B]0.3.5[/B] (2019-12-04)
+- Internal improvements
+
+[B]0.3.4[/B] (2019-11-23)
 - Other minor improvements
 
 [B]0.3.3[/B] (2019-11-21)
