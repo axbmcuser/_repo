@@ -131,7 +131,7 @@
 	</extension>
 </addon>
 
-<addon id="script.duration_axbmcuser" name="Duration script (KODI 17) (axbmcuser)" version="0.3.8" provider-name="axbmcuser (Rework+Fixes), Twolaw">
+<addon id="script.duration_axbmcuser" name="Duration script (KODI 17) (axbmcuser)" version="0.4.0" provider-name="axbmcuser (Rework+Fixes), Twolaw">
 	<requires>
 		<import addon="xbmc.python" version="2.24.0"/>
 	</requires>
@@ -146,7 +146,14 @@
 		<website/>
 		<email/>
 		<source/>
-		<news>[B]0.3.8[/B] (2018-04-26)
+		<news>[B]0.4.0[/B] (2019-12-05)
+- ! Add-on deprecated !
+- ! Please uninstall ! Add-on replaced with new "service.duration.helper" add-on
+
+[B]0.3.9[/B] (2019-10-20)
+- Minor improvements and optimizations
+
+[B]0.3.8[/B] (2018-04-26)
 - Minor improvements and optimizations
 
 [B]0.3.7[/B] (2018-04-02)
@@ -183,6 +190,7 @@
 		<assets>
 			<icon>resources/icon.png</icon>
 		</assets>
+		<broken>! Please uninstall ! Add-on replaced with new "service.duration.helper" add-on</broken>
 	</extension>
 </addon>
 

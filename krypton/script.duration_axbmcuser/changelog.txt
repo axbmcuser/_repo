@@ -1,3 +1,10 @@
+[B]0.4.0[/B] (2019-12-05)
+- ! Add-on deprecated !
+- ! Please uninstall ! Add-on replaced with new "service.duration.helper" add-on
+
+[B]0.3.9[/B] (2019-10-20)
+- Minor improvements and optimizations
+
 [B]0.3.8[/B] (2018-04-26)
 - Minor improvements and optimizations
 
