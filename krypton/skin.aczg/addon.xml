@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="3.3.0" name="A Confluence ZEITGEIST (KODI 17)" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.3.1" name="A Confluence ZEITGEIST (KODI 17)" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 		<import addon="service.duration.helper" version="1.0.0"/>
@@ -17,7 +17,12 @@
 		<website></website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]3.3.0[/B] (2019-11-23)
+		<news>[B]3.3.1[/B] (2019-12-07)
+- Added dynamically generated blurred "mood backgrounds" for DialogVideoInfo ("ListItem Helper" must be installed)
+- Small cosmetic fixes for DialogAddonInfo (Marking of broken add-ons)
+- Other improvements
+
+[B]3.3.0[/B] (2019-11-23)
 - Updated Roboto fonts version
 - Other improvements
 
