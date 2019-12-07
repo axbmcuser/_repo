@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="4.3.0" name="A Confluence ZEITGEIST (KODI 18)" provider-name="axbmcuser">
+<addon id="skin.aczg" version="4.3.1" name="A Confluence ZEITGEIST (KODI 18)" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0"/>
 		<import addon="service.library.data.provider.lite" version="0.3.4"/>
@@ -16,7 +16,12 @@
 		<website></website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]4.3.0[/B] (2019-11-23)
+		<news>[B]4.3.1[/B] (2019-12-07)
+- Added dynamically generated blurred "mood backgrounds" for DialogVideoInfo ("ListItem Helper" must be installed)
+- Small cosmetic fixes for DialogAddonInfo (Marking of broken add-ons)
+- Other improvements
+
+[B]4.3.0[/B] (2019-11-23)
 - Updated Roboto fonts version
 - Updated language files (In sync with latest Original Confluence for Leia (4.6.11))
 - Other improvements

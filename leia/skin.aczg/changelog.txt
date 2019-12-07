@@ -1,3 +1,8 @@
+[B]4.3.1[/B] (2019-12-07)
+- Added dynamically generated blurred "mood backgrounds" for DialogVideoInfo ("ListItem Helper" must be installed)
+- Small cosmetic fixes for DialogAddonInfo (Marking of broken add-ons)
+- Other improvements
+
 [B]4.3.0[/B] (2019-11-23)
 - Updated Roboto fonts version
 - Updated language files (In sync with latest Original Confluence for Leia (4.6.11))
