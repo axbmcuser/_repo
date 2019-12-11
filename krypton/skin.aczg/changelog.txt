@@ -1,3 +1,8 @@
+[B]3.3.2[/B] (2019-12-12)
+- DialogVideoInfo: Changed tv show poster alignment in episode view, optimized dynamic mood background
+- Optimized fade out gradients for wall views and DialogVideoInfo with better dithering
+- Other improvements
+
 [B]3.3.1[/B] (2019-12-07)
 - Added dynamically generated blurred "mood backgrounds" for DialogVideoInfo ("ListItem Helper" must be installed)
 - Small cosmetic fixes for DialogAddonInfo (Marking of broken add-ons)
