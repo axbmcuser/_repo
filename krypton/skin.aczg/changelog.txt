@@ -1,3 +1,14 @@
+[B]3.3.3[/B] (2020-01-28)
+- Added HFR overlay icon for 4k60 movie/espide content (WallViews, Home Screen Widgets)
+- Added some more options for "multiple images" background slideshow interval
+- Added option to change KODI logo on home screen (Kodi, hidden, madVR)
+- Added option to change search button action on home screen (search dialog, hidden, direct video library search)
+- Added experimental option for showing a madVR logo while using the startup fade in function
+- Added option to disable "mood background" for DialogVideoInfo
+- Movie/episode end time now showing when VideoOSD buttons are visible
+- Improved visual quality for DialogVideoInfo mood background blur (dithering)
+- Other improvements
+
 [B]3.3.2[/B] (2019-12-12)
 - DialogVideoInfo: Changed tv show poster alignment in episode view, optimized dynamic mood background
 - Optimized fade out gradients for wall views and DialogVideoInfo with better dithering
