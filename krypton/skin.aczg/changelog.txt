@@ -1,5 +1,8 @@
+[B]3.3.4[/B] (2020-01-29)
+- Other improvements
+
 [B]3.3.3[/B] (2020-01-28)
-- Added HFR overlay icon for 4k60 movie/espide content (WallViews, Home Screen Widgets)
+- Added HFR overlay icon for 4k60 movie/episode content (WallViews, Home Screen Widgets)
 - Added some more options for "multiple images" background slideshow interval
 - Added option to change KODI logo on home screen (Kodi, hidden, madVR)
 - Added option to change search button action on home screen (search dialog, hidden, direct video library search)
