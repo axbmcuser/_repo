@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="3.3.6" name="A Confluence ZEITGEIST (KODI 17)" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.3.7" name="A Confluence ZEITGEIST (KODI 17)" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 		<import addon="service.duration.helper" version="1.0.0"/>
@@ -17,12 +17,9 @@
 		<website></website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]3.3.6[/B] (2020-02-04)
-- Other improvements
-
+		<news>[B]3.3.7[/B] (2020-02-06)
+[B]3.3.6[/B] (2020-02-04)
 [B]3.3.5[/B] (2020-02-04)
-- Other improvements
-
 [B]3.3.4[/B] (2020-01-29)
 - Other improvements
 

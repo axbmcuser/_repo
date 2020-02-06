@@ -1,3 +1,6 @@
+[B]0.3.5[/B] (2020-02-06)
+- (axbmcuser) Added optional python 3 compatibility
+
 [B]0.3.4[/B]
 - (axbmcuser) Lite version of original script version 0.3.2 with better performance for minimalistic usage
 

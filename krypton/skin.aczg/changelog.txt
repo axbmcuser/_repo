@@ -1,9 +1,6 @@
+[B]3.3.7[/B] (2020-02-06)
 [B]3.3.6[/B] (2020-02-04)
-- Other improvements
-
 [B]3.3.5[/B] (2020-02-04)
-- Other improvements
-
 [B]3.3.4[/B] (2020-01-29)
 - Other improvements
 
