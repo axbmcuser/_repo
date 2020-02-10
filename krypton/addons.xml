@@ -310,16 +310,14 @@
 	</extension>
 </addon>
 
-<addon id="service.library.data.provider.lite" name="Library Data Provider Lite (KODI 17+18) (axbmcuser)" provider-name="BigNoid, axbmcuser" version="0.3.5">
+<addon id="service.library.data.provider.lite" name="Library Data Provider Lite (KODI 17+18) (axbmcuser)" provider-name="BigNoid, axbmcuser" version="0.3.6">
 	<requires>
 		<import addon="xbmc.json" version="7.9.0"/>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="script.module.simplejson" version="3.3.0"/>
 		<import addon="script.module.routing" version="0.1.0"/>
 	</requires>
-	<extension point="xbmc.python.pluginsource" library="plugin.py">
-		<provides>video</provides>
-	</extension>
+	<extension point="xbmc.python.pluginsource" library="plugin.py" />
 	<extension library="service.py" point="xbmc.service" start="login" />
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Plugin for skins to provide library data throughout the skin.</summary>
@@ -332,8 +330,11 @@
 		<website>https://github.com/BigNoid/service.library.data.provider</website>
 		<email>big.noid@kodi.tv</email>
 		<source>https://github.com/BigNoid/service.library.data.provider</source>
-		<news>[B]0.3.5[/B] (2020-02-06)
-- (axbmcuser) Added optional python 3 compatibility
+		<news>[B]0.3.6[/B] (2020-02-10)
+- (axbmcuser) Remove addon from showing as an entry in "video addons" listing
+
+[B]0.3.5[/B] (2020-02-06)
+- (axbmcuser) Added optional python 3 compatibility (incomplete, still broken on "python 3 only" Kodi)
 
 [B]0.3.4[/B]
 - (axbmcuser) Lite version of original script version 0.3.2 with better performance for minimalistic usage
@@ -466,7 +467,7 @@ Second Test Release:
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="3.3.7" name="A Confluence ZEITGEIST (KODI 17)" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.3.8" name="A Confluence ZEITGEIST (KODI 17)" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 		<import addon="service.duration.helper" version="1.0.0"/>
@@ -484,7 +485,8 @@ Second Test Release:
 		<website></website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]3.3.7[/B] (2020-02-06)
+		<news>[B]3.3.8[/B] (2020-02-10)
+[B]3.3.7[/B] (2020-02-06)
 [B]3.3.6[/B] (2020-02-04)
 [B]3.3.5[/B] (2020-02-04)
 [B]3.3.4[/B] (2020-01-29)
