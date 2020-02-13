@@ -1,3 +1,6 @@
+[B]0.3.8[/B] (2020-02-14)
+- Internal improvements
+
 [B]0.3.7[/B] (2019-12-12)
 - Internal improvements
 
