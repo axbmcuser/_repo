@@ -1,3 +1,10 @@
+[B]3.3.9[/B] (2020-02-13)
+- Reworked all main menu icons for higher quality (Now supporting native 2160p icons if 4K system resolution is detected)
+- Reworked font sizes for multiple sections (home screen, favorites dialog, shutdown dialog, search dialog, videoinfo dialog) (Improved/larger fonts)
+- Added SkinSettings option to hide movie file name in DialogVideoInfo
+- Added new lightweight dependency for DialogVideoInfo mood backgrounds: service.listitem.helper
+- Other improvements
+
 [B]3.3.8[/B] (2020-02-10)
 [B]3.3.7[/B] (2020-02-06)
 [B]3.3.6[/B] (2020-02-04)
