@@ -226,10 +226,11 @@
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="4.3.4" name="A Confluence ZEITGEIST (KODI 18)" provider-name="axbmcuser">
+<addon id="skin.aczg" version="4.3.9" name="A Confluence ZEITGEIST (KODI 18)" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0"/>
 		<import addon="service.library.data.provider.lite" version="0.3.4"/>
+		<import addon="service.listitem.helper" version="0.3.4"/>
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false" effectslowdown="0.22">
 		<res width="1280" height="720" aspect="16:9" default="true" folder="720p" />
@@ -243,7 +244,18 @@
 		<website></website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]4.3.4[/B] (2020-01-29)
+		<news>[B]4.3.9[/B] (2020-02-14)
+- Reworked all main menu icons for higher quality (Now supporting native 2160p icons if 4K system resolution is detected)
+- Reworked font sizes for multiple sections (home screen, favorites dialog, shutdown dialog, search dialog, videoinfo dialog) (Improved/larger fonts)
+- Added SkinSettings option to hide movie file name in DialogVideoInfo
+- Added new lightweight dependency for DialogVideoInfo mood backgrounds: service.listitem.helper
+- Other improvements
+- Version now in sync with Krypton skin version 3.3.9
+
+[B]4.3.7[/B] (2020-02-07)
+- Other improvements (In sync with Krypton skin version 3.3.7)
+
+[B]4.3.4[/B] (2020-01-29)
 - Other improvements
 
 [B]4.3.3[/B] (2020-01-29)

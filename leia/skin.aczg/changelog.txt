@@ -1,3 +1,14 @@
+[B]4.3.9[/B] (2020-02-14)
+- Reworked all main menu icons for higher quality (Now supporting native 2160p icons if 4K system resolution is detected)
+- Reworked font sizes for multiple sections (home screen, favorites dialog, shutdown dialog, search dialog, videoinfo dialog) (Improved/larger fonts)
+- Added SkinSettings option to hide movie file name in DialogVideoInfo
+- Added new lightweight dependency for DialogVideoInfo mood backgrounds: service.listitem.helper
+- Other improvements
+- Version now in sync with Krypton skin version 3.3.9
+
+[B]4.3.7[/B] (2020-02-07)
+- Other improvements (In sync with Krypton skin version 3.3.7)
+
 [B]4.3.4[/B] (2020-01-29)
 - Other improvements
 
