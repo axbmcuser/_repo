@@ -1,3 +1,6 @@
+[B]4.4.1[/B] (2020-02-15)
+- Other improvements (In sync with Krypton skin version 3.4.0)
+
 [B]4.4.0[/B] (2020-02-14)
 [B]4.3.9[/B] (2020-02-14)
 - Reworked all main menu icons for higher quality (Now supporting native 2160p icons if 4K system resolution is detected)

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="4.4.0" name="A Confluence ZEITGEIST (KODI 18)" provider-name="axbmcuser">
+<addon id="skin.aczg" version="4.4.1" name="A Confluence ZEITGEIST (KODI 18)" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0"/>
 		<import addon="service.library.data.provider.lite" version="0.3.4"/>
@@ -17,7 +17,10 @@
 		<website></website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]4.4.0[/B] (2020-02-14)
+		<news>[B]4.4.1[/B] (2020-02-15)
+- Other improvements (In sync with Krypton skin version 3.4.0)
+
+[B]4.4.0[/B] (2020-02-14)
 [B]4.3.9[/B] (2020-02-14)
 - Reworked all main menu icons for higher quality (Now supporting native 2160p icons if 4K system resolution is detected)
 - Reworked font sizes for multiple sections (home screen, favorites dialog, shutdown dialog, search dialog, videoinfo dialog) (Improved/larger fonts)
