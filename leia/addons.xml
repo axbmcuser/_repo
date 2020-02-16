@@ -226,7 +226,7 @@
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="4.4.1" name="A Confluence ZEITGEIST (KODI 18)" provider-name="axbmcuser">
+<addon id="skin.aczg" version="4.4.2" name="A Confluence ZEITGEIST (KODI 18)" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0"/>
 		<import addon="service.library.data.provider.lite" version="0.3.4"/>
@@ -244,7 +244,15 @@
 		<website></website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]4.4.1[/B] (2020-02-15)
+		<news>[B]4.4.2[/B] (2020-02-16)
+- Some more tweaking regarding larger fonts (home screen, select dialog, settings, skin settings and more)
+- Slightly increased size of home screen addon shortcut icons (home screen)
+- Slightly increased size of recently added movie posters (home screen)
+- Tweaked some non-focus button textures and sizes (removed non-focus textures for some dialogs)
+- Other improvements
+- (In sync with Krypton skin version 3.4.1)
+
+[B]4.4.1[/B] (2020-02-15)
 - Other improvements (In sync with Krypton skin version 3.4.0)
 
 [B]4.4.0[/B] (2020-02-14)

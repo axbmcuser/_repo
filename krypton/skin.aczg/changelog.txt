@@ -1,3 +1,10 @@
+[B]3.4.1[/B] (2020-02-16)
+- Some more tweaking regarding larger fonts (home screen, select dialog, settings, skin settings and more)
+- Slightly increased size of home screen addon shortcut icons (home screen)
+- Slightly increased size of recently added movie posters (home screen)
+- Tweaked some non-focus button textures and sizes (removed non-focus textures for some dialogs)
+- Other improvements
+
 [B]3.4.0[/B] (2020-02-15)
 - Other improvements
 
