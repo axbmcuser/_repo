@@ -429,7 +429,7 @@ Second Test Release:
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="3.4.1" name="A Confluence ZEITGEIST (KODI 17)" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.4.2" name="A Confluence ZEITGEIST (KODI 17)" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 		<import addon="service.duration.helper" version="1.0.0"/>
@@ -448,7 +448,11 @@ Second Test Release:
 		<website></website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]3.4.1[/B] (2020-02-16)
+		<news>[B]3.4.2[/B] (2020-02-22)
+- Some more tweaking regarding larger fonts
+- Other improvements
+
+[B]3.4.1[/B] (2020-02-16)
 - Some more tweaking regarding larger fonts (home screen, select dialog, settings, skin settings and more)
 - Slightly increased size of home screen addon shortcut icons (home screen)
 - Slightly increased size of recently added movie posters (home screen)

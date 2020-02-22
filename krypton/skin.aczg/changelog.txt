@@ -1,3 +1,7 @@
+[B]3.4.2[/B] (2020-02-22)
+- Some more tweaking regarding larger fonts
+- Other improvements
+
 [B]3.4.1[/B] (2020-02-16)
 - Some more tweaking regarding larger fonts (home screen, select dialog, settings, skin settings and more)
 - Slightly increased size of home screen addon shortcut icons (home screen)
