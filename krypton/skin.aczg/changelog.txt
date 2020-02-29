@@ -1,3 +1,10 @@
+[B]3.4.3[/B] (2020-02-29)
+- Updated language strings (Including: Strangely named "Working..." renamed to "Loading...")
+- Skin settings: New option
+- - General settings -> views and visual options
+- - -> "Show mouse control buttons if mouse input enabled   (Default: Disabled)"
+- Other improvements
+
 [B]3.4.2[/B] (2020-02-22)
 - Some more tweaking regarding larger fonts
 - Other improvements
