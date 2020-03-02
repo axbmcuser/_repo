@@ -1,4 +1,4 @@
-1.2.21 (01.09.2016)
+1.2.3 (01.09.2016)
 - Fix for missing thumbnails (axbmcuser MOD)
 
 1.2.2 (16.03.2014)
