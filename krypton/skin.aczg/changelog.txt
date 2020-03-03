@@ -1,3 +1,6 @@
+[B]3.4.5[/B] (2020-03-02)
+- Other improvements
+
 [B]3.4.4[/B] (2020-03-02)
 - Skin settings: New option
 - - General settings -> Trailer Search method: Kodi YouTube Add-on / Open in Default Web Browser
