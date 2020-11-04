@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="4.4.3" name="A Confluence ZEITGEIST (KODI 18)" provider-name="axbmcuser">
+<addon id="skin.aczg" version="4.4.4" name="A Confluence ZEITGEIST (KODI 18)" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0"/>
 		<import addon="service.library.data.provider.lite" version="0.3.4"/>
@@ -17,7 +17,8 @@
 		<website></website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]4.4.3[/B] (2020-11-04)
+		<news>[B]4.4.4[/B] (2020-11-04)
+[B]4.4.3[/B] (2020-11-04)
 - Some more tweaking regarding larger fonts (Including: Full with list view)
 - Visually optimized SideBlade
 - Other improvements
