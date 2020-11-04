@@ -1,3 +1,29 @@
+[B]4.4.3[/B] (2020-11-04)
+- Some more tweaking regarding larger fonts (Including: Full with list view)
+- Visually optimized SideBlade
+- Other improvements
+
+(2020-03-02)
+- Other improvements
+
+(2020-03-02)
+- Skin settings: New option
+- - General settings -> Trailer Search method: Kodi YouTube Add-on / Open in Default Web Browser
+- Other improvements
+
+(2020-02-29)
+- Updated language strings (Including: Strangely named "Working..." renamed to "Loading...")
+- Skin settings: New option
+- - General settings -> views and visual options
+- - -> "Show mouse control buttons if mouse input enabled   (Default: Disabled)"
+- Other improvements
+
+(2020-02-22)
+- Some more tweaking regarding larger fonts
+- Other improvements
+
+- (In sync with Krypton skin version 3.4.6)
+
 [B]4.4.2[/B] (2020-02-16)
 - Some more tweaking regarding larger fonts (home screen, select dialog, settings, skin settings and more)
 - Slightly increased size of home screen addon shortcut icons (home screen)
