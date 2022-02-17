@@ -1,3 +1,6 @@
+v5.2.4
+- minor improvements
+
 v5.2.3
 - further improved cookie code
 
