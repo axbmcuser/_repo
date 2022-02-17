@@ -1,3 +1,6 @@
+v5.2.3
+- further improved cookie code
+
 v5.2.2
 - improved cookie fetching from v5.2.1
 
