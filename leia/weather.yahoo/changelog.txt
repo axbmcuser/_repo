@@ -1,3 +1,6 @@
+v5.2.6
+- fixed connection yet again (cookie stuff) (working @ 2022-03-29)
+
 v5.2.5
 v5.2.4
 - minor improvements
