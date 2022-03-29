@@ -208,9 +208,33 @@
     </extension>
 </addon>
 
-<addon id="service.duration.helper" name="Duration Helper (KODI 17) (axbmcuser)" version="1.0.0" provider-name="axbmcuser (Rework+Fixes), Twolaw">
+<addon id="service.cinema.helper" name="Cinema Helper (KODI 17+18) (axbmcuser)" version="1.0.0" provider-name="axbmcuser">
 	<requires>
-		<import addon="xbmc.python" version="2.24.0"/>
+		<import addon="xbmc.python" version="2.25.0"/>
+		<import addon="script.module.simplejson" version="3.16.1"/>
+	</requires>
+	<extension point="xbmc.service" library="service.py" start="login"/>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Cinema Helper</summary>
+		<description lang="en">A Cinema Helper service which provides some lightweight skin functionality</description>
+		<platform>all</platform>
+		<license></license>
+		<forum>http://forum.kodi.tv/showthread.php?tid=242892</forum>
+		<website></website>
+		<email></email>
+		<source>https://github.com/axbmcuser/_repo/</source>
+		<news>[B]1.0.0[/B] (2022-03-29)
+- Initial release
+		</news>
+		<assets>
+			<icon>resources/icon.png</icon>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="service.duration.helper" name="Duration Helper (KODI 17) (axbmcuser)" version="1.0.1" provider-name="axbmcuser (Rework+Fixes), Twolaw">
+	<requires>
+		<import addon="xbmc.python" version="2.25.0"/>
 	</requires>
 	<extension library="service.py" point="xbmc.service" start="login">
 	</extension>
@@ -223,7 +247,10 @@
 		<website/>
 		<email/>
 		<source/>
-		<news>[B]1.0.0[/B] (2019-11-18)
+		<news>[B]1.0.1[/B] (2022-03-27)
+- Minor performance improvements and optimizations
+
+[B]1.0.0[/B] (2019-11-18)
 - Rename Addon to "Duration Helper" (service.duration.helper)
 
 [B]0.3.9[/B] (2018-10-20)

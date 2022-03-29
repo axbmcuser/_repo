@@ -1,3 +1,6 @@
+[B]1.0.1[/B] (2022-03-27)
+- Minor performance improvements and optimizations
+
 [B]1.0.0[/B] (2019-11-18)
 - Rename Addon to "Duration Helper" (service.duration.helper)
 
