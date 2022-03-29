@@ -296,7 +296,7 @@
 	</extension>
 </addon>
 
-<addon id="service.library.data.provider.lite" name="Library Data Provider Lite (KODI 17+18) (axbmcuser)" provider-name="BigNoid, axbmcuser" version="0.3.7">
+<addon id="service.library.data.provider.lite" name="Library Data Provider Lite (KODI 17+18) (axbmcuser)" provider-name="BigNoid, axbmcuser" version="0.3.8">
 	<requires>
 		<import addon="xbmc.json" version="7.9.0"/>
 		<import addon="xbmc.python" version="2.25.0"/>
@@ -316,7 +316,10 @@
 		<website>https://github.com/BigNoid/service.library.data.provider</website>
 		<email>big.noid@kodi.tv</email>
 		<source>https://github.com/BigNoid/service.library.data.provider</source>
-		<news>[B]0.3.7[/B] (2020-03-02)
+		<news>[B]0.3.8[/B] (2022-03-19)
+- (axbmcuser) Internal improvements
+
+[B]0.3.7[/B] (2020-03-02)
 - (axbmcuser) Internal improvements
 
 [B]0.3.6[/B] (2020-02-10)
@@ -380,7 +383,7 @@
 	</extension>
 </addon>
 
-<addon id="service.listitem.helper" name="ListItem Helper (KODI 17+18) (axbmcuser)" version="0.3.8" provider-name="axbmcuser">
+<addon id="service.listitem.helper" name="ListItem Helper (KODI 17+18) (axbmcuser)" version="0.3.9" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="script.module.requests" version="2.3.0"/>
@@ -400,7 +403,10 @@
 		<website></website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]0.3.8[/B] (2020-02-14)
+		<news>[B]0.3.9[/B] (2022-03-19)
+- Minor performance improvements and optimizations
+
+[B]0.3.8[/B] (2020-02-14)
 - Internal improvements
 
 [B]0.3.7[/B] (2019-12-12)

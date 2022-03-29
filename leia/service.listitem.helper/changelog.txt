@@ -1,3 +1,6 @@
+[B]0.3.9[/B] (2022-03-19)
+- Minor performance improvements and optimizations
+
 [B]0.3.8[/B] (2020-02-14)
 - Internal improvements
 
