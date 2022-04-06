@@ -1,2 +1,8 @@
+[B]1.0.1[/B] (2022-04-06)
+- Added "ParentFolderItem skip for Fanart view" functionality
+- Added "Always force Preset Views" functionality
+- Added different code execution intervals for different actions
+- Code and performance improvements
+
 [B]1.0.0[/B] (2022-03-29)
 - Initial release
