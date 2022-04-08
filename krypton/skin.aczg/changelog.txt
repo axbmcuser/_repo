@@ -1,3 +1,11 @@
+3.5.0 (2022-04-08)
+
+- Reduced logo size for Recently played LiveTV Widget on home screen for a cohesive visual experience between the Widgets
+
+3.4.9 (2022-04-07)
+
+- Maintenance release: Fix for code merging issue with 3.4.8
+
 3.4.8 (2022-04-07)
 
 - [New/reworked view type] New Fanart View for Video library
@@ -128,6 +136,10 @@ Settings left navigation section, Skin Settings left navigation section
 - [DialogNotification] Extended width of Dialog
 - [Mouse Control] Just for information: Although i always recommend completely disabling Mouse Control for serious Home Cinema use, 
 this Skin still has very good Mouse Support while not showing any cluttered additional Mouse Buttons
+
+- [New Feature] New experimental feature: Always force Preset Views
+Always forces view types 500 (Wall 2x7), 508 (Video Fanart), 52 (Modern Episodes View), 901 (Text) on certain sections on Window Load for (OOB experience)
+Also forces "Sort by: Episode ASCENDING" for Episodes content on Window Load
 
 [B]3.4.7[/B] (2020-11-04)
 [B]3.4.6[/B] (2020-11-04)
