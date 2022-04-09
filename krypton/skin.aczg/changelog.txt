@@ -1,3 +1,8 @@
+3.5.1 (2022-04-09)
+
+- Fixed Episode Art in [Dialog Video Info] when opened via a playing Episodes VideoOSD Info Button 
+(issue workaround due service.library.data.provider(.lite) bug)
+
 3.5.0 (2022-04-08)
 
 - Reduced logo size for Recently played LiveTV Widget on home screen for a cohesive visual experience between the Widgets

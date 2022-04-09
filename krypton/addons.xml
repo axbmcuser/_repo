@@ -471,7 +471,7 @@ Second Test Release:
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="3.5.0" name="A Confluence ZEITGEIST (KODI 17)" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.5.1" name="A Confluence ZEITGEIST (KODI 17)" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 		<import addon="service.duration.helper" version="1.0.0"/>
@@ -491,7 +491,12 @@ Second Test Release:
 		<website></website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>3.5.0 (2022-04-08)
+		<news>3.5.1 (2022-04-09)
+
+- Fixed Episode Art in [Dialog Video Info] when opened via a playing Episodes VideoOSD Info Button
+(issue workaround due service.library.data.provider(.lite) bug)
+
+3.5.0 (2022-04-08)
 
 - Reduced logo size for Recently played LiveTV Widget on home screen for a cohesive visual experience between the Widgets
 
