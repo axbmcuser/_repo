@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="weather.yahoo" name="Yahoo! Weather (KODI 17+18) (axbmcuser)" version="5.2.6" provider-name="Kodi Community">
+<addon id="weather.yahoo" name="Yahoo! Weather (KODI 17+18) (axbmcuser)" version="5.2.7" provider-name="Kodi Community">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="script.module.requests" version="2.19.1"/>
@@ -130,7 +130,10 @@
 		<platform>all</platform>
 		<license>GPL-2.0-only</license>
 		<forum>https://forum.kodi.tv/showthread.php?tid=169410</forum>
-		<news>v5.2.6
+		<news>v5.2.7
+- fixed connection yet again (cookie stuff) (working @ 2022-05-28)
+
+v5.2.6
 - fixed connection yet again (cookie stuff) (working @ 2022-03-29)
 
 v5.2.5
