@@ -1520,7 +1520,7 @@ I had this disabled because i want to be able to jump to the most right object b
 	</extension>
 </addon>
 
-<addon id="weather.yahoo" name="Yahoo! Weather (KODI 17+18) (axbmcuser)" version="5.2.9" provider-name="Kodi Community">
+<addon id="weather.yahoo" name="Yahoo! Weather (KODI 17+18) (axbmcuser)" version="5.3.0" provider-name="Kodi Community">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="script.module.requests" version="2.19.1"/>
@@ -1651,7 +1651,14 @@ I had this disabled because i want to be able to jump to the most right object b
 		<platform>all</platform>
 		<license>GPL-2.0-only</license>
 		<forum>https://forum.kodi.tv/showthread.php?tid=169410</forum>
-		<news>v5.2.8
+		<news>[B]v5.3.0[/B]  (2022-11-20)
+- Changed addon to use hidden addon settings for cookie data instead of external "cookies.txt" file (thx @ronie)
+- Improved error handling with expanded automatic retry functionality
+
+v5.2.9
+- fixed connection yet again (cookie stuff, thx @ronie) (working @ 2022-11-19)
+
+v5.2.8
 - fixed connection yet again (cookie stuff, thx @ronie) (working @ 2022-07-19)
 
 v5.2.7
