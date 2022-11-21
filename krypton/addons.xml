@@ -471,7 +471,7 @@ Second Test Release:
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="3.5.1" name="A Confluence ZEITGEIST (KODI 17)" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.5.3" name="A Confluence ZEITGEIST (KODI 17)" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 		<import addon="service.duration.helper" version="1.0.0"/>
@@ -491,7 +491,21 @@ Second Test Release:
 		<website></website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>3.5.1 (2022-04-09)
+		<news>3.5.3 (2022-11-21)
+
+- Reworked "Info Button"-Icon in [VideoOSD]
+- Make watchedstate checkmarks for Wall Views and "Recently added" widgets slightly translucent when in non-hover state
+- Deleted and replaced "InfoMessagePanel.png" with existing black image (used for alphabet indicator when scrolling the media library)
+- Fixed thumbnail-fallback to fanart for situations with non existing thumbnails in "recently added episodes" Widget
+- [DialogVideoInfo] Fix for very rare situations where posters were not cropped as intended
+- OverlayUHD and OverlayHFR icons are now slightly translucent (used in Wall Views recently added movies/episodes Widgets)
+
+3.5.2 (2022-04-12)
+
+- Added support for Season Fanart (if available)
+- Removed album cover art shadow border in [MusicVisualisation]
+
+3.5.1 (2022-04-09)
 
 - Fixed Episode Art in [Dialog Video Info] when opened via a playing Episodes VideoOSD Info Button
 (issue workaround due service.library.data.provider(.lite) bug)
