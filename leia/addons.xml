@@ -344,11 +344,12 @@ Second Test Release:
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="4.4.4" name="A Confluence ZEITGEIST (KODI 18)" provider-name="axbmcuser">
+<addon id="skin.aczg" version="4.4.5" name="A Confluence ZEITGEIST (KODI 18)" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0"/>
 		<import addon="service.library.data.provider.lite" version="0.3.4"/>
 		<import addon="service.listitem.helper" version="0.3.4"/>
+		<import addon="service.cinema.helper" version="1.0.0"/>
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false" effectslowdown="0.22">
 		<res width="1280" height="720" aspect="16:9" default="true" folder="720p" />
@@ -358,11 +359,180 @@ Second Test Release:
 		<description lang="en">"A Confluence ZEITGEIST" is a clean and modern rework of the Confluence skin. It mainly features an icon-based main menu without the need for scrolling and two all new wall views, which replace the old thumbnail view. Countless other small graphics updates and optimizations are included.</description>
 		<platform>all</platform>
 		<license></license>
-		<forum>http://forum.kodi.tv/showthread.php?tid=242892</forum>
+		<forum>https://forum.kodi.tv/showthread.php?tid=242892</forum>
 		<website></website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]4.4.4[/B] (2020-11-04)
+		<news>[B]4.4.5[/B] (2022-12-02)
+
+Ported from KODI 17 skin version 3.5.4 (2022-12-02)
+
+- Fix permanent "My List" home menu item and remove it when it should not be visible (feature disabled)
+- Fix skin .xsp playlists when Android is detected (Android can't use real "–", use "-" instead)
+
+Ported from KODI 17 skin version 3.5.3 (2022-11-21)
+
+- Reworked "Info Button"-Icon in [VideoOSD]
+- Make watchedstate checkmarks for Wall Views and "Recently added" widgets slightly translucent when in non-hover state
+- Deleted and replaced "InfoMessagePanel.png" with existing black image (used for alphabet indicator when scrolling the media library)
+- Fixed thumbnail-fallback to fanart for situations with non existing thumbnails in "recently added episodes" Widget
+- [DialogVideoInfo] Fix for very rare situations where posters were not cropped as intended
+- OverlayUHD and OverlayHFR icons are now slightly translucent (used in Wall Views recently added movies/episodes Widgets)
+
+Ported from KODI 17 skin version 3.5.2 (2022-04-12)
+
+- Added support for Season Fanart (if available)
+- Removed album cover art shadow border in [MusicVisualisation]
+
+Ported from KODI 17 skin version 3.5.1 (2022-04-09)
+
+- Fixed Episode Art in [Dialog Video Info] when opened via a playing Episodes VideoOSD Info Button
+(issue workaround due service.library.data.provider(.lite) bug)
+
+Ported from KODI 17 skin version 3.5.0 (2022-04-08)
+
+- Reduced logo size for Recently played LiveTV Widget on home screen for a cohesive visual experience between the Widgets
+
+Ported from KODI 17 skin version 3.4.9 (2022-04-07)
+
+- Maintenance release: Fix for code merging issue with 3.4.8
+
+Ported from KODI 17 skin version 3.4.8 (2022-04-07)
+
+- [New/reworked view type] New Fanart View for Video library
+Replaces the old and totally visually outdated Confluence fanart view
+(Music Fanart View will most likely also be recreated accordingly at one point in the future)
+- - Usability feature for new Fanart View: Always skip "Parent Folder Item" and move focus to first content item
+(assisted by lightweight service.cinema.helper addon)
+
+- Mid-rework of Video Info Dialog for Videos + LiveTV:
+Changed font type and title size, reduced height scrollable items box by one item
+
+- Video Info Dialog: Increased line height for Plot Text including changed focus boxes
+- - Also corrected PVR Plot Text
+
+- Slightly changed scrollbars for Wall Views
+
+- [Video Info Dialog] Added Play-Button Spam Protection to prevent a very rare crash situation for DirectShow-based Kodi versions
+
+- Favorites: Default folder icon focus flicker fix (Avoid use of fallback parameter which causes the flicker)
+
+- [New Feature] Movie/episodes Library feature: "My List" - a N3tflix style Watchlist
+(uses ListItem.UserRating==1)
+You can add every movie, TV Show or TV Shows episode to your "My List" via Video Info Dialog (new button+icon);
+List can be accessed through the sub menu item "My List"
+In total, there are 3 separate "My List" categories: Movies, TV Shows, TV Show Episodes
+"My List (Movies)" and "My List (TV Shows)" can be accessed easily from the according Home Screen sub menus,
+"My List (Episodes)" is accessible using the "parent folder" item from withwin "My List (TV Shows)"
+Further remark: The "Special Playlists" which have existed in the past can also now be found when using the "parent folder" item from withwin any "My List"
+
+Feature is disabled by default: Can be enabled in Skin Settings -> General -> Video Info Dialog
+
+- [New Features] Added a new small+lightweight addon called "Cinema Helper Service" which is used by the skin:
+Features:
+1) VideoOSD/MusicOSD auto close after X seconds Idle
+2) Show "Video Info Dialog" or "Cinema screen" after playback of a movie from Kodi DB is finished
+- "Cinema Screen" is a slightly animated "red curtain" Cinema Wallpaper which can be shown after the movie presentation is complete
+- Additionaly you can choose to add a fully custom single or multiline Text to this end screen like "THANKS FOR WATCHING"
+- "Cinema Screen" can be tested with or without the optional text from within Skin Settings (See Skin Setting -> Experimental)
+- Alternatively to the "Cinema Screen" you can choose to just Display the Video Info Dialog of the movie that has just completed
+Both variants avoid abruptly returning to the regular and maybe bright Kodi UI after movie presentation and therefore represent a much better all-around-cinema-mood experience
+3) "My List" functionality (see above)
+
+- [New Feature] Show Info UI when Playback is paused in Fullscreen (Enabled by default)
+
+- [SeekBar] Completely reworked Seekbar and Seekbar handling:
+Removed the redundant solution of the top right Seekbar and created a unified approach where the fullscreen progress bar is identical to the new seekbar functionality
+Simplified Seekbar for non fullscreen situations (now only shows PlayState indicator at the top center of the screen)
+
+- [DialogSeekBar] now has a short fade in/out + optimized delayed fade out due to removed usage of Player.DisplayAfterSeek
+
+- [New view type] Added view type "Modern" which is a Episode-ish style viewtype
+This view is now the default view for episodes (both regular+recently added), but also looks great as the standard view for non-DB video file listings
+- Improved new "Modern" view for "All Seasons" + flattened TV Show episodes listings afterwards
+
+- [New Feature] TV Show Episode thumbnail spoiler protection:
+If enabled, the episode thumbnail will be replaced by the TV Show Fanart
+This applies to both the Home Screen Widget and the new "Modern" Episodes view
+
+- [New view type] Added new additional "Wall View": 4x12 (existing variants are: 2x7, 3x9)
+
+Improvements for Wall Views, including:
+- Focus item border now has a short fade in animation
+- Refined scrolling animations
+- Renamed "Wall View XxX" to "Wall XxX" for more simplicity
+
+- Improved episodes format; Example of new format: S3 E12
+- Reworked recently added Episodes Widget, added Season Poster
+- [New/repurposed view type] Added unified Seasons "Text" view to already existing "Text" View and reworked this view according to the new situational requirements
+
+- [Skin Settings] Reworked/optimized settings structure/gouping for better usability, also improved some wording/typo
+
+- Improvements for many LiveTV Dialogs including PVR group/channel manager and similar views
+
+- [Improved View] Reworked LiveTV/PVR Info Dialog (look now in sync with Video Info Dialog)
+
+- VideoOSD/MusicOSD: Reworked views and submenus
+
+- Improved Home Screen Widget "Recently added Albums" (Labels + Cover Art size)
+
+- [New Option] New option in Skin Settings -> Home screen -> Date/Time type:
+You can now choose between showing "Date + Time" (Default), "Time only" and "Hidden"
+This option also affects the top right clock Video/Music Fullscreen
+
+- Slightly reworked Video Library "Info View" (+ this view is now always available if output is coming from an Addon)
+
+- Added "Text" view to be used with "Countries", "Studios and "Directors" library section
+
+
+Other improvements
+
+- Custom multi-wallpaper has now a longer fade over transition duration
+
+- New lighter font type for some sections and elements:
+Favorites header, Date/Clock, breadcrumbs/title navigation for all sections
+Settings left navigation section, Skin Settings left navigation section
+
+- Reworked Weather Widget + alignment for multiple temperature text sizes
+- Reworked Weather section, left sidebar navigation improvements + now showing active weather location
+
+- [VideoOSD/VideoFullScreen] UI improvements for both regular playback and LiveTV
+- [VideoOSD/VideoFullScreen] Added simple %-buffering indicator
+- [DialogVideoInfo] Hide "Extended Info" button for: TV Shows/Seasons/Episodes
+- Updated/new icon for Watched Indicator checkmark
+- Removed bottom right item count in some areas for more simplicity
+- Fixed multiline LiveTV Episode title issue
+- Improved some usability cases on dialogs like "DialogAddonSettings"
+- [DialogNumeric] now has a less dark background when being used while typing a channel no. during LiveTV
+- Some already disabled buttons are now hidden when "DialogVideoInfo" is used with the YouTube-Addon
+- Weather Widget on "Home" now has a fade in/out on data changes
+- Improved "MusicOSD/MusicVisualisation" UI to be on par with "VideoOSD/VideoFullScreen"
+- Dim "CommonWindowHeader" in some special cases
+- Reworked almost all scrollbars including fixes for Weather scrollbars
+- Added some missing audio-flag icons for OPUS and framed FLAC
+- Added additional default color typoe: red, green, invisible
+- Updated search dialog YouTube Logo icon to the latest logo (also added a uhd variant of the logo which is used automatically when 3k+ is detected)
+- Improved UHD detection for UHD image variants
+- Reworked default icons for: Warning, Info and Error
+- Reworked many views and font types
+- Changed style of some horizontal lines
+- Reworked/improved Settings views + default button types
+- Improved many navigation paths jump points for more intuitive navigation within many views and button selections
+- Removed AudioDSP skin files (deprecated)
+- Reworked Video Info Dialog including the addition of new icons for the most important buttons: Play, Browse, My List, Watched
+- Reworked FullScreen Text Viewer which is used for maximized Plot View and similar cases, improved navigation on Open/Close
+- Reworked Mouse Close Button Icon (These buttons are disabled by default, even if mouse support is enabled)
+- [VideoOSD] Changed/reworked new icon for "INFO" button
+- Reworked Wall view for Music and Home Screen Music Widget
+- [DialogNotification] Extended width of Dialog
+- [Mouse Control] Just for information: Although i always recommend completely disabling Mouse Control for serious Home Cinema use,
+this Skin still has very good Mouse Support while not showing any cluttered additional Mouse Buttons
+
+- [New Feature] New experimental feature: Always force Preset Views
+Always forces view types 500 (Wall 2x7), 508 (Video Fanart), 52 (Modern Episodes View), 901 (Text) on certain sections on Window Load for (OOB experience)
+Also forces "Sort by: Episode ASCENDING" for Episodes content on Window Load
+
+[B]4.4.4[/B] (2020-11-04)
 [B]4.4.3[/B] (2020-11-04)
 - Some more tweaking regarding larger fonts (Including: Full with list view)
 - Visually optimized SideBlade
