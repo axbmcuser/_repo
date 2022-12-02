@@ -1,3 +1,8 @@
+3.5.4 (2022-12-02)
+
+- Fix permanent "My List" home menu item and remove it when it should not be visible (feature disabled)
+- Fix skin .xsp playlists when Android is detected (Android can't use real "–", use "-" instead)
+
 3.5.3 (2022-11-21)
 
 - Reworked "Info Button"-Icon in [VideoOSD]
