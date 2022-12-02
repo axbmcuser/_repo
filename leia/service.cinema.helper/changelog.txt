@@ -1,8 +1,23 @@
+[B]1.0.3[/B] (2022-12-02)
+
+- Change VideoOSD idle-auto-close handling for Kodi 18 or higher (Seemingly a "Window.IsTopMost" bug on Kodi 18)
+- Fix duplicate tmpKodiIdleTime check for VideoOSD idle-auto-close (did no harm, but fixed nonetheless)
+- Improve clearing of CinemaHelper.UserRating.PROCESS and CinemaHelper.WatchedState.PROCESS
+- Remove "True or IsVideoDb" debug condition (condition is now removed)
+- Fix unmatched parentheses for "IsSpecialList" definition
+
+
+[B]1.0.2[/B] (2022-04-06)
+
+- Fix "ExperimentalPostMovieInfoDialog" enabled-check
+
 [B]1.0.1[/B] (2022-04-06)
+
 - Added "ParentFolderItem skip for Fanart view" functionality
 - Added "Always force Preset Views" functionality
 - Added different code execution intervals for different actions
 - Code and performance improvements
 
 [B]1.0.0[/B] (2022-03-29)
+
 - Initial release
