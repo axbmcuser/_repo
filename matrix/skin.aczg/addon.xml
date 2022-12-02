@@ -2,8 +2,8 @@
 <addon id="skin.aczg" version="5.4.5" name="A Confluence ZEITGEIST (Alpha) (KODI 19)" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.15.0"/>
-		<!--
 		<import addon="service.library.data.provider.lite" version="0.3.4"/>
+		<!--
 		<import addon="service.listitem.helper" version="0.3.4"/>
 		-->
 	</requires>
