@@ -529,9 +529,9 @@ Second Test Release:
 <addon id="skin.aczg" version="3.5.6" name="A Confluence ZEITGEIST (KODI 17)" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0" />
+		<import addon="service.listitem.helper" version="0.3.4" />
 		<import addon="service.duration.helper" version="1.0.0" />
 		<import addon="service.library.data.provider.lite" version="0.3.4" />
-		<import addon="service.listitem.helper" version="0.3.4" />
 		<import addon="service.cinema.helper" version="1.0.0" />
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false" effectslowdown="0.22">
