@@ -102,7 +102,7 @@
   </extension>
 </addon>
 
-<addon id="service.cinema.helper" name="Cinema Helper (KODI 19+20) (axbmcuser)" version="2.0.4" provider-name="axbmcuser">
+<addon id="service.cinema.helper" name="Cinema Helper (KODI 19+20) (axbmcuser)" version="2.0.5" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.simplejson" version="3.16.1" />
@@ -117,7 +117,11 @@
 		<website></website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]2.0.4[/B] (2022-12-03)
+		<news>[B]2.0.5[/B] (2022-12-03)
+
+- Rename "Special Lists" playlist folders again for more simplicity (Android "–"/"-" workaround removed). "service.cinema.helper" had also to be changed accordingly.
+
+[B]2.0.4[/B] (2022-12-03)
 
 - Added KODI 19+20 (Python 3) compatibility code basis (Dual-addon: Python 2 still supported)
 - - Python 2/3 versions still need separate addon version due to required addon.xml changes
