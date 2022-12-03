@@ -1,4 +1,4 @@
-[B]1.0.4[/B] (2022-12-03)
+[B]2.0.4[/B] (2022-12-03)
 
 - Added KODI 19+20 (Python 3) compatibility code basis (Dual-addon: Python 2 still supported)
 - - Python 2/3 versions still need separate addon version due to required addon.xml changes

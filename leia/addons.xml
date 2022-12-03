@@ -170,12 +170,12 @@
   </extension>
 </addon>
 
-<addon id="service.cinema.helper" name="Cinema Helper (KODI 17+18) (axbmcuser)" version="1.0.3" provider-name="axbmcuser">
+<addon id="service.cinema.helper" name="Cinema Helper (KODI 17+18) (axbmcuser)" version="1.0.4" provider-name="axbmcuser">
 	<requires>
-		<import addon="xbmc.python" version="2.25.0"/>
-		<import addon="script.module.simplejson" version="3.16.1"/>
+		<import addon="xbmc.python" version="2.25.0" />
+		<import addon="script.module.simplejson" version="3.16.1" />
 	</requires>
-	<extension point="xbmc.service" library="service.py" start="login"/>
+	<extension point="xbmc.service" library="service.py" start="login" />
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Cinema Helper</summary>
 		<description lang="en">A Cinema Helper service which provides some lightweight skin functionality</description>
@@ -185,7 +185,13 @@
 		<website></website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]1.0.3[/B] (2022-12-02)
+		<news>[B]1.0.4[/B] (2022-12-03)
+
+- Added KODI 19+20 (Python 3) compatibility code basis (Dual-addon: Python 2 still supported)
+- - Python 2/3 versions still need separate addon version due to required addon.xml changes
+- - Using unified code basis still makes things much easier
+
+[B]1.0.3[/B] (2022-12-02)
 
 - Change VideoOSD idle-auto-close handling for Kodi 18 or higher (Seemingly a "Window.IsTopMost" bug on Kodi 18)
 - Fix duplicate tmpKodiIdleTime check for VideoOSD idle-auto-close (did no harm, but fixed nonetheless)

@@ -1,3 +1,9 @@
+[B]1.0.4[/B] (2022-12-03)
+
+- Added KODI 19+20 (Python 3) compatibility code basis (Dual-addon: Python 2 still supported)
+- - Python 2/3 versions still need separate addon version due to required addon.xml changes
+- - Using unified code basis still makes things much easier
+
 [B]1.0.3[/B] (2022-12-02)
 
 - Change VideoOSD idle-auto-close handling for Kodi 18 or higher (Seemingly a "Window.IsTopMost" bug on Kodi 18)
