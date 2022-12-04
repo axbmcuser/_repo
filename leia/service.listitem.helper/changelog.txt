@@ -1,3 +1,8 @@
+[B]0.3.10[/B] (2022-12-04)
+
+- Improve external ratings (rotten tomatoes, metacritic, ...) processing for wrongly scraped ListItem.IMDBNumber (The "The Movie Database" scraper wrongly puts the tmdb-id into ListItem.IMDBNumber)
+(Now "service.listitem.helper" always gets the real imdb-id via a json query)
+
 [B]0.3.9[/B] (2022-03-19)
 - Minor performance improvements and optimizations
 
