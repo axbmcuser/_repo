@@ -535,7 +535,7 @@ Second Test Release:
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="3.5.7" name="A Confluence ZEITGEIST (KODI 17)" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.5.8" name="A Confluence ZEITGEIST (KODI 17)" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0" />
 		<import addon="service.listitem.helper" version="0.3.4" />
@@ -555,7 +555,12 @@ Second Test Release:
 		<website></website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]3.5.7[/B] (2022-12-04)
+		<news>[B]3.5.8[/B] (2022-12-04)
+
+- Improve external ratings (rotten tomatoes, metacritic, ...) processing for wrongly scraped ListItem.IMDBNumber (The "The Movie Database" scraper wrongly puts the tmdb-id into ListItem.IMDBNumber)
+(Now "service.listitem.helper" always gets the real imdb-id via a json query)
+
+[B]3.5.7[/B] (2022-12-04)
 
 - Improved poster crop detection in Video Info Dialog
 - Fix/workaround for missing ListItem.Art(poster)) value when using "service.library.data.provider.lite" for KODI 19 (Dialog Video Info: opended by PostMovie feature)
