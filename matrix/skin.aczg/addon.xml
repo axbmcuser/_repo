@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="5.4.7" name="A Confluence ZEITGEIST (Alpha 4) (KODI 19)" provider-name="axbmcuser">
+<addon id="skin.aczg" version="5.4.8" name="A Confluence ZEITGEIST (Alpha 4) (KODI 19)" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.15.0" />
 		<!--<import addon="service.listitem.helper" version="0.3.4" />-->
@@ -18,7 +18,15 @@
 		<website></website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]5.4.7[/B] Alpha 4 (2022-12-04)
+		<news>[B]5.4.8[/B] Alpha 5 (2022-12-04)
+
+- Improve external ratings (rotten tomatoes, metacritic, ...) processing for wrongly scraped ListItem.IMDBNumber (The "The Movie Database" scraper wrongly puts the tmdb-id into ListItem.IMDBNumber)
+(Now "service.listitem.helper" always gets the real imdb-id via a json query)
+
+Note: 
+"service.listitem.helper" is still missing for KODI 19, but these changes are in preparation for the return of above mentioned functionality
+
+[B]5.4.7[/B] Alpha 4 (2022-12-04)
 
 - Fix Episodes duration in minutes by changing ListItem.Duration to ListItem.Duration(mins) for KODI 18+19 (Modern/Episodes View)
 - Fix Plot Text condition regarding removed "videolibrary.showunwatchedplots" setting for KODI 18+19 (Fanart View)
