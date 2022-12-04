@@ -1,6 +1,17 @@
+[B]5.4.7[/B] Alpha 4 (2022-12-04)
+
+- Fix Episodes duration in minutes by changing ListItem.Duration to ListItem.Duration(mins) for KODI 18+19 (Modern/Episodes View)
+- Fix Plot Text condition regarding removed "videolibrary.showunwatchedplots" setting for KODI 18+19 (Fanart View)
+- Remove no-focus border for spincontrolx items in Dialog Addon Settings (Missed this when porting from KODI 17)
+- Improved poster crop detection in Video Info Dialog
+- Fix/workaround for missing ListItem.Art(poster)) value when using "service.library.data.provider.lite" for KODI 19 (Dialog Video Info: opended by PostMovie feature)
+
+- Changed style of horizontal line in Dialog Addon Settings
+- Change remaining "Working..." language id/strings to "Loading..."
+
 [B]5.4.6[/B] (2022-12-03)
 
-- KODI 19 (Matrix) INCOMPLETE(!) Alpha 3 Test Release
+- KODI 19 (Matrix) Alpha 3 Test Release
 
 - Synced/updated language files from Original Confluence 4.7.13 (KODI 19 Matrix)
 - Added "Versions" button for Addon Info Dialog
@@ -16,18 +27,18 @@ Ported from KODI 17 skin version 3.5.5 (2022-12-03)
 - Added non-colored default mood background for Dialog Video Info which is shown if the feature is disabled or "service.listitem.helper" is missing (Kodi 19+ at the moment)
 - Added workaround for "PosterThumb": KODI 18+ has a bug where parent folder icon gets wrongly replaced with playlist icon after viewing a playlist window (workaround inactive for KODI 17)
 - Re-enable VideoOSD buttons "Subtitles" and "Chapters/Bookmarks" for "IsInternetStream" media. Disable "Subtitle Download" for "IsInternetStream" media in subtitles sub menu.
-- Rename "Special Lists" playlist folders again for more simplicity (Android "–"/"-" workaround removed). "service.cinema.helper" had also to be changed accordingly. (Changed in versions 1.0.5 and 2.0.5)
+- Rename "Special Lists" playlist folders again for more simplicity (Android "â€“"/"-" workaround removed). "service.cinema.helper" had also to be changed accordingly. (Changed in versions 1.0.5 and 2.0.5)
 
 [B]5.4.5[/B] (2022-12-02)
 
-- KODI 19 (Matrix) INCOMPLETE(!) Alpha 2 Test Release
+- KODI 19 (Matrix) Alpha 2 Test Release
 
 [B]4.4.5[/B] (2022-12-02)
 
 Ported from KODI 17 skin version 3.5.4 (2022-12-02)
 
 - Fix permanent "My List" home menu item and remove it when it should not be visible (feature disabled)
-- Fix skin .xsp playlists when Android is detected (Android can't use real "–", use "-" instead)
+- Fix skin .xsp playlists when Android is detected (Android can't use real "â€“", use "-" instead)
 
 Ported from KODI 17 skin version 3.5.3 (2022-11-21)
 

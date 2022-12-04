@@ -102,7 +102,7 @@
   </extension>
 </addon>
 
-<addon id="service.cinema.helper" name="Cinema Helper (KODI 19+20) (axbmcuser)" version="2.0.5" provider-name="axbmcuser">
+<addon id="service.cinema.helper" name="Cinema Helper (KODI 19+20) (axbmcuser)" version="2.0.6" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.simplejson" version="3.16.1" />
@@ -117,7 +117,11 @@
 		<website></website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]2.0.5[/B] (2022-12-03)
+		<news>[B]2.0.6[/B] (2022-12-04)
+
+- Set "ExperimentalPostMovieDialogOpensNow" property before opening post movie dialogs
+
+[B]2.0.5[/B] (2022-12-03)
 
 - Rename "Special Lists" playlist folders again for more simplicity (Android "–"/"-" workaround removed). "service.cinema.helper" had also to be changed accordingly.
 
@@ -253,7 +257,7 @@
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="5.4.6" name="A Confluence ZEITGEIST (Alpha 3) (KODI 19)" provider-name="axbmcuser">
+<addon id="skin.aczg" version="5.4.7" name="A Confluence ZEITGEIST (Alpha 4) (KODI 19)" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.15.0" />
 		<!--<import addon="service.listitem.helper" version="0.3.4" />-->
@@ -272,9 +276,20 @@
 		<website></website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]5.4.6[/B] (2022-12-03)
+		<news>[B]5.4.7[/B] Alpha 4 (2022-12-04)
 
-- KODI 19 (Matrix) INCOMPLETE(!) Alpha 3 Test Release
+- Fix Episodes duration in minutes by changing ListItem.Duration to ListItem.Duration(mins) for KODI 18+19 (Modern/Episodes View)
+- Fix Plot Text condition regarding removed "videolibrary.showunwatchedplots" setting for KODI 18+19 (Fanart View)
+- Remove no-focus border for spincontrolx items in Dialog Addon Settings (Missed this when porting from KODI 17)
+- Improved poster crop detection in Video Info Dialog
+- Fix/workaround for missing ListItem.Art(poster)) value when using "service.library.data.provider.lite" for KODI 19 (Dialog Video Info: opended by PostMovie feature)
+
+- Changed style of horizontal line in Dialog Addon Settings
+- Change remaining "Working..." language id/strings to "Loading..."
+
+[B]5.4.6[/B] (2022-12-03)
+
+- KODI 19 (Matrix) Alpha 3 Test Release
 
 - Synced/updated language files from Original Confluence 4.7.13 (KODI 19 Matrix)
 - Added "Versions" button for Addon Info Dialog
@@ -284,6 +299,7 @@ Ported from KODI 17 skin version 3.5.6 (2022-12-03)
 - Refined "Broken Addon" messages in DialogAddonInfo dialog.
 
 Ported from KODI 17 skin version 3.5.5 (2022-12-03)
+
 - Refined "FileManager" scrollbar width
 - Fix "My List" wrong home menu item id (caused issues when moving focus to other items)
 - Added non-colored default mood background for Dialog Video Info which is shown if the feature is disabled or "service.listitem.helper" is missing (Kodi 19+ at the moment)
@@ -292,7 +308,8 @@ Ported from KODI 17 skin version 3.5.5 (2022-12-03)
 - Rename "Special Lists" playlist folders again for more simplicity (Android "–"/"-" workaround removed). "service.cinema.helper" had also to be changed accordingly. (Changed in versions 1.0.5 and 2.0.5)
 
 [B]5.4.5[/B] (2022-12-02)
-- KODI 19 (Matrix) INCOMPLETE(!) Alpha 2 Test release
+
+- KODI 19 (Matrix) Alpha 2 Test Release
 
 [B]4.4.5[/B] (2022-12-02)
 
