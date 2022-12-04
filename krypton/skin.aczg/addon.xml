@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="3.5.6" name="A Confluence ZEITGEIST (KODI 17)" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.5.7" name="A Confluence ZEITGEIST (KODI 17)" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0" />
 		<import addon="service.listitem.helper" version="0.3.4" />
@@ -19,11 +19,19 @@
 		<website></website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>3.5.6 (2022-12-03)
+		<news>[B]3.5.7[/B] (2022-12-04)
+
+- Improved poster crop detection in Video Info Dialog
+- Fix/workaround for missing ListItem.Art(poster)) value when using "service.library.data.provider.lite" for KODI 19 (Dialog Video Info: opended by PostMovie feature)
+
+- Changed style of horizontal line in Dialog Addon Settings
+- Change remaining "Working..." language id/strings to "Loading..."
+
+[B]3.5.6[/B] (2022-12-03)
 
 - Refined "Broken Addon" messages in DialogAddonInfo dialog.
 
-3.5.5 (2022-12-03)
+[B]3.5.5[/B] (2022-12-03)
 
 - Refined "FileManager" scrollbar width
 - Fix "My List" wrong home menu item id (caused issues when moving focus to other items)
@@ -32,12 +40,12 @@
 - Re-enable VideoOSD buttons "Subtitles" and "Chapters/Bookmarks" for "IsInternetStream" media. Disable "Subtitle Download" for "IsInternetStream" media in subtitles sub menu.
 - Rename "Special Lists" playlist folders again for more simplicity (Android "–"/"-" workaround removed). "service.cinema.helper" had also to be changed accordingly. (Changed in versions 1.0.5 and 2.0.5)
 
-3.5.4 (2022-12-02)
+[B]3.5.4[/B] (2022-12-02)
 
 - Fix permanent "My List" home menu item and remove it when it should not be visible (feature disabled)
 - Fix skin .xsp playlists when Android is detected (Android can't use real "–", use "-" instead)
 
-3.5.3 (2022-11-21)
+[B]3.5.3[/B] (2022-11-21)
 
 - Reworked "Info Button"-Icon in [VideoOSD]
 - Make watchedstate checkmarks for Wall Views and "Recently added" widgets slightly translucent when in non-hover state
@@ -46,25 +54,25 @@
 - [DialogVideoInfo] Fix for very rare situations where posters were not cropped as intended
 - OverlayUHD and OverlayHFR icons are now slightly translucent (used in Wall Views recently added movies/episodes Widgets)
 
-3.5.2 (2022-04-12)
+[B]3.5.2[/B] (2022-04-12)
 
 - Added support for Season Fanart (if available)
 - Removed album cover art shadow border in [MusicVisualisation]
 
-3.5.1 (2022-04-09)
+[B]3.5.1[/B] (2022-04-09)
 
 - Fixed Episode Art in [Dialog Video Info] when opened via a playing Episodes VideoOSD Info Button 
 (issue workaround due service.library.data.provider(.lite) bug)
 
-3.5.0 (2022-04-08)
+[B]3.5.0[/B] (2022-04-08)
 
 - Reduced logo size for Recently played LiveTV Widget on home screen for a cohesive visual experience between the Widgets
 
-3.4.9 (2022-04-07)
+[B]3.4.9[/B] (2022-04-07)
 
 - Maintenance release: Fix for code merging issue with 3.4.8
 
-3.4.8 (2022-04-07)
+[B]3.4.8[/B] (2022-04-07)
 
 - [New/reworked view type] New Fanart View for Video library
 Replaces the old and totally visually outdated Confluence fanart view
