@@ -325,7 +325,7 @@
 	</extension>
 </addon>
 
-<addon id="service.listitem.helper" name="ListItem Helper (KODI 17+18) (axbmcuser)" version="0.3.11" provider-name="axbmcuser">
+<addon id="service.listitem.helper" name="ListItem Helper (KODI 17+18) (axbmcuser)" version="0.3.12" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
 		<import addon="script.module.requests" version="2.3.0" />
@@ -338,14 +338,25 @@
 	<extension point="xbmc.python.script" library="default.py" />
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">A ListItem Helper</summary>
-		<description lang="en">A ListItem Helper service which provides values from OMDb/TMDb.[CR][CR][COLOR=red]![/COLOR] Entering OMDb/TMDb API keys in the configuration dialog is required.[CR][CR]Property names:[CR](home) ListItemHelper.rating.rottentomatoes.percent[CR](home) ListItemHelper.rating.rottentomatoes.image[CR](home) ListItemHelper.rating.rottentomatoes.url[CR](home) ListItemHelper.rating.rottentomatoes.audience[CR](home) ListItemHelper.rating.metacritic.percent[CR](home) ListItemHelper.rating.imdb.percent[CR](home) ListItemHelper.rating.imdb[CR](home) ListItemHelper.rating.imdb.votes[CR](home) ListItemHelper.awards[CR](home) ListItemHelper.budget[CR](home) ListItemHelper.budget.million[CR](home) ListItemHelper.budget.formatted[CR](home) ListItemHelper.revenue[CR](home) ListItemHelper.revenue.million[CR](home) ListItemHelper.revenue.formatted[CR](home) ListItemHelper.revenue.boxoffice[CR](home) ListItemHelper.DBID[CR](home) ListItemHelper.IMDBNumber[CR][CR]For use with other containers like home screen widgets set the following properties:[CR][CR](home) ListItemHelper.WidgetContainerId[CR]to the container ID (Example: 8000)[CR](home) ListItemHelper.WidgetContainerWindowName[CR]to the window name where the container resides (Example: home)[CR][CR]Important remarks:[CR]- Unset the WidgetContainer-properties when leaving focus from the widget.[CR][CR]Known supported Skins:[CR]A Confluence ZEITGEIST[CR][CR][CR][COLOR=gray]This addon contains forked code of marcelveldt addon script.module.metadatautils which has been changed and massively stripped down for fast execution and minimal functionality.[CR] [/COLOR]</description>
+		<description lang="en">A ListItem Helper service which provides values from OMDb/TMDb.[CR][CR][COLOR=red]![/COLOR] Entering OMDb/TMDb API keys in the configuration dialog is required.[CR][CR]Property names:[CR](home) ListItemHelper.rating.rottentomatoes.percent[CR](home) ListItemHelper.rating.rottentomatoes.image[CR](home) ListItemHelper.rating.rottentomatoes.url[CR](home) ListItemHelper.rating.rottentomatoes.audience[CR](home) ListItemHelper.rating.metacritic.percent[CR](home) ListItemHelper.rating.imdb.percent[CR](home) ListItemHelper.rating.imdb[CR](home) ListItemHelper.rating.imdb.votes[CR](home) ListItemHelper.awards[CR](home) ListItemHelper.budget[CR](home) ListItemHelper.budget.million[CR](home) ListItemHelper.budget.formatted[CR](home) ListItemHelper.revenue[CR](home) ListItemHelper.revenue.million[CR](home) ListItemHelper.revenue.formatted[CR](home) ListItemHelper.revenue.boxoffice[CR](home) ListItemHelper.DBID[CR](home) ListItemHelper.IMDBNumber[CR](home) ListItemHelper.IMDBNumber.isValid[CR](home) ListItemHelper.IMDBNumber.corrected[CR](home) ListItemHelper.IMDBNumber.corrected.isValid[CR](home) ListItemHelper.TMDBID[CR](home) ListItemHelper.TVDBID[CR][CR]For use with other containers like home screen widgets set the following properties when the container is focused:[CR][CR](home) ListItemHelper.WidgetContainerId[CR]to the container ID (Example: 8000)[CR](home) ListItemHelper.WidgetContainerWindowName[CR]to the window name where the container resides (Example: home)[CR][CR]Important remarks:[CR]- Unset the WidgetContainer-properties when leaving focus from the container/widget.[CR][CR]Known supported Skins:[CR]A Confluence ZEITGEIST[CR][CR][CR][COLOR=gray]This addon partly contains forked code of the following addons:[CR]- script.toolbox by phil65[CR]- script.module.metadatautils by marcelveldt and others[CR]- script.embuary.helper by sualfred[CR]which has been changed and massively stripped down for fast execution and minimal functionality.[/COLOR][CR] </description>
 		<platform>all</platform>
 		<license></license>
 		<forum>https://forum.kodi.tv/showthread.php?tid=242892</forum>
 		<website></website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]0.3.11[/B] (2022-12-05)
+		<news>[B]0.3.12[/B] (2022-12-05)
+
+- Added property (home) ListItemHelper.IMDBNumber.isValid
+- Added property (home) ListItemHelper.IMDBNumber.corrected
+- Added property (home) ListItemHelper.IMDBNumber.corrected.isValid
+- Added property (home) ListItemHelper.TMDBID
+- Added property (home) ListItemHelper.TVDBID
+- Changed addon settings dialog tab name to "API keys"
+- Improved data validation
+- Expanded Python 2/3 dual code base
+
+[B]0.3.11[/B] (2022-12-05)
 
 - Change addon.xml so that the addon is visibly placed into the "Services" category of the KODI addon manager and the repo
 - - Note: In addon.xml, extension point="xbmc.service" tag has to be placed _above_ extension point="xbmc.python.script" tag for this to happen

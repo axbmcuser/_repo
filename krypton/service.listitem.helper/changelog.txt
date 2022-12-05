@@ -1,3 +1,14 @@
+[B]0.3.12[/B] (2022-12-05)
+
+- Added property (home) ListItemHelper.IMDBNumber.isValid
+- Added property (home) ListItemHelper.IMDBNumber.corrected
+- Added property (home) ListItemHelper.IMDBNumber.corrected.isValid
+- Added property (home) ListItemHelper.TMDBID
+- Added property (home) ListItemHelper.TVDBID
+- Changed addon settings dialog tab name to "API keys"
+- Improved data validation
+- Expanded Python 2/3 dual code base
+
 [B]0.3.11[/B] (2022-12-05)
 
 - Change addon.xml so that the addon is visibly placed into the "Services" category of the KODI addon manager and the repo

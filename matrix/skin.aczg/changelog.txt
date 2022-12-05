@@ -1,7 +1,12 @@
+[B]5.4.11[/B] (2022-12-05)
+
+- Fix "CommonNowPlaying" poster since KODI 19 does not have fallback from Player.Art(thumb) to poster property anymore. Replaced by Player.Art(poster) condition and value
+
 [B]5.4.10[/B] Alpha 7 (2022-12-04)
 
 - Small further improvements regarding:
 - - Fix/workaround for missing ListItem.Art(poster)) value when using "service.library.data.provider.lite" for KODI 19 (Dialog Video Info: opended by PostMovie feature or VideoOSD Info-Button)
+- - Provide correct values for mood background image generation in Video Info Dialog when opened via above mentioned situations
 
 [B]5.4.9[/B] Alpha 6 (2022-12-04)
 
