@@ -1,3 +1,8 @@
+[B]5.4.9[/B] Alpha 6 (2022-12-04)
+
+- Added dependency "service.listitem.helper" for external omdb/tmdb ratings and dynamic mood backgrounds
+- - KODI 19 (Python 3) ready version now online: "service.listitem.helper" 1.3.10
+
 [B]5.4.8[/B] Alpha 5 (2022-12-04)
 
 - Improve external ratings (rotten tomatoes, metacritic, ...) processing for wrongly scraped ListItem.IMDBNumber (The "The Movie Database" scraper wrongly puts the tmdb-id into ListItem.IMDBNumber)
