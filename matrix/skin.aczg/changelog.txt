@@ -1,3 +1,8 @@
+[B]5.4.10[/B] Alpha 7 (2022-12-04)
+
+- Small further improvements regarding:
+- - Fix/workaround for missing ListItem.Art(poster)) value when using "service.library.data.provider.lite" for KODI 19 (Dialog Video Info: opended by PostMovie feature or VideoOSD Info-Button)
+
 [B]5.4.9[/B] Alpha 6 (2022-12-04)
 
 - Added dependency "service.listitem.helper" for external omdb/tmdb ratings and dynamic mood backgrounds
