@@ -1,3 +1,8 @@
+[B]0.3.11[/B] (2022-12-05)
+
+- Change addon.xml so that the addon is visibly placed into the "Services" category of the KODI addon manager and the repo
+- - Note: In addon.xml, extension point="xbmc.service" tag has to be placed _above_ extension point="xbmc.python.script" tag for this to happen
+
 [B]0.3.10[/B] (2022-12-04)
 
 - Improve external ratings (rotten tomatoes, metacritic, ...) processing for wrongly scraped ListItem.IMDBNumber (The "The Movie Database" scraper wrongly puts the tmdb-id into ListItem.IMDBNumber)
