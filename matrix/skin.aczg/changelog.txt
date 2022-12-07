@@ -1,3 +1,7 @@
+[B]5.4.12[/B] (2022-12-07)
+
+- Strengthen blur of mood backgrounds in Dialog Video Info (before: 20 now: 30)
+
 [B]5.4.11[/B] (2022-12-05)
 
 - Fix "CommonNowPlaying" poster since KODI 19 does not have fallback from Player.Art(thumb) to poster property anymore. Replaced by Player.Art(poster) condition and value

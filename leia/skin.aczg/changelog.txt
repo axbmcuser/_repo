@@ -1,3 +1,8 @@
+[B]4.4.9[/B] (2022-12-07)
+
+- Strengthen blur of mood backgrounds in Dialog Video Info (before: 20 now: 30)
+- Further fixes for potentially missing ListItem.Art(poster)) value when using "service.library.data.provider.lite" (Dialog Video Info: opended by PostMovie feature or VideoOSD Info-Button)
+
 [B]4.4.8[/B] (2022-12-04)
 
 - Improve external ratings (rotten tomatoes, metacritic, ...) processing for wrongly scraped ListItem.IMDBNumber (The "The Movie Database" scraper wrongly puts the tmdb-id into ListItem.IMDBNumber)

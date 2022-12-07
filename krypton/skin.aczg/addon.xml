@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="3.5.8" name="A Confluence ZEITGEIST (KODI 17)" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.5.9" name="A Confluence ZEITGEIST (KODI 17)" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0" />
 		<import addon="service.listitem.helper" version="0.3.4" />
@@ -19,7 +19,12 @@
 		<website></website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]3.5.8[/B] (2022-12-04)
+		<news>[B]3.5.9[/B] (2022-12-07)
+
+- Strengthen blur of mood backgrounds in Dialog Video Info (before: 20 now: 30)
+- Further fixes for potentially missing ListItem.Art(poster)) value when using "service.library.data.provider.lite" (Dialog Video Info: opended by PostMovie feature or VideoOSD Info-Button)
+
+[B]3.5.8[/B] (2022-12-04)
 
 - Improve external ratings (rotten tomatoes, metacritic, ...) processing for wrongly scraped ListItem.IMDBNumber (The "The Movie Database" scraper wrongly puts the tmdb-id into ListItem.IMDBNumber)
 (Now "service.listitem.helper" always gets the real imdb-id via a json query)
