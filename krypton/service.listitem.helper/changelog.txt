@@ -1,3 +1,7 @@
+[B]0.3.15[/B] (2022-12-13)
+
+- Changed settings.xml format and added language strings
+
 [B]0.3.14[/B] (2022-12-12)
 
 - Improved Addon settings: Added descriptive text and new debug tab+option "Clear image cache"
