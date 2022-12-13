@@ -1,3 +1,13 @@
+[B]0.3.14[/B] (2022-12-12)
+
+- Improved Addon settings: Added descriptive text and new debug tab+option "Clear image cache"
+- Added functionality to force generation of blurimg image even if it exists in the cache (important when image changes in certain situations)
+- Backported downstream from KODI 19 service.listitem.helper: Support for "saturation" parameter when using blurimg functionality
+
+[B]0.3.13[/B] (2022-12-05)
+
+- No real changes: Repo upload fix
+
 [B]0.3.12[/B] (2022-12-05)
 
 - Added property (home) ListItemHelper.IMDBNumber.isValid

@@ -257,7 +257,7 @@
 	</extension>
 </addon>
 
-<addon id="service.listitem.helper" name="ListItem Helper (KODI 19+20) (axbmcuser)" version="1.3.12" provider-name="axbmcuser">
+<addon id="service.listitem.helper" name="ListItem Helper (KODI 19+20) (axbmcuser)" version="1.3.13" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" version="2.3.0" />
@@ -277,7 +277,12 @@
 		<website></website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]1.3.12[/B] (2022-12-05)
+		<news>[B]1.3.13[/B] (2022-12-12)
+
+- Improved Addon settings: Added descriptive text and new debug tab+option "Clear image cache"
+- Added functionality to force generation of blurimg image even if it exists in the cache (important when image changes in certain situations)
+
+[B]1.3.12[/B] (2022-12-05)
 
 - Added property (home) ListItemHelper.IMDBNumber.isValid
 - Added property (home) ListItemHelper.IMDBNumber.corrected
@@ -367,7 +372,7 @@ Second Test Release:
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="5.4.12" name="A Confluence ZEITGEIST (KODI 19)" provider-name="axbmcuser">
+<addon id="skin.aczg" version="5.4.13" name="A Confluence ZEITGEIST (KODI 19)" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.15.0" />
 		<import addon="service.listitem.helper" version="1.0.0" />
@@ -386,7 +391,26 @@ Second Test Release:
 		<website></website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]5.4.12[/B] (2022-12-07)
+		<news>[B]5.4.13[/B] (2022-12-12)
+
+- Added code for service.listitem.helper improved blurimg functionality in DialogVideoInfo
+- Added Experimental Skin Setting "Clear service.listitem.helper image cache"
+- [DialogVideoInfo] Multiple fixes to display correct poster in very different and very specific circumstances
+
+- Improved icons DefaultRemovableDisk and DefaultNetwork (removed LED on graphic)
+- Added some additional audio/video codec flag icons (8K and some more, also duplicates to cover different strings)
+- Added some default icons (synced from Matrix Estuary skin master)
+
+- New/improved icon for "Weather" and "Games": home menu icons, breadcrumb navigation icons, Default Addon Weather/Games icons
+- Reordered Includes_DialogSelect
+- Fix scrollbar onleft-action in DialogAddonSettings (wrong id)
+- Improved support for section "Games" (not officially supported due to home cinema focus, but should now be on par with Original Confluence now)
+(Added Includes_DialogSelect and Includes stuff to achieve this)
+- Corrected/improved/expanded Dialog DialogGameControllers (Original Confluence Dialog was unfinished)
+- Hide VideoOSD if player HasGame
+- Added home screen submenu for "Games" and also 7 home screen addon shortcuts for "Games" (configured via Skin Settings)
+
+[B]5.4.12[/B] (2022-12-07)
 
 - Strengthen blur of mood backgrounds in Dialog Video Info (before: 20 now: 30)
 

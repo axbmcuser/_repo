@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="3.5.9" name="A Confluence ZEITGEIST (KODI 17)" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.5.10" name="A Confluence ZEITGEIST (KODI 17)" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0" />
 		<import addon="service.listitem.helper" version="0.3.4" />
@@ -19,7 +19,20 @@
 		<website></website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]3.5.9[/B] (2022-12-07)
+		<news>[B]3.5.10[/B] (2022-12-12)
+
+- Added code for service.listitem.helper improved blurimg functionality in DialogVideoInfo
+- Added Experimental Skin Setting "Clear service.listitem.helper image cache"
+- [DialogVideoInfo] Multiple fixes to display correct poster in very different and very specific circumstances
+
+- Improved icons DefaultRemovableDisk and DefaultNetwork (removed LED on graphic)
+- Added some additional audio/video codec flag icons (8K and some more, also duplicates to cover different strings)
+- Added some default icons (synced from Matrix Estuary skin master)
+
+- New/improved icon for "Weather" and "Games": home menu icons, breadcrumb navigation icons, Default Addon Weather/Games icons
+- Reordered Includes_DialogSelect
+
+[B]3.5.9[/B] (2022-12-07)
 
 - Strengthen blur of mood backgrounds in Dialog Video Info (before: 20 now: 30)
 - Further fixes for potentially missing ListItem.Art(poster)) value when using "service.library.data.provider.lite" (Dialog Video Info: opended by PostMovie feature or VideoOSD Info-Button)
