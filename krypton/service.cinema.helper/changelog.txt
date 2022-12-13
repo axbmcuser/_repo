@@ -1,3 +1,7 @@
+[B]1.0.7[/B] (2022-12-10)
+
+- TV show episodes now always focus first item after window open. Much better OOB experience, not only because KODI 17 has a focus history bug for episodes view, but in general.
+
 [B]1.0.6[/B] (2022-12-04)
 
 - Set "ExperimentalPostMovieDialogOpensNow" property before opening post movie dialogs
