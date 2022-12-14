@@ -446,7 +446,7 @@ Second Test Release:
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="4.4.10" name="A Confluence ZEITGEIST (KODI 18)" provider-name="axbmcuser">
+<addon id="skin.aczg" version="4.4.11" name="A Confluence ZEITGEIST (KODI 18)" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="service.listitem.helper" version="0.3.4" />
@@ -465,7 +465,14 @@ Second Test Release:
 		<website></website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]4.4.10[/B] (2022-12-12)
+		<news>[B]4.4.11[/B] (2022-12-14)
+
+- Change VARS PosterThumb, PosterThumbInfoDialog, FanartThumbnail so that fanart values are correct in very specific situations (could not use VAR due to KODI restrictions)
+- Re-added full mini sub-menu for subtitles above subtitles button within VideoOSD (Disabled by default - now has an option to Enable it. Read below.)
+- - Added new setting: Skin Settings -> General Settings -> Video OSD -> [Video OSD]  Enable mini sub-menu above subtitle button (Default: Off)
+(KODI 17.6 has this option hidden since the menu is always enabled for that version which has no dedicated subtitle dialog compared to 17.7(DS)/18/19 and higher)
+
+[B]4.4.10[/B] (2022-12-12)
 
 - Added code for service.listitem.helper improved blurimg functionality in DialogVideoInfo
 - Added Experimental Skin Setting "Clear service.listitem.helper image cache"
