@@ -102,7 +102,7 @@
   </extension>
 </addon>
 
-<addon id="service.cinema.helper" name="Cinema Helper (KODI 19+20) (axbmcuser)" version="2.0.7" provider-name="axbmcuser">
+<addon id="service.cinema.helper" name="Cinema Helper (KODI 19+20) (axbmcuser)" version="2.0.8" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.simplejson" version="3.16.1" />
@@ -113,11 +113,25 @@
 		<description lang="en">A Cinema Helper service which provides some lightweight skin functionality</description>
 		<platform>all</platform>
 		<license></license>
-		<forum>https://forum.kodi.tv/showthread.php?tid=242892</forum>
-		<website></website>
+		<forum>https://forum.kodi.tv/showthread.php?tid=370673</forum>
+		<website>https://forum.kodi.tv/showthread.php?tid=370673</website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]2.0.7[/B] (2022-12-10)
+		<news>[B]2.0.8[/B] (2022-12-24)
+
+- Added support for new service.listitem.helper setting "videolibrary.itemseparator" needed for value splitting if user has set a custom separator via advancedsettings.xml
+- Added PostCreditsScene detection mechanism
+- Added VideoPlayer.studio splitting support
+- Added support for custom view IDs via Skin Settings option "Customize View IDs for "Always force Preset Views""
+
+New properties:
+
+(home) CinemaHelper.player.studio.X (X=index no, starting at 1)
+(home) CinemaHelper.player.nearEndPreReached
+(home) CinemaHelper.player.nearEndReached
+(home) CinemaHelper.player.movieHasPostCreditsScene
+
+[B]2.0.7[/B] (2022-12-10)
 
 - TV show episodes now always focus first item after window open. Much better OOB experience, not only because KODI 17 has a focus history bug for episodes view, but in general.
 
@@ -261,7 +275,7 @@
 	</extension>
 </addon>
 
-<addon id="service.listitem.helper" name="ListItem Helper (KODI 19+20) (axbmcuser)" version="1.3.14" provider-name="axbmcuser">
+<addon id="service.listitem.helper" name="ListItem Helper (KODI 19+20) (axbmcuser)" version="1.3.15" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" version="2.3.0" />
@@ -277,11 +291,30 @@
 		<description lang="en">A ListItem Helper service which provides values from OMDb/TMDb.[CR][CR][COLOR=red]![/COLOR] Entering OMDb/TMDb API keys in the configuration dialog is required.[CR][CR]Property names:[CR](home) ListItemHelper.rating.rottentomatoes.percent[CR](home) ListItemHelper.rating.rottentomatoes.image[CR](home) ListItemHelper.rating.rottentomatoes.url[CR](home) ListItemHelper.rating.rottentomatoes.audience[CR](home) ListItemHelper.rating.metacritic.percent[CR](home) ListItemHelper.rating.imdb.percent[CR](home) ListItemHelper.rating.imdb[CR](home) ListItemHelper.rating.imdb.votes[CR](home) ListItemHelper.awards[CR](home) ListItemHelper.budget[CR](home) ListItemHelper.budget.million[CR](home) ListItemHelper.budget.formatted[CR](home) ListItemHelper.revenue[CR](home) ListItemHelper.revenue.million[CR](home) ListItemHelper.revenue.formatted[CR](home) ListItemHelper.revenue.boxoffice[CR](home) ListItemHelper.DBID[CR](home) ListItemHelper.IMDBNumber[CR](home) ListItemHelper.IMDBNumber.isValid[CR](home) ListItemHelper.IMDBNumber.corrected[CR](home) ListItemHelper.IMDBNumber.corrected.isValid[CR](home) ListItemHelper.TMDBID[CR](home) ListItemHelper.TVDBID[CR][CR]For use with other containers like home screen widgets set the following properties when the container is focused:[CR][CR](home) ListItemHelper.WidgetContainerId[CR]to the container ID (Example: 8000)[CR](home) ListItemHelper.WidgetContainerWindowName[CR]to the window name where the container resides (Example: home)[CR][CR]Important remarks:[CR]- Unset the WidgetContainer-properties when leaving focus from the container/widget.[CR][CR]Known supported Skins:[CR]A Confluence ZEITGEIST[CR][CR][CR][COLOR=gray]This addon partly contains forked code of the following addons:[CR]- script.toolbox by phil65[CR]- script.module.metadatautils by marcelveldt and others[CR]- script.embuary.helper by sualfred[CR]which has been changed and massively stripped down for fast execution and minimal functionality.[/COLOR][CR] </description>
 		<platform>all</platform>
 		<license></license>
-		<forum>https://forum.kodi.tv/showthread.php?tid=242892</forum>
-		<website></website>
+		<forum>https://forum.kodi.tv/showthread.php?tid=370673</forum>
+		<website>https://forum.kodi.tv/showthread.php?tid=370673</website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]1.3.14[/B] (2022-12-12)
+		<news>[B]1.3.15[/B] (2022-12-24)
+
+- Added functionality for new Skin setting "Use highest score for stars rating (*****)"
+
+- Added new setting "videolibrary.itemseparator" needed for value splitting if user has set a custom separator via advancedsettings.xml
+- Added ListItem.studio   splitting support
+- Added ListItem.genre    splitting support
+- Added ListItem.director splitting support
+- Added ListItem.writer   splitting support
+
+New properties:
+
+(home) ListItemHelper.rating.highestScaleTo10
+
+(home) ListItemHelper.studio.X   (X=index no, starting at 1)
+(home) ListItemHelper.genre.X    (X=index no, starting at 1)
+(home) ListItemHelper.director.X (X=index no, starting at 1)
+(home) ListItemHelper.writer.X   (X=index no, starting at 1)
+
+[B]1.3.14[/B] (2022-12-12)
 
 - Changed settings.xml format and added language strings
 
@@ -380,7 +413,7 @@ Second Test Release:
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="5.4.14" name="A Confluence ZEITGEIST (KODI 19)" provider-name="axbmcuser">
+<addon id="skin.aczg" version="5.4.15" name="A Confluence ZEITGEIST (KODI 19)" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.15.0" />
 		<import addon="service.listitem.helper" version="1.0.0" />
@@ -392,14 +425,102 @@ Second Test Release:
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">"A Confluence ZEITGEIST" is a clean and modern rework of the Confluence skin.</summary>
-		<description lang="en">"A Confluence ZEITGEIST" is a clean and modern rework of the Confluence skin. It mainly features an icon-based main menu without the need for scrolling and two all new wall views, which replace the old thumbnail view. Countless other small graphics updates and optimizations are included.</description>
+		<description lang="en">"A Confluence ZEITGEIST" is a clean and modern rework of the Confluence skin.[CR][CR]It features an icon-based main menu without the need for scrolling and all new wall views, which replace the old thumbnail view. Countless graphics updates, useful lightweight features and optimizations are included, resulting in a simplified experience you would expect from a retail media player with a good UI.</description>
 		<platform>all</platform>
 		<license></license>
 		<forum>https://forum.kodi.tv/showthread.php?tid=242892</forum>
-		<website></website>
+		<website>https://forum.kodi.tv/showthread.php?tid=242892</website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]5.4.14[/B] (2022-12-14)
+		<news>[B]5.4.15[/B] (2022-12-24)
+
+Hotfixes for 5.4.15
+
+- [DialogVideoInfo] Fix rare stacking condition for rating stars. If no rating, hide the unneeded horizontal space as intended to avoid weird empty visual space.
+- [VideoFullScreen] Fix Clock Label visible condition
+- [VideoFullScreen] [DialogVolumeBar] Fix rare Mute Label y-position condition
+
+[B]5.4.15[/B] (2022-12-24)
+
+- Expanded Skin Settings feature: When "Always force Preset Views" in "General Settings" is enabled, you can now customize the IDs in "Advanced Settings"
+
+- New feature/Skin setting: "Use highest score for stars rating (*****)   (Default: On)" for DialogVideoInfo
+This option will automatically convert+compare all available ratings (local and external) and always render the stars rating according to the highest of all scores, so that movies don't look worse on first sight than they might are.
+
+- Skin setting change: Home screen options -> "Date/Time type" now defaults to "Time only" (Before: "Date + Time")
+- - Additional corresponding change: Time is now at most exlusively displayed on Home screen or VideoFullScreen/MusicVisualisation regardless of the above mentioned setting. (No display on any further dialogs) Changed for simplicity and coherence.
+! Attention: Please re-check your desired setting for this option after this change.
+
+- New feature "PostCreditsScene detection" (supported by service.cinema.helper):
+This feature now shows the (reworked) post credits scene "stinger" icon in [VideoFullscreen] when movie progress is within the final 30 minutes. Just open the VideoFullscreen Info or VideoOSD itself and look right besides "End time". Functioanlity depends on the common movie tags aftercreditsstinger/duringcreditsstinger and is enabled by default.
+Additionally, you can activate a corresponding new Skin setting: OSD + Dialogs -> Video OSD / Fullscreen -> "Show Post Credits Scene Icon (10min before movie ends)   (Default: Off)" which shows the same icon on top of the playing movie once for some seconds, exactly 10 minutes before movie ends. This additional setting is optional and disabled by default.
+
+- Skin Settings visually improved, reorganized and simplified (new tab "OSD + Dialogs", renamed "Experimental" to "Advanced settings")
+
+- New Skin Setting: OSD + Dialogs -> Video Info Dialog -> "Use highest score for stars rating (*****)   (Default: On)"
+(Service+skin will convert+compare all available ratings (local and external) and always render the stars rating according to the highest of all scores, so that movies don't look worse on first sight than they might are.)
+
+- New Skin Setting: OSD + Dialogs -> Video OSD / Fullscreen -> "Enable Post Credits Scene Icon (10min before movie end)   (Default: Off)"
+
+- New Skin Setting: OSD + Dialogs -> Video Info Dialog -> "Enable Video Ratings   (Default: On)"
+
+- [Textures] Reworked all movie and tv show certification rating graphics for: (US) MPAA, (GER) FSK, (UK) BBFC, (US) TV rating system
+
+- Improved Out Of The Box Experience: When loading a TV show Episodes dialog window, the first episode will always be selected. This workarounds/fixes the KODI selection-history bug which otherwise would result in poor user experience in this regard. (Supported by service.cinema.helper)
+
+
+Additional changes:
+
+- Keyboard/remote shortcuts on Video OSD: When focusing the buttons "subtitle" or "audio settings", pressing DOWN on your remote/keyboard triggers "NextSubtitle" and "NextAudioLanguage" for quick cycling.
+Opening the dialogs via regular pushing of the mentioned buttons is not affected and remains fully functional.
+
+- "Show Dialog after playing a single Movie from Kodi DB" Skin Setting option "Cinema Screen" is now animated and darker
+
+- Improved mood backgrounds conditions, removed disabling mood backgrounds in Skin Setting (pointless at this point)
+- Added new defaultcolor "selecteddark" (used in Skin Settings rework)
+- Switched Wall View IDs: "Wall 3x9" now: 908 before: 909, "Wall 4x12" now: 909 before: 908
+
+- [VideoFullscreen] Year + Studio + Title now have a light font instead of regular, removed year label for simplicity
+- [MusicVisualisation] Artist + Album + Year now have a light font instead of regular
+- [VideoFullscreen] Studio only displays "StudioName 1" instead of the cluttered full string (Provided by service.cinema.helper addon)
+- [DialogVideoInfo] Studio only displays "StudioName 1 | StudioName 2" instead of the cluttered full string (Provided by service.listitem.helper addon)
+- [DialogVideoInfo] Visually reworked stars rating
+- [DialogVideoInfo] Reworked "Post Credits Scene" stinger icon
+- [DialogVideoInfo] Improved grouplist stacking for video/audio/movie flags
+
+- Improved Volume bar images and volume icon. Fixed a very rare issue with the volume progress bar scrubber which had a small visual glitch due to graphic rendering
+
+- Very slightly reworked rarely used PlayerControls dialog
+
+- Cleanup/removal of unused video view "PosterWrapView"
+- Very slightly reworked some legacy video views regarding fonts, borders and separators
+
+- Skin Setting "Darken Home Screen Background": Corrected "Medium" value (before: 50 like "Minimal" now: 62 as originally itended)
+- Skin Setting "Enable Idle Timer for Home Screen UI Fade Out": Corrected darkening of background when in Idle state. Background is now a bit darker due to less fade out of the darkening layer.
+
+- Removed many unnecessary label shadows (shadowcolor)
+- [Slideshow] Removed the "Music Info Overlay" in Slideshow when playing music in the background
+- [Slideshow] Changed "play" button for paused videos in slideshow
+
+- [DialogVideoInfo] Changed font face+size of main buttons
+
+- Reworked and improved VideoOSD and MusicOSD total width and button positions
+- Reworked VideoFullscreen and MusicVisualisation label positions and VideoFullscreen font style of SeekNumeric (now more simplified and without shadowcolor, using top fadeout for contrast purposes)
+
+- [VideoOSD] [MusicOSD]
+
+- [Textures] Reworked all star rating graphics
+- [Textures] Added a 8K flagging icon for listings
+
+- [MusicVisualisation] [MusicOSD] reworked stars rating
+
+- Skin setting: OSD + Dialogs -> Video Information Dialog -> "Show movie file name" now defaults to "Off" (Before: "On")
+- New Skin setting: OSD + Dialogs -> Video Information Dialog ->  "Use highest score for stars rating (*****)   (Default: On)"
+- New Skin setting: OSD + Dialogs -> Video Information Dialog ->  Enable Video Ratings   (Default: On)"
+
+- Updated very rarely used background "mood_background_default.png"
+
+[B]5.4.14[/B] (2022-12-14)
 
 - Change VARS PosterThumb, PosterThumbInfoDialog, FanartThumbnail so that fanart values are correct in very specific situations (could not use VAR due to KODI restrictions)
 - Re-added full mini sub-menu for subtitles above subtitles button within VideoOSD (Disabled by default - now has an option to Enable it. Read below.)

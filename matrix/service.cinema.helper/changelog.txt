@@ -1,3 +1,17 @@
+[B]2.0.8[/B] (2022-12-24)
+
+- Added support for new service.listitem.helper setting "videolibrary.itemseparator" needed for value splitting if user has set a custom separator via advancedsettings.xml
+- Added PostCreditsScene detection mechanism
+- Added VideoPlayer.studio splitting support
+- Added support for custom view IDs via Skin Settings option "Customize View IDs for "Always force Preset Views""
+
+New properties:
+
+(home) CinemaHelper.player.studio.X (X=index no, starting at 1)
+(home) CinemaHelper.player.nearEndPreReached
+(home) CinemaHelper.player.nearEndReached
+(home) CinemaHelper.player.movieHasPostCreditsScene
+
 [B]2.0.7[/B] (2022-12-10)
 
 - TV show episodes now always focus first item after window open. Much better OOB experience, not only because KODI 17 has a focus history bug for episodes view, but in general.
