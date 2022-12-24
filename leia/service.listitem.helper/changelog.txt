@@ -1,3 +1,22 @@
+[B]0.3.16[/B] (2022-12-24)
+
+- Added functionality for new Skin setting "Use highest score for stars rating (*****)"
+
+- Added new setting "videolibrary.itemseparator" needed for value splitting if user has set a custom separator via advancedsettings.xml
+- Added ListItem.studio   splitting support
+- Added ListItem.genre    splitting support
+- Added ListItem.director splitting support
+- Added ListItem.writer   splitting support
+
+New properties:
+
+(home) ListItemHelper.rating.highestScaleTo10
+
+(home) ListItemHelper.studio.X   (X=index no, starting at 1)
+(home) ListItemHelper.genre.X    (X=index no, starting at 1)
+(home) ListItemHelper.director.X (X=index no, starting at 1)
+(home) ListItemHelper.writer.X   (X=index no, starting at 1)
+
 [B]0.3.15[/B] (2022-12-13)
 
 - Changed settings.xml format and added language strings

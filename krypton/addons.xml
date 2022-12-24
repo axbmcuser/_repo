@@ -602,7 +602,7 @@ Second Test Release:
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="3.5.12" name="A Confluence ZEITGEIST (KODI 17)" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.5.13" name="A Confluence ZEITGEIST (KODI 17)" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0" />
 		<import addon="service.listitem.helper" version="0.3.4" />
@@ -622,7 +622,15 @@ Second Test Release:
 		<website>https://forum.kodi.tv/showthread.php?tid=242892</website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]3.5.12[/B] (2022-12-24)
+		<news>[B]3.5.13[/B] (2022-12-24)
+
+Hotfixes for 3.5.12
+
+- [DialogVideoInfo] Fix rare stacking condition for rating stars. If no rating, hide the unneeded horizontal space as intended to avoid weird empty visual space.
+- [VideoFullScreen] Fix Clock Label visible condition
+- [VideoFullScreen] [DialogVolumeBar] Fix rare Mute Label y-position condition
+
+[B]3.5.12[/B] (2022-12-24)
 
 - Expanded Skin Settings feature: When "Always force Preset Views" in "General Settings" is enabled, you can now customize the IDs in "Advanced Settings"
 
