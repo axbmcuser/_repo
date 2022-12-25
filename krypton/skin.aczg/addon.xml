@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="3.5.13" name="A Confluence ZEITGEIST (KODI 17)" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.5.14" name="A Confluence ZEITGEIST (KODI 17)" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0" />
 		<import addon="service.listitem.helper" version="0.3.4" />
@@ -14,12 +14,18 @@
 		<summary lang="en">"A Confluence ZEITGEIST" is a clean and modern rework of the Confluence skin.</summary>
 		<description lang="en">"A Confluence ZEITGEIST" is a clean and modern rework of the Confluence skin.[CR][CR]It features an icon-based main menu without the need for scrolling and all new wall views, which replace the old thumbnail view. Countless graphics updates, useful lightweight features and optimizations are included, resulting in a simplified experience you would expect from a retail media player with a good UI.</description>
 		<platform>all</platform>
-		<license></license>
+		<license>GPL-2.0-only</license>
 		<forum>https://forum.kodi.tv/showthread.php?tid=242892</forum>
 		<website>https://forum.kodi.tv/showthread.php?tid=242892</website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]3.5.13[/B] (2022-12-24)
+		<news>[B]3.5.14[/B] (2022-12-25)
+
+- Hotfix for label VAR "VideoPlayerStudioLabelOnlyFirst" (now depends on CinemaHelper.player.DBID)
+- Removed all type restrictions for "Skin Settings" -> "Add-on shortcuts"
+You can select addons of every type for every main menu category.
+
+[B]3.5.13[/B] (2022-12-24)
 
 Hotfixes for 3.5.12
 
