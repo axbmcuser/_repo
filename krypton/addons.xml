@@ -229,7 +229,7 @@
   </extension>
 </addon>
 
-<addon id="service.cinema.helper" name="Cinema Helper (KODI 17+18) (axbmcuser)" version="1.0.9" provider-name="axbmcuser">
+<addon id="service.cinema.helper" name="Cinema Helper (KODI 17+18) (axbmcuser)" version="1.0.10" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
 		<import addon="script.module.simplejson" version="3.16.1" />
@@ -244,7 +244,8 @@
 		<website>https://forum.kodi.tv/showthread.php?tid=370673</website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]1.0.9[/B] (2022-12-25)
+		<news>[B]1.0.10[/B] (2022-12-25)
+[B]1.0.9[/B] (2022-12-25)
 
 - Backported dual python 2/3 code for post credits scene detection
 - Added new property (home) CinemaHelper.player.DBID

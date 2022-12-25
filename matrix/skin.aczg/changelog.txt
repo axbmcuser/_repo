@@ -1,3 +1,9 @@
+[B]5.4.16[/B] (2022-12-25)
+
+- Hotfix for label VAR "VideoPlayerStudioLabelOnlyFirst" (now depends on CinemaHelper.player.DBID)
+- Removed all type restrictions for "Skin Settings" -> "Add-on shortcuts"
+You can select addons of every type for every main menu category.
+
 [B]5.4.15[/B] (2022-12-24)
 
 Hotfixes for 5.4.15
