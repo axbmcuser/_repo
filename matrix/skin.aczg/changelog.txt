@@ -1,7 +1,7 @@
 [B]4.4.17[/B] (2022-12-30)
 
 - Improve VideoFullScreen buffering indicator conditions 
-(Now shown less: Only if % < 100, only if buffering takes longer than 110ms and only if Player.IsInternetStream is true)
+(Now shown less: Only if % is less than 100, only if buffering takes longer than 110ms and only if Player.IsInternetStream is true)
 
 - [VideoFullScreen] [VideoOSD] [MusicVisualisation] [DialogSeekBar]
 Reworked FullScreen Info/OSD for much more simplicity (Rework includes all sections: Movies, TV Show Episodes, Videos, Music)

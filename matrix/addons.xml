@@ -423,7 +423,7 @@ Second Test Release:
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="5.4.17" name="A Confluence ZEITGEIST (KODI 19)" provider-name="axbmcuser">
+<addon id="skin.aczg" version="5.4.18" name="A Confluence ZEITGEIST (KODI 19)" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.15.0" />
 		<import addon="service.listitem.helper" version="1.0.0" />
@@ -445,7 +445,7 @@ Second Test Release:
 		<news>[B]4.4.17[/B] (2022-12-30)
 
 - Improve VideoFullScreen buffering indicator conditions
-(Now shown less: Only if % < 100, only if buffering takes longer than 110ms and only if Player.IsInternetStream is true)
+(Now shown less: Only if % is less than 100, only if buffering takes longer than 110ms and only if Player.IsInternetStream is true)
 
 - [VideoFullScreen] [VideoOSD] [MusicVisualisation] [DialogSeekBar]
 Reworked FullScreen Info/OSD for much more simplicity (Rework includes all sections: Movies, TV Show Episodes, Videos, Music)
