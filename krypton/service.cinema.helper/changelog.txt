@@ -1,5 +1,8 @@
-[B]1.0.11[/B] (2022-12-30)
+[B]1.0.12[/B] (2022-12-30)
 
+- Hotfix for code merging issue
+
+[B]1.0.11[/B] (2022-12-30)
 - Improvements for FullScreen OSD auto-close functionality and skin detection
 
 [B]1.0.10[/B] (2022-12-25)

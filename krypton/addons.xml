@@ -229,7 +229,7 @@
   </extension>
 </addon>
 
-<addon id="service.cinema.helper" name="Cinema Helper (KODI 17+18) (axbmcuser)" version="1.0.11" provider-name="axbmcuser">
+<addon id="service.cinema.helper" name="Cinema Helper (KODI 17+18) (axbmcuser)" version="1.0.12" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
 		<import addon="script.module.simplejson" version="3.16.1" />
@@ -244,7 +244,11 @@
 		<website>https://forum.kodi.tv/showthread.php?tid=370673</website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]1.0.11[/B] (2022-12-30)
+		<news>[B]1.0.12[/B] (2022-12-30)
+
+- Hotfix for code merging issue
+
+[B]1.0.11[/B] (2022-12-30)
 
 - Improvements for FullScreen OSD auto-close functionality and skin detection
 
