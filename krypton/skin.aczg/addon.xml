@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="3.5.14" name="A Confluence ZEITGEIST (KODI 17)" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.5.15" name="A Confluence ZEITGEIST (KODI 17)" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0" />
 		<import addon="service.listitem.helper" version="0.3.4" />
@@ -11,15 +11,42 @@
 		<res width="1280" height="720" aspect="16:9" default="true" folder="720p" />
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">"A Confluence ZEITGEIST" is a clean and modern rework of the Confluence skin.</summary>
-		<description lang="en">"A Confluence ZEITGEIST" is a clean and modern rework of the Confluence skin.[CR][CR]It features an icon-based main menu without the need for scrolling and all new wall views, which replace the old thumbnail view. Countless graphics updates, useful lightweight features and optimizations are included, resulting in a simplified experience you would expect from a retail media player with a good UI.</description>
+		<summary lang="en_GB">"A Confluence ZEITGEIST" is a clean and modern rework of the Confluence skin.</summary>
+		<description lang="en_GB">"A Confluence ZEITGEIST" is a clean and modern rework of the Confluence skin.[CR][CR]It features an icon-based main menu without the need for scrolling and all new wall views, which replace the old thumbnail view. Countless graphics updates, useful lightweight features and optimizations are included, resulting in a simplified experience you would expect from a retail media player with a good UI.</description>
 		<platform>all</platform>
 		<license>GPL-2.0-only</license>
 		<forum>https://forum.kodi.tv/showthread.php?tid=242892</forum>
 		<website>https://forum.kodi.tv/showthread.php?tid=242892</website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]3.5.14[/B] (2022-12-25)
+		<news>[B]3.5.15[/B] (2022-12-30)
+
+- [VideoFullScreen] [VideoOSD] [MusicVisualisation] [DialogSeekBar]
+Reworked FullScreen Info/OSD for much more simplicity (Rework includes all sections: Movies, TV Show Episodes, Videos, Music)
+Corresponding new Skin setting: 
+Skin settings -> OSD + Dialogs -> "Reduced Fullscreen Info OSD   (Default: On)"
+
+- Added new "DefaultTV" icon for PVR dialogs (mostly used as fallback for missing channel icons. Default video icon - which was used before - was kinda unfitting)
+
+- Reworked/improved most PVR dialogs
+Including the following changes: 
+- - Channel icons now always on the left side within lists)
+- - Fixed plot values regarding line breaks issues of EpisodeName
+- - Improved plot values regarding duplicate properties of EpisodeName and Plot itself (show only one property in such cases)
+
+- [Custom_1107_SearchDialog] Added Netflix search button (Visible if Kodi Netflix add-on is installed)
+- [Custom_1107_SearchDialog] Updated Prime Video Search including a new icon (Visible if Kodi Netflix add-on is installed)
+- [Custom_1107_SearchDialog] Updated YouTube + TMDB Search icons
+
+- [_includes] Added a few additional VideoPlayer.AudioLanguage/SubtitlesLanguage conditions for Kodi DSPlayer/KodiDS
+
+- [MyMusicPlaylistEditor] Slight improvements to visuals and font styles (Could use some more work)
+
+- [VideoFullScreen] Removed unused AudioDSP entries (deprecated)
+
+- [IncludesPVR] Removed unused View Change button for PVR SideBlade
+
+[B]3.5.14[/B] (2022-12-25)
 
 - Hotfix for label VAR "VideoPlayerStudioLabelOnlyFirst" (now depends on CinemaHelper.player.DBID)
 - Removed all type restrictions for "Skin Settings" -> "Add-on shortcuts"
