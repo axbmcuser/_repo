@@ -1,3 +1,30 @@
+[B]4.4.15[/B] (2022-12-30)
+
+- [VideoFullScreen] [VideoOSD] [MusicVisualisation] [DialogSeekBar]
+Reworked FullScreen Info/OSD for much more simplicity (Rework includes all sections: Movies, TV Show Episodes, Videos, Music)
+Corresponding new Skin setting: 
+Skin settings -> OSD + Dialogs -> "Reduced Fullscreen Info OSD   (Default: On)"
+
+- Added new "DefaultTV" icon for PVR dialogs (mostly used as fallback for missing channel icons. Default video icon - which was used before - was kinda unfitting)
+
+- Reworked/improved most PVR dialogs
+Including the following changes: 
+- - Channel icons now always on the left side within lists)
+- - Fixed plot values regarding line breaks issues of EpisodeName
+- - Improved plot values regarding duplicate properties of EpisodeName and Plot itself (show only one property in such cases)
+
+- [Custom_1107_SearchDialog] Added Netflix search button (Visible if Kodi Netflix add-on is installed)
+- [Custom_1107_SearchDialog] Updated Prime Video Search including a new icon (Visible if Kodi Netflix add-on is installed)
+- [Custom_1107_SearchDialog] Updated YouTube + TMDB Search icons
+
+- [_includes] Added a few additional VideoPlayer.AudioLanguage/SubtitlesLanguage conditions for Kodi DSPlayer/KodiDS
+
+- [MyMusicPlaylistEditor] Slight improvements to visuals and font styles (Could use some more work)
+
+- [VideoFullScreen] Removed unused AudioDSP entries (deprecated)
+
+- [IncludesPVR] Removed unused View Change button for PVR SideBlade
+
 [B]4.4.14[/B] (2022-12-25)
 
 - Hotfix for label VAR "VideoPlayerStudioLabelOnlyFirst" (now depends on CinemaHelper.player.DBID)
