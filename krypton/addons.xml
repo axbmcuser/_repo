@@ -229,22 +229,29 @@
   </extension>
 </addon>
 
-<addon id="service.cinema.helper" name="Cinema Helper (KODI 17+18) (axbmcuser)" version="1.0.10" provider-name="axbmcuser">
+<addon id="service.cinema.helper" name="Cinema Helper (KODI 17+18) (axbmcuser)" version="1.0.11" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
 		<import addon="script.module.simplejson" version="3.16.1" />
 	</requires>
 	<extension point="xbmc.service" library="service.py" start="login" />
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Cinema Helper</summary>
-		<description lang="en">A Cinema Helper service which provides some lightweight skin functionality</description>
+		<summary lang="en_GB">Cinema Helper</summary>
+		<description lang="en_GB">A Cinema Helper service which provides some lightweight skin functionality and properties.</description>
 		<platform>all</platform>
 		<license>GPL-2.0-only</license>
 		<forum>https://forum.kodi.tv/showthread.php?tid=370673</forum>
 		<website>https://forum.kodi.tv/showthread.php?tid=370673</website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]1.0.10[/B] (2022-12-25)
+		<news>[B]1.0.11[/B] (2022-12-30)
+
+- Improvements for FullScreen OSD auto-close functionality and skin detection
+
+[B]1.0.10[/B] (2022-12-25)
+[B]1.0.9[/B] (2022-12-25)
+
+[B]1.0.10[/B] (2022-12-25)
 [B]1.0.9[/B] (2022-12-25)
 
 - Backported dual python 2/3 code for post credits scene detection
