@@ -1,3 +1,8 @@
+[B]3.5.16[/B] (2022-12-30)
+
+- Improve VideoFullScreen buffering indicator conditions 
+(Now shown less: Only if % < 100, only if buffering takes longer than 110ms and only if Player.IsInternetStream is true)
+
 [B]3.5.15[/B] (2022-12-30)
 
 - [VideoFullScreen] [VideoOSD] [MusicVisualisation] [DialogSeekBar]

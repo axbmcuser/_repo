@@ -496,7 +496,7 @@ Second Test Release:
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="4.4.15" name="A Confluence ZEITGEIST (KODI 18)" provider-name="axbmcuser">
+<addon id="skin.aczg" version="4.4.16" name="A Confluence ZEITGEIST (KODI 18)" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="service.listitem.helper" version="0.3.4" />
@@ -515,7 +515,12 @@ Second Test Release:
 		<website>https://forum.kodi.tv/showthread.php?tid=242892</website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]4.4.15[/B] (2022-12-30)
+		<news>[B]4.4.16[/B] (2022-12-30)
+
+- Improve VideoFullScreen buffering indicator conditions
+(Now shown less: Only if % < 100, only if buffering takes longer than 110ms and only if Player.IsInternetStream is true)
+
+[B]4.4.15[/B] (2022-12-30)
 
 - [VideoFullScreen] [VideoOSD] [MusicVisualisation] [DialogSeekBar]
 Reworked FullScreen Info/OSD for much more simplicity (Rework includes all sections: Movies, TV Show Episodes, Videos, Music)
