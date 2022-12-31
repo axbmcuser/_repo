@@ -466,7 +466,7 @@ Second Test Release:
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="5.4.19" name="A Confluence ZEITGEIST (KODI 19)" provider-name="axbmcuser">
+<addon id="skin.aczg" version="5.4.20" name="A Confluence ZEITGEIST (KODI 19)" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.15.0" />
 		<import addon="service.listitem.helper" version="1.0.0" />
@@ -485,7 +485,11 @@ Second Test Release:
 		<website>https://forum.kodi.tv/showthread.php?tid=242892</website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]5.4.19[/B] (2022-12-31)
+		<news>[B]5.4.20[/B] (2023-01-01)
+
+- [DialogSeekBar] Added Player.HasPerformedSeek(2) because Player.DisplayAfterSeek is removed for Kodi 20
+
+[B]5.4.19[/B] (2022-12-31)
 
 - Improved full screen info/osd visual condition for very rare case of playing videos without audio track (and therefore empty VideoPlayer.AudioLanguage property)
 
