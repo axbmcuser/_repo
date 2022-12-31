@@ -1,4 +1,18 @@
-[B]4.4.17[/B] (2022-12-30)
+[B]5.4.19[/B] (2022-12-31)
+
+- Improved full screen info/osd visual condition for very rare case of playing videos without audio track (and therefore empty VideoPlayer.AudioLanguage property)
+
+- Removed some bottom item counts for PVR dialogs (Affects "Timer rules" and more)
+
+- [VideoFullScreen] Minor improvements, including: Cohesive picon fadetime, added missing VisibleFadeEffect for SubtitlesLanguage, added missing VideoPlayer.SubtitlesEnabled condition for Kodi 18+ (does no harm on 17 also)
+- [_variables] Minor improvements, including: Corrected conditions/brackets for VideoPlayer.AudioLanguage and VideoPlayer.SubtitlesLanguage
+- [Includes] Remove unused SelectLabel
+
+[B]5.4.18[/B] (2022-12-30)
+
+- Instant Hotfix for code merging/syntax error issue
+
+[B]5.4.17[/B] (2022-12-30)
 
 - Improve VideoFullScreen buffering indicator conditions 
 (Now shown less: Only if % is less than 100, only if buffering takes longer than 110ms and only if Player.IsInternetStream is true)
