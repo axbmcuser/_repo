@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.hdtrailers_net" version="2.0.0" name="HD-Trailers.net" provider-name="WebEye, axbmcuser">
+<addon id="plugin.video.hdtrailers_net" version="2.0.1" name="HD-Trailers.net" provider-name="WebEye, axbmcuser">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.requests" version="2.12.4"/>
@@ -16,7 +16,13 @@
     <website>https://forum.kodi.tv/showthread.php?tid=148400</website>
     <forum>https://forum.kodi.tv/showthread.php?tid=148400</forum>
     <source>https://github.com/axbmcuser/_repo/</source>
-    <news>[B]2.0.0[/B] (2022-12-31)
+    <news>[B]2.0.1[/B] (2022-12-31)
+
+- Improvements to the automatic View Type selection
+- Added main page button to all subfolders
+- Clean up unused code and language strings
+
+[B]2.0.0[/B] (2022-12-31)
 
 - Python 3 full rewrite by WebEye for Kodi 19+20
 - Improvements, additional changes and release cleanup by axbmcuser
