@@ -1,3 +1,9 @@
+[B]1.0.13[/B] (2022-12-31)
+
+- Removed unused code (Skin Reload functionality)
+- On Kodi 17, don't check for Window.IsVisible(OsdSubtitleSettings) since this dialog is non existant
+- Added multi-version check for upcoming Kodi 21
+
 [B]1.0.12[/B] (2022-12-30)
 
 - Hotfix for code merging issue
