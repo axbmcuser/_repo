@@ -1,0 +1,4 @@
+[B]2.0.0[/B] (2022-12-31)
+
+- Python 3 full rewrite by WebEye for Kodi 19+20
+- Improvements, additional changes and release cleanup by axbmcuser

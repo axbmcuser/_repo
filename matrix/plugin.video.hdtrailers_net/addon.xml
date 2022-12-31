@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.video.hdtrailers_net" version="2.0.0" name="HD-Trailers.net" provider-name="WebEye, axbmcuser">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.requests" version="2.12.4"/>
+    <import addon="script.module.beautifulsoup4" version="4.3.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="main.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <language>en</language>
+    <platform>all</platform>
+    <license>GPL-3.0-only</license>
+    <website>https://forum.kodi.tv/showthread.php?tid=148400</website>
+    <forum>https://forum.kodi.tv/showthread.php?tid=148400</forum>
+    <source>https://github.com/axbmcuser/_repo/</source>
+    <news>[B]2.0.0[/B] (2022-12-31)
+
+- Python 3 full rewrite by WebEye for Kodi 19+20
+- Improvements, additional changes and release cleanup by axbmcuser
+
+    </news>
+    <summary lang="de">Trailer von der Internetseite "hd-trailers.net"</summary>
+    <summary lang="en">Trailers from the website "hd-trailers.net"</summary>
+    <assets>
+      <icon>resources/assets/icon.png</icon>
+      <fanart>resources/assets/fanart.png</fanart>
+    </assets>
+  </extension>
+</addon>
