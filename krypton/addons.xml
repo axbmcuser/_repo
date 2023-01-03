@@ -625,7 +625,7 @@ Second Test Release:
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="3.5.18" name="A Confluence ZEITGEIST (KODI 17)" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.5.19" name="A Confluence ZEITGEIST (KODI 17)" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0" />
 		<import addon="service.listitem.helper" version="0.3.4" />
@@ -645,7 +645,35 @@ Second Test Release:
 		<website>https://forum.kodi.tv/showthread.php?tid=242892</website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]3.5.18[/B] (2022-12-31)
+		<news>[B]3.5.19[/B] (2023-01-03)
+
+- Further tweaking and visual fine tuning for "Reduced Fullscreen Info OSD" [VideoFullScreen] [MusicVisualisation]
+
+- Internal code changes to "Reduced Fullscreen Info OSD" (Some of them have no visible changes for the end user)
+- [DialogSeekBar] Added Player.HasPerformedSeek(2) because Player.DisplayAfterSeek is removed for Kodi 20
+- [Custom_1107_SearchDialog] Changed URL for Netflix search
+- [VideoFullScreen] Further UI refinements (Refined and shortened "Next" pvr item display, fadeout top animation and more)
+- [MusicVisualisation] Further UI refinements (Refined and shortened "Next" track display, ratings display in reduced UI and more)
+- [VideoOSD] Removed Audio DSP OSD button (deprecated after Kodi 17)
+
+- [Textures] Reworked all remaining graphics that needed some work, including:
+- - Reworked DiscMenu button for VideoOSD (rarely ever used)
+- - Reworked all remaining DefaultXXX icons like the ones for HardDisk, Network and more
+- - Added some DefaultPVR graphics from upstream, most likely only used in higher Kodi versions
+- - Removed now unused files: contentpanel.png, recentaddedback.png, defaultaudiodsp.png, osddspaudiofo.png, osddspaudionf.png
+- - Added 2K resolution flag (1080p now also shows "2K" instead of "1080" since the new name is now quite widely used for that resolution and has a shorter, simpler look to it in our use cases)
+
+- [ViewsMusicLibrary] Minor cleanup of unused legacy Music Artwork view (Deprecated and will be replaced with a similar Artwork View similar to the one from VideoLibrary)
+- Renamed recently added DefaultTV.png to DefaultPVRChannels.png to be coherent with default PVR icon name of newer Kodi versions
+
+- Added 2 new Advanced Skin Settings:
+- - Skin settings – Advanced - OSD + Dialogs – "Show video resolution on opened Reduced Fullscreen buttons OSD   (Default: Off)"
+- - Skin settings – Advanced - OSD + Dialogs – "Show audio channels on opened Reduced Fullscreen OSD   (Default: Off)"
+Both settings are recommended to be set to "Off" because of the cleaner OSD impression when opening VideoOSD.
+
+- Changelog revised to be more xml syntax safe
+
+[B]3.5.18[/B] (2022-12-31)
 
 - Improved full screen info/osd visual condition for very rare case of playing videos without audio track (and therefore empty VideoPlayer.AudioLanguage property)
 
@@ -669,7 +697,7 @@ Second Test Release:
 - [VideoFullScreen] [VideoOSD] [MusicVisualisation] [DialogSeekBar]
 Reworked FullScreen Info/OSD for much more simplicity (Rework includes all sections: Movies, TV Show Episodes, Videos, Music)
 Corresponding new Skin setting:
-Skin settings -> OSD + Dialogs -> "Reduced Fullscreen Info OSD   (Default: On)"
+Skin settings – OSD + Dialogs – "Reduced Fullscreen Info OSD   (Default: On)"
 
 - Added new "DefaultTV" icon for PVR dialogs (mostly used as fallback for missing channel icons. Default video icon - which was used before - was kinda unfitting)
 
@@ -680,7 +708,7 @@ Including the following changes:
 - - Improved plot values regarding duplicate properties of EpisodeName and Plot itself (show only one property in such cases)
 
 - [Custom_1107_SearchDialog] Added Netflix search button (Visible if Kodi Netflix add-on is installed)
-- [Custom_1107_SearchDialog] Updated Prime Video Search including a new icon (Visible if Kodi Netflix add-on is installed)
+- [Custom_1107_SearchDialog] Updated Prime Video Search including a new icon (Visible if Kodi Prime Video add-on is installed)
 - [Custom_1107_SearchDialog] Updated YouTube + TMDB Search icons
 
 - [_includes] Added a few additional VideoPlayer.AudioLanguage/SubtitlesLanguage conditions for Kodi DSPlayer/KodiDS
@@ -694,7 +722,7 @@ Including the following changes:
 [B]3.5.14[/B] (2022-12-25)
 
 - Hotfix for label VAR "VideoPlayerStudioLabelOnlyFirst" (now depends on CinemaHelper.player.DBID)
-- Removed all type restrictions for "Skin Settings" -> "Add-on shortcuts"
+- Removed all type restrictions for "Skin Settings" – "Add-on shortcuts"
 You can select addons of every type for every main menu category.
 
 [B]3.5.13[/B] (2022-12-24)
@@ -712,22 +740,22 @@ Hotfixes for 3.5.12
 - New feature/Skin setting: "Use highest score for stars rating (*****)   (Default: On)" for DialogVideoInfo
 This option will automatically convert+compare all available ratings (local and external) and always render the stars rating according to the highest of all scores, so that movies don't look worse on first sight than they might are.
 
-- Skin setting change: Home screen options -> "Date/Time type" now defaults to "Time only" (Before: "Date + Time")
+- Skin setting change: Home screen options – "Date/Time type" now defaults to "Time only" (Before: "Date + Time")
 - - Additional corresponding change: Time is now at most exlusively displayed on Home screen or VideoFullScreen/MusicVisualisation regardless of the above mentioned setting. (No display on any further dialogs) Changed for simplicity and coherence.
 ! Attention: Please re-check your desired setting for this option after this change.
 
 - New feature "PostCreditsScene detection" (supported by service.cinema.helper):
 This feature now shows the (reworked) post credits scene "stinger" icon in [VideoFullscreen] when movie progress is within the final 30 minutes. Just open the VideoFullscreen Info or VideoOSD itself and look right besides "End time". Functioanlity depends on the common movie tags aftercreditsstinger/duringcreditsstinger and is enabled by default.
-Additionally, you can activate a corresponding new Skin setting: OSD + Dialogs -> Video OSD / Fullscreen -> "Show Post Credits Scene Icon (10min before movie ends)   (Default: Off)" which shows the same icon on top of the playing movie once for some seconds, exactly 10 minutes before movie ends. This additional setting is optional and disabled by default.
+Additionally, you can activate a corresponding new Skin setting: OSD + Dialogs – Video OSD / Fullscreen – "Show Post Credits Scene Icon (10min before movie ends)   (Default: Off)" which shows the same icon on top of the playing movie once for some seconds, exactly 10 minutes before movie ends. This additional setting is optional and disabled by default.
 
 - Skin Settings visually improved, reorganized and simplified (new tab "OSD + Dialogs", renamed "Experimental" to "Advanced settings")
 
-- New Skin Setting: OSD + Dialogs -> Video Info Dialog -> "Use highest score for stars rating (*****)   (Default: On)"
+- New Skin Setting: OSD + Dialogs – Video Info Dialog – "Use highest score for stars rating (*****)   (Default: On)"
 (Service+skin will convert+compare all available ratings (local and external) and always render the stars rating according to the highest of all scores, so that movies don't look worse on first sight than they might are.)
 
-- New Skin Setting: OSD + Dialogs -> Video OSD / Fullscreen -> "Enable Post Credits Scene Icon (10min before movie end)   (Default: Off)"
+- New Skin Setting: OSD + Dialogs – Video OSD / Fullscreen – "Enable Post Credits Scene Icon (10min before movie end)   (Default: Off)"
 
-- New Skin Setting: OSD + Dialogs -> Video Info Dialog -> "Enable Video Ratings   (Default: On)"
+- New Skin Setting: OSD + Dialogs – Video Info Dialog – "Enable Video Ratings   (Default: On)"
 
 - [Textures] Reworked all movie and tv show certification rating graphics for: (US) MPAA, (GER) FSK, (UK) BBFC, (US) TV rating system
 
@@ -779,9 +807,9 @@ Opening the dialogs via regular pushing of the mentioned buttons is not affected
 
 - [MusicVisualisation] [MusicOSD] reworked stars rating
 
-- Skin setting: OSD + Dialogs -> Video Information Dialog -> "Show movie file name" now defaults to "Off" (Before: "On")
-- New Skin setting: OSD + Dialogs -> Video Information Dialog ->  "Use highest score for stars rating (*****)   (Default: On)"
-- New Skin setting: OSD + Dialogs -> Video Information Dialog ->  Enable Video Ratings   (Default: On)"
+- Skin setting: OSD + Dialogs – Video Information Dialog – "Show movie file name" now defaults to "Off" (Before: "On")
+- New Skin setting: OSD + Dialogs – Video Information Dialog –  "Use highest score for stars rating (*****)   (Default: On)"
+- New Skin setting: OSD + Dialogs – Video Information Dialog –  Enable Video Ratings   (Default: On)"
 
 - Updated very rarely used background "mood_background_default.png"
 
@@ -789,7 +817,7 @@ Opening the dialogs via regular pushing of the mentioned buttons is not affected
 
 - Change VARS PosterThumb, PosterThumbInfoDialog, FanartThumbnail so that fanart values are correct in very specific situations (could not use VAR due to KODI restrictions)
 - Re-added full mini sub-menu for subtitles above subtitles button within VideoOSD (Disabled by default - now has an option to Enable it. Read below.)
-- - Added new setting: Skin Settings -> General Settings -> Video OSD -> [Video OSD]  Enable mini sub-menu above subtitle button (Default: Off)
+- - Added new setting: Skin Settings – General Settings – Video OSD – [Video OSD]  Enable mini sub-menu above subtitle button (Default: Off)
 (KODI 17.6 has this option hidden since the menu is always enabled for that version which has no dedicated subtitle dialog compared to 17.7(DS)/18/19 and higher)
 
 [B]3.5.10[/B] (2022-12-12)
@@ -897,7 +925,7 @@ In total, there are 3 separate "My List" categories: Movies, TV Shows, TV Show E
 "My List (Episodes)" is accessible using the "parent folder" item from withwin "My List (TV Shows)"
 Further remark: The "Special Playlists" which have existed in the past can also now be found when using the "parent folder" item from withwin any "My List"
 
-Feature is disabled by default: Can be enabled in Skin Settings -> General -> Video Info Dialog
+Feature is disabled by default: Can be enabled in Skin Settings – General – Video Info Dialog
 
 - [New Features] Added a new small+lightweight addon called "Cinema Helper Service" which is used by the skin:
 Features:
@@ -905,7 +933,7 @@ Features:
 2) Show "Video Info Dialog" or "Cinema screen" after playback of a movie from Kodi DB is finished
 - "Cinema Screen" is a slightly animated "red curtain" Cinema Wallpaper which can be shown after the movie presentation is complete
 - Additionaly you can choose to add a fully custom single or multiline Text to this end screen like "THANKS FOR WATCHING"
-- "Cinema Screen" can be tested with or without the optional text from within Skin Settings (See Skin Setting -> Experimental)
+- "Cinema Screen" can be tested with or without the optional text from within Skin Settings (See Skin Setting – Experimental)
 - Alternatively to the "Cinema Screen" you can choose to just Display the Video Info Dialog of the movie that has just completed
 Both variants avoid abruptly returning to the regular and maybe bright Kodi UI after movie presentation and therefore represent a much better all-around-cinema-mood experience
 3) "My List" functionality (see above)
@@ -947,7 +975,7 @@ Improvements for Wall Views, including:
 
 - Improved Home Screen Widget "Recently added Albums" (Labels + Cover Art size)
 
-- [New Option] New option in Skin Settings -> Home screen -> Date/Time type:
+- [New Option] New option in Skin Settings – Home screen – Date/Time type:
 You can now choose between showing "Date + Time" (Default), "Time only" and "Hidden"
 This option also affects the top right clock Video/Music Fullscreen
 
@@ -1014,14 +1042,14 @@ Also forces "Sort by: Episode ASCENDING" for Episodes content on Window Load
 
 [B]3.4.4[/B] (2020-03-02)
 - Skin settings: New option
-- - General settings -> Trailer Search method: Kodi YouTube Add-on / Open in Default Web Browser
+- - General settings – Trailer Search method: Kodi YouTube Add-on / Open in Default Web Browser
 - Other improvements
 
 [B]3.4.3[/B] (2020-02-29)
 - Updated language strings (Including: Strangely named "Working..." renamed to "Loading...")
 - Skin settings: New option
-- - General settings -> views and visual options
-- - -> "Show mouse control buttons if mouse input enabled   (Default: Disabled)"
+- - General settings – views and visual options
+- - – "Show mouse control buttons if mouse input enabled   (Default: Disabled)"
 - Other improvements
 
 [B]3.4.2[/B] (2020-02-22)
