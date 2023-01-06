@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="4.4.19" name="A Confluence ZEITGEIST (KODI 18)" provider-name="axbmcuser">
+<addon id="skin.aczg" version="4.4.20" name="A Confluence ZEITGEIST (KODI 18)" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="service.listitem.helper" version="0.3.4" />
@@ -18,7 +18,30 @@
 		<website>https://forum.kodi.tv/showthread.php?tid=242892</website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]4.4.19[/B] (2023-01-03)
+		<news>[B]4.4.20[/B] (2023-01-06)
+
+- Reworked all FullScreen OSD buttons + icons for VideoOSD and MusicOSD
+- Additionaly, reworked accordingly: playlist_icon.png, OSDPause.png (simplified), OSDPlay.png, VolumeIcon.png, icon-mute.png
+
+- [_variables] Fix KodiDS+madVR AudioLanguage and SubtitlesLanguage label conditions
+- [EventLog] [DialogPlayerProcessInfo] [SettingsSystemInfo] Sligtly reworked visuals and font styles
+- [MyPVRChannels] Reworked visuals for more simplicity (Including channel icon visual tweaking)
+- [DialogPVRChannelsOSD] Slightly reworked visuals for more simplicity (Including channel icon visual tweaking)
+- [MyPVRRecordings] Fallback to DefaultPVRChannels icon instead of DefaultVideo or DefaultTVShows icons (Workaround for Kodi 17-20 bug/inconsistency)
+- [VideoOSD] Add condition for AudioLanguage OSD button down-shortcut (Only execute action if AudioLanguage is not empty. This avoids rare crash situations for KodiDS when playing videos without audio track)
+- [VideoFullScreen] [MusicVisualisation] Make top and bottom fadeout gradient slightly more transparent and less dark
+- [VideoFullScreen] Corrected +3px LiveTV  VideoOSD button x-position difference compared to other media playing
+- [DialogBusy] Reworked font style and animated Kodi logo size, also reworked texture busy_kodi.png + added high resolution variant busy_kodi_uhd.png
+
+- [Textures] Added additional texture variants for high resolution displays: 
+aczg_logo_settings_uhd.png, aczg_logo_skin_settings_uhd.png, DefaultSuperFolderVideos_uhd.png, kodi-logo-large_uhd.png, madvr-logo_uhd.png, madvr-logo-full_uhd.png, settings_uhd.png, icon_power_uhd.png, icon_search_uhd.png, kodi-logo_uhd.png, also slightly improved variants of same textures for regular resolution
+- [Textures] Reworked DefaultFile.png (less bulky looking)
+- [Textures] Reworked DefaultIconError.png, DefaultIconWarning.png, DefaultIconInfo.png, GoFullscreen.png
+- [Textures] Removed unused textures: contentpanelmirror.png, globalsearch-background.jpg
+- [Textures] New home menu system icon (regular and high resolution variants), 
+also changed all other icons which used the old system/settings/gear symbol: OSDAudio/OSDVideo OSD settings button, icon_system.png, settings_level.png
+
+[B]4.4.19[/B] (2023-01-03)
 
 - Further tweaking and visual fine tuning for "Reduced Fullscreen Info OSD" [VideoFullScreen] [MusicVisualisation]
 
