@@ -1,3 +1,7 @@
+[B]1.0.2[/B] (2023-01-10)
+- Minor performance improvements and optimizations
+- Added properties and changed property names
+
 [B]1.0.1[/B] (2022-03-27)
 - Minor performance improvements and optimizations
 
