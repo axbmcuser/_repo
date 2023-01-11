@@ -1,3 +1,25 @@
+[B]5.4.23[/B] (2023-01-11)
+
+- Further visual improvements of all FullScreen OSD buttons + icons for VideoOSD and MusicOSD
+- [DialogVideoInfo] Improved visuals (Also changed movie/episode Runtime format, button transparency and adapted "service.duration.helper" addon on Kodi 17 accordingly to support the changes) also affects [_variables] [Includes]
+- - Includes rework of icons: icon_minus_red.png, icon_mylist.png, icon_play.png, icon_plus.png, icon_plus_green.png, icon_watched.png
+- Reworked MusicOSD icons for "Repeat" and "Shuffle" (including all sub variants)
+
+- Hide disabled Pause Button for VideoOSD if Player.PauseEnabled is false. (Mostly affects LiveTV but also the other almost non-existant cases)
+- Reduced Video Info OSD: Added minimalistic animated "Now Recording" icon for LiveTV channel (visible during live-recording of the current channel)
+- Improved display of background Music Visualization + Fanart/Backgrounds at the same time
+- Improved fanart handling [IncludesBackgroundBuilding]
+- [VideoOSD] [MusicOSD] Improved mouse support for mini sub menus (Enabling/using a mouse is still never recommended though)
+- Improved visuals and changed font styles for for notification dialogs: DialogExtendedProgressBar, DialogNotification
+- [MusicVisualisation] Further UI refinements (Shortened track artist display to album artist)
+- [VideoFullScreen] [MusicVisualisation] Further UI refinements (Changed font colors and removed last remaining font shadows for more modern+clean look)
+- [Textures] Reworked arrow-big-left.png, arrow-big-right.png, arrow-white.png, DefaultTVShows.png, OSDPlay.png, icon_video_tvshows.png because of corresponding other texture changes
+- [Textures] Removed unused textures: 100x100_green.png, 100x100_red.png, OSDPreFO.png, OSDPreNF.png, OSDPresetSettingsFO.png, OSDPresetSettingsNF.png, icon_player.png
+arrow-big-left.png
+
+- [DialogBusy] Reworked dialog, removed unused progress bar, removed "Loading..." text, dialog now displayed in center of the screen while loading. Changed [DialogNotification] accordingly (removed conditional x-move)
+- [VideoFullScreen] Replaced buffering indicator percentage label with identical Kodi loading logo icon without any text
+
 [B]5.4.22[/B] (2023-01-06)
 
 - Reworked all FullScreen OSD buttons + icons for VideoOSD and MusicOSD
