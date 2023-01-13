@@ -466,7 +466,7 @@ Second Test Release:
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="5.4.23" name="A Confluence ZEITGEIST (KODI 19)" provider-name="axbmcuser">
+<addon id="skin.aczg" version="5.4.24" name="A Confluence ZEITGEIST (KODI 19)" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.15.0" />
 		<import addon="service.listitem.helper" version="1.0.0" />
@@ -485,7 +485,16 @@ Second Test Release:
 		<website>https://forum.kodi.tv/showthread.php?tid=242892</website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]5.4.23[/B] (2023-01-11)
+		<news>[B]5.4.24[/B] (2023-01-13)
+
+- Replace PlayerControl(Next/Previous) commands with ChannelUp/ChannelDown for LiveTV
+(Workaround for Kodi 18+ bug with non working channel switching with the mentioned PlayerControl commands)
+Affects [VideoOSD] [MusicOSD] [MusicVisualisation] [PlayerControls] [Includes]
+- [MusicOSD] Minor visual improvements (Includes: Hide Playlist button for LiveTV radio channels, Hide disabled Pause button (typical for LiveTV))
+- [MusicVisualisation] Change fallback image for LiveTV radio channels to DefaultPVRChannels.png (Before: DefaultAlbumCover.png), removed some unneeded control ids
+- Removed [PlayerControls] dialog (Reason: Heavily redundant and outdated control concept) Includes post removal clean-up: Deleted SmallVideoInfo and SmallMusicInfo from [Includes]
+
+[B]5.4.23[/B] (2023-01-11)
 
 - Further visual improvements of all FullScreen OSD buttons + icons for VideoOSD and MusicOSD
 - [DialogVideoInfo] Improved visuals (Also changed movie/episode Runtime format, button transparency and adapted "service.duration.helper" addon on Kodi 17 accordingly to support the changes) also affects [_variables] [Includes]

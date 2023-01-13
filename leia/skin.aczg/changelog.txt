@@ -1,3 +1,12 @@
+[B]4.4.22[/B] (2023-01-13)
+
+- Replace PlayerControl(Next/Previous) commands with ChannelUp/ChannelDown for LiveTV 
+(Workaround for Kodi 18+ bug with non working channel switching with the mentioned PlayerControl commands) 
+Affects [VideoOSD] [MusicOSD] [MusicVisualisation] [PlayerControls] [Includes]
+- [MusicOSD] Minor visual improvements (Includes: Hide Playlist button for LiveTV radio channels, Hide disabled Pause button (typical for LiveTV))
+- [MusicVisualisation] Change fallback image for LiveTV radio channels to DefaultPVRChannels.png (Before: DefaultAlbumCover.png), removed some unneeded control ids
+- Removed [PlayerControls] dialog (Reason: Heavily redundant and outdated control concept) Includes post removal clean-up: Deleted SmallVideoInfo and SmallMusicInfo from [Includes]
+
 [B]4.4.21[/B] (2023-01-11)
 
 - Further visual improvements of all FullScreen OSD buttons + icons for VideoOSD and MusicOSD
