@@ -466,7 +466,7 @@ Second Test Release:
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="5.4.24" name="A Confluence ZEITGEIST (KODI 19)" provider-name="axbmcuser">
+<addon id="skin.aczg" version="5.4.25" name="A Confluence ZEITGEIST (KODI 19)" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.15.0" />
 		<import addon="service.listitem.helper" version="1.0.0" />
