@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="4.4.23" name="A Confluence ZEITGEIST (KODI 18)" provider-name="axbmcuser">
+<addon id="skin.aczg" version="4.4.24" name="A Confluence ZEITGEIST (KODI 18)" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="service.listitem.helper" version="0.3.4" />
@@ -18,7 +18,149 @@
 		<website>https://forum.kodi.tv/showthread.php?tid=242892</website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]4.4.22[/B] (2023-01-13)
+		<news>[B]4.4.24[/B] (2023-02-04)
+
+- Large visual rework and optimization of many visual items, including the following changes:
+
+Further rework of the already introduced Reduced Fullscreen Info OSD (It's now the default - deprecated option for the old variant has been removed)
+- Added/restructured the following Advanced Skin Settings accordingly: 
+- - Skin settings – Advanced - OSD + Dialogs – "Always show audio/sub language with Reduced Fullscreen OSD   (Default: On)"
+- - Skin settings – Advanced - OSD + Dialogs – "Show video resolution on opened Reduced Fullscreen OSD   (Default: Off)"
+- - Skin settings – Advanced - OSD + Dialogs – "Show audio codec on opened Reduced Fullscreen OSD   (Default: Off)"
+- - Skin settings – Advanced - OSD + Dialogs – "Show audio channels on opened Reduced Fullscreen OSD   (Default: Off)"                    
+The latter three settings are recommended to be set to "Off" because of the cleaner OSD impression when opening VideoOSD (unless you really need one of them enabled for informational purposes, of course)
+
+Reworked FullScreenVideo + VideoOSD with further improved and modern look adapting the graphical changes (codec icons and more)
+
+Reworked Dialog Video Info dialog with further improved and modern look adapting the graphical changes (codec icons and more)
+
+Reworked MusicVisualisation + MusicOSD with further improved and modern look adapting the graphical changes (codec icons and more)
+
+Improved animation transitions when switching windows/dialogs (window open/close) and visible/hidden states
+
+Reworked "System/Settings" and sub-dialogs + "Skin Settings" visuals (Including new lighter left menu visuals for the following windows: Settings/Settings Category/Skin Settings)
+
+Reworked settings items visuals (Including New modern Radio Button design including an inverted variant for special use cases, reworked spincontrol(ex) and more textures)
+
+Reworked all audio codes icons (source now based on vector graphics for future support of double/infinite resolution icons)
+Reworked all video codec icons (source now based on vector graphics for future support of double/infinite resolution icons)
+Reworked and adapted all remaining icons for resolutions, 3D, HD, 4K, 8K, Sets including listing variants
+Reworked TV ratings icons
+Added missing channel flags up to 14 channels
+
+Reworked all scrollbars (Replaces old blurry visuals - they are now pixel perfect)
+Reworked all progress bars (Replaces old blurry visuals - they are now pixel perfect)
+Reworked all seek bars (Replaces old blurry visuals - they are now pixel perfect)
+
+Reworked font style/weight of almost all window/dialogs - all of which weren't already optimized for the new lighter look in previous updates
+
+Reworked Custom Search Dialog
+Reworked Parent Folder Item visuals with coherent new icon with sub variants (bg transparent/solid/innersquare)
+
+Reworked rarely used [DialogTextViewer] to be coherent to [Custom_1102_TextViewer]
+Added VolumeIcon_low.png texture: If volume is 40% or lower, the VolumeIcon now shows this different VolumeIcon for a better feel when changing volume (Like on most modern UI)
+Fruther reworked all OSD button icons including new adapted 3D icon from above
+Reworked and reduced all separator textures, optimized all heights to be max 1px (Fixes inconsistent partly blurry old separators)
+
+Slightly reworked many View for different categories (Music, MusicVideos, PVR) even some deprecated ones which will be removed in the future. (But for now they at least look and function better :-)
+
+Reworked [DialogGameControllers] to upstream changes (window is almost unused on Kodi 17 but nonetheless)
+
+Optimized global context menu top margin [DialogButtonMenu]
+Reworked [DialogKeyboard] and [DialogNumeric] (The first more than the latter window)
+
+Improved DialogVolumeBar and Mute Icon placement (FadeIn/Out, added zorder the volume dialog is always on top. Fixes DialogPVRChannelsOSD being displayed on top of DialogVolumeBar)
+Improved VideoFullScreen Clock visible condition
+Changed left/right arrows for home screen "Recently [...]" widgets to be more consistent
+Removed code references to unused old add-on script.skin.helper.service
+
+Removed Skin Settings option under General Settings: "Show mouse control buttons if mouse input enabled   (Default: Off)" and cleaned up the now deprecated code
+
+"End time:" text in the Fullscreen Info is replaced with a small icon. 
+Also: End time is now only shown if the video has a duration of 10+ minutes. Reason: Showing this info for a short 3 minute video makes no sense in regards to the purpose of this feature.
+
+Improved visual dummy seek bar support when playing a LiveTV channel without EPG data
+
+"NextSubtitle" shortcut when using DOWN on your remote/keyboard is now also enabled even if the optional subtitles mini-sub menu is enabled
+
+Improved main menu "VIDEOS" item onclick targets, removed/added/restructured sub-menu items, removed now deprecated VideosDirectLink property handling
+
+Improved main menu "MUSIC" item onclick targets, removed/added/restructured sub-menu items, removed now deprecated MusicDirectLink property handling
+
+
+Improved "manual search" button hitrect in Subtitles Download dialog (Only affects mouse input)
+
+[Includes_DialogSelect] Improved some image positions and sizes for consistency betweens dialog variants
+[_variables] Added rus audio language condition for DSPlayer/KodiDS conditions
+
+Top right PVR Recording Widget is now also shown fully when PVR Radio is in hover state (Before: Only PVR TV)
+
+[Home] [IncludesHomeRecentlyAdded] Corrected multiple conditions replacing "String." with "Integer."
+[FileBrowser] Create Folder button is only shown if it's available (Before: The button was shown as disabled almost all the time)
+[Includes] Reworked CommonNowPlaying_Controls code
+[SkinSettings] Corrected "CustomBackgroundMultipleTimePerImageReloadRestore" handling
+
+[VideoOSDBookmarks] Improved visuals
+
+
+Many more minor and partly subtle improvements and visual tweaks based on repeated UI testing which were too much to document
+
+- [Textures] Removed aspectratio icon folder due to these textures being deprecated
+- [Textures] Reworked icon_back.png, icon_home.png and changed their visuals (rarely used mouse control buttons, you never see them by default)
+- [Textures] Reworked GoFullscreen.png
+- [Textures] Removed many textures which were now deprececated to the global visual rework
+- [Textures] Added end_time_icon.png, end_time_icon_uhd.png
+
+- Code clean-up: Removed all references to removed textures to avoid "texture not found" log entries
+- Code clean-up: Removed 0/0 coordinates of many dialogs
+
+- Improved PVR and PVR Timshift support for Fullscreen OSD and further dialogs (Minimal on Kodi 17, more so on Kodi 18+) 
+[DialogPVRInfo] [VideoFullScreen] [MusicVisualisation] [Includes] [_variables] [DialogSeekBar]
+- [MusicVisualisation] Show ChannelNo for LiveTV radio, fill Player.Title with channel name when Player.Title is empty (LiveTV radio)
+- [ViewsVideoLibrary] Added rating stars to Fanart View
+- [ViewsVideoLibrary] Reworked "Modern" (Episodes/Videos) View including new textures mentioned below (Episode resumable icon looks much better now and is neatly combined with the watched checkmark when both are shown at the same time. This removes the weird visually unpleasing overlapping that has been used in the past.)
+- [_ViewsFileMode_text] Watched checkmark icon now same size as in reworked "Modern" View
+- [ViewsFileMode] [MyPVRRecordings] Adapted "Modern" View rework changes for resumable/watched state icons
+- [ViewsFileMode] [MyPVRRecordings] [ViewsVideoLibrary] [_ViewsFileMode_walls] [DialogPVRChannelManager] [Includes_DialogSelect] [_ViewsFileMode_text] [_includes]
+Reworked many windows and views regarding media flags and resumable/watched state icons changes, added support for ListItem.Resolution 8K
+Also: Clean-up for some old deprecated views (Removing separators, hiding image controls if ListItem.IsParentFolder, corrected some x/y positions to be more consistent)
+Removed strong shadow on watched checkmark icon for [_ViewsFileMode_walls]
+- [_variables] Changed ItemDuration[X]Label handling, added ItemDurationLabelSpace 
+- [DialogContextMenu] Reduced top margin so padding is identical to L R B margins
+- [MyVideoNav] Make footer slightly transparent for certain modern views
+- [Textures] Reworked icon-mute.png [DialogVolumeBar]
+- [Textures] Slightly improved VolumeIcon.png
+- [Textures] Reworked DefaultIconInfo.png, OverlayLocked.png, OverlayRAR.png, OverlayWatching.png, OverlayWatched.png, fallback.png, DefaultMovies.png, DefaultAudio.png, DefaultAlbumCover.png
+- [Textures] Added OverlayWatched_w_shadow.png, some additional flagging/aspectratio flags (unused at this time)
+- [Textures] Removed unused textures: floor_button_alpha.png, separator_vertical.png, OverlayWatched_old.png
+- [DialogVideoInfo] Remove unused code of already insivible controls
+- [Custom_SideMenuHelp] Changed headline font face and removed vertical separator [Fonts]
+- [DialogSeekBar] Don't hide seekbar if PlayBackJustStarted/Ended when playing LiveTV
+- [DialogSubtitles] Changed headline font face (Now lighter)
+- [Settings] Remove fadetime for large Kodi logo
+- [_ViewsFileMode_walls] Remove unusued old switch wall view code
+- [PlayerControls] Fixed syntax error due to code merging
+- Code clean-up: Removed hyphen "-" as None value even for Kodi 17. Makes skin code merging down-/upstream easier (Kodi 17 only. Kodi 18+ already includes this change for a long time since it's required there.)
+- [DialogFavourites] Usability improvements (navigation is now limited when going all left/right, all right jumps to scrollbar which also is limited when trying to navigate all right any further)
+- [Textures] Reworked some flagging/video and all flagging/lists textures for 2K/4K/8K/HD(720)/Set/3D and created consistency between both
+- [VideoFullScreen] [VideoOSD] Improved flagging positions in extremely rare cases with videos without audio tracks and optional resolution/channel no. flags enabled with reduced Info OSD
+- [custom_PVRChannelNumberInput] Added dialog open transition, slightly changed label font style and position (Kodi 18+)
+
+Kodi 19+ only
+- [DialogSeekBar] Added chapter markers for progress bar (Kodi 19+), also added new texture osd/progress-chapter-marker.png accordingly
+Remarks: Chapter markers are not visible yet for end users due to visual reservations regarding a clean seek bar look and unknown necessity. I want to do some further tests before activating them. Maybe i'll implement an Skin option to enable them in the future.
+
+Kodi 20+ only
+- Added new Favorites window "MyFavourites.xml" for Kodi 20+ and adapted identical visuals/usability/functionality to old DialogFavourites dialog
+Remarks: For now, the Skin version for KODI 19-21 by default does not use the new dialog yet - but you can map it to a remote/keyboard button action of course. (for testing purposes)
+Reason: The new implementation of MyFavourites.xml is still missing consistency regarging the sort feature in the Kodi core at the time of writing: 
+See: https://github.com/xbmc/xbmc/pull/22001#issuecomment-1383172046
+
+[B]4.4.23[/B] (2023-01-13)
+
+- Instant Hotfix for code merging/syntax error issue
+
+[B]4.4.22[/B] (2023-01-13)
 
 - Replace PlayerControl(Next/Previous) commands with ChannelUp/ChannelDown for LiveTV 
 (Workaround for Kodi 18+ bug with non working channel switching with the mentioned PlayerControl commands) 
