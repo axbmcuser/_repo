@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="5.4.26" name="A Confluence ZEITGEIST (KODI 19+20)" provider-name="axbmcuser">
+<addon id="skin.aczg" version="5.4.27" name="A Confluence ZEITGEIST (KODI 19+20)" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.15.0" />
 		<import addon="service.listitem.helper" version="1.0.0" />
@@ -18,7 +18,37 @@
 		<website>https://forum.kodi.tv/showthread.php?tid=242892</website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]5.4.26[/B] (2023-02-04)
+		<news>[B]5.4.27[/B] (2023-02-06)
+
+[DialogPVRRadioRDSInfo] Added some visible conditions to avoid empty label rows and corrected some font sizes
+Remark: RDS dialog support may be removed in the future due to it's highly deprecated nature, especially in context of things
+
+[MusicOSD] Removed redundant visible condition for Radio RDS OSD button; changed conditions to always prefer EPG button over availbable RDS Info button
+
+[VideOSD] [MusicOSD] Improved default OSD button focus conditions
+[VideoFullScreen] [MusicVisualisation] Reduced label width of "Next item" text.
+[MusicVisualisation] Reduced title label width to be identical to the corresponding title label from [VideoFullScreen]
+
+[SettingsScreenCalibration] [Textures] Slight rework for all Kodi versions, moved corresponding textures to calibrate/ folder, changed texture CalibratePixelRatio.png
+
+- Added new Skin Settings feature/option: 
+- - Skin settings – Advanced - Views and visual options – "Use alternative VIDEOS home screen icon (Pseudo library mode)   (Default: Off)"
+
+Kodi 19+ only
+Updated language files
+
+Kodi 20+ only
+[SettingsScreenCalibration] Added movingspeed-tags for Kodi 20+ support
+[SettingsScreenCalibration] Adapted and reworked Kodi 20+ Original Confluence changes by bossanova808 PR #194
+[SettingsScreenCalibration] [Textures] Added CalibrateSubtitles_k20+.png due to different subtitle line y-position, added CalibrateReset.png
+
+[DialogColorPicker] [Defaults] [SettingsCategory] [Textures] Added colorpicker dialog and settings button support:
+Adapted and reworked Kodi 20+ Original Confluence changes by bossanova808 PR #194
+Added textures color-button-box.png and colors/white.png
+
+[Timers.xml] Added empty Timers.xml file adapted from Kodi 20+ Original Confluence changes by bossanova808 PR #194
+
+[B]5.4.26[/B] (2023-02-04)
 
 - Large visual rework and optimization of many visual items, including the following changes:
 
