@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="3.5.25" name="A Confluence ZEITGEIST (KODI 17)" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.5.26" name="A Confluence ZEITGEIST (KODI 17)" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0" />
 		<import addon="service.listitem.helper" version="0.3.4" />
@@ -19,7 +19,15 @@
 		<website>https://forum.kodi.tv/showthread.php?tid=242892</website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]3.5.25[/B] (2023-03-15)
+		<news>[B]3.5.26[/B] (2023-03-15)
+
+- Further optimized fake "progress" control bar mentioned in previous skin update to be more precise from 0-10% and 91-100% 
+(Mostly noticeable in [MyPVRChannels], not that much for "EpisodesWatchedProgressZoomStates")
+
+- Removed and disabled new Skin Settings option introduced in previous update:
+"Automatically set "Default select action" to "Show information"  (Default: On)"
+
+[B]3.5.25[/B] (2023-03-15)
 
 Reworked, improved and expanded section "Skin Settings – Background", including: 
 

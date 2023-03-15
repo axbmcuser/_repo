@@ -1,3 +1,11 @@
+[B]5.4.29[/B] (2023-03-15)
+
+- Further optimized fake "progress" control bar mentioned in previous skin update to be more precise from 0-10% and 91-100% 
+(Mostly noticeable in [MyPVRChannels], not that much for "EpisodesWatchedProgressZoomStates")
+
+- Removed and disabled new Skin Settings option introduced in previous update:
+"Automatically set "Default select action" to "Show information"  (Default: On)"
+
 [B]5.4.28[/B] (2023-03-15)
 
 Reworked, improved and expanded section "Skin Settings – Background", including: 
