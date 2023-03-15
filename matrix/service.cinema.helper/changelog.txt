@@ -1,3 +1,12 @@
+[B]2.0.15[/B] (2023-03-15)
+
+"A Confluence ZEITGEIST" skin:
+- Expanded and improved support for "Always force Preset Views" option
+- Added support for two new Skin Settings options: 
+- - "Automatically disable "Show parent folder items"   (Default: On)"
+- - "Automatically set "Default select action" to "Show information"  (Default: On)"
+- Added support for "Seasons" view (509) and "Episodes" view (510)
+
 [B]2.0.14[/B] (2023-01-15)
 
 - Code and performance optimizations
