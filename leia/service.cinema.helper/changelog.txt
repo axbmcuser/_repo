@@ -1,3 +1,8 @@
+[B]1.0.16[/B] (2023-03-15)
+
+- Hotfix for minor bug with "Always force Preset Views" which caused not all custom IDs to be read from the user input string
+- Removed code for previously introduced option "Automatically set "Default select action" to "Show information"" since it's now unused
+
 [B]1.0.15[/B] (2023-03-15)
 
 "A Confluence ZEITGEIST" skin:
