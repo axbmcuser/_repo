@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="4.4.27" name="A Confluence ZEITGEIST (KODI 18)" provider-name="axbmcuser">
+<addon id="skin.aczg" version="4.4.28" name="A Confluence ZEITGEIST (KODI 18)" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="service.listitem.helper" version="0.3.4" />
@@ -18,7 +18,39 @@
 		<website>https://forum.kodi.tv/showthread.php?tid=242892</website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]4.4.27[/B] (2023-03-15)
+		<news>[B]4.4.28[/B] (2023-03-24)
+
+- Improve sort order for "Recently added" movies/albums widgets on home screen by removing the additional sort parameters (dateadded desc)
+The sorting is now identical to what you see when entering the "Recently added movies/albums" dialog windows itself. This is how it should be and would be expected by the user. 
+(The "Recently added episodes" widget already had the correct code)
+
+[DialogButtonMenu]
+- Changed localization string from hard coded "Restart Kodi" to translated $LOCALIZE "Kodi Restart"
+- Changed CoreELEC specific reboot buttons. CoreELEC has now two Reboot buttons: The regular "Reboot" and "Reboot eMMC/NAND" which can separately be enabled/disabled via Skin Settings accordingly
+
+– Added sidebar buttons "Wall Density ++" buttons to MyPics, MyPrograms, MyMusicNav (MyVideos already had this button)
+
+- Fix for situations for items without fanart: "Fanart" (508) view which did show old fanart because of a Kodi background-loader bug. (Workaround was already implemented before, but transparent.png fallback had wrong path missing "colors/" folder prefix)
+
+- Remove now unused workaround code for removed "AllowMyVideosSelectActionByUser" option [Startup]
+
+- [VideoOSD] When Playing more than a single video (episodes, other multiple videos via "Play from here" or similar), the "Skip To Next" button is now shown in Video OSD
+
+- Further reworked and expanded "Fanart" View: This View is now available for (Music) "Albums". In exchange for this, the old deprecated Muisc Fanart View has been removed. Also: Minor improvements regarding darkening of items when control 508 has no focus.
+
+[Includes] Hide letter indicator while scrolling for Current Playlist window
+
+[VideoFullScreen] [VideoOSD] [MusicVisualisation]
+- Localized top left "Chapter" text is replaced by a new chapter icon for more simplicity. The same new icon is now also used for the VideoOSD "chapter/bookmarks" button which used the "favorites" icon from home screen before (which was not ideal to be used) [Textures] Changed OSDBookmarksFO.png OSDBookmarksNF.png
+- Chapter indicator is now only shown when VideoOSD is opened
+- Added a playlist icon and position indicator to the top left area which is shown when VideoOSD is opened. [Textures] Added "playlist_icon_large.png"
+- Removed top left LiveTV "Channel group" label+value for more simplicity. It wasn't a benefitial information for the user since it's only important to be shown when opening the [DialogPVRChannelsOSD] dialog where it acts like a "group-filter" indicator.
+
+Kodi (19/)20+ only
+
+[Includes] Changed scrolltime for the at the time of writing optional "MyFavoritesLayout" dialog to the "StandardScrollTime"-include
+
+[B]4.4.27[/B] (2023-03-15)
 
 - Further optimized fake "progress" control bar mentioned in previous skin update to be more precise from 0-10% and 91-100% 
 (Mostly noticeable in [MyPVRChannels], not that much for "EpisodesWatchedProgressZoomStates")
@@ -39,7 +71,8 @@ Note: Simulation can be a bit darker compared to the real final result, but shou
 Note: Animated variants have higher idle GPU usage (Be aware for low end devices)
 
 
-- Added two new Skin Settings options: 
+- Added two new Skin Settings options:
+Skin settings – Advanced – Views and visual options
 - - "Automatically disable "Show parent folder items"   (Default: On)"
 - - "Automatically set "Default select action" to "Show information"  (Default: On)"
 
