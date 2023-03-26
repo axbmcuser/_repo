@@ -1,3 +1,13 @@
+[B]3.5.28[/B] (2023-03-26)
+
+"Fanart" View (508):
+- Use text "0 Seasons" instead of "0 Season" if empty tv show is shown
+
+Kodi 18+ only:
+
+"Fanart" View (508):
+- Fix missing Plot for completely unwatched tv shows (bypass System.GetBool(videolibrary.showunwatchedplots) on Kodi 18+)
+
 [B]3.5.27[/B] (2023-03-24)
 
 - Improve sort order for "Recently added" movies/albums widgets on home screen by removing the additional sort parameters (dateadded desc)
@@ -6,7 +16,7 @@ The sorting is now identical to what you see when entering the "Recently added m
 
 [DialogButtonMenu]
 - Changed localization string from hard coded "Restart Kodi" to translated $LOCALIZE "Kodi Restart"
-- Changed CoreELEC specific reboot buttons. CoreELEC has now two Reboot buttons: The regular "Reboot" and "Reboot eMMC/NAND" which can separately be enabled/disabled via Skin Settings accordingly
+- Changed CoreELEC specific reboot buttons. CoreELEC has now two Reboot buttons: The regular "Reboot" and "Reboot eMMC/NAND" which can be enabled/disabled separately via Skin Settings
 
 – Added sidebar buttons "Wall Density ++" buttons to MyPics, MyPrograms, MyMusicNav (MyVideos already had this button)
 
@@ -16,7 +26,7 @@ The sorting is now identical to what you see when entering the "Recently added m
 
 - [VideoOSD] When Playing more than a single video (episodes, other multiple videos via "Play from here" or similar), the "Skip To Next" button is now shown in Video OSD
 
-- Further reworked and expanded "Fanart" View: This View is now available for (Music) "Albums". In exchange for this, the old deprecated Muisc Fanart View has been removed. Also: Minor improvements regarding darkening of items when control 508 has no focus.
+- Further reworked and expanded "Fanart" View: This View is now available for (Music) "Albums". In exchange for this, the old deprecated Music Fanart View has been removed. Also: Minor improvements regarding darkening of items when control 508 has no focus.
 
 [Includes] Hide letter indicator while scrolling for Current Playlist window
 
@@ -28,7 +38,7 @@ The sorting is now identical to what you see when entering the "Recently added m
 
 Kodi (19/)20+ only
 
-[Includes] Changed scrolltime for the at the time of writing optional "MyFavoritesLayout" dialog to the "StandardScrollTime"-include
+[Includes] Changed scrolltime for the at the time of writing optional [MyFavourites] dialog to the "StandardScrollTime"-include [MyFavoritesLayout]
 
 [B]3.5.26[/B] (2023-03-15)
 
