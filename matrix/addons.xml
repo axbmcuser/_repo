@@ -484,7 +484,7 @@ Second Test Release:
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="5.4.32" name="A Confluence ZEITGEIST (KODI 19+20)" provider-name="axbmcuser">
+<addon id="skin.aczg" version="5.4.33" name="A Confluence ZEITGEIST (KODI 19+20)" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.15.0" />
 		<import addon="service.listitem.helper" version="1.0.0" />
@@ -503,7 +503,11 @@ Second Test Release:
 		<website>https://forum.kodi.tv/showthread.php?tid=242892</website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]5.4.32[/B] (2023-04-01)
+		<news>[B]5.4.33[/B] (2023-04-01)
+
+[_variables] Hotfix for missing season art posters due to a minor code merging issue. Mostly affects views "Seasons", "List", "Media Info 2" and "Media Info 3"
+
+[B]5.4.32[/B] (2023-04-01)
 
 [Defaults] [Textures]
 - Reworked textures for spincontrol and spincontrolex (Rounded borders, higher quality and more precise dimensions)

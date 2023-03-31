@@ -1,3 +1,7 @@
+[B]4.4.31[/B] (2023-04-01)
+
+[_variables] Hotfix for missing season art posters due to a minor code merging issue. Mostly affects views "Seasons", "List", "Media Info 2" and "Media Info 3"
+
 [B]4.4.30[/B] (2023-04-01)
 
 [Defaults] [Textures] 
