@@ -1,3 +1,44 @@
+[B]4.4.30[/B] (2023-04-01)
+
+[Defaults] [Textures] 
+- Reworked textures for spincontrol and spincontrolex (Rounded borders, higher quality and more precise dimensions) 
+(spincontrol-down.png spincontrol-down-focus.png spincontrol-up.png spincontrol-up-focus.png)
+
+[MyPVRGuide]
+- Code clean-up: Removed unused ids 11, 12 and 13 in views-tag and also removed the non existant includes
+[ViewsPVRGuide]
+Changed texture item order: Moved focus border texture item (focus_border_2px.png) down by one item for more precise pixel perfect rendering
+
+Legacy Views "Media Info 2" and "Media Info 3": 
+- Changed $INFO[ListItem.Icon] to $VAR[PosterThumb]. This corrects missing poster for the "* All seasons" item (Now identical to List View (50) poster) 
+- Visually improved labels which showed watched and unwatched episode count
+[Includes]
+- Added additional tv show / seasons poster value condition for rare intances when using legacy Views "List", "Media Info 2" and "Media Info 3". This corrects missing poster for the "* All seasons" item on these views.
+[ViewsVideoLibrary]
+
+- Removed unused parameters "CloseButtonLeft" and "CloseButtonNav" for DialogBackgroundCommons-include in multiple files. (Unused since mouse buttons removal some updates ago)
+
+[DialogKeyboard] [_includes]
+Usability improvements for Keyboard Dialog: 
+- Removed "onup" actions within top rows: Auto-completion and most top keyboard letter row. Before, pressing up made the focus jump to another element further down which just felt wrong in regards to intuitive usablity.
+- Removed "ondown" actions within bottom row: "Done", "Cancel", "Space", "Move Cursor Left", "Move Cursor Right" and "Backspace". Before, pressing down made the focus jump to another element  further up which just felt wrong in regards to intuitive usablity.
+
+[MyPVRSearch]
+- Corrected x-position of ListItem Icon. Channel icon was displayed a bit too far left so it collided with the focus border texture.
+
+Kodi 18+ only:
+
+[DialogVideoInfo] 
+- Changed target of Movie "Sets" button, so that the button leads directly into the Movie Set as it has been before with Kodi 17. 
+- Code was also changed on the Kodi 17 skin vesion for codebase consistency, but has no difference in functionality on this particular version. 
+
+[DialogSelect] [DialogPVRChannelGuide]
+- Fix for missing black dialog background: Replaced two rare instances of code referencing 100x100_black.png with colors/black.png which were missed during the recent texture structure changes of one of the previous updates.
+
+[DialogPVRGuideSearch]
+- Fix "Reset" button label localization within PVR Guide Search dialog. On Kodi 18+, this button wrongly showed "Skin Settings" as label instead of "Reset". Changed $LOCALIZE[10035] to 13007 to correct this.
+(At the time of writing, this issue also exists on Original Confluence for Kodi 18+)
+
 [B]4.4.29[/B] (2023-03-26)
 
 "Fanart" View (508):
