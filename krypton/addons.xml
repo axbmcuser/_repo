@@ -647,7 +647,7 @@ Second Test Release:
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="3.5.31" name="A Confluence ZEITGEIST (KODI 17)" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.5.32" name="A Confluence ZEITGEIST (KODI 17)" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0" />
 		<import addon="service.listitem.helper" version="0.3.4" />
@@ -667,7 +667,22 @@ Second Test Release:
 		<website>https://forum.kodi.tv/showthread.php?tid=242892</website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]3.5.31[/B] (2023-04-01)
+		<news>[B]3.5.32[/B] (2023-04-01)
+
+[Textures] and corresponding xml files:
+- Renamed and moved "_added_img/black-back2-noborder.png" to "black-back2.png"
+- Removed xml border parameters for "black-back.png" because there is no border in this texture
+- Removed unused texture "HomeSubEnd.png"
+- Renamed and moved "_added_img/posterwall_100x100_clear.png" to "colors/transparent_1.png"
+- Resized all "colors/*" textures from 100x100 to 50x50
+- Resized "black-back.png" and "black-back2.png" textures from 64x64 to 50x50
+
+- Reworked and added special texture variants of the home screen playback control buttons "Play", "Pause" and "Stop". Before, especially the "Stop" button showed some unpleasent blurriness on focus.
+(OSDPauseFO-full.png OSDPauseNF-full.png OSDPlayFO-full.png OSDPlayNF-full.png OSDStopFO-full.png OSDStopNF-full.png) [Home]
+
+- Fixed one of the two CoreELEC specific reboot buttons: Added missing Reset()-onclick for "Reboot eMMC/NAND" button [DialogButtonMenu]
+
+[B]3.5.31[/B] (2023-04-01)
 
 [Includes] Hotfix for missing season art posters due to a minor code merging issue. Mostly affects views "Seasons", "List", "Media Info 2" and "Media Info 3"
 
