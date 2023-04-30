@@ -85,7 +85,8 @@
     <extension point="xbmc.python.module" library="resources/lib/"/>
     <extension point="xbmc.addon.metadata">
         <news>
-tempfix.2
+6.8.25+tempfix.2 ("plugin.video.youtube-6.18.25-new2.zip" by anxdpanic)
+
 [fix] Nexus compatibility with InfoTagVideo |contrib: jurialmunkey|
 [chg] make httpd /api url case insensitive due to skin choice of uppercase settings text
 [chg] use listitem property for Inputstream Adaptive headers instead of url piped on Nexus+
