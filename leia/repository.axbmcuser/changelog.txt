@@ -1,3 +1,9 @@
+[B]1.2.0[/B] (2023-12-08)
+
+Version in sync for major rework of "A Confluence ZEITGEIST" 3.6.0 (Version numbers vary on other Kodi generations)
+
+- New addon icon
+
 [B]1.1.8[/B] (2019-11-17)
 - New repo icon (higher resolution)
 

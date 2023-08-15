@@ -1,3 +1,12 @@
+[B]0.4.0[/B] (2023-08-12)
+
+Version in sync for major rework of "A Confluence ZEITGEIST" 3.6.0 (Version numbers vary on other Kodi generations)
+
+- Code and performance optimizations (shorter cache values, optimized retry-handling, fixed file loading for python 3 addon variant)
+- Language strings changed
+- Minor code improvement for settings.xml
+- New addon icon
+
 [B]0.3.16[/B] (2022-12-24)
 
 - Added functionality for new Skin setting "Use highest score for stars rating (*****)"

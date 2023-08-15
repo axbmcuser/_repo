@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="service.cinema.helper" name="Cinema Helper (KODI 17+18) (axbmcuser)" version="1.0.16" provider-name="axbmcuser">
+<addon id="service.cinema.helper" name="Cinema Helper (KODI 17+18) (axbmcuser)" version="1.1.1" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
 		<import addon="script.module.simplejson" version="3.16.1" />
@@ -14,7 +14,26 @@
 		<website>https://forum.kodi.tv/showthread.php?tid=370673</website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]1.0.16[/B] (2023-03-15)
+		<news>[B]1.1.1[/B] (2023-08-15)
+
+- Changed default value in context of force views
+- Added support for "Games" in context of force views
+
+[B]1.1.0[/B] (2023-08-12)
+
+Version in sync for major rework of "A Confluence ZEITGEIST" 3.6.0 (Version numbers vary on other Kodi generations)
+
+- Added values CinemaHelper.ListItem.TvShowDBID, TvShowTitle, TvShowTotalSeasons
+- Opzimized and expanded force views functionality
+- Added "set_focus_now" functionality
+- Improved handling of videolibrary.flattentvshows value
+- New addon icon
+
+Internal changes (not relevant for end users):
+- Added 24p check functionality for KodiDS custom build
+- Added support for EnableSkinDebugOutput
+
+[B]1.0.16[/B] (2023-03-15)
 
 - Hotfix for minor bug with "Always force Preset Views" which caused not all custom IDs to be read from the user input string
 - Removed code for previously introduced option "Automatically set "Default select action" to "Show information"" since it's now unused

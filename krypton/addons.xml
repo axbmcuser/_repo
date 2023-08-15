@@ -340,7 +340,7 @@ Version in sync for major rework of "A Confluence ZEITGEIST" 3.6.0 (Version numb
   </extension>
 </addon>
 
-<addon id="service.cinema.helper" name="Cinema Helper (KODI 17+18) (axbmcuser)" version="1.1.0" provider-name="axbmcuser">
+<addon id="service.cinema.helper" name="Cinema Helper (KODI 17+18) (axbmcuser)" version="1.1.1" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
 		<import addon="script.module.simplejson" version="3.16.1" />
@@ -355,7 +355,12 @@ Version in sync for major rework of "A Confluence ZEITGEIST" 3.6.0 (Version numb
 		<website>https://forum.kodi.tv/showthread.php?tid=370673</website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]1.1.0[/B] (2023-08-12)
+		<news>[B]1.1.1[/B] (2023-08-15)
+
+- Changed default value in context of force views
+- Added support for "Games" in context of force views
+
+[B]1.1.0[/B] (2023-08-12)
 
 Version in sync for major rework of "A Confluence ZEITGEIST" 3.6.0 (Version numbers vary on other Kodi generations)
 

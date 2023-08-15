@@ -1,3 +1,22 @@
+[B]1.1.1[/B] (2023-08-15)
+
+- Changed default value in context of force views
+- Added support for "Games" in context of force views
+
+[B]1.1.0[/B] (2023-08-12)
+
+Version in sync for major rework of "A Confluence ZEITGEIST" 3.6.0 (Version numbers vary on other Kodi generations)
+
+- Added values CinemaHelper.ListItem.TvShowDBID, TvShowTitle, TvShowTotalSeasons
+- Opzimized and expanded force views functionality
+- Added "set_focus_now" functionality
+- Improved handling of videolibrary.flattentvshows value
+- New addon icon
+
+Internal changes (not relevant for end users):
+- Added 24p check functionality for KodiDS custom build
+- Added support for EnableSkinDebugOutput
+
 [B]1.0.16[/B] (2023-03-15)
 
 - Hotfix for minor bug with "Always force Preset Views" which caused not all custom IDs to be read from the user input string

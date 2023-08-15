@@ -176,7 +176,7 @@
     </extension>
 </addon>
 
-<addon id="repository.axbmcuser" name="axbmcuser REPO" version="1.1.8" provider-name="axbmcuser">
+<addon id="repository.axbmcuser" name="axbmcuser REPO" version="1.2.0" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.addon" version="12.0.0"/>
 	</requires>
@@ -209,7 +209,13 @@
 		<website/>
 		<email/>
 		<source/>
-		<news>[B]1.1.8[/B] (2019-11-17)
+		<news>[B]1.2.0[/B] (2023-12-08)
+
+Version in sync for major rework of "A Confluence ZEITGEIST" 3.6.0 (Version numbers vary on other Kodi generations)
+
+- New addon icon
+
+[B]1.1.8[/B] (2019-11-17)
 - New repo icon (higher resolution)
 
 [B]1.1.7[/B] (2019-08-24)
@@ -275,7 +281,7 @@
   </extension>
 </addon>
 
-<addon id="service.cinema.helper" name="Cinema Helper (KODI 17+18) (axbmcuser)" version="1.0.16" provider-name="axbmcuser">
+<addon id="service.cinema.helper" name="Cinema Helper (KODI 17+18) (axbmcuser)" version="1.1.1" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
 		<import addon="script.module.simplejson" version="3.16.1" />
@@ -290,7 +296,26 @@
 		<website>https://forum.kodi.tv/showthread.php?tid=370673</website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]1.0.16[/B] (2023-03-15)
+		<news>[B]1.1.1[/B] (2023-08-15)
+
+- Changed default value in context of force views
+- Added support for "Games" in context of force views
+
+[B]1.1.0[/B] (2023-08-12)
+
+Version in sync for major rework of "A Confluence ZEITGEIST" 3.6.0 (Version numbers vary on other Kodi generations)
+
+- Added values CinemaHelper.ListItem.TvShowDBID, TvShowTitle, TvShowTotalSeasons
+- Opzimized and expanded force views functionality
+- Added "set_focus_now" functionality
+- Improved handling of videolibrary.flattentvshows value
+- New addon icon
+
+Internal changes (not relevant for end users):
+- Added 24p check functionality for KodiDS custom build
+- Added support for EnableSkinDebugOutput
+
+[B]1.0.16[/B] (2023-03-15)
 
 - Hotfix for minor bug with "Always force Preset Views" which caused not all custom IDs to be read from the user input string
 - Removed code for previously introduced option "Automatically set "Default select action" to "Show information"" since it's now unused
@@ -392,7 +417,7 @@ New properties:
 	</extension>
 </addon>
 
-<addon id="service.library.data.provider.lite" name="Library Data Provider Lite (KODI 17+18) (axbmcuser)" provider-name="BigNoid, SiLVO, axbmcuser" version="0.3.9">
+<addon id="service.library.data.provider.lite" name="Library Data Provider Lite (KODI 17+18) (axbmcuser)" provider-name="BigNoid, SiLVO, axbmcuser" version="0.4.0">
 	<requires>
 		<import addon="xbmc.json" version="7.9.0" />
 		<import addon="xbmc.python" version="2.25.0" />
@@ -411,7 +436,13 @@ New properties:
 		<forum>https://forum.kodi.tv/showthread.php?tid=210063</forum>
 		<website>https://github.com/BigNoid/service.library.data.provider</website>
 		<source>https://github.com/BigNoid/service.library.data.provider</source>
-		<news>[B]0.3.9[/B] (2022-12-03) (axbmcuser)
+		<news>[B]0.4.0[/B] (2022-08-12) (axbmcuser)
+
+Version in sync for major rework of "A Confluence ZEITGEIST" 3.6.0 (Version numbers vary on other Kodi generations)
+
+- New addon icon
+
+[B]0.3.9[/B] (2022-12-03) (axbmcuser)
 
 - Added KODI 19+20 (Python 3) compatibility code basis (Dual-addon: Python 2 still supported)
 - - Python 2/3 versions still need separate addon version due to required addon.xml changes
@@ -489,7 +520,7 @@ New properties:
 	</extension>
 </addon>
 
-<addon id="service.listitem.helper" name="ListItem Helper (KODI 17+18) (axbmcuser)" version="0.3.16" provider-name="axbmcuser">
+<addon id="service.listitem.helper" name="ListItem Helper (KODI 17+18) (axbmcuser)" version="0.4.0" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
 		<import addon="script.module.requests" version="2.3.0" />
@@ -509,7 +540,16 @@ New properties:
 		<website>https://forum.kodi.tv/showthread.php?tid=370673</website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]0.3.16[/B] (2022-12-24)
+		<news>[B]0.4.0[/B] (2023-08-12)
+
+Version in sync for major rework of "A Confluence ZEITGEIST" 3.6.0 (Version numbers vary on other Kodi generations)
+
+- Code and performance optimizations (shorter cache values, optimized retry-handling, fixed file loading for python 3 addon variant)
+- Language strings changed
+- Minor code improvement for settings.xml
+- New addon icon
+
+[B]0.3.16[/B] (2022-12-24)
 
 - Added functionality for new Skin setting "Use highest score for stars rating (*****)"
 
