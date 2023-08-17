@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="5.6.0" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="5.6.1" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.15.0" />
 		<import addon="service.listitem.helper" version="1.0.0" />
@@ -10,15 +10,22 @@
 		<res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en_GB">"A Confluence ZEITGEIST" is a clean and modern rework of the Confluence skin.</summary>
-		<description lang="en_GB">"A Confluence ZEITGEIST" is a clean and modern rework of the Confluence skin.[CR][CR]It features an icon-based main menu without the need for scrolling and all new wall views, which replace the old thumbnail view. Countless graphics updates, useful lightweight features and optimizations are included, resulting in a simplified experience you would expect from a retail media player with a good UI.</description>
+		<summary lang="en_GB">A modern reimagination of Confluence</summary>
+		<description lang="en_GB">A Confluence ZEITGEIST - a modern reimagination of Confluence, the beloved long-time default user interface of Kodi (formerly XBMC).[CR][CR]Features include a complete graphical overhaul, an icon-based main menu without the need for scrolling and all new wall views.[CR]The useful lightweight features among countless carefully crafted usability optimizations make you enjoy an intuitive user experience you would expect from a retail media player with a good UI.</description>
 		<platform>all</platform>
 		<license>GPL-2.0-only</license>
 		<forum>https://forum.kodi.tv/showthread.php?tid=242892</forum>
 		<website>https://forum.kodi.tv/showthread.php?tid=242892</website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]5.6.0[/B] (2023-08-16)
+		<news>[B]5.6.1[/B] (2023-08-17)
+
+- Updated addon summary and description text
+
+Kodi 19+ only
+- Improved default focus for DialogAddonInfo dialog
+
+[B]5.6.0[/B] (2023-08-16)
 
 - Good bye rectangular visuals
 Major visual rework of the skin carefully replacing virtually all rectangular corners with rounded corners of different radii
