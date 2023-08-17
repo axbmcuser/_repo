@@ -37,7 +37,7 @@
   </extension>
 </addon>
 
-<addon id="repository.axbmcuser" name="axbmcuser REPO" version="1.1.8" provider-name="axbmcuser">
+<addon id="repository.axbmcuser" name="axbmcuser REPO" version="1.2.0" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.addon" version="12.0.0"/>
 	</requires>
@@ -70,7 +70,13 @@
 		<website/>
 		<email/>
 		<source/>
-		<news>[B]1.1.8[/B] (2019-11-17)
+		<news>[B]1.2.0[/B] (2023-12-08)
+
+Version in sync for major rework of "A Confluence ZEITGEIST" 3.6.0 (Version numbers vary on other Kodi generations)
+
+- New addon icon
+
+[B]1.1.8[/B] (2019-11-17)
 - New repo icon (higher resolution)
 
 [B]1.1.7[/B] (2019-08-24)
@@ -139,7 +145,7 @@
   </extension>
 </addon>
 
-<addon id="service.cinema.helper" name="Cinema Helper (KODI 19+20) (axbmcuser)" version="2.0.16" provider-name="axbmcuser">
+<addon id="service.cinema.helper" name="Cinema Helper (KODI 19+20) (axbmcuser)" version="2.1.0" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.simplejson" version="3.16.1" />
@@ -154,7 +160,21 @@
 		<website>https://forum.kodi.tv/showthread.php?tid=370673</website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]2.0.16[/B] (2023-03-15)
+		<news>[B]2.1.0[/B] (2023-08-16)
+
+Version in sync for major rework of "A Confluence ZEITGEIST" 3.6.0 (Version numbers vary on other Kodi generations)
+
+- Added values CinemaHelper.ListItem.TvShowDBID, TvShowTitle, TvShowTotalSeasons
+- Opzimized and expanded force views functionality
+- Added "set_focus_now" functionality
+- Improved handling of videolibrary.flattentvshows value
+- New addon icon
+
+Internal changes (not relevant for end users):
+- Added 24p check functionality for KodiDS custom build
+- Added support for EnableSkinDebugOutput
+
+[B]2.0.16[/B] (2023-03-15)
 
 - Hotfix for minor bug with "Always force Preset Views" which caused not all custom IDs to be read from the user input string
 - Removed code for previously introduced option "Automatically set "Default select action" to "Show information"" since it's now unused
@@ -249,7 +269,7 @@ New properties:
 	</extension>
 </addon>
 
-<addon id="service.library.data.provider.lite" name="Library Data Provider Lite (KODI 19+20) (axbmcuser)" provider-name="BigNoid, SiLVO, axbmcuser" version="1.3.9">
+<addon id="service.library.data.provider.lite" name="Library Data Provider Lite (KODI 19+20) (axbmcuser)" provider-name="BigNoid, SiLVO, axbmcuser" version="1.4.0">
 	<requires>
 		<import addon="xbmc.json" version="11.2.0" />
 		<import addon="xbmc.python" version="3.0.0" />
@@ -268,7 +288,13 @@ New properties:
 		<forum>https://forum.kodi.tv/showthread.php?tid=210063</forum>
 		<website>https://github.com/BigNoid/service.library.data.provider</website>
 		<source>https://github.com/BigNoid/service.library.data.provider</source>
-		<news>[B]0.3.9[/B] (2022-12-03) (axbmcuser)
+		<news>[B]1.4.0[/B] (2023-08-16) (axbmcuser)
+
+Version in sync for major rework of "A Confluence ZEITGEIST" 3.6.0 (Version numbers vary on other Kodi generations)
+
+- New addon icon
+
+[B]1.3.9[/B] (2022-12-03) (axbmcuser)
 
 - Added KODI 19+20 (Python 3) compatibility code basis (Dual-addon: Python 2 still supported)
 - - Python 2/3 versions still need separate addon version due to required addon.xml changes
@@ -338,15 +364,14 @@ New properties:
 - Add recent videos option.
 - Add writer and cast to video list items.
 - Add limit parameter to plugin element.
-
-</news>
+		</news>
 		<assets>
 			<icon>resources/icon.png</icon>
 		</assets>
 	</extension>
 </addon>
 
-<addon id="service.listitem.helper" name="ListItem Helper (KODI 19+20) (axbmcuser)" version="1.3.15" provider-name="axbmcuser">
+<addon id="service.listitem.helper" name="ListItem Helper (KODI 19+20) (axbmcuser)" version="1.4.0" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" version="2.3.0" />
@@ -366,7 +391,16 @@ New properties:
 		<website>https://forum.kodi.tv/showthread.php?tid=370673</website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]1.3.15[/B] (2022-12-24)
+		<news>[B]1.4.0[/B] (2023-08-16)
+
+Version in sync for major rework of "A Confluence ZEITGEIST" 3.6.0 (Version numbers vary on other Kodi generations)
+
+- Code and performance optimizations (shorter cache values, optimized retry-handling, fixed file loading for python 3 addon variant)
+- Language strings changed
+- Minor code improvement for settings.xml
+- New addon icon
+
+[B]1.3.15[/B] (2022-12-24)
 
 - Added functionality for new Skin setting "Use highest score for stars rating (*****)"
 
@@ -484,7 +518,7 @@ Second Test Release:
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="5.4.35" name="A Confluence ZEITGEIST (KODI 19+20)" provider-name="axbmcuser">
+<addon id="skin.aczg" version="5.6.0" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.15.0" />
 		<import addon="service.listitem.helper" version="1.0.0" />
@@ -492,7 +526,7 @@ Second Test Release:
 		<import addon="service.cinema.helper" version="1.0.0" />
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false" effectslowdown="0.22">
-		<res width="1280" height="720" aspect="16:9" default="true" folder="720p" />
+		<res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en_GB">"A Confluence ZEITGEIST" is a clean and modern rework of the Confluence skin.</summary>
@@ -503,7 +537,95 @@ Second Test Release:
 		<website>https://forum.kodi.tv/showthread.php?tid=242892</website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]5.4.35[/B] (2023-04-01)
+		<news>[B]5.6.0[/B] (2023-08-16)
+
+- Good bye rectangular visuals
+Major visual rework of the skin carefully replacing virtually all rectangular corners with rounded corners of different radii
+
+- Major rework of all skin xml files to be native 1080p code
+After Original Confluence tradionally being 720p xml code for the last decade, A Confluence ZEITGEIST has now switched to 1920x1080px xml code
+
+The skin already used sharp textures up to 4K before, but this change helps with more sharp button borders and allows for more pixel perfect positioning of elements because there is no *1.5 multiplier in place anymore.
+Also this change opended the possibility for long planned further sharp visual improvements which are now already incorporated into the wall view rework.
+UI scaling to 4K/2160p is also great now due to the scaling multiplier being *2.0
+
+- Global visual improvements and major rework of the Wall Views
+Wall Views now feature a squared sub-variant for visually pleasing usage of sections like addons, pictures, music and more
+Including, but not limited to the following further improvements:
+- Reworked Home screen to be more simplistic by default
+- Reworked main menu visuals with all icons reworked based on vector source material
+- Reduced CommonWindowHeader and it's PVR variant by removing sections root level navigation clutter
+- Improved progress bar visual for different views
+- Added non-intrusive focus animations for some elements for a more intuitive user experience which now feels better than before
+- Added better support for "Music videos" content type with cohesive CommonWindowHeader icons when opening this section via Videos or Music respectively
+- Reworked or recreated countless textures and icons including new icons for "End time", "Settings level" and many more
+
+- Major rework of the "Always force Preset Views" feature
+All relevant types of windows/content now can be preset and customized for a further improved out-of-the-box experience
+Also added a feature to reset the default preset view IDs "[RESET] all above View IDs to Default"
+
+- Added new View type "Songs" which is now the default view for music song containers
+
+- New mouse pointer visuals
+- Removed blue tint from "Hexagons Advanced" base layer background variants
+- New addon icon and addon fanart (based on the new default background)
+- Added backgrounds/mood_background_default2.png for use with new DialogAddonInfo dialog mood background visuals (anti banding dithered gradient)
+- Changed OverlayWatching texture variants to be horizontally mirrored (makes more sense visually in regards to what the icon wants to show in it's meaning)
+
+- Reworked DialogSettings slider bars
+- Replaced convert tabulator "&amp;#x9;" with regular tab (converted string resulted from use of the Kodi Skinning Tool when it did some help on the skin resolution conversion)
+
+[SmartPlaylistEditor]
+- Added scrollbar for search rules (invisible if no scrolling needed)
+- Changed style for rules listing buttons: "Add", "Remove" and "Edit"
+- Moved down section "Playlist options" by some pixels because sections were too close to each other visually
+
+
+- PVR ChannelGuide: Header "Guide - ChannelName" (optional with prefix " - ") before: prefix always there even if no value
+
+- Moved down legacy view "Media Info" fanart to be visually flush (movies/tvshows/episodes) (tbc)
+
+- Slightly updated "Special Lists", added one new Special List "episodes_by_recently_played.xsp"
+
+- Added many new stock backgrounds/wallpapers with the new default being "Frosted Glass /Light Colors" which replaces the previous default "Polygons /Grey"
+
+List of new backgrounds/wallpapers:
+
+Frosted Glass /Light Colors (New Default)
+Frosted Glass /Rainbow
+Frosted Glass /Sunrise
+Frosted Glass /Silver
+Frosted Glass /Blue Sea
+Frosted Glass /Forest
+Cinema /Red Curtain
+
+
+- Added new Skin Settings option "[RESET] all skin settings to default"
+
+- Added new Videos section sidebar feature "Hide Video Ratings" which hides all ratings from all modern views (Fanart + Wall Views)
+
+- [Custom_1107_SearchDialog] Added support for "Global Search" addon within this dialog. Also some minor improvements to the visuals of this dialog have been made.
+- [Custom_1185_WelcomeNewVersion] Added dialog with welcome dialog which shows a small notification one time after every version update
+
+- [DialogAddonInfo] Visual rework and improvements including blurred mood backgrounds
+
+- Multiple default focus improvements for edge situations where default focus could be lost due to complex navigation
+- [DialogSettings] Added text header
+
+- [DialogSubtitles] Major usability and visual rework of subtitle search dialog
+- [DialogVideoInfo] Further improved Video Information Dialog
+
+- [DialogVolumeBar] Reworked volume bar with more intuitive icons which show the amount of volume, also improved mute indicator
+
+- Added "Total Seasons" below poster for "Seasons" view (based on workarounds to avoid some Kodi core issues which make this impossible using regular values)
+
+- Reworked home screen PVR indicators for existing tv recording and timers activity and fixed a rare issue where the open and closed visual variant would cause overlapping when window is not reopened after a change
+
+- [VideoOSDBookmarks] Improved panel position when content item count is lower than the full amount
+
+- Reduced visual size of "rating stars" for Video Info Dialog and Fanart View
+
+[B]5.4.35[/B] (2023-04-01)
 
 [Textures] and corresponding xml files:
 - Renamed and moved "_added_img/black-back2-noborder.png" to "black-back2.png"
@@ -2301,7 +2423,7 @@ I had this disabled because i want to be able to jump to the most right object b
 		</news>
 		<assets>
 			<icon>resources/icon.png</icon>
-			<fanart>resources/fanart.png</fanart>
+			<fanart>resources/fanart.jpg</fanart>
 		</assets>
 	</extension>
 </addon>

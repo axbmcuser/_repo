@@ -1,3 +1,9 @@
+[B]1.4.0[/B] (2023-08-16) (axbmcuser)
+
+Version in sync for major rework of "A Confluence ZEITGEIST" 3.6.0 (Version numbers vary on other Kodi generations)
+
+- New addon icon
+
 [B]1.3.9[/B] (2022-12-03) (axbmcuser)
 
 - Added KODI 19+20 (Python 3) compatibility code basis (Dual-addon: Python 2 still supported)
