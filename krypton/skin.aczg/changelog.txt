@@ -1,3 +1,24 @@
+[B]3.6.3[/B] (2023-08-19)
+
+- Updated DefaultAddonsUpdates icon (Added a red dot to the existing icon)
+- Reworked and simplified System Settings root dialog and similar system dialogs
+- Removed now unused texture black-back2.png
+- Further simplified settings level icon
+- Improved settings category active indicator (width +1px)
+- Reworked slider base bars to a slimmer look
+- Fixed rare bug causing custom wallpaper(s) not to be shown (when hexagons advanced is selected (but disabled))
+- Updated background simulation language string wording for SkinSettings
+
+Kodi 17 only
+- Restored home screen default focus code (needed exclusively on Kodi 17)
+
+[B]3.6.2[/B] (2023-08-18)
+
+- Updated addon summary and description text
+
+Kodi 19+ only
+- Improved default focus for DialogAddonInfo dialog
+
 [B]3.6.1[/B] (2023-08-15)
 
 - Changed default value in context of "Always force Preset Views"
@@ -39,7 +60,7 @@ Also added a feature to reset the default preset view IDs "[RESET] all above Vie
 - Changed OverlayWatching texture variants to be horizontally mirrored (makes more sense visually in regards to what the icon wants to show in it's meaning)
 
 - Reworked DialogSettings slider bars
-- Replaced convert tabulator "&amp;#x9" with regular tab (converted string resulted from use of the Kodi Skinning Tool when it did some help on the skin resolution conversion)
+- Replaced convert tabulator "&amp;#x9;" with regular tab (converted string resulted from use of the Kodi Skinning Tool when it did some help on the skin resolution conversion)
 
 [SmartPlaylistEditor]
 - Added scrollbar for search rules (invisible if no scrolling needed)

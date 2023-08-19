@@ -1,3 +1,17 @@
+[B]5.6.3[/B] (2023-08-19)
+
+- Updated DefaultAddonsUpdates icon (Added a red dot to the existing icon)
+- Reworked and simplified System Settings root dialog and similar system dialogs
+- Removed now unused texture black-back2.png
+- Further simplified settings level icon
+- Improved settings category active indicator (width +1px)
+- Reworked slider base bars to a slimmer look
+- Fixed rare bug causing custom wallpaper(s) not to be shown (when hexagons advanced is selected (but disabled))
+- Updated background simulation language string wording for SkinSettings
+
+Kodi 17 only
+- Restored home screen default focus code (needed exclusively on Kodi 17)
+
 [B]5.6.1[/B] (2023-08-17)
 
 - Updated addon summary and description text

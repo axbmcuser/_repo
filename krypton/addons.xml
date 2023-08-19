@@ -804,7 +804,7 @@ Second Test Release:
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="3.6.1" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.6.3" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0" />
 		<import addon="service.listitem.helper" version="0.3.4" />
@@ -817,14 +817,35 @@ Second Test Release:
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en_GB">A modern reimagination of Confluence</summary>
-		<description lang="en_GB">A Confluence ZEITGEIST is a modern reimagination of the Confluence skin, the beloved long-time default user interface of Kodi (formerly XBMC).[CR][CR]Features include a complete graphical overhaul, an icon-based main menu without the need for scrolling and all new wall views.[CR]The useful lightweight features among countless carefully crafted usability optimizations make you enjoy an intuitive user experience you would expect from a retail media player with good UI.</description>
+		<description lang="en_GB">A Confluence ZEITGEIST - a modern reimagination of Confluence, the beloved long-time default user interface of Kodi (formerly XBMC).[CR][CR]Features include a complete graphical overhaul, an icon-based main menu without the need for scrolling and all new wall views.[CR]The useful lightweight features among countless carefully crafted usability optimizations make you enjoy an intuitive user experience you would expect from a retail media player with a good UI.</description>
 		<platform>all</platform>
 		<license>GPL-2.0-only</license>
 		<forum>https://forum.kodi.tv/showthread.php?tid=242892</forum>
 		<website>https://forum.kodi.tv/showthread.php?tid=242892</website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]3.6.1[/B] (2023-08-15)
+		<news>[B]3.6.3[/B] (2023-08-19)
+
+- Updated DefaultAddonsUpdates icon (Added a red dot to the existing icon)
+- Reworked and simplified System Settings root dialog and similar system dialogs
+- Removed now unused texture black-back2.png
+- Further simplified settings level icon
+- Improved settings category active indicator (width +1px)
+- Reworked slider base bars to a slimmer look
+- Fixed rare bug causing custom wallpaper(s) not to be shown (when hexagons advanced is selected (but disabled))
+- Updated background simulation language string wording for SkinSettings
+
+Kodi 17 only
+- Restored home screen default focus code (needed exclusively on Kodi 17)
+
+[B]3.6.2[/B] (2023-08-18)
+
+- Updated addon summary and description text
+
+Kodi 19+ only
+- Improved default focus for DialogAddonInfo dialog
+
+[B]3.6.1[/B] (2023-08-15)
 
 - Changed default value in context of "Always force Preset Views"
 - [Home] Remove setDefaultControl includes
@@ -865,7 +886,7 @@ Also added a feature to reset the default preset view IDs "[RESET] all above Vie
 - Changed OverlayWatching texture variants to be horizontally mirrored (makes more sense visually in regards to what the icon wants to show in it's meaning)
 
 - Reworked DialogSettings slider bars
-- Replaced convert tabulator "&amp;#x9" with regular tab (converted string resulted from use of the Kodi Skinning Tool when it did some help on the skin resolution conversion)
+- Replaced convert tabulator "&amp;#x9;" with regular tab (converted string resulted from use of the Kodi Skinning Tool when it did some help on the skin resolution conversion)
 
 [SmartPlaylistEditor]
 - Added scrollbar for search rules (invisible if no scrolling needed)
@@ -890,7 +911,6 @@ Frosted Glass /Silver
 Frosted Glass /Blue Sea
 Frosted Glass /Forest
 Cinema /Red Curtain
-
 
 - Added new Skin Settings option "[RESET] all skin settings to default"
 
