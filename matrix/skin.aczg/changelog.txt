@@ -1,3 +1,13 @@
+[B]5.6.4[/B] (2023-08-20)
+
+- Reworked remaining 12px-height progress bars to 9px for a more consistent and slimmer look [DialogVolumeBar] [DialogConfirm] [DialogSeekBar]. Also affects [MusicOSD] [VideoOSD]
+- Updated seek_marker.png and removed now unsued texture progress-12px-start-end.png [Textures]
+- Slightly changed dialog position of some dialogs [DialogVolumeBar] [DialogSlider]
+- Slightly changed PVR channels progress bar focus transparency (they are barely noticeable less transparent on focus now) [DialogPVRChannelsOSD] [MyPVRChannels]
+- Improved visuals of [DialogExtendedProgressBar] (Lower density of visual elements and slightly changed dialog position)
+- Removed progressBarStyleLight from [_includes] since it's unused
+- Home screen background and logo settings are not reset to default anymore after updating to a newer skin version, if the user already uses the new skin versions (3.6.x, 4.6.x, 5.6.x)
+
 [B]5.6.3[/B] (2023-08-19)
 
 - Updated DefaultAddonsUpdates icon (Added a red dot to the existing icon)
