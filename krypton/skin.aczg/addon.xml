@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="3.6.5" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.6.4" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0" />
 		<import addon="service.listitem.helper" version="0.3.4" />
@@ -19,24 +19,7 @@
 		<website>https://forum.kodi.tv/showthread.php?tid=242892</website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]3.6.5[/B] (2023-08-22)
-
-- Major rework of Fullscreen and OSD visuals (Affects both video and music variants)
-
-Expanded "Customize Reduced Fullscreen OSD" Skin Settings options with new defaults and recommendations
-
-The rework features a more simplistic and - finally - visually centered look. 
-
-By default the new OSD is configured to be simplistic, focusing on what's important.
-You still can freely configurable it, if you need more information. (See Skin Settings "Customize Fullscreen OSD")
-
-Added "_clear_fullscreen_osd_cfg.py" script for "[RESET] Fullscreen OSD settings to default" functionality
-
-In context of the above rework, [VideoOSDBookmarks], [DialogSettings] and some onclick targets of multiple Fullscreen OSD buttons have also beem improved and optimized for a more intuitive user experience.
-
-[Textures] Updated end_time_icon.png and end_time_icon_uhd.png (icon now full 100% white instead of grey)
-
-[B]3.6.4[/B] (2023-08-20)
+		<news>[B]3.6.4[/B] (2023-08-20)
 
 - Reworked remaining 12px-height progress bars to 9px for a more consistent and slimmer look [DialogVolumeBar] [DialogConfirm] [DialogSeekBar]. Also affects [MusicOSD] [VideoOSD]
 - Updated seek_marker.png and removed now unsued texture progress-12px-start-end.png [Textures]
