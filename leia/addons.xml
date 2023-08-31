@@ -670,7 +670,7 @@ Second Test Release:
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="4.6.8" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="4.6.9" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="service.listitem.helper" version="0.3.4" />
@@ -689,7 +689,17 @@ Second Test Release:
 		<website>https://forum.kodi.tv/showthread.php?tid=242892</website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]4.6.8[/B] (2023-08-31)
+		<news>[B]4.6.9[/B] (2023-08-31)
+
+- Solved tv show poster overring the season poster in some cases [_variables]
+- Additionaly improved display of "All seasons" tv show poster when using Wall Views (now using correct "scale" aspect ratio instead of "keep" which solves showing unwanted borders) [_ViewsFileMode_walls]
+
+Minor code improvements [VideoFullScreen] [MusicVisualisation] [IncludesCodecFlagging]
+Including: stinger_scene.png removed aspect ratio tag; for album cover: use "scale" instead of "keep", change scaling for ratingstars to "center"
+
+[Textures] Added DefaultFolder_poster.png for Kodi 17-only "All seasons" poster texture workaround
+
+[B]4.6.8[/B] (2023-08-31)
 
 [DialogSeekbar] Further refined potential workaround for very rare occurence of truncated "total time" label
 (Identified as an issue of the Kodi core regarding UI/font rendering when changing between windowed and fullscreen mode)
