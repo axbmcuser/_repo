@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="5.6.7" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="5.6.8" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.15.0" />
 		<import addon="service.listitem.helper" version="1.0.0" />
@@ -18,7 +18,18 @@
 		<website>https://forum.kodi.tv/showthread.php?tid=242892</website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]5.6.7[/B] (2023-08-29)
+		<news>[B]5.6.8[/B] (2023-08-31)
+
+[DialogSeekbar] Further refined potential workaround for very rare occurence of truncated "total time" label
+(Identified as an issue of the Kodi core regarding UI/font rendering when changing between windowed and fullscreen mode)
+
+Minor code improvements
+[Custom_SideMenuHelp] [IncludesCodecFlagging] [Custom_1185_WelcomeNewVersion] [VideoOSD] [MusicOSD] [VideoFullScreen] [MusicVisualisation] [VideoOSDBookmarks]
+
+[DialogAddonSettings] [MyGames] Fixed some final "button-focus.png" borders (6 must be 14) that were missed during the resolution rework merging
+Updated click target for "Get More" sidebar button in Games section
+
+[B]5.6.7[/B] (2023-08-29)
 
 [VideoFullScreen] [DialogSeekBar] [_includes] [IncludesCodecFlagging]
 Minor code improvements, includes potential fix for very rare occurence of truncated "total time" label with non native display resolutions/aspect ratio

@@ -1,3 +1,22 @@
+[B]4.6.8[/B] (2023-08-31)
+
+[DialogSeekbar] Further refined potential workaround for very rare occurence of truncated "total time" label
+(Identified as an issue of the Kodi core regarding UI/font rendering when changing between windowed and fullscreen mode)
+
+Minor code improvements
+[Custom_SideMenuHelp] [IncludesCodecFlagging] [Custom_1185_WelcomeNewVersion] [VideoOSD] [MusicOSD] [VideoFullScreen] [MusicVisualisation] [VideoOSDBookmarks]
+
+[DialogAddonSettings] [MyGames] Fixed some final "button-focus.png" borders (6 must be 14) that were missed during the resolution rework merging
+Updated click target for "Get More" sidebar button in Games section
+
+[B]4.6.7[/B] (2023-08-29)
+
+[VideoFullScreen] [DialogSeekBar] [_includes] [IncludesCodecFlagging]
+Minor code improvements, includes potential fix for very rare occurence of truncated "total time" label with non native display resolutions/aspect ratio
+
+Kodi 18+ only
+- Fixed main menu default focus when only very few main menu items are configured to be visible (Focus should be always on first item)
+
 [B]4.6.6[/B] (2023-08-22)
 
 - Major rework of Fullscreen and OSD visuals (Affects both video and music variants)
