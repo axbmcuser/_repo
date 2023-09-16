@@ -1,3 +1,11 @@
+[B]2.1.3[/B] (2023-09-16)
+
+- Updated addon for reworked and expanded post movie dialog feature
+
+Kodi 17 only
+- Improvements for FullScreen OSD auto-close functionality
+(same simplified code will be used for Kodi 18+ versions, but it does not affect these versions in regards of functionality)
+
 [B]2.1.2[/B] (2023-08-17)
 
 - Fixed a minor issue while loading user settings in context of force views

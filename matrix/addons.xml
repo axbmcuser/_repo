@@ -145,7 +145,7 @@ Version in sync for major rework of "A Confluence ZEITGEIST" 3.6.0 (Version numb
   </extension>
 </addon>
 
-<addon id="service.cinema.helper" name="Cinema Helper (KODI 19+20) (axbmcuser)" version="2.1.2" provider-name="axbmcuser">
+<addon id="service.cinema.helper" name="Cinema Helper (KODI 19+20) (axbmcuser)" version="2.1.3" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.simplejson" version="3.16.1" />
@@ -160,7 +160,15 @@ Version in sync for major rework of "A Confluence ZEITGEIST" 3.6.0 (Version numb
 		<website>https://forum.kodi.tv/showthread.php?tid=370673</website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]2.1.2[/B] (2023-08-17)
+		<news>[B]2.1.3[/B] (2023-09-16)
+
+- Updated addon for reworked and expanded post movie dialog feature
+
+Kodi 17 only
+- Improvements for FullScreen OSD auto-close functionality
+(same simplified code will be used for Kodi 18+ versions, but it does not affect these versions in regards of functionality)
+
+[B]2.1.2[/B] (2023-08-17)
 
 - Fixed a minor issue while loading user settings in context of force views
 (Global/Misc Preset IDs: Affecting the last two entries "Add-ons" and "Games" which were not read correctly before this fix)
@@ -523,7 +531,7 @@ Second Test Release:
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="5.6.9" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="5.6.10" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.15.0" />
 		<import addon="service.listitem.helper" version="1.0.0" />
@@ -542,7 +550,42 @@ Second Test Release:
 		<website>https://forum.kodi.tv/showthread.php?tid=242892</website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]5.6.9[/B] (2023-08-31)
+		<news>[B]5.6.10[/B] (2023-09-16)
+
+- Reworked and expanded optional post movie dialog feature (See: Skin settings - Advanced settings - Cinema options - Custom End Screen)
+
+- New Skin settings option for "Video Info Dialog": "Show audio codec/channels" (New default: Off)
+
+- Clean-up regarding some Skin settings labels
+
+- Usability: Improved click-targets for better navigation feel within DialogSelect [Includes_DialogSelect]
+
+- Renamed texture home_icons/uhd/_home_icon_programs.png to _home_icon_addons.png [Home]
+- Removed audio channels info from "Fanart" view (video resolution remains unchanged)
+
+- Improved rendering of texture "icon_search_large.png" and simplified text+icon header of [Custom_1107_SearchDialog] which uses that textures
+
+Visuals:
+
+- New "mute"-icon (Circular visuals just did not feel right). Now using a rectangle with rounded corners. [Textures] [DialogVolumeBar]
+- Reworked main menu focus layout visuals (rounded corners upped from 24 to 30). Added white_border30.png
+
+- Reworked "settings level" icon with more simplified visuals
+- Reworked "stinger scene" icon with more simplified visuals
+
+- New "movies" icon (affects main menu icon including pseudolib, window header, DefaultMovies.png)
+- Updated multiple "music" (note) related icons to be consistent with other existing icons which contain a music note
+- Reworked "addons" icon with more simplified visuals
+
+- New "power" icons with more simplified and rounded visuals
+- Reworked "artists/actors/user" and related icons with rounded visuals at the lower line ends (which were cut off straight before)
+(DefaultActor DefaultArtist DefaultMusicArtists DefaultMusicRoles DefaultUser)
+
+- Updated x-position of DialogBusy inner icon by +1px (Looked slightly off before)
+
+- Minor update for DefaultAddonSkin.png
+
+[B]5.6.9[/B] (2023-08-31)
 
 - Solved tv show poster overring the season poster in some cases [_variables]
 - Additionaly improved display of "All seasons" tv show poster when using Wall Views (now using correct "scale" aspect ratio instead of "keep" which solves showing unwanted borders) [_ViewsFileMode_walls]
