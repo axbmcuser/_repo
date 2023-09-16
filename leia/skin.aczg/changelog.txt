@@ -1,3 +1,38 @@
+[B]4.6.10[/B] (2023-09-16)
+
+- Reworked and expanded optional post movie dialog feature (See: Skin settings - Advanced settings - Cinema options - Custom End Screen)
+
+- New Skin settings option for "Video Info Dialog": "Show audio codec/channels" (New default: Off)
+
+- Clean-up regarding some Skin settings labels
+
+- Usability: Improved click-targets for better navigation feel within DialogSelect [Includes_DialogSelect]
+
+- Renamed texture home_icons/uhd/_home_icon_programs.png to _home_icon_addons.png [Home]
+- Removed audio channels info from "Fanart" view (video resolution remains unchanged)
+
+- Improved rendering of texture "icon_search_large.png" and simplified text+icon header of [Custom_1107_SearchDialog] which uses that textures
+
+Visuals:
+
+- New "mute"-icon (Circular visuals just did not feel right). Now using a rectangle with rounded corners. [Textures] [DialogVolumeBar]
+- Reworked main menu focus layout visuals (rounded corners upped from 24 to 30). Added white_border30.png
+
+- Reworked "settings level" icon with more simplified visuals
+- Reworked "stinger scene" icon with more simplified visuals
+
+- New "movies" icon (affects main menu icon including pseudolib, window header, DefaultMovies.png)
+- Updated multiple "music" (note) related icons to be consistent with other existing icons which contain a music note
+- Reworked "addons" icon with more simplified visuals
+
+- New "power" icons with more simplified and rounded visuals
+- Reworked "artists/actors/user" and related icons with rounded visuals at the lower line ends (which were cut off straight before)
+(DefaultActor DefaultArtist DefaultMusicArtists DefaultMusicRoles DefaultUser)
+
+- Updated x-position of DialogBusy inner icon by +1px (Looked slightly off before)
+
+- Minor update for DefaultAddonSkin.png
+
 [B]4.6.9[/B] (2023-08-31)
 
 - Solved tv show poster overring the season poster in some cases [_variables]
