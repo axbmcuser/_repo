@@ -1,3 +1,85 @@
+[B]3.6.11[/B] (2023-09-23)
+
+- Reworked Video Info Dialog [DialogVideoInfo] [DialogPVRInfo] [Includes] [_includes] [_variables]
+
+Further improved dialog visuals including improved spacing between elements and button focus animation refinements.
+When focused, the Play-button now features a "progress bar" indicator to prepare you in an intuitive way for a potentially upcoming "play or resume?"-dialog after clicking said button.
+Removed rating votes for movies and changed label variable to always show the highest rating available. (According to the existing functionality which already did this for the rating stars texture *****)
+
+Improved visuals for "Actors" and a smoother switch between "Plot" and "Cast" by adding a transition animation with custom timings.
+Updated actor panel with changed image dimensions+spacing and changed font style (regular to light). Fixed barely visual black ghosting at corner of actor focus border.
+
+The new code still relies on the "Plot/Cast" button with id "5" which is deprecated according to the Kodi wiki because handling it otherwise causes bugs in the Kodi core. 
+Internal remark: Button id "5" is also still needed in [DialogPVRInfo] for "switch to channel" functionality. So not so much deprecated at all it seems. (Not documented in Kodi wiki)
+
+
+! Reworked and expanded rating scores support
+
+Visual rating score indicators now support local ratings from your Kodi database.
+
+At the time of writing, the following most common property names will be supported (higher listed names of the same rating will take priority):
+
+# rotten romatoes
+ListItem.Rating(tomatometerallcritics)
+ListItem.Rating(rottentomatoes)
+
+# rotten tomatoes audience rating
+ListItem.Rating(tomatometerallaudience)
+
+# metacritic
+ListItem.Rating(metacritic)
+ListItem.Rating(metascore)
+
+# imdb
+ListItem.Rating(imdb)
+
+Support for live rating scores via ListItem Helper using your API keys remains intact and is still most recommended. Live rating scores will always take priority over an existing local ListItem.Rating(xxx) property.
+
+
+Also updated DialogPVRInfo to match DialogVideoInfo more closely. (Affects PVR+PVR recordings)
+
+
+- Added focus animations on multiple home screen elements (sub menus, widgets, addon shortcuts) for a better feel while navigating without compromising on short animation speeds (which are always important for 24p framerate switch situations)
+
+- Slightly expanded height for Favorites Dialog panel (removes unnecessary few-px border at bottom) [DialogFavourites] and additionally for Kodi 20+ only: [MyFavourites]
+
+- Added support for 8K video resolution indicator overlay on posters (Wall View and Home Screen Widget)
+
+- Adapted improved button focus animations from Video Info Dialog to power dialog (ShutDownButtonsFocusStyle) [Includes] [DialogButtonMenu]
+
+- Further optimized all diffuse mask textures (removed alpha 1% black for all. Also fixed almost invisible ghosting for UHD indicator textures on posters by changing radius from 7 to 6)
+
+- File manager: Added rounded corners for file preview squares. Changed item count font style from regular to light
+
+- Reworked Overlay 4K, 8K, HFR (Now: plain background)
+- Reworked Wall View addon flag icons "info" and "warning" for deprecated and orphaned addons (Further simplified. Visuals are now in line with DefaultIconInfo and DefaultIconError)
+
+- Label improvements for buffering line within [DialogPlayerProcessInfo] (If buffer/cache property is empty, the label now shows "0%" instead of "%")
+
+- Corrected a diffuse mask height-value for OverlayUHD icon from 12px to 13px (Single change. Correction almost invisible.) [_ViewsFileMode_walls]
+
+- Reworked multiple games section related icons/textures with slightly sharper and better rendering
+
+- Episodes View: Removed the circular "resumable"-indicator on the right for more simplicity and redundancy reasons. If an episode is resumable, indication by the large progress bar on the left is perfectly sufficient. 
+
+- Fixed very rare issue when Video Info Dialog is opened via Video OSD Info button and switching the displayed movie within this dialog afterwards (via actor panel search for example):
+Now the correct artwork will be displayed for the described situation. Also, the play button remains hidden and the close button will remain intact.
+
+- New settings icon (home screen and settings section header)
+
+- Slightly decreased size of videos and tv shows header icons
+
+
+Textures maintenance
+
+- Restructered and renamed some textures and folders
+- Removed unused textures
+- Removal of invisible rendering workaround background (black @ 1% alpha) from many textures (ongoing WIP)
+
+Kodi 18+ only
+- Improved Games support within CommonNowPlaying and IncludesBackgroundBuilding
+Also, when playing a game in the background, a neutral games section wallpaper is now displayed to indicate that a game is playing/loaded in the background (Player.HasGame)
+
 [B]3.6.10[/B] (2023-09-16)
 
 - Reworked and expanded optional post movie dialog feature (See: Skin settings - Advanced settings - Cinema options - Custom End Screen)
