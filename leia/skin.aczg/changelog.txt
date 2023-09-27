@@ -1,3 +1,30 @@
+[B]4.6.12[/B] (2023-09-28)
+
+- Settings dialog: Moved Kodi logo a bit to the right
+- Settings - Profiles: Reworked dialog visuals
+- Further refined new "power" icon from previous release (Now: thinner lines)
+- Updated some default button text color values [Defaults]
+- Custom Search Dialog: Improved focus animations
+- Refined focus animation "EpisodesViewFocusAnimation" which is used for Episodes View, Songs View, Weather, Events and a few more occasions (zoom effect now a bit more noticeable and slightly slower)
+- Modern View, Episodes View, Songs View: Improved focus transitions for text elements. Now text color is transitioned smoothly between grey and white instead of just hard-changing the color
+- Skin Settings: Changed label for "Hide Video Ratings" to "Show video ratings" and moved element to another section
+- Video SideBar: Removed section header "Actions" for simplicity and to create some more vertical space
+- Removed header icon "icon_events.png" for System sub section "Events" (Now this section is using the already existing "System" icon which is also used for similar sub sections)
+
+Login Screen
+- Reworked visuals
+- Refined focus and power button animations
+- Udpated DefaultUser.png background color to grey
+
+Wall Views
+- Reworked WallView 4X to match the exact same aspect ratio as 2X and 3X
+- Multiple smaller refinements to all Wall Views
+
+Video Info Dialog
+- Set preloaditems to max for actors panel to mitigate effects of too aggressive texture unload-handling of regular Kodi versions
+- Reduced left dialog half width to fit 2 by 3 poster aspect ratio
+- Adapted changes to [DialogPVRInfo]
+
 [B]4.6.11[/B] (2023-09-23)
 
 - Reworked Video Info Dialog [DialogVideoInfo] [DialogPVRInfo] [Includes] [_includes] [_variables]
