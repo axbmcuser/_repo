@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="4.6.12" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="4.6.13" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="service.listitem.helper" version="0.3.4" />
@@ -18,7 +18,14 @@
 		<website>https://forum.kodi.tv/showthread.php?tid=242892</website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]4.6.12[/B] (2023-09-28)
+		<news>[B]4.6.13[/B] (2023-09-28)
+
+- Skin Settings: Small text change to one help label
+
+Wall Views
+- Include different "preloaditems" counts to mitigate effects of too aggressive and functionally limited texture unload-handling of regular Kodi versions
+
+[B]4.6.12[/B] (2023-09-28)
 
 - Settings dialog: Moved Kodi logo a bit to the right
 - Settings - Profiles: Reworked dialog visuals

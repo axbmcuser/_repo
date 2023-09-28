@@ -1,3 +1,10 @@
+[B]4.6.13[/B] (2023-09-28)
+
+- Skin Settings: Small text change to one help label
+
+Wall Views
+- Include different "preloaditems" counts to mitigate effects of too aggressive and functionally limited texture unload-handling of regular Kodi versions
+
 [B]4.6.12[/B] (2023-09-28)
 
 - Settings dialog: Moved Kodi logo a bit to the right
