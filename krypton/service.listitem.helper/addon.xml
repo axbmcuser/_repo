@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="service.listitem.helper" name="ListItem Helper (KODI 17+18) (axbmcuser)" version="0.4.1" provider-name="axbmcuser">
+<addon id="service.listitem.helper" name="ListItem Helper (KODI 17+18) (axbmcuser)" version="0.4.2" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
 		<import addon="script.module.requests" version="2.3.0" />
@@ -11,15 +11,123 @@
 	<extension point="xbmc.service" library="service.py" start="login" />
 	<extension point="xbmc.python.script" library="default.py" />
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">A ListItem Helper</summary>
-		<description lang="en">A ListItem Helper service which provides values from OMDb/TMDb.[CR][CR][COLOR=red]![/COLOR] Entering OMDb/TMDb API keys in the configuration dialog is required.[CR][CR]Property names:[CR](home) ListItemHelper.rating.rottentomatoes.percent[CR](home) ListItemHelper.rating.rottentomatoes.image[CR](home) ListItemHelper.rating.rottentomatoes.url[CR](home) ListItemHelper.rating.rottentomatoes.audience[CR](home) ListItemHelper.rating.metacritic.percent[CR](home) ListItemHelper.rating.imdb.percent[CR](home) ListItemHelper.rating.imdb[CR](home) ListItemHelper.rating.imdb.votes[CR](home) ListItemHelper.awards[CR](home) ListItemHelper.budget[CR](home) ListItemHelper.budget.million[CR](home) ListItemHelper.budget.formatted[CR](home) ListItemHelper.revenue[CR](home) ListItemHelper.revenue.million[CR](home) ListItemHelper.revenue.formatted[CR](home) ListItemHelper.revenue.boxoffice[CR](home) ListItemHelper.DBID[CR](home) ListItemHelper.IMDBNumber[CR](home) ListItemHelper.IMDBNumber.isValid[CR](home) ListItemHelper.IMDBNumber.corrected[CR](home) ListItemHelper.IMDBNumber.corrected.isValid[CR](home) ListItemHelper.TMDBID[CR](home) ListItemHelper.TVDBID[CR][CR]For use with other containers like home screen widgets set the following properties when the container is focused:[CR][CR](home) ListItemHelper.WidgetContainerId[CR]to the container ID (Example: 8000)[CR](home) ListItemHelper.WidgetContainerWindowName[CR]to the window name where the container resides (Example: home)[CR][CR]Important remarks:[CR]- Unset the WidgetContainer-properties when leaving focus from the container/widget.[CR][CR]Known supported Skins:[CR]A Confluence ZEITGEIST[CR][CR][CR][COLOR=gray]This addon partly contains forked code of the following addons:[CR]- script.toolbox by phil65[CR]- script.module.metadatautils by marcelveldt and others[CR]- script.embuary.helper by sualfred[CR]which has been changed and massively stripped down for fast execution and minimal functionality.[/COLOR][CR] </description>
+		<summary lang="en">A ListItem Helper service</summary>
+		<description lang="en">A ListItem Helper service which provides values from OMDb/TMDb/MDBList and your Kodi database.
+
+[COLOR=red]![/COLOR] Entering OMDb/TMDb/MDBList API keys in the configuration dialog is required.
+
+Property names (home):
+
+ListItemHelper.rating.rottentomatoes.percent
+ListItemHelper.rating.rottentomatoes.image
+ListItemHelper.rating.rottentomatoes.url
+ListItemHelper.rating.rottentomatoes.audience
+
+ListItemHelper.rating.metacritic.percent
+
+ListItemHelper.rating.imdb.percent
+ListItemHelper.rating.imdb
+ListItemHelper.rating.imdb.votes
+
+ListItemHelper.rating.letterboxd
+ListItemHelper.rating.letterboxd.percent
+ListItemHelper.rating.letterboxd.votes
+
+ListItemHelper.rating.trakt
+ListItemHelper.rating.trakt.percent
+ListItemHelper.rating.trakt.votes
+
+ListItemHelper.rating.highestScaleTo5
+ListItemHelper.rating.highestScaleTo10
+ListItemHelper.rating.highestScaleTo100
+
+ListItemHelper.awards
+ListItemHelper.budget
+ListItemHelper.budget.million
+ListItemHelper.budget.formatted
+ListItemHelper.revenue
+ListItemHelper.revenue.million
+ListItemHelper.revenue.formatted
+ListItemHelper.revenue.boxoffice
+
+ListItemHelper.DBID
+ListItemHelper.IMDBNumber
+ListItemHelper.IMDBNumber.isValid
+ListItemHelper.IMDBNumber.corrected
+ListItemHelper.IMDBNumber.corrected.isValid
+ListItemHelper.TMDBID
+ListItemHelper.TVDBID
+
+ListItemHelper.ageRating.commonsense
+
+ListItemHelper.studio.1 (up to .50)
+ListItemHelper.genre.1 (up to .50)
+ListItemHelper.writer.1 (up to .50)
+ListItemHelper.director.1 (up to .50)
+
+Local ratings from Kodi database:
+
+ListItemHelper.listitem.rating.tomatometerallcritics
+ListItemHelper.listitem.rating.tomatometerallcritics.scaleTo100
+ListItemHelper.listitem.votes.tomatometerallcritics
+ListItemHelper.listitem.rating.rottentomatoes
+ListItemHelper.listitem.rating.rottentomatoes.scaleTo100
+ListItemHelper.listitem.votes.rottentomatoes
+
+ListItemHelper.listitem.rating.tomatometerallaudience
+ListItemHelper.listitem.rating.tomatometerallaudience.scaleTo100
+ListItemHelper.listitem.votes.tomatometerallaudience
+
+ListItemHelper.listitem.rating.metacritic
+ListItemHelper.listitem.rating.metacritic.scaleTo100
+ListItemHelper.listitem.votes.metacritic
+
+ListItemHelper.listitem.rating.metascore
+ListItemHelper.listitem.rating.metascore.scaleTo100
+ListItemHelper.listitem.votes.metascore
+
+ListItemHelper.listitem.rating.imdb
+ListItemHelper.listitem.rating.imdb.scaleTo100
+ListItemHelper.listitem.votes.imdb
+
+
+For use with other containers like home screen widgets set the following properties when the container is focused:
+
+(home) ListItemHelper.WidgetContainerId
+to the container ID (Example: 8000)
+(home) ListItemHelper.WidgetContainerWindowName
+to the window name where the container resides (Example: home)
+
+Important remarks:
+- Unset the WidgetContainer-properties when leaving focus from the container/widget.
+
+
+[COLOR=gray]This project may still contain elements of the following projects:
+
+- script.toolbox (by phil65)
+- script.module.metadatautils (by marcelveldt and others)
+- script.embuary.helper (by sualfred)
+
+which have been either replaced, rewritten, expanded, changed and/or massively stripped down for fast execution and minimal functionality.
+
+Many thanks to the contributors of the listed projects and all users providing valuable feedback.[/COLOR]
+</description>
 		<platform>all</platform>
-		<license></license>
+		<license>GPL-2.0-only</license>
 		<forum>https://forum.kodi.tv/showthread.php?tid=370673</forum>
 		<website>https://forum.kodi.tv/showthread.php?tid=370673</website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]0.4.1[/B] (2023-09-23)
+		<news>[B]0.4.2[/B] (2023-10-12)
+
+- Added API support for MDBList
+- Added support for local ratings from the Kodi database and new properties
+- Minor performance improvements and optimizations
+
+Clean up:
+- Removed some Python 2 code (now using code which is compatible with both 2 and 3)
+
+[B]0.4.1[/B] (2023-09-23)
 
 Version in sync with "A Confluence ZEITGEIST" 3.6.11 (4.6.11, 5.6.11)
 
