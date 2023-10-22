@@ -793,7 +793,7 @@ Second Test Release:
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="4.6.13" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="4.7.0" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="service.listitem.helper" version="0.3.4" />
@@ -805,14 +805,132 @@ Second Test Release:
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en_GB">A modern reimagination of Confluence</summary>
-		<description lang="en_GB">A Confluence ZEITGEIST – a modern reimagination of Confluence, the beloved long-time default user interface of Kodi (formerly XBMC).[CR][CR]Features include a complete graphical overhaul, an icon-based main menu without the need for scrolling and all new wall views.[CR]The useful lightweight features among countless carefully crafted usability optimizations make you enjoy an intuitive user experience you would expect from a retail media player with an awesome UI.</description>
+		<description lang="en_GB">A Confluence ZEITGEIST – a modern reimagination of Confluence, the beloved long-time default user interface of Kodi (formerly XBMC).
+
+Features include a complete graphical overhaul, an icon-based main menu without the need for scrolling and all new wall views.
+The useful lightweight features among countless carefully crafted usability optimizations make you enjoy an intuitive user experience you would expect from a retail media player with an awesome UI.
+</description>
 		<platform>all</platform>
-		<license>GPL-2.0-only</license>
 		<forum>https://forum.kodi.tv/showthread.php?tid=242892</forum>
-		<website>https://forum.kodi.tv/showthread.php?tid=242892</website>
-		<email></email>
-		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]4.6.13[/B] (2023-09-28)
+		<website>https://axbmcuser.github.io</website>
+		<source>https://github.com/axbmcuser/_repo</source>
+		<news>[B]4.7.0[/B] (2023-10-22)
+
+Remarks:
+- This release now includes support for additional trakt and letterboxd rating scores (Both local+online variants) (See "ListItem Helper" add-on for more details)
+- Please take notice of the flagging-overlays (4K/8K, HFR, Movie set, 3D, disc) default config changes for "Wall" views below
+
+
+Reworked "Wall" views
+
+- Improved visuals including new flagging/overlay indicators (Including: Movie set, 3D, (disc))
+- Overlays "4K/8K/HFR" have slightly rounded edges now (1px) which looks more fitting to overall visuals (Barely noticeable)
+- Overlays on posters are by default now only shown when the item is focused. This behaviour can be changed separately for overlays and the watched checkmark:
+Added two items to skin settings accordingly:
+"Show Wall Views overlays 4K/HFR/3D/Set/Disc" and "Show Wall Views watched checkmarks"
+with the following selectable options: "(Default) Only on focus", "Always" and "Never"
+- This improvement also affects home screen widgets for recently added movies/episodes
+- Optimized code to avoid redundancy and improve maintainability (itemlayouts/focuedlayouts)
+
+Reworked "Fanart" view
+
+- Movies variant: Improved and optimized view visuals and animations. Fixed wrong poster aspect ratio on focus. Also, movie posters don't overlap anywhere anymore.
+- Albums variant: Improved and optimized view visuals and animations. Changed album art aspect ratio to full 1:1. Also added missing "* All albums" covers and fixed display of "* All albums" fanart.
+- Changed semi-transparent scrollbar style to be more visible than before but still not visually instrusive
+- Changed navigation target for sidebar (before: down now: up. Feels more intutitive to have navgating away from the bottom scrollbar.)
+- Added support for showing MusicVideos with this view (album art 1:1 aspect ratio identical to albums)
+
+Reworked Video Info Dialog
+
+- Improved visuals including element dimensions, spacing between elements, font types, colors and text label changes (Sub-header, revenue)
+- Added support for two new rating types: letterboxd and trakt (See "ListItem Helper" add-on depdendency for more details)
+- Stars rating won't be shown anymore if the dialog is displaying an episode of a tv show
+- Minor code improvement for actors panel in Video Info Dialog [DialogVideoInfo]
+- Added plot/text transition animation when text viewer button is (non-)focused [DialogVideoInfo] Also adapted changes to [DialogPVRInfo]
+- Removed forced uppercase font style for ListItem.Country
+
+
+- Improved and expanded flagging indicators (Including: Movie set, 3D, disc, HFR). Affects multiple views and dialog: "Wall" views, Video Info dialog, "Fanart" view [IncludesCodecFlagging]
+Added new flagging textures accordingly and changed some existing one like "movie set"
+
+- Weather: Improved entry page of weather section (more simplified, thinner font styles, better positioning of presented available data)
+- If main menu item "Weather" is disabled but there is an active weather provider configured, you can now still open the weather section through a sub menu link under the main menu item "Favorites"
+(This gives you the possibility to use the weather section without the need to clutter your main menu with a dedicated menu item for it)
+
+- Settings: Minor improvements to visuals
+- MyPVRChannels: Slightly corrected width of right progress bar to be visually aligned with text labels with no overlap (This has been a final leftover of the progress bar rework)
+- Skin Settings: Minor improvements to visuals/text labels and improved navigation usability
+- Improved "preloaditems" include-conditions to also look for BetterGUI builds of Kodi (which already contain improvements regarding "preloaditems" and therefore don't need any (only partially-working) workarounds) [_ViewsFileMode_walls] [DialogVideoInfo]
+- Default focus improvements for Text Viewer dialogs [Custom_1102_TextViewer] [Custom_1103_TextViewerFS]
+
+
+- Improved some textures positions of multiple views (+- 1px most of the time)
+- Improved navigation usability of multiple views
+- Home screen top right area:
+Reduced font size of clock/time, improved label alignments of optional date and weather icon+text
+
+- Improved home screen main menu focus and inactive-focus visuals
+- Simplified some textures which included the typical accent color and changed them to full white+colordiffuse, improved file size (8bit png). Affects poster_borderXXX, settings_category_activeXXX, Also added variable for typical grey inactive colordiffuse
+
+- Corrected barely(!) different accent color "0078c3" to "0079c3" (Remaining textures will also follow this change accordingly in a future update)
+Further code improvements in this context to improve code maintainability
+
+- Slightly corrected auto-completion result labels position (+1px y-pos)
+- Removed non existant "selectbutton" control from [Defaults] (deprecated since Kodi 17)
+- Removed scroll-left-focus.png and scroll-up-focus.png, also changed scroll-left.png scroll-up.png to full white+colordiffuse for transparency
+
+Skin settings:
+- Restructured Experimental/developer options and added a switch to optionally show/enable them.
+The extra options are now hidden for regular users for more simplicity and fewer items within "Advanced Settings".
+(Also added red radiobutton-focus-warn.png texture for this)
+- Improved and/or shortened many text labels/headers
+- Added new skin setting option: "Enable AutoCompletion   (Default: On)"
+(You can now disable AutoCompletion suggestions even when the add-on "AutoCompletion for virtual keyboard" is installed and enabled)
+- (Kodi 19+ only) Auto-Enable "AutoCompletion for virtual keyboard" when trying to open settings dialog via shortcut (Only if add-on is installed, but disabled)
+- Improved usability for "main menu" and "power options" tabs
+(Switched from regular radiobuttons to a new radiobuttons variant with common select dialog style and new eye-texture ("selected" font color))
+
+
+- Updated Kodi version detection to also look for Kodi 22.x (future)
+- Busy dialog: Improved logo position being off center (barely visible, 1px). Also updated texture buffer-bg to be pixel perfect and added 4K variant
+- (Kodi 21+ only) If Kodi 21+ is detected, the main menu item "favorites" automatically opens the new "FavouritesBrowser" dialog instead of "Favourites" since the latter has been removed from Kodi 21+.
+Unfortunately "FavouritesBrowser" still seems to be feature incomplete:
+"favourites://" does not inherit the sorting preferences from the new dialog and therefore causes usability inconsistencies when displaying "favourites://" on home screen and switching to the new dialog afterwards. Hopefully this will be fixed before release of Kodi 21.
+- Improved main menu text labels (no more uppercase)
+Adapted changes to Skin settings labels accordingly (no more uppercase in similar situations, too)
+- (Kodi 20+ only) Minor improvements to ColorPicker dialog
+- Changed [MyPVRChannels] [DialogPVRChannelsOSD] start/end time font style from Bold to Regular
+- Updated GoFullscreen icon
+
+
+Default controls visuals:
+- Dim radiobutton-OFF controls when not focused (same like radiobutton-ON now)
+- (Kodi 21+ only) Implemented new slider/sliderex disabled state visuals (texturesliderbardisabled/textureslidernibdisabled)
+- Optimized disabled text colors
+
+
+Keyboard and numeric keyboard dialogs:
+- Improved visuals and usability of keyboard and numeric keyboard dialog
+- (Kodi 20+ only) Added password show/hide button. This button replaces the IP address button (but only when displaying a password input dialog). Also created and added two password-hide/show icons
+- Improved navigation targets of numeric keyboard dialog
+
+
+Clean-up and other improvements:
+
+- Major reduce in add-on install file size
+- Updated Roboto fonts to latest version (might be virtually identical even if file size seems to differ slightly)
+- Updated add-on icon/logo
+
+[Textures]
+- Restructured/moved some textures to different subfolders
+- Reduced hexagons base overlays in size (2k-variant are now transparent 8bit pngs without visible quality loss). 4K variants are still 24bit to avoid quality loss. Also reworked "bg_colorful_static.png" with better quality, corrected dimensions and smaller file size
+- Created new and more fitting icon for "add source" (DefaultAddSource.png)
+- Added "inverted" variant for resolution flags
+- Added a missing dedicated fallback texture for VideoResolution with correct dimensions
+- Removed old "list" variant of resolution textures (These variant is now using the new inverted type which is universally used in multiple situations/dialogs)
+- Minor update to OverlayLocked.png
+
+[B]4.6.13[/B] (2023-09-28)
 
 - Skin Settings: Small text change to one help label
 
@@ -835,7 +953,7 @@ Wall Views
 Login Screen
 - Reworked visuals
 - Refined focus and power button animations
-- Udpated DefaultUser.png background color to grey
+- Updated DefaultUser.png background color to grey
 
 Wall Views
 - Reworked WallView 4X to match the exact same aspect ratio as 2X and 3X
