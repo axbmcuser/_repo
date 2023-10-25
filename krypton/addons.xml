@@ -3130,7 +3130,7 @@ I had this disabled because i want to be able to jump to the most right object b
 	</extension>
 </addon>
 
-<addon id="weather.yahoo" name="Yahoo! Weather (KODI 17+18) (axbmcuser)" version="5.3.2" provider-name="Kodi Community">
+<addon id="weather.yahoo" name="Yahoo! Weather (Kodi 17+18) (axbmcuser)" version="5.3.3" provider-name="Kodi Community">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="script.module.requests" version="2.19.1"/>
@@ -3261,7 +3261,10 @@ I had this disabled because i want to be able to jump to the most right object b
 		<platform>all</platform>
 		<license>GPL-2.0-only</license>
 		<forum>https://forum.kodi.tv/showthread.php?tid=169410</forum>
-		<news>[B]v5.3.2[/B]  (2023-03-27)
+		<news>[B]v5.3.3[/B]  (2023-10-25)
+- Fixed connection yet again  (thx @ronie)
+
+[B]v5.3.2[/B]  (2023-03-27)
 - Fixed connection yet again  (thx @ronie)
 
 [B]v5.3.1[/B]  (2022-12-05)
