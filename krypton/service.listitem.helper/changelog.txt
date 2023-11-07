@@ -1,3 +1,9 @@
+[B]0.4.3[/B] (2023-11-07)
+
+- Added "suppressException" option for get_json (get_xml already had this added in a previous update)
+- Improved exception handling for time outs and similar status
+- Slightly updated settings window language strings (visual font changes)
+
 [B]0.4.2[/B] (2023-10-12)
 
 - Added API support for MDBList

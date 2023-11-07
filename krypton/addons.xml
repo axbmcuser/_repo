@@ -667,7 +667,7 @@ Version in sync for major rework of "A Confluence ZEITGEIST" 3.6.0 (Version numb
 	</extension>
 </addon>
 
-<addon id="service.listitem.helper" name="ListItem Helper (KODI 17+18) (axbmcuser)" version="0.4.2" provider-name="axbmcuser">
+<addon id="service.listitem.helper" name="ListItem Helper (Kodi 17+18)" version="0.4.3" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
 		<import addon="script.module.requests" version="2.3.0" />
@@ -786,7 +786,13 @@ Many thanks to the contributors of the listed projects and all users providing v
 		<website>https://forum.kodi.tv/showthread.php?tid=370673</website>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]0.4.2[/B] (2023-10-12)
+		<news>[B]0.4.3[/B] (2023-11-07)
+
+- Added "suppressException" option for get_json (get_xml already had this added in a previous update)
+- Improved exception handling for time outs and similar status
+- Slightly updated settings window language strings (visual font changes)
+
+[B]0.4.2[/B] (2023-10-12)
 
 - Added API support for MDBList
 - Added support for local ratings from the Kodi database and new properties
