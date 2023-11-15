@@ -661,7 +661,7 @@ Second Test Release:
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="5.7.2" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="5.7.3" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.15.0" />
 		<import addon="service.listitem.helper" version="1.0.0" />
@@ -682,7 +682,44 @@ The useful lightweight features among countless carefully crafted usability opti
 		<forum>https://forum.kodi.tv/showthread.php?tid=242892</forum>
 		<website>https://axbmcuser.github.io</website>
 		<source>https://github.com/axbmcuser/_repo</source>
-		<news>[B]5.7.2[/B] (2023-11-13)
+		<news>[B]5.7.3[/B] (2023-11-15)
+
+Global visual rework of focus elements
+
+- Finally, the visuals of every focused element have moved away from the old and non-ideal "bright-colored-border, dark base"-style
+- The new visuals result in a much cleaner, visually calming and coherent look
+- This change affects all three UI accent color themes
+- Video/PVR Info dialog: Updated plot viewer and actors panel focus visuals to adapt the changes of the focus elements rework
+- Profiles dialog: Updated visuals and synchronized focus-visuals with login screen
+- Internal note: Home Screen superfolder focus texture now uses a brighter focus texture for better contrast (Only affects "Kodi Blue" default UI accent color theme. Other themes use the default way.)
+- Internal note: Home Screen favorites widget now uses brighter DefeaultFolder-bright.png textures for some states and better contrast (Affects all UI accent color themes)
+
+Login Screen
+
+- The Login Screen has been further simplified - also adapted the changes from the focus elements rework and Profiles dialog
+
+PVR Guide
+
+- The PVR Guide has been reworked with rounded corners (missing before) and better visuals - also adapted the changes from the focus elements rework and Profiles dialog
+- Changed plot text font style from regular to light
+- Two unused sidebar buttons have been hidden for tvguide and radioguide dialogs
+- Added FullScreenClock to this dialog (always felt like it has been missing for this dialog)
+
+
+- Event Viewer: Improved visuals. Also added DefaultIconInfo-solid.png for use in this dialog (default fallback texture, now with rounded corners and higher quality)
+- VideoOSD/MusicOSD: Updated mouse control seekbar focus texture (thicker border + hide when fading out osd to avoid almost invisible graphic glitch of texture-bordering)
+- Fix rare sidebar mouse control bug for weather section by adding missing ids for two labels, fixed focus text color of location change button, also added the missing visible-fade-in animation of the location name
+- Changed Defaults.xml "white" color to full white instead of 95% white (Needed for focus visuals rework)
+- Corrected some pulseonselect-tags from "no" to "false", also added missing pulseonselect for slider and sliderex [Defaults]. Removed all pulseonselect-tags in other files than Defaults.xml
+
+Kodi 20+ only:
+
+ColorPicker
+
+- Improved ColorPicker dialog visuals
+- Also updated associated color-button-box texture with rounded corners (missing before)
+
+[B]5.7.2[/B] (2023-11-13)
 
 Improved Profiles support and Login Screen
 
