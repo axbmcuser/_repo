@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="3.7.3" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.7.4" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0" />
 		<import addon="service.listitem.helper" version="0.3.4" />
@@ -21,7 +21,13 @@ The useful lightweight features among countless carefully crafted usability opti
 		<forum>https://forum.kodi.tv/showthread.php?tid=242892</forum>
 		<website>https://axbmcuser.github.io</website>
 		<source>https://github.com/axbmcuser/_repo</source>
-		<news>[B]3.7.3[/B] (2023-11-15)
+		<news>[B]3.7.4[/B] (2023-11-16)
+
+- Weather / weather maps: Minor code optimization. Also added rounded corners for the weather map (missing before)
+- Skin settings – power menu: "Exit" button is shown by default on a clean install again
+(Reversed previous change to avoid irritations regarding user habit)
+
+[B]3.7.3[/B] (2023-11-15)
 
 Global visual rework of focus elements
 
@@ -83,7 +89,7 @@ Other improvements and visual changes:
 - Slightly improved visuals and usability of the most used Weather Views (Daily/Hoursly/Maps)
 - Skin settings: Moved option "Make Favorites Button first main menu item" to main menu while replacing the old radiobutton with a new self explanatory button and a better usability concept
 - Updated _reset_skin_settings.py to also reset skin theme/colors selection to default when using "[RESET] all skin settings to default"
-- Skin settings / power menu: "Exit" button is now disabled by default on a clean install
+- Skin settings – power menu: "Exit" button is now disabled by default on a clean install
 - Kodi 18+ only: Changed position of main menu item "Games" one count to the left
 
 [B]3.7.1[/B] (2023-11-06)

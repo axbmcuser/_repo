@@ -1,3 +1,9 @@
+[B]3.7.4[/B] (2023-11-16)
+
+- Weather / weather maps: Minor code optimization. Also added rounded corners for the weather map (missing before)
+- Skin settings – power menu: "Exit" button is shown by default on a clean install again
+(Reversed previous change to avoid irritations regarding user habit)
+
 [B]3.7.3[/B] (2023-11-15)
 
 Global visual rework of focus elements
@@ -60,7 +66,7 @@ Other improvements and visual changes:
 - Slightly improved visuals and usability of the most used Weather Views (Daily/Hoursly/Maps)
 - Skin settings: Moved option "Make Favorites Button first main menu item" to main menu while replacing the old radiobutton with a new self explanatory button and a better usability concept
 - Updated _reset_skin_settings.py to also reset skin theme/colors selection to default when using "[RESET] all skin settings to default"
-- Skin settings / power menu: "Exit" button is now disabled by default on a clean install
+- Skin settings – power menu: "Exit" button is now disabled by default on a clean install
 - Kodi 18+ only: Changed position of main menu item "Games" one count to the left
 
 [B]3.7.1[/B] (2023-11-06)
