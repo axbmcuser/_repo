@@ -1,3 +1,8 @@
+[B]1.1.5[/B] (2023-11-16)
+
+- Added checking and synchronizing of UI accent color scheme with skin themes and skin colors
+- Code optimizations
+
 [B]1.1.4[/B] (2023-11-13)
 
 - Added support for "set_focus_now_child"

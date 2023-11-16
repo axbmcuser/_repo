@@ -281,7 +281,7 @@ Version in sync for major rework of "A Confluence ZEITGEIST" 3.6.0 (Version numb
   </extension>
 </addon>
 
-<addon id="service.cinema.helper" name="Cinema Helper (Kodi 17+18)" version="1.1.4" provider-name="axbmcuser">
+<addon id="service.cinema.helper" name="Cinema Helper (Kodi 17+18)" version="1.1.5" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
 		<import addon="script.module.simplejson" version="3.16.1" />
@@ -294,9 +294,13 @@ Version in sync for major rework of "A Confluence ZEITGEIST" 3.6.0 (Version numb
 		<license>GPL-2.0-only</license>
 		<forum>https://forum.kodi.tv/showthread.php?tid=370673</forum>
 		<website>https://forum.kodi.tv/showthread.php?tid=370673</website>
-		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]1.1.4[/B] (2023-11-13)
+		<news>[B]1.1.5[/B] (2023-11-16)
+
+- Added checking and synchronizing of UI accent color scheme with skin themes and skin colors
+- Code optimizations
+
+[B]1.1.4[/B] (2023-11-13)
 
 - Added support for "set_focus_now_child"
 - Minor performance improvements and optimizations
