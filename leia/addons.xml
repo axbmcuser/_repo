@@ -812,7 +812,7 @@ Second Test Release:
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="4.7.4" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="4.7.5" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="service.listitem.helper" version="0.3.4" />
@@ -833,7 +833,55 @@ The useful lightweight features among countless carefully crafted usability opti
 		<forum>https://forum.kodi.tv/showthread.php?tid=242892</forum>
 		<website>https://axbmcuser.github.io</website>
 		<source>https://github.com/axbmcuser/_repo</source>
-		<news>[B]4.7.4[/B] (2023-11-16)
+		<news>[B]4.7.5[/B] (2023-11-19)
+
+Reworked the following textures/icons with higher resolution and an updated, coherent look:
+
+DefaultAddonInputstream, DefaultExtensionInfo, DefaultFile, DefaultMimetypeInfo, KeyboardBackKey, KeyboardDoneKey, OverlayRAR, OverlayZIP, pointer (aka the mouse cursor), spacebar
+
+Other improvements and visual changes:
+
+- Video Bookmarks dialog: Improved visuals
+- Wall Views: Improved x/y-positions for addon flags overlays and the disabled-radiobutton overlay (the icons were visually too close to the texture/focus-border before)
+- Add-on info dialog: Adapted the x/y-position change from above for disabled-radiobutton
+- Weather section and Home Screen weather info widget:
+Improved current weather icon code and handling,
+fixed skinning engine grouplist loading flicker via workaround for a completely smooth fade-in
+Also: the "not available" weather icon is now hidden
+- Some code improvements regarding Kodi version checks
+- Some minor misc code improvements
+- Minor correction of button y-position (+1px) in [DialogMediaSource] [SmartPlaylistEditor]
+
+Select dialog
+- Improved focused layout for situations when control is not in focus anymore to display unfocused style [DialogSelect] [Includes_DialogSelect.xml]
+- Also increaed manual/cancel buttons spacing between buttons to the correct coherent amount
+- Improved navigation targets
+
+
+Kodi 18+ only:
+
+RetroPlayer
+
+- New/reworked dialog and improved usability for Game Controllers dialog [DialogGameControllers]
+- Improved Game OSD [GameOSD] [Includes]
+- Never show [VideoFullScreen] and [VideoOSD] when Player.HasGame
+
+
+Kodi 20+ only:
+
+RetroPlayer
+
+RetroPlayer: Savestate manager #20913
+Added support for #20913 with new/reworked dialog and improved usability
+
+RetroPlayer: In-game Port Setup dialog #20505
+Added support for #20505 with new/reworked dialog and improved usability
+
+RetroPlayer: Fix/update strings.po with translations for game window IDs #24071
+Added support for #24071 by adapting the language string changes to work with both older and newer Kodi generations (Kodi 19-21)
+(#24071 has been merged to git master (Kodi 21) on Nov 17, 2023)
+
+[B]4.7.4[/B] (2023-11-16)
 
 - Weather / weather maps: Minor code optimization. Also added rounded corners for the weather map (missing before)
 - Skin settings – power menu: "Exit" button is shown by default on a clean install again
