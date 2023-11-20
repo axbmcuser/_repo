@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="4.7.5" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="4.7.6" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="service.listitem.helper" version="0.3.4" />
@@ -20,7 +20,38 @@ The useful lightweight features among countless carefully crafted usability opti
 		<forum>https://forum.kodi.tv/showthread.php?tid=242892</forum>
 		<website>https://axbmcuser.github.io</website>
 		<source>https://github.com/axbmcuser/_repo</source>
-		<news>[B]4.7.5[/B] (2023-11-19)
+		<news>[B]4.7.6[/B] (2023-11-20)
+
+Select Dialog
+
+- Reworked Select Dialog for improved visuals and usability
+
+OSD Player Status indicators
+
+- Created all new textures for all OSD Player Status indicators including corresponding high resolution 4K UI variants: 
+[DialogSeekBar] Affects: OSDPause.png, OSDPlay.png, OSDSeekForward.png, OSDSeekRewind.png, 
+OSD2x.png, OSD4x.png, OSD8x.png, OSD16x.png, OSD32x.png, 
+OSD0.8x.png, OSD0.9x.png, OSD1.1x.png, OSD1.2x.png, OSD1.3x.png, OSD1.4x.png, OSD1.5x.png
+- Also: Moved the above textures to osd/playerstatus/ folder
+
+Other improvements and visual changes
+
+- Minor optimization of textures OverlayRAR, OverlayZIP (1px icon off-center correction)
+- Updated texture DefaultFile with a more simplified look which makes more contextual sense
+- Minor code change in [VideoOSDBookmarks] (added background=true for a texture)
+- (Internal) Release files: Updated fanart.jpg and resources/fanart.jpg to new version from release x.7.2 ("Frosted Glass · Light colors":  Increased colors/saturation) 
+
+Kodi 18+ only:
+
+- Fixed minor regression: Code referenced a wrong texture filename for the "Seek Slider Kodi 18+ LiveTV seek" texture [DialogSeekBar]
+(Regression from UI accent color schemes update)
+ 
+RetroPlayer
+
+- Further visual and usability improvements for Game OSD, Savestates dialog and all corresponding game dialogs
+- Some minor code clean-up for the game dialogs (removed deprecated close-button (mouse control) and unnecessary and non existant separator texture)
+
+[B]4.7.5[/B] (2023-11-19)
 
 Reworked the following textures/icons with higher resolution and an updated, coherent look: 
 
