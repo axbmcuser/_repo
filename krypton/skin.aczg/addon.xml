@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="3.7.7" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.7.8" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0" />
 		<import addon="service.listitem.helper" version="0.3.4" />
@@ -21,7 +21,25 @@ The useful lightweight features among countless carefully crafted usability opti
 		<forum>https://forum.kodi.tv/showthread.php?tid=242892</forum>
 		<website>https://axbmcuser.github.io</website>
 		<source>https://github.com/axbmcuser/_repo</source>
-		<news>[B]3.7.7[/B] (2023-11-29)
+		<news>[B]3.7.8[/B] (2023-12-11)
+
+Reworked "DefaultVideo" icon
+- Additionally adapted the updated visuals to all similar icons
+(DefaultFile.png, DefaultExtensionInfo.png, DefaultMimetypeInfo.png, DefaultVideo.png, DefaultVideoCover.png, DefaultVideoDeleted.png)
+- Additionally adapted these changes to both alternative UI accent color schemes also (DefaultVideo.png, DefaultVideoCover.png)
+
+Reworked main menu icon "Videos"
+- This icon now has a smilar look as the DefaultVideo icon and fixes the the perception of the icon previously being too wide (_home_icon_videos.png, icon_videos.png)
+
+- VideoOSD / MusicOSD: Slightly optimized textures for 0.8, 0.9, 1.1, 1.2, 1.3, 1.4 and 1.5 playback speed
+
+- Internal: Corrected some changelog typos
+
+Kodi 21+ only:
+
+- Bump add-on ABI to v5.17.0 to retain compatibility with latest Kodi 21 releases
+
+[B]3.7.7[/B] (2023-11-29)
 
 Global dialogs/windows rework(s)
 
@@ -29,7 +47,7 @@ Improved visuals and optimization rework of almost all dialogs, including, but n
 
 - Improved visuals for select dialog variants with better visuals, spacing and button dimensions/positions
 - Improved almost-centered positioning of all dialogs with improved code-maintainability
-- Improved dialog headers of all regular dialogs (left/right label spacing was way to small before which resulted in long labels being too close to the edges which looked wrong)
+- Improved dialog headers of all regular dialogs (left/right label spacing was way too small before which resulted in long labels being too close to the edges which looked wrong)
 - Improved correct darkening of windows when a dialog is displayed on top (Before: Window headers were still displayed on top of the darkened windows)
 - Reduced height of "settings level" button in settings sections
 - Improved visuals, usability and click targets of Music Playlist Editor dialog including the display of the correct window header label
@@ -44,7 +62,7 @@ Improved visuals and optimization rework of almost all dialogs, including, but n
 - Process Info Dialog: Changed font weight of section headers from regular to light
 - Keyboard and Numeric Dialogs: Improved visuals for some non focused and focused elements
 - Addon Settings Dialog: Improved visuals and click targets for better and more predictable usability. Also moved some code elements for improved sync/code-maintainability with the skin versions for other Kodi generations
-- Improved visuals the focus style of List Wide (51) view (more transparent accent color to avoid contrast conflics with textures which are displayed on top of the accent colored element)
+- Improved visuals the focus style of List Wide (51) view (more transparent accent color to avoid contrast conflicts with textures which are displayed on top of the accent colored element)
 - Improved visuals for "Seasons" view
 (up/down indicators are now fully rounded with a cohesive look similar to the new "dual-color" darkened focus style mentioned within the Live TV / PVR rework)
 - Skin settings: Always show "move to top/bottom"-button for "Favorites" within the main menu section so users notice the function more easily (highly transparent look)
@@ -81,7 +99,7 @@ Other improvements and visual changes
 Live TV / PVR section and dialogs
 
 - Improved visuals for all Live TV / PVR windows and dialogs (Also including group manager and channel manager)
-- New Dual-color darkened focus style for all elements which contain a channel logo (This improves contrast and avoids bad color/contrast combinations with some channel logos). Added two new custom diffuse textures for this (white_border10l_-10r.png, white_border11t_-10b.png)
+- New Dual-color darkened focus style for all elements which contain a channel logo (This improves contrast and avoids bad color/contrast combinations with some channel logos). Added two new custom diffuse textures for this (white_border11l_-10r.png, white_border11t_-10b.png)
 - Removed references to unused view "LiveTVView1" and ViewsLiveTV.xml
 - Updated visuals for "Recently watched" PVR home screen widget
 - Removed diffuse texture for "Recently watched" PVR home screen widget (no need to mask the channel logo with rounded corners since channel logos should be transparent (bright style))
