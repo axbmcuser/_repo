@@ -1,3 +1,29 @@
+[B]3.7.9[/B] (2024-01-07)
+
+Reworked and improved Fullscreen OSD shadow visuals
+
+- While seeking videos, a new, more subtle and constrained shadow texture is used
+- Reworked main shadow gradient texture
+- The upper shadow gradient texture is only shown when OSD is opened
+
+Other improvements
+
+- Added fallback for Player fanart when playing music
+(Using the very fitting neutral default wallpaper "Frosted Glass · Graydient")
+
+- Minor correction regarding channel icon dimensions when playing LiveTV radio
+
+- Minor corrections regarding header text positions within PVR EPG OSD dialog and PVR channels OSD dialog [DialogPVRGuideOSD] [DialogPVRChannelsOSD]
+
+- PVR recording/timer indicator: If two indicator elements are shown (recording+timer active), the second/lower element has been moved down by +5px to increase visual spacing and mitigate visual collision with the "right arrow" of the TV shows recently added widget
+
+- Minor Fullscreen OSD improvements for LiveTV recordings
+
+Textures
+
+- Slightly improved OSD Info button textures [OSDinfodialogNF.png] [OSDinfodialogFO.png]
+- Removed now unused texture "HomeNowPlayingBack.png" (unused due to reworked Fullscreen OSD shadow visuals)
+
 [B]3.7.8[/B] (2023-12-11)
 
 Reworked "DefaultVideo" icon

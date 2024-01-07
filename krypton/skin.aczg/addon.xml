@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="3.7.8" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.7.9" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0" />
 		<import addon="service.listitem.helper" version="0.3.4" />
@@ -21,7 +21,33 @@ The useful lightweight features among countless carefully crafted usability opti
 		<forum>https://forum.kodi.tv/showthread.php?tid=242892</forum>
 		<website>https://axbmcuser.github.io</website>
 		<source>https://github.com/axbmcuser/_repo</source>
-		<news>[B]3.7.8[/B] (2023-12-11)
+		<news>[B]3.7.9[/B] (2024-01-07)
+
+Reworked and improved Fullscreen OSD shadow visuals
+
+- While seeking videos, a new, more subtle and constrained shadow texture is used
+- Reworked main shadow gradient texture
+- The upper shadow gradient texture is only shown when OSD is opened
+
+Other improvements
+
+- Added fallback for Player fanart when playing music
+(Using the very fitting neutral default wallpaper "Frosted Glass · Graydient")
+
+- Minor correction regarding channel icon dimensions when playing LiveTV radio
+
+- Minor corrections regarding header text positions within PVR EPG OSD dialog and PVR channels OSD dialog [DialogPVRGuideOSD] [DialogPVRChannelsOSD]
+
+- PVR recording/timer indicator: If two indicator elements are shown (recording+timer active), the second/lower element has been moved down by +5px to increase visual spacing and mitigate visual collision with the "right arrow" of the TV shows recently added widget
+
+- Minor Fullscreen OSD improvements for LiveTV recordings
+
+Textures
+
+- Slightly improved OSD Info button textures [OSDinfodialogNF.png] [OSDinfodialogFO.png]
+- Removed now unused texture "HomeNowPlayingBack.png" (unused due to reworked Fullscreen OSD shadow visuals)
+
+[B]3.7.8[/B] (2023-12-11)
 
 Reworked "DefaultVideo" icon
 - Additionally adapted the updated visuals to all similar icons
