@@ -1,3 +1,6 @@
+[B]v5.3.4[/B]  (2024-04-21)
+- Fixed connection yet again  (thx @ronie)
+
 [B]v5.3.3[/B]  (2023-10-25)
 - Fixed connection yet again  (thx @ronie)
 
