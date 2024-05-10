@@ -1,3 +1,26 @@
+[B]3.7.10[/B] (2024-05-10)
+
+Video Info Dialog
+
+- Changed the color of the "My List" and "Watched" indicator icons from white to "uiColorVariantSliderNibFocus"
+(corresponds to a slightly brightened accent color)
+
+This strongly improves noticeability for both indicators which were previously just too similar to the white "+" icons representing the non-active state. 
+The user therefore had to forcibly concentrate on finding out if an indicator represents in fact an active state, which lead to an undesirable user experience.
+
+Video Info Dialog (Trailer Search button)
+
+- Added a fourth option for Trailer search language ("None") which omits any additional language strings from the search query
+
+- Improved warning dialog when the Trailer Search (via Web Browser) button is clicked while Kodi is playing media. 
+Now you have the option to easily confirm "Yes" to stop Kodi playback and open the Web Browser.
+
+- Expanded the existing Trailer Search functionality with support for a Custom Web Browser which can be set via Skin settings
+
+Example for a custom "Browser path":
+
+"C:\SomeFolder\Firefox\firefox.exe" -profile "C:\SomeFolder\Firefox\MyFirefoxProfile" -kiosk
+
 [B]3.7.9[/B] (2024-01-07)
 
 Reworked and improved Fullscreen OSD shadow visuals
