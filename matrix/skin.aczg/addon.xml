@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="5.7.9" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="5.7.11" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.15.0" />
 		<import addon="service.listitem.helper" version="1.0.0" />
@@ -20,7 +20,38 @@ The useful lightweight features among countless carefully crafted usability opti
 		<forum>https://forum.kodi.tv/showthread.php?tid=242892</forum>
 		<website>https://axbmcuser.github.io</website>
 		<source>https://github.com/axbmcuser/_repo</source>
-		<news>[B]5.7.9[/B] (2024-01-07)
+		<news>[B]5.7.11[/B] (2024-05-12)
+
+Video Info Dialog (Trailer Search button)
+
+- When clicking the Trailer Search (via Web Browser) button, focus is (re)set to the first button within Video Info Dialog while openening the Web Browser.
+This improvement ensures a more intuitive user experience compared to leaving the focus on the Trailer Search button. 
+After potentially viewing the trailer, the user should be given the instant and obvious primary option on the decision making whether to start playback or not.
+
+[B]5.7.10[/B] (2024-05-10)
+
+Video Info Dialog
+
+- Changed the color of the "My List" and "Watched" indicator icons from white to "uiColorVariantSliderNibFocus"
+(corresponds to a slightly brightened accent color)
+
+This strongly improves noticeability for both indicators which were previously just too similar to the white "+" icons representing the non-active state. 
+The user therefore had to forcibly concentrate on finding out if an indicator represents in fact an active state, which lead to an undesirable user experience.
+
+Video Info Dialog (Trailer Search button)
+
+- Added a fourth option for Trailer search language ("None") which omits any additional language strings from the search query
+
+- Improved warning dialog when the Trailer Search (via Web Browser) button is clicked while Kodi is playing media. 
+Now you have the option to easily confirm "Yes" to stop Kodi playback and open the Web Browser.
+
+- Expanded the existing Trailer Search functionality with support for a Custom Web Browser which can be set via Skin settings
+
+Example for a custom "Browser path":
+
+"C:\SomeFolder\Firefox\firefox.exe" -profile "C:\SomeFolder\Firefox\MyFirefoxProfile" -kiosk
+
+[B]5.7.9[/B] (2024-01-07)
 
 Reworked and improved Fullscreen OSD shadow visuals
 
