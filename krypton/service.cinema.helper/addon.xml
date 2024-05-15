@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="service.cinema.helper" name="Cinema Helper (Kodi 17+18)" version="1.1.5" provider-name="axbmcuser">
+<addon id="service.cinema.helper" name="Cinema Helper (Kodi 17-18)" version="1.1.6" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
 		<import addon="script.module.simplejson" version="3.16.1" />
 	</requires>
 	<extension point="xbmc.service" library="service.py" start="login" />
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en_GB">Cinema Helper</summary>
+		<summary lang="en_GB">A Cinema Helper service</summary>
 		<description lang="en_GB">A Cinema Helper service which provides some lightweight skin functionality and properties.</description>
 		<platform>all</platform>
 		<license>GPL-2.0-only</license>
 		<forum>https://forum.kodi.tv/showthread.php?tid=370673</forum>
 		<website>https://forum.kodi.tv/showthread.php?tid=370673</website>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]1.1.5[/B] (2023-11-16)
+		<news>[B]1.1.6[/B] (2024-05-16)
+
+- Minor improvements to addon.xml
+- Code optimizations
+
+[B]1.1.5[/B] (2023-11-16)
 
 - Added checking and synchronizing of UI accent color scheme with skin themes and skin colors
 - Code optimizations
@@ -116,7 +121,7 @@ New properties:
 
 [B]1.0.7[/B] (2022-12-10)
 
-- TV show episodes now always focus first item after window open. Much better OOB experience, not only because KODI 17 has a focus history bug for episodes view, but in general.
+- TV show episodes now always focus first item after window open. Much better OOB experience, not only because Kodi 17 has a focus history bug for episodes view, but in general.
 
 [B]1.0.6[/B] (2022-12-04)
 
@@ -128,9 +133,9 @@ New properties:
 
 [B]1.0.4[/B] (2022-12-03)
 
-- Added KODI 19+20 (Python 3) compatibility code basis (Dual-addon: Python 2 still supported)
-- - Python 2/3 versions still need separate addon version due to required addon.xml changes
-- - Using unified code basis still makes things much easier
+Added Kodi 19+20 (Python 3) compatibility code basis (Dual-addon: Python 2 still supported)
+- Python 2/3 versions still need separate addon version due to required addon.xml changes
+- Using unified code basis still makes things much easier
 
 [B]1.0.3[/B] (2022-12-02)
 
@@ -153,8 +158,7 @@ New properties:
 
 [B]1.0.0[/B] (2022-03-29)
 
-- Initial release
-		</news>
+- Initial release</news>
 		<assets>
 			<icon>resources/icon.png</icon>
 		</assets>
