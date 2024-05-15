@@ -514,9 +514,9 @@ Added Kodi 19+20 (Python 3) compatibility code basis (Dual-addon: Python 2 still
 	</extension>
 </addon>
 
-<addon id="service.duration.helper" name="Duration Helper (Kodi 17)" version="1.1.1" provider-name="axbmcuser, Twolaw">
+<addon id="service.duration.helper" name="Duration Helper (KODI 17) (axbmcuser)" version="1.1.0" provider-name="axbmcuser, Twolaw">
 	<requires>
-		<import addon="xbmc.python" version="2.25.0" />
+		<import addon="xbmc.python" version="2.25.0"/>
 	</requires>
 	<extension library="service.py" point="xbmc.service" start="login">
 	</extension>
@@ -529,11 +529,7 @@ Added Kodi 19+20 (Python 3) compatibility code basis (Dual-addon: Python 2 still
 		<website/>
 		<email></email>
 		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]1.1.1[/B] (2024-05-16)
-
-- Minor improvements to addon.xml
-
-[B]1.1.0[/B] (2023-08-12)
+		<news>[B]1.1.0[/B] (2023-08-12)
 
 Version in sync for major rework of "A Confluence ZEITGEIST" 3.6.0 (Version numbers vary on other Kodi generations)
 
@@ -573,7 +569,7 @@ Version in sync for major rework of "A Confluence ZEITGEIST" 3.6.0 (Version numb
 - Minor cleanup
 
 [B]0.3.2[/B] (2016-07-23)
-- axbmcuser MOD: Fix for Kodi 17 (Krypton): "videolibrary" renamed to "videos" [default.py]
+- axbmcuser MOD: Fix for KODI 17 (Krypton): "videolibrary" renamed to "videos" [default.py]
 
 [B]0.3.1[/B]
 - axbmcuser MOD: Minor improvements and optimizations
@@ -585,7 +581,8 @@ Version in sync for major rework of "A Confluence ZEITGEIST" 3.6.0 (Version numb
 - Correction of crash when duration value isn't properly written in database
 
 [B]0.1[/B]
-- Initial release</news>
+- Initial release
+		</news>
 		<assets>
 			<icon>resources/icon.png</icon>
 		</assets>
