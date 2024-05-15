@@ -1,34 +1,38 @@
-[B]0.4.0[/B] (2022-08-12) (axbmcuser)
+[B]0.4.2[/B] (2024-05-15)
+
+Further code reduction
+
+[B]0.4.0[/B] (2023-08-16)
 
 Version in sync for major rework of "A Confluence ZEITGEIST" 3.6.0 (Version numbers vary on other Kodi generations)
 
 - New addon icon
 
-[B]0.3.9[/B] (2022-12-03) (axbmcuser)
+[B]0.3.9[/B] (2022-12-03)
 
-- Added KODI 19+20 (Python 3) compatibility code basis (Dual-addon: Python 2 still supported)
-- - Python 2/3 versions still need separate addon version due to required addon.xml changes
-- - Using unified code basis still makes things much easier
+Added KODI 19+20 (Python 3) compatibility code basis (Dual-addon: Python 2 still supported)
+- Python 2/3 versions still need separate addon version due to required addon.xml changes
+- Using unified code basis still makes things much easier
 
-[B]0.3.8[/B] (2022-03-19) (axbmcuser)
+[B]0.3.8[/B] (2022-03-19)
 
-- Internal improvements
+Internal improvements
 
-[B]0.3.7[/B] (2020-03-02) (axbmcuser)
+[B]0.3.7[/B] (2020-03-02)
 
-- Internal improvements
+Internal improvements
 
-[B]0.3.6[/B] (2020-02-10) (axbmcuser)
+[B]0.3.6[/B] (2020-02-10)
 
-- Remove addon from showing as an entry in "video addons" listing
+Remove addon from showing as an entry in "video addons" listing
 
-[B]0.3.5[/B] (2020-02-06) (axbmcuser)
+[B]0.3.5[/B] (2020-02-06)
 
-- Added optional python 3 compatibility (incomplete, still broken on "python 3 only" Kodi)
+Added optional python 3 compatibility (incomplete, still broken on "python 3 only" Kodi)
 
-[B]0.3.4[/B] (axbmcuser)
+[B]0.3.4[/B]
 
-- Lite version of original script version 0.3.2 with better performance for minimalistic usage
+Lite version of original script version 0.3.2 with better performance for minimalistic usage
 
 [B]0.1.6[/B]
 - Enable context menu/info

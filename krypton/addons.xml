@@ -585,7 +585,7 @@ Version in sync for major rework of "A Confluence ZEITGEIST" 3.6.0 (Version numb
 	</extension>
 </addon>
 
-<addon id="service.library.data.provider.lite" name="Library Data Provider Lite (KODI 17+18) (axbmcuser)" provider-name="BigNoid, SiLVO, axbmcuser" version="0.4.0">
+<addon id="service.library.data.provider.lite" name="Library Data Provider Lite (Kodi 17-18)" provider-name="BigNoid, SiLVO, axbmcuser" version="0.4.2">
 	<requires>
 		<import addon="xbmc.json" version="7.9.0" />
 		<import addon="xbmc.python" version="2.25.0" />
@@ -593,7 +593,6 @@ Version in sync for major rework of "A Confluence ZEITGEIST" 3.6.0 (Version numb
 		<import addon="script.module.routing" version="0.1.0" />
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="plugin.py" />
-	<extension library="service.py" point="xbmc.service" start="login" />
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Plugin for skins to provide library data throughout the skin.</summary>
 		<description lang="en">Plugin for skins to provide library data throughout the skin.</description>
@@ -604,37 +603,41 @@ Version in sync for major rework of "A Confluence ZEITGEIST" 3.6.0 (Version numb
 		<forum>https://forum.kodi.tv/showthread.php?tid=210063</forum>
 		<website>https://github.com/BigNoid/service.library.data.provider</website>
 		<source>https://github.com/BigNoid/service.library.data.provider</source>
-		<news>[B]0.4.0[/B] (2022-08-12) (axbmcuser)
+		<news>[B]0.4.2[/B] (2024-05-15)
+
+Further code reduction
+
+[B]0.4.0[/B] (2023-08-16)
 
 Version in sync for major rework of "A Confluence ZEITGEIST" 3.6.0 (Version numbers vary on other Kodi generations)
 
 - New addon icon
 
-[B]0.3.9[/B] (2022-12-03) (axbmcuser)
+[B]0.3.9[/B] (2022-12-03)
 
-- Added KODI 19+20 (Python 3) compatibility code basis (Dual-addon: Python 2 still supported)
-- - Python 2/3 versions still need separate addon version due to required addon.xml changes
-- - Using unified code basis still makes things much easier
+Added KODI 19+20 (Python 3) compatibility code basis (Dual-addon: Python 2 still supported)
+- Python 2/3 versions still need separate addon version due to required addon.xml changes
+- Using unified code basis still makes things much easier
 
-[B]0.3.8[/B] (2022-03-19) (axbmcuser)
+[B]0.3.8[/B] (2022-03-19)
 
-- Internal improvements
+Internal improvements
 
-[B]0.3.7[/B] (2020-03-02) (axbmcuser)
+[B]0.3.7[/B] (2020-03-02)
 
-- Internal improvements
+Internal improvements
 
-[B]0.3.6[/B] (2020-02-10) (axbmcuser)
+[B]0.3.6[/B] (2020-02-10)
 
-- Remove addon from showing as an entry in "video addons" listing
+Remove addon from showing as an entry in "video addons" listing
 
-[B]0.3.5[/B] (2020-02-06) (axbmcuser)
+[B]0.3.5[/B] (2020-02-06)
 
-- Added optional python 3 compatibility (incomplete, still broken on "python 3 only" Kodi)
+Added optional python 3 compatibility (incomplete, still broken on "python 3 only" Kodi)
 
-[B]0.3.4[/B] (axbmcuser)
+[B]0.3.4[/B]
 
-- Lite version of original script version 0.3.2 with better performance for minimalistic usage
+Lite version of original script version 0.3.2 with better performance for minimalistic usage
 
 [B]0.1.6[/B]
 - Enable context menu/info
@@ -679,9 +682,7 @@ Version in sync for major rework of "A Confluence ZEITGEIST" 3.6.0 (Version numb
 [B]0.0.5[/B]
 - Add recent videos option.
 - Add writer and cast to video list items.
-- Add limit parameter to plugin element.
-
-</news>
+- Add limit parameter to plugin element.</news>
 		<assets>
 			<icon>resources/icon.png</icon>
 		</assets>
