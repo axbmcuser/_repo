@@ -1,3 +1,7 @@
+[B]0.4.4[/B] (2024-05-16)
+
+Minor improvements to addon.xml and settings language strings
+
 [B]0.4.3[/B] (2023-11-07)
 
 - Added "suppressException" option for get_json (get_xml already had this added in a previous update)
@@ -56,7 +60,7 @@ New properties:
 
 - Improved Addon settings: Added descriptive text and new debug tab+option "Clear image cache"
 - Added functionality to force generation of blurimg image even if it exists in the cache (important when image changes in certain situations)
-- Backported downstream from KODI 19 service.listitem.helper: Support for "saturation" parameter when using blurimg functionality
+- Backported downstream from Kodi 19 service.listitem.helper: Support for "saturation" parameter when using blurimg functionality
 
 [B]0.3.13[/B] (2022-12-05)
 
@@ -75,8 +79,8 @@ New properties:
 
 [B]0.3.11[/B] (2022-12-05)
 
-- Change addon.xml so that the addon is visibly placed into the "Services" category of the KODI addon manager and the repo
-- - Note: In addon.xml, extension point="xbmc.service" tag has to be placed _above_ extension point="xbmc.python.script" tag for this to happen
+Change addon.xml so that the addon is visibly placed into the "Services" category of the Kodi addon manager and the repo
+Note: In addon.xml, extension point="xbmc.service" tag has to be placed _above_ extension point="xbmc.python.script" tag for this to happen
 
 [B]0.3.10[/B] (2022-12-04)
 
