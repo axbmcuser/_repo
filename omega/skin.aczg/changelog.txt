@@ -1,4 +1,18 @@
+[B]6.7.13[/B] (2024-05-15)
+
+Kodi 21+ only:
+
+Removed "More.." entry for all dynamic content containers like "Recently added movies" (and similar)
+
 [B]6.7.12[/B] (2024-05-12)
+
+Kodi 19+ only:
+
+Video Info Dialog (Trailer Search button)
+
+- Fixed url string quoting in "_yt_trailer_search.py"
+(Use Python 3 "urllib.parse.quote_plus" instead of Python 2 "urllib.quote_plus")
+
 [B]6.7.11[/B] (2024-05-12)
 
 Video Info Dialog (Trailer Search button)
