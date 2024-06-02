@@ -1,4 +1,51 @@
+[B]5.7.14[/B] (2024-06-02)
+
+Info Dialog Reworks
+
+- Reworked Video Info Dialog
+- Reworked LiveTV/PVR Info Dialog
+- Reworked Add-on Info Dialog
+
+- New Skin settings option: (Home screen options) "TV shows are displayed as single Episodes"
+
+- Minor improvements to PVR Guide OSD
+
+- Minor improvements to addon.xml
+- Extend post skin update reset-condition to also consider skin version 6.x.x [Custom_1185_WelcomeNewVersion]
+(Fixes unwanted reoccurring info messages after skin updates)
+
+- Improved "Modern" view visual spacing: This fixes the "recently added episodes" section having its mini-posters/thumbnails too close to the borders of the focus texture
+
+- Improvements for Add-on Browser sidebar and Weather section sidebar
+
+Increased forward compatibility for upcoming Kodi versions:
+
+- Replaced all remaining ListItem.Thumb references with ListItem.Art(thumb)
+- "ListItem.AddonLifecycleDesc" in now also considered in addition to the still existing but deprecated "ListItem.AddonBroken"
+(both properties contain the identical add-on broken reason text)
+
+- Other minor improvements
+
+Textures:
+
+- Added focus_border_2px-rounded-neutral-new.png for info dialog reworks
+- Reworked DefaultAddonsRecentlyUpdated.png
+
+[B]5.7.13[/B] (2024-05-15)
+
+Kodi 21+ only:
+
+Removed "More.." entry for all dynamic content containers like "Recently added movies" (and similar)
+
 [B]5.7.12[/B] (2024-05-12)
+
+Kodi 19+ only:
+
+Video Info Dialog (Trailer Search button)
+
+- Fixed url string quoting in "_yt_trailer_search.py"
+(Use Python 3 "urllib.parse.quote_plus" instead of Python 2 "urllib.quote_plus")
+
 [B]5.7.11[/B] (2024-05-12)
 
 Video Info Dialog (Trailer Search button)

@@ -76,7 +76,7 @@ Version in sync for major rework of "A Confluence ZEITGEIST" 3.6.0 (Version numb
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="6.7.13" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="6.7.14" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
 		<import addon="service.listitem.helper" version="1.0.0" />
@@ -91,13 +91,45 @@ Version in sync for major rework of "A Confluence ZEITGEIST" 3.6.0 (Version numb
 		<description lang="en_GB">A Confluence ZEITGEIST – a modern reimagination of Confluence, the beloved long-time default user interface of Kodi (formerly XBMC).
 
 Features include a complete graphical overhaul, an icon-based main menu without the need for scrolling and all new wall views.
-The useful lightweight features among countless carefully crafted usability optimizations make you enjoy an intuitive user experience you would expect from a retail media player with an awesome UI.
-</description>
+The useful lightweight features among countless carefully crafted usability optimizations make you enjoy an intuitive user experience you would expect from a retail media player with an awesome UI.</description>
 		<platform>all</platform>
 		<forum>https://forum.kodi.tv/showthread.php?tid=242892</forum>
 		<website>https://axbmcuser.github.io</website>
 		<source>https://github.com/axbmcuser/_repo</source>
-		<news>[B]6.7.13[/B] (2024-05-15)
+		<news>[B]6.7.14[/B] (2024-06-02)
+
+Info Dialog Reworks
+
+- Reworked Video Info Dialog
+- Reworked LiveTV/PVR Info Dialog
+- Reworked Add-on Info Dialog
+
+- New Skin settings option: (Home screen options) "TV shows are displayed as single Episodes"
+
+- Minor improvements to PVR Guide OSD
+
+- Minor improvements to addon.xml
+- Extend post skin update reset-condition to also consider skin version 6.x.x [Custom_1185_WelcomeNewVersion]
+(Fixes unwanted reoccurring info messages after skin updates)
+
+- Improved "Modern" view visual spacing: This fixes the "recently added episodes" section having its mini-posters/thumbnails too close to the borders of the focus texture
+
+- Improvements for Add-on Browser sidebar and Weather section sidebar
+
+Increased forward compatibility for upcoming Kodi versions:
+
+- Replaced all remaining ListItem.Thumb references with ListItem.Art(thumb)
+- "ListItem.AddonLifecycleDesc" in now also considered in addition to the still existing but deprecated "ListItem.AddonBroken"
+(both properties contain the identical add-on broken reason text)
+
+- Other minor improvements
+
+Textures:
+
+- Added focus_border_2px-rounded-neutral-new.png for info dialog reworks
+- Reworked DefaultAddonsRecentlyUpdated.png
+
+[B]6.7.13[/B] (2024-05-15)
 
 Kodi 21+ only:
 
