@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="5.7.14" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="5.7.20" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.15.0" />
 		<import addon="service.listitem.helper" version="1.0.0" />
@@ -19,7 +19,82 @@ The useful lightweight features among countless carefully crafted usability opti
 		<forum>https://forum.kodi.tv/showthread.php?tid=242892</forum>
 		<website>https://axbmcuser.github.io</website>
 		<source>https://github.com/axbmcuser/_repo</source>
-		<news>[B]5.7.14[/B] (2024-06-02)
+		<news>[B]5.7.20[/B] (2024-06-08)
+
+Home screen Rework (visual/functional)
+
+- Reworked main menu
+- Reworked sub menus
+- Reworked home screen widgets (Movies, TV shows, Music, PVR, Favorites)
+(Includes, but not not limited to: Recently added TV shows widget now default to the recently added "group by show" instead of showing single episodes)
+- Reworked RSS feed support (improved, simplified and removal of rss icon)
+- Groundwork for a future support of home screen styles
+
+Global visual improvements
+
+- Reworked dialog backgrounds
+(dialogs, notifications, volume, extended progress, fullscreen VideoOSD/MusicOSD sub menus)
+These elements are now cohesive with similar or identical shadows/glows
+
+- Reworked and simplified CommonNowPlaying indicator and it's occurence (only visible on home screen)
+
+Video info dialog Rework
+
+- Reworked visuals for all media types of this dialog (Movie, TV show, Episode, Season, PVR) [DialogVideoInfo] [DialogPVRInfo]
+- Added seasons support (see "Kodi 21+ only" section below)
+- Music videos support improved
+- The Trailer search button is now also shown for TV shows
+- Groundwork for an adapted future cohesive "Music info dialog"
+
+Misc improvements
+
+- Added missing VisibleChange animation within MusicOSD for fullscreen darkening element
+
+- Improvements for Skin settings "main menu" section
+The functionality for moving the favorites menu item is now more noticeable and more intuitive to use due to the changes and an added up/down arrow.
+Also slightly affects the "power options" section
+
+- Added skin settings option to separately hide the video rating stars ("Show stars (*****)")
+
+- Fixed missing audio passthrough volume icon in [DialogVolumeBar]
+
+- Changed some possibly invalid comment tags in [DialogSeekBar] (Just to be safe)
+
+- Slightly increased blue header label height for System/settings so it does not get so visually close to the below line/setting [SettingsCategory]
+
+- Changed [MyPVRChannels] scrollbar nav target when going from right to left
+
+- Corrected Player.Art(thumb) to Player.Art(icon) for TV channel icon in VideoFulllScreen (Fixes missing tv channel icon when playing recordings)
+
+- Changed variable name TvShowEpisodePlayerArt to TvShowEpisodeOrMoviePlayerPoster due to recent changes and it's use (For consistency only)
+
+- Improvements for "Fanart" view (movies/albums): "..." element is now hidden when unneeded (if description text is not shortened)
+Cohesive with latest video info dialog changes
+
+- The very bright yellow rating stars (video/music/...) are now slightly dimmed so they don't visually stick out with their intese brightness
+Additional reasoning: Since fixating on media ratings is hugely escalated and overrated these days, the stars should not be the most bright and prominent visual element
+
+- Fix PVR channel manager dialogs dialog background width (Width was slightly off; most likely the last minor regression of a previous dialog rework)
+
+- Removed two empty fallback attribute for deprecated view MediaListView2
+
+- Minor code clean-up
+(Removed some unused code. Also fixed some very few invalid xml attributes or values which did no harm but should be fixed)
+
+Textures:
+
+- Corrected very slightly wrongly scaled "DefaultDVDxxx" disc icon textures (Middle of texture was slightly off center. Almost unnoticeable)
+- Renamed two existing diffuse textures for user account pictures (For consistency only)
+
+Kodi 21+ only:
+
+- Added compatibility improvement with Kodi 21+ by also considering "favouritesbrowser" in addition to "favourites" [Custom_1170_IdleScreenCheck] [_includes]
+
+Video info dialog
+
+- Added support for TV show seasons
+
+[B]5.7.14[/B] (2024-06-02)
 
 Info Dialog Reworks
 
