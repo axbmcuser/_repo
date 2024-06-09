@@ -1,3 +1,23 @@
+[B]5.7.22[/B] (2024-06-09)
+
+Home screen Rework (visual/functional)
+
+- Further updates to main menu
+
+- Added two new Skin setting options:
+
+ * Home screen options - "Main menu background style" (Default: "Standard width")
+   
+   "Standard width"  Background width stays at 10-items-width for 10+ items and 9-items-width for 1-9 items
+   "Reduce to item width"  Background width is reduced to the smallest possible size depending on the number of items
+   "Full width stripe"  Background width is expanded to a full screen width stripe
+
+ * Home screen options - "Show sub menus" (Default: On)
+   New option to hide all sub menus on home screen without enabling Kiosk Mode (Kiosk Mode option remains intact and is mostly unchanged)
+
+- Improved Skin settings structure of "Home screen options"
+- Improved Skin settings "Kiosk Mode" option to consider the existence of the new "Show sub menus" option
+
 [B]5.7.20[/B] (2024-06-08)
 
 Home screen Rework (visual/functional)
