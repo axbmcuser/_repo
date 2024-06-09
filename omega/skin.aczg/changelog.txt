@@ -1,4 +1,4 @@
-[B]6.7.21[/B] (2024-06-09)
+[B]6.7.22[/B] (2024-06-09)
 
 Home screen Rework (visual/functional)
 
