@@ -820,7 +820,7 @@ Second Test Release:
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="4.7.22" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="4.7.23" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="service.listitem.helper" version="0.3.4" />
@@ -840,15 +840,33 @@ The useful lightweight features among countless carefully crafted usability opti
 		<forum>https://forum.kodi.tv/showthread.php?tid=242892</forum>
 		<website>https://axbmcuser.github.io</website>
 		<source>https://github.com/axbmcuser/_repo</source>
-		<news>[B]4.7.22[/B] (2024-06-09)
+		<news>[B]4.7.23[/B] (2024-06-11)
+
+Home screen styles
+
+- Added new Skin settings option: Home screen options - "Home screen style"
+
+Variants: Centered (Default+Recommended), Top, Bottom
+
+This options changes the vertical position of the main menu and adapts all other home screen elements like Widgets and Add-on shortcuts accordingly.
+
+Misc improvements
+
+- Corrected dialog dimensions for Settings Dialog [DialogSettings]
+(Most likely the only and final minor regression from the recent dialogs rework)
+- Further minor improvements for CommonNowPlaying indicator on home screen
+- Font style: Removed forced uppercase header from "PVR manager is starting up" notification
+- Added some info regarding defaults to some Skin settings
+
+[B]4.7.22[/B] (2024-06-09)
 
 Home screen Rework (visual/functional)
 
 - Further updates to main menu
 
-- Added two new Skin setting options:
+- Added two new Skin settings options:
 
- * Home screen options - "Main menu background style" (Default: "Standard width")
+ * Home screen options - "Main menu background style" (Default+Recommended: "Standard width")
 
    "Standard width"  Background width stays at 10-items-width for 10+ items and 9-items-width for 1-9 items
    "Reduce to item width"  Background width is reduced to the smallest possible size depending on the number of items
