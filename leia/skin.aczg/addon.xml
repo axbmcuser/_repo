@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="4.7.23" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="4.7.24" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="service.listitem.helper" version="0.3.4" />
@@ -19,7 +19,11 @@ The useful lightweight features among countless carefully crafted usability opti
 		<forum>https://forum.kodi.tv/showthread.php?tid=242892</forum>
 		<website>https://axbmcuser.github.io</website>
 		<source>https://github.com/axbmcuser/_repo</source>
-		<news>[B]4.7.23[/B] (2024-06-11)
+		<news>[B]4.7.24[/B] (2024-06-11)
+
+Minor navigation hotfix for just released new "Home screen styles"
+
+[B]4.7.23[/B] (2024-06-11)
 
 Home screen styles
 
