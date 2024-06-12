@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="weather.yahoo" name="Yahoo! Weather (Kodi 17-18)" version="5.3.5" provider-name="Kodi Community">
+<addon id="weather.yahoo" name="Yahoo! Weather (Kodi 17-18)" version="5.3.6" provider-name="Kodi Community">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
 		<import addon="script.module.requests" version="2.19.1" />
@@ -131,7 +131,17 @@
 		<license>GPL-2.0-only</license>
 		<forum>https://forum.kodi.tv/showthread.php?tid=367653</forum>
 		<source>https://github.com/axbmcuser/_repo</source>
-		<news>[B]5.3.5[/B] (2024-05-16)
+		<news>[B]5.3.6[/B] (2024-06-12)
+
+On fresh installs, the Add-on is broken as of today due to changes from Yahoo!
+
+- If you already have an old valid cookie in your settings.xml, you can still get weather data
+
+- Added a workaround so an existing valid cookie never expires
+
+- Improved settings.xml structure
+
+[B]5.3.5[/B] (2024-05-16)
 
 Minor improvements to addon.xml and changelog
 

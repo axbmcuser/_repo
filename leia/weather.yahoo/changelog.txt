@@ -1,46 +1,74 @@
-[B]v5.3.4[/B]  (2024-04-21)
-- Fixed connection yet again  (thx @ronie)
+[B]5.3.6[/B] (2024-06-12)
 
-[B]v5.3.3[/B]  (2023-10-25)
-- Fixed connection yet again  (thx @ronie)
+On fresh installs, the Add-on is broken as of today due to changes from Yahoo!
 
-[B]v5.3.2[/B]  (2023-03-27)
-- Fixed connection yet again  (thx @ronie)
+- If you already have an old valid cookie in your settings.xml, you can still get weather data
 
-[B]v5.3.1[/B]  (2022-12-05)
-- Improved error handling (thx @ronie)
+- Added a workaround so an existing valid cookie never expires
 
-[B]v5.3.0[/B]  (2022-11-20)
+- Improved settings.xml structure
+
+[B]5.3.5[/B] (2024-05-16)
+
+Minor improvements to addon.xml and changelog
+
+[B]5.3.4[/B] (2024-04-21)
+
+Fixed connection yet again (thx @ronie)
+
+[B]5.3.3[/B] (2023-10-25)
+
+Fixed connection yet again (thx @ronie)
+
+[B]5.3.2[/B] (2023-03-27)
+
+Fixed connection yet again (thx @ronie)
+
+[B]5.3.1[/B] (2022-12-05)
+
+Improved error handling (thx @ronie)
+
+[B]5.3.0[/B] (2022-11-20)
+
 - Changed addon to use hidden addon settings for cookie data instead of external "cookies.txt" file (thx @ronie)
 - Improved error handling with expanded automatic retry functionality
 
-v5.2.9
-- fixed connection yet again (cookie stuff, thx @ronie) (working @ 2022-11-19)
+[B]5.2.9[/B]
 
-v5.2.8
-- fixed connection yet again (cookie stuff, thx @ronie) (working @ 2022-07-19)
+Fixed connection yet again (cookie stuff, thx @ronie) (working @ 2022-11-19)
 
-v5.2.7
-- fixed connection yet again (cookie stuff) (working @ 2022-05-28)
+[B]5.2.8[/B]
 
-v5.2.6
-- fixed connection yet again (cookie stuff) (working @ 2022-03-29)
+Fixed connection yet again (cookie stuff, thx @ronie) (working @ 2022-07-19)
 
-v5.2.5
-v5.2.4
-- minor improvements
+[B]5.2.7[/B]
 
-v5.2.3
-- further improved cookie code
+Fixed connection yet again (cookie stuff) (working @ 2022-05-28)
 
-v5.2.2
-- improved cookie fetching from v5.2.1
+[B]5.2.6[/B]
 
-v5.2.1
-- fixed connection (cookie stuff) (still working @ 2022-02-15)
+Fixed connection yet again (cookie stuff) (working @ 2022-03-29)
 
-v5.2.0
-- fixed again (still working, 2021-06-24)
+[B]5.2.5[/B]
+[B]5.2.4[/B]
+
+Minor improvements
+
+[B]5.2.3[/B]
+
+Further improved cookie code
+
+[B]5.2.2[/B]
+
+Improved cookie fetching from v5.2.1
+
+[B]5.2.1[/B]
+
+Fixed connection (cookie stuff) (still working @ 2022-02-15)
+
+[B]5.2.0[/B]
+
+Fixed again (still working, 2021-06-24)
 
 v5.1.0
 - broken due to site changes
