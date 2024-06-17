@@ -1,6 +1,11 @@
+[B]1.1.8[/B] (2024-06-17)
+
+- Added AutoComplete Helper code
+- Minor improvements to addon.xml and changelog
+
 [B]1.1.7[/B] (2024-05-17)
 
-- Minor improvements
+Minor improvements
 
 [B]1.1.6[/B] (2024-05-16)
 

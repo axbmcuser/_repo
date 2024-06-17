@@ -1,3 +1,17 @@
+[B]1.1.8[/B] (2024-06-17)
+
+- Added AutoComplete Helper code
+- Minor improvements to addon.xml and changelog
+
+[B]1.1.7[/B] (2024-05-17)
+
+Minor improvements
+
+[B]1.1.6[/B] (2024-05-16)
+
+- Minor improvements to addon.xml
+- Code optimizations
+
 [B]1.1.5[/B] (2023-11-16)
 
 - Added checking and synchronizing of UI accent color scheme with skin themes and skin colors
@@ -73,6 +87,7 @@ Internal changes (not relevant for end users):
 - Hotfix for code merging issue
 
 [B]1.0.11[/B] (2022-12-30)
+
 - Improvements for FullScreen OSD auto-close functionality and skin detection
 
 [B]1.0.10[/B] (2022-12-25)
@@ -97,7 +112,7 @@ New properties:
 
 [B]1.0.7[/B] (2022-12-10)
 
-- TV show episodes now always focus first item after window open. Much better OOB experience, not only because KODI 17 has a focus history bug for episodes view, but in general.
+- TV show episodes now always focus first item after window open. Much better OOB experience, not only because Kodi 17 has a focus history bug for episodes view, but in general.
 
 [B]1.0.6[/B] (2022-12-04)
 
@@ -109,9 +124,9 @@ New properties:
 
 [B]1.0.4[/B] (2022-12-03)
 
-- Added KODI 19+20 (Python 3) compatibility code basis (Dual-addon: Python 2 still supported)
-- - Python 2/3 versions still need separate addon version due to required addon.xml changes
-- - Using unified code basis still makes things much easier
+Added Kodi 19+20 (Python 3) compatibility code basis (Dual-addon: Python 2 still supported)
+- Python 2/3 versions still need separate addon version due to required addon.xml changes
+- Using unified code basis still makes things much easier
 
 [B]1.0.3[/B] (2022-12-02)
 

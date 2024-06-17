@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="4.7.25" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="4.7.26" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="service.listitem.helper" version="0.3.4" />
@@ -19,7 +19,44 @@ The useful lightweight features among countless carefully crafted usability opti
 		<forum>https://forum.kodi.tv/showthread.php?tid=242892</forum>
 		<website>https://axbmcuser.github.io</website>
 		<source>https://github.com/axbmcuser/_repo</source>
-		<news>[B]4.7.25[/B] (2024-06-13)
+		<news>[B]4.7.26[/B] (2024-06-17)
+
+- Moved up "Search" button in Music section sidebar so it matches the position of the same button in Videos section sidebar
+
+- Improved Text Viewer Dialog with increased textbox and scrollbar height
+(Also adapted this changes from Custom_1102_TextViewer to rarely used DialogTextViewer) 
+
+- Improvements for AutoCompletion handling
+Especially automatically disabling AutoCompletion when entering input which is not suitable for AutoCompletion has been improved.
+Also updated "Cinema Helper" Add-on to assist with this and added an empty directory to the skins path "xml/empty/"
+
+- Further rework of Fanart View (Focus visuals are improved for both poster and squared variants)
+
+- Follow-up refinements of View header breadcrumbs visiblity-conditions
+
+- Improved default audio fallback code for music video and album cover art (Affects multiple Views like Fanart View, Wall Views, Songs View)
+
+- Updated "ON/OFF" Notification text for Dynamic Range Compression to "On/Off"
+
+- Follow-up work on top-right Home screen margin changes: Adapted recent changes to [SettingsProfile]
+
+- Added TvShowPoster variable to use with TV shows Episodes Widget and Modern View
+
+- Some minor code comment cosmetics and clean-up
+
+Textures:
+
+- Added fanart-view-focus-poster.png, fanart-view-focus-square.png for Fanart View rework
+- Deleted now unused poster_border_8px.png
+- Updated DefaultIconInfoDRC.png to match the recent Notification Dialog rework
+- Updated DefaultUser.png (grey background color correction)
+- Updated DefaultAddon_solid.png (grey background color correction. Removed wrongly dither background)
+- Updated DefaultAlbumCover.png, DefaultAudio.png with improved quality variants
+- Added new DefaultAlbumCover-infodialog.png variant based on newly created vector data
+Exception: Not added to Textures.xbt but to the skins media-folder so it can be accessed directly to generate a blurred mood background fallback via Python Add-on "ListItem Helper".
+Python seemingly can't access skin images from within Textures.xbt
+
+[B]4.7.25[/B] (2024-06-13)
 
 Misc improvements
 
@@ -40,7 +77,7 @@ Further improvements
 - Updated LiveTV guide to not dim it's dark background if used outside of Video/Music Fullscreen
 - Fixed slightly overlapping x-position of Actors panel in Video Info Dialog (Minor regression from recent rework)
 - Player status textures are now slightly transparent when used within DialogSeekBar and on Home screen
-- View header breadcrumbs are now always hidden for all content on Wall Views and Fanart view
+- View header breadcrumbs are now always hidden for all content from video library on Wall Views and Fanart view
 - Corrected slightly wrong rounded corners radius for Fullscreen Music Album Cover Art
 - Increased focus border size of Fanart View (Looked too thin in comparison)
 - Minor changelog refinements (Also affects Skin settings text "Home screen" vs "Home Screen")
