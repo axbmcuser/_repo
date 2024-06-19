@@ -691,7 +691,7 @@ Second Test Release:
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="5.7.26" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="5.7.27" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.15.0" />
 		<import addon="service.listitem.helper" version="1.0.0" />
@@ -711,7 +711,29 @@ The useful lightweight features among countless carefully crafted usability opti
 		<forum>https://forum.kodi.tv/showthread.php?tid=242892</forum>
 		<website>https://axbmcuser.github.io</website>
 		<source>https://github.com/axbmcuser/_repo</source>
-		<news>[B]5.7.26[/B] (2024-06-17)
+		<news>[B]5.7.27[/B] (2024-06-19)
+
+- Improved Music Videos cover art variable code (Avoids showing wrongly set Poster art which is set by Kodi)
+
+- Improved Fanart View focus item code
+
+- Changed global SideBar IDs from 9000/8999 to 7000/7999
+This change ensures independent detection of SideBar focus since the IDs 9000/8999 are also used for other elements
+
+- Replaced "Container.Content(X)" with "String.IsEqual(Container.Content,X)" for windows with real content containers like "MyVideoNav.xml" (= more reliable on window load. Fixes condition issues)
+Windows like "DialogVideoInfo.xml" will keep using "Container.Content(X)" because the "Container.Content" string is empty there sometimes due to a bug in Kodi itself
+
+- Added Advanced Skin settings option "Enable Skin Debug Output" (not relevant for end users)
+- Improved warning related coloring/visuals for Advanced Skin settings developer options
+
+- Misc code improvements - including, but not limited to:
+PluginName detection conditions
+Removal of deprecated code in regards to deprecated Add-ons - code changed to a more universal approach
+Code case corrections (Corrected many property names to the identical Kodi-typical PascalCase)
+
+- The optional Subtitles mini sub-menu is now always hidden when it has no items [VideoOSD]
+
+[B]5.7.26[/B] (2024-06-17)
 
 - Moved up "Search" button in Music section sidebar so it matches the position of the same button in Videos section sidebar
 
