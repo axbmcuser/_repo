@@ -289,7 +289,7 @@ Version in sync for major rework of "A Confluence ZEITGEIST" 3.6.0 (Version numb
   </extension>
 </addon>
 
-<addon id="service.cinema.helper" name="Cinema Helper (Kodi 17-18)" version="1.1.8" provider-name="axbmcuser">
+<addon id="service.cinema.helper" name="Cinema Helper (Kodi 17-18)" version="1.1.9" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
 		<import addon="script.module.simplejson" version="3.16.1" />
@@ -303,7 +303,11 @@ Version in sync for major rework of "A Confluence ZEITGEIST" 3.6.0 (Version numb
 		<forum>https://forum.kodi.tv/showthread.php?tid=242892</forum>
 		<website>https://axbmcuser.github.io</website>
 		<source>https://github.com/axbmcuser/_repo</source>
-		<news>[B]1.1.8[/B] (2024-06-17)
+		<news>[B]1.1.9[/B] (2024-06-19)
+
+Improvements to Container.Scrolling detection
+
+[B]1.1.8[/B] (2024-06-17)
 
 - Added AutoComplete Helper code
 - Minor improvements to addon.xml and changelog
@@ -567,7 +571,7 @@ Version in sync for major rework of "A Confluence ZEITGEIST" 3.6.0 (Version numb
 	</extension>
 </addon>
 
-<addon id="service.listitem.helper" name="ListItem Helper (Kodi 17+18)" version="0.4.3" provider-name="axbmcuser">
+<addon id="service.listitem.helper" name="ListItem Helper (Kodi 17-18)" version="0.4.5" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
 		<import addon="script.module.requests" version="2.3.0" />
@@ -579,8 +583,8 @@ Version in sync for major rework of "A Confluence ZEITGEIST" 3.6.0 (Version numb
 	<extension point="xbmc.service" library="service.py" start="login" />
 	<extension point="xbmc.python.script" library="default.py" />
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">A ListItem Helper service</summary>
-		<description lang="en">A ListItem Helper service which provides values from OMDb/TMDb/MDBList and your Kodi database.
+		<summary lang="en_GB">A ListItem Helper service</summary>
+		<description lang="en_GB">A ListItem Helper service which provides values from OMDb/TMDb/MDBList and your Kodi database.
 
 [COLOR=red]![/COLOR] Entering OMDb/TMDb/MDBList API keys in the configuration dialog is required.
 
@@ -663,11 +667,11 @@ For use with other containers like home screen widgets set the following propert
 
 (home) ListItemHelper.WidgetContainerId
 to the container ID (Example: 8000)
+
 (home) ListItemHelper.WidgetContainerWindowName
 to the window name where the container resides (Example: home)
 
-Important remarks:
-- Unset the WidgetContainer-properties when leaving focus from the container/widget.
+Important: Unset the WidgetContainer-properties when leaving focus from the container/widget.
 
 
 [COLOR=gray]This project may still contain elements of the following projects:
@@ -678,15 +682,26 @@ Important remarks:
 
 which have been either replaced, rewritten, expanded, changed and/or massively stripped down for fast execution and minimal functionality.
 
-Many thanks to the contributors of the listed projects and all users providing valuable feedback.[/COLOR]
-</description>
+Many thanks to the contributors of the listed projects and all users providing valuable feedback.[/COLOR]</description>
 		<platform>all</platform>
 		<license>GPL-2.0-only</license>
 		<forum>https://forum.kodi.tv/showthread.php?tid=370673</forum>
-		<website>https://forum.kodi.tv/showthread.php?tid=370673</website>
-		<email></email>
-		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]0.4.3[/B] (2023-11-07)
+		<website>https://axbmcuser.github.io</website>
+		<source>https://github.com/axbmcuser/_repo</source>
+		<news>[B]0.4.5[/B] (2024-06-19)
+
+Misc improvements
+
+- Minor improvements to addon.xml, .nts-files reading capability (added escaping for double quotes) and settings.xml
+- Improved code to be less prone for errors when no results from TMDb were fetched
+- Improvements to Container.Scrolling detection
+- Slightly reduced code execution interval from 0.75 to 0.7 seconds
+
+[B]0.4.4[/B] (2024-05-16)
+
+Minor improvements to addon.xml and settings language strings
+
+[B]0.4.3[/B] (2023-11-07)
 
 - Added "suppressException" option for get_json (get_xml already had this added in a previous update)
 - Improved exception handling for time outs and similar status
@@ -744,7 +759,7 @@ New properties:
 
 - Improved Addon settings: Added descriptive text and new debug tab+option "Clear image cache"
 - Added functionality to force generation of blurimg image even if it exists in the cache (important when image changes in certain situations)
-- Backported downstream from KODI 19 service.listitem.helper: Support for "saturation" parameter when using blurimg functionality
+- Backported downstream from Kodi 19 service.listitem.helper: Support for "saturation" parameter when using blurimg functionality
 
 [B]0.3.13[/B] (2022-12-05)
 
@@ -763,8 +778,8 @@ New properties:
 
 [B]0.3.11[/B] (2022-12-05)
 
-- Change addon.xml so that the addon is visibly placed into the "Services" category of the KODI addon manager and the repo
-- - Note: In addon.xml, extension point="xbmc.service" tag has to be placed _above_ extension point="xbmc.python.script" tag for this to happen
+Change addon.xml so that the addon is visibly placed into the "Services" category of the Kodi addon manager and the repo
+Note: In addon.xml, extension point="xbmc.service" tag has to be placed _above_ extension point="xbmc.python.script" tag for this to happen
 
 [B]0.3.10[/B] (2022-12-04)
 
@@ -825,8 +840,7 @@ Second Test Release:
 - Other minor improvements
 
 [B]0.1.0[/B] (2018-03-06)
-- Initial test release
-		</news>
+- Initial test release</news>
 		<assets>
 			<icon>resources/icon.png</icon>
 		</assets>

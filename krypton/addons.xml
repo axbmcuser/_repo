@@ -348,7 +348,7 @@ Version in sync for major rework of "A Confluence ZEITGEIST" 3.6.0 (Version numb
   </extension>
 </addon>
 
-<addon id="service.cinema.helper" name="Cinema Helper (Kodi 17-18)" version="1.1.8" provider-name="axbmcuser">
+<addon id="service.cinema.helper" name="Cinema Helper (Kodi 17-18)" version="1.1.9" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
 		<import addon="script.module.simplejson" version="3.16.1" />
@@ -362,7 +362,11 @@ Version in sync for major rework of "A Confluence ZEITGEIST" 3.6.0 (Version numb
 		<forum>https://forum.kodi.tv/showthread.php?tid=242892</forum>
 		<website>https://axbmcuser.github.io</website>
 		<source>https://github.com/axbmcuser/_repo</source>
-		<news>[B]1.1.8[/B] (2024-06-17)
+		<news>[B]1.1.9[/B] (2024-06-19)
+
+Improvements to Container.Scrolling detection
+
+[B]1.1.8[/B] (2024-06-17)
 
 - Added AutoComplete Helper code
 - Minor improvements to addon.xml and changelog
@@ -523,7 +527,7 @@ Added Kodi 19+20 (Python 3) compatibility code basis (Dual-addon: Python 2 still
 	</extension>
 </addon>
 
-<addon id="service.duration.helper" name="Duration Helper (Kodi 17)" version="1.1.1" provider-name="axbmcuser, Twolaw">
+<addon id="service.duration.helper" name="Duration Helper (Kodi 17)" version="1.1.2" provider-name="axbmcuser, Twolaw">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
 	</requires>
@@ -531,14 +535,45 @@ Added Kodi 19+20 (Python 3) compatibility code basis (Dual-addon: Python 2 still
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en_GB">Duration converter for movies and episodes</summary>
-		<description lang="en_GB">Converts movie and episode durations[CR]from format MINUTES to H:MM, H, HH, M, MM[CR][CR]Example: 113 minutes could be converted to 1:53 using DurationHelper.Duration.H:MM[CR][CR]Property names:[CR](home) DurationHelper.Duration.H:MM[CR](home) DurationHelper.Duration.H[CR](home) DurationHelper.Duration.HH[CR](home) DurationHelper.Duration.M[CR](home) DurationHelper.Duration.MM[CR](home) DurationHelper.DBID[CR](home) DurationHelper.InputDurationMinutes[CR][CR]For use with other containers like home screen widgets set the following properties:[CR][CR](home) DurationHelper.WidgetContainerId[CR]to the container ID (Example: 8000)[CR](home) DurationHelper.WidgetContainerWindowName[CR]to the window name where the container resides (Example: home)[CR][CR]Known supported Skins:[CR]A Confluence ZEITGEIST</description>
+		<description lang="en_GB">Converts movie and episode durations
+from format MINUTES to H:MM, H, HH, M, MM
+
+Example: 113 minutes could be converted to 1:53 using DurationHelper.Duration.H:MM
+
+Property names (home):
+
+DurationHelper.Duration.H:MM
+DurationHelper.Duration.H
+DurationHelper.Duration.HH
+DurationHelper.Duration.M
+DurationHelper.Duration.MM
+DurationHelper.DBID
+DurationHelper.InputDurationMinutes
+
+
+For use with other containers like home screen widgets set the following properties when the container is focused:
+
+(home) DurationHelper.WidgetContainerId
+to the container ID (Example: 8000)
+
+(home) DurationHelper.WidgetContainerWindowName
+to the window name where the container resides (Example: home)
+
+Important: Unset the WidgetContainer-properties when leaving focus from the container/widget.</description>
 		<platform>all</platform>
 		<license>GPL-2.0-only</license>
 		<forum>https://forum.kodi.tv/showthread.php?tid=242892</forum>
-		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]1.1.1[/B] (2024-05-16)
+		<website>https://axbmcuser.github.io</website>
+		<source>https://github.com/axbmcuser/_repo</source>
+		<news>[B]1.1.2[/B] (2024-06-19)
 
 - Minor improvements to addon.xml
+- Improvements to Container.Scrolling detection
+- Slightly reduced code execution interval from 0.75 to 0.7 seconds
+
+[B]1.1.1[/B] (2024-05-16)
+
+Minor improvements to addon.xml
 
 [B]1.1.0[/B] (2023-08-12)
 
@@ -703,7 +738,7 @@ Lite version of original script version 0.3.2 with better performance for minima
 	</extension>
 </addon>
 
-<addon id="service.listitem.helper" name="ListItem Helper (Kodi 17-18)" version="0.4.4" provider-name="axbmcuser">
+<addon id="service.listitem.helper" name="ListItem Helper (Kodi 17-18)" version="0.4.5" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
 		<import addon="script.module.requests" version="2.3.0" />
@@ -799,11 +834,11 @@ For use with other containers like home screen widgets set the following propert
 
 (home) ListItemHelper.WidgetContainerId
 to the container ID (Example: 8000)
+
 (home) ListItemHelper.WidgetContainerWindowName
 to the window name where the container resides (Example: home)
 
-Important remarks:
-- Unset the WidgetContainer-properties when leaving focus from the container/widget.
+Important: Unset the WidgetContainer-properties when leaving focus from the container/widget.
 
 
 [COLOR=gray]This project may still contain elements of the following projects:
@@ -818,9 +853,18 @@ Many thanks to the contributors of the listed projects and all users providing v
 		<platform>all</platform>
 		<license>GPL-2.0-only</license>
 		<forum>https://forum.kodi.tv/showthread.php?tid=370673</forum>
-		<website>https://forum.kodi.tv/showthread.php?tid=370673</website>
-		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]0.4.4[/B] (2024-05-16)
+		<website>https://axbmcuser.github.io</website>
+		<source>https://github.com/axbmcuser/_repo</source>
+		<news>[B]0.4.5[/B] (2024-06-19)
+
+Misc improvements
+
+- Minor improvements to addon.xml, .nts-files reading capability (added escaping for double quotes) and settings.xml
+- Improved code to be less prone for errors when no results from TMDb were fetched
+- Improvements to Container.Scrolling detection
+- Slightly reduced code execution interval from 0.75 to 0.7 seconds
+
+[B]0.4.4[/B] (2024-05-16)
 
 Minor improvements to addon.xml and settings language strings
 

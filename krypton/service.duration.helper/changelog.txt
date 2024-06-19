@@ -1,6 +1,12 @@
-[B]1.1.1[/B] (2024-05-16)
+[B]1.1.2[/B] (2024-06-19)
 
 - Minor improvements to addon.xml
+- Improvements to Container.Scrolling detection
+- Slightly reduced code execution interval from 0.75 to 0.7 seconds
+
+[B]1.1.1[/B] (2024-05-16)
+
+Minor improvements to addon.xml
 
 [B]1.1.0[/B] (2023-08-12)
 

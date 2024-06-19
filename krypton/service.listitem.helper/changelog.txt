@@ -1,3 +1,12 @@
+[B]0.4.5[/B] (2024-06-19)
+
+Misc improvements
+
+- Minor improvements to addon.xml, .nts-files reading capability (added escaping for double quotes) and settings.xml
+- Improved code to be less prone for errors when no results from TMDb were fetched
+- Improvements to Container.Scrolling detection
+- Slightly reduced code execution interval from 0.75 to 0.7 seconds
+
 [B]0.4.4[/B] (2024-05-16)
 
 Minor improvements to addon.xml and settings language strings

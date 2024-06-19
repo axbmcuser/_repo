@@ -155,7 +155,7 @@ Version in sync for major rework of "A Confluence ZEITGEIST" 3.6.0 (Version numb
   </extension>
 </addon>
 
-<addon id="service.cinema.helper" name="Cinema Helper (Kodi 19-22)" version="2.1.8" provider-name="axbmcuser">
+<addon id="service.cinema.helper" name="Cinema Helper (Kodi 19-22)" version="2.1.9" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.simplejson" version="3.16.1" />
@@ -169,7 +169,11 @@ Version in sync for major rework of "A Confluence ZEITGEIST" 3.6.0 (Version numb
 		<forum>https://forum.kodi.tv/showthread.php?tid=242892</forum>
 		<website>https://axbmcuser.github.io</website>
 		<source>https://github.com/axbmcuser/_repo</source>
-		<news>[B]2.1.8[/B] (2024-06-17)
+		<news>[B]2.1.9[/B] (2024-06-19)
+
+Improvements to Container.Scrolling detection
+
+[B]2.1.8[/B] (2024-06-17)
 
 - Added AutoComplete Helper code
 - Minor improvements to addon.xml and changelog
@@ -422,7 +426,7 @@ Lite version of original script version 0.3.2 with better performance for minima
 	</extension>
 </addon>
 
-<addon id="service.listitem.helper" name="ListItem Helper (Kodi 19-22)" version="1.4.4" provider-name="axbmcuser">
+<addon id="service.listitem.helper" name="ListItem Helper (Kodi 19-22)" version="1.4.5" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" version="2.3.0" />
@@ -518,11 +522,11 @@ For use with other containers like home screen widgets set the following propert
 
 (home) ListItemHelper.WidgetContainerId
 to the container ID (Example: 8000)
+
 (home) ListItemHelper.WidgetContainerWindowName
 to the window name where the container resides (Example: home)
 
-Important remarks:
-- Unset the WidgetContainer-properties when leaving focus from the container/widget.
+Important: Unset the WidgetContainer-properties when leaving focus from the container/widget.
 
 
 [COLOR=gray]This project may still contain elements of the following projects:
@@ -537,9 +541,18 @@ Many thanks to the contributors of the listed projects and all users providing v
 		<platform>all</platform>
 		<license>GPL-2.0-only</license>
 		<forum>https://forum.kodi.tv/showthread.php?tid=370673</forum>
-		<website>https://forum.kodi.tv/showthread.php?tid=370673</website>
-		<source>https://github.com/axbmcuser/_repo/</source>
-		<news>[B]1.4.4[/B] (2024-05-16)
+		<website>https://axbmcuser.github.io</website>
+		<source>https://github.com/axbmcuser/_repo</source>
+		<news>[B]1.4.5[/B] (2024-06-19)
+
+Misc improvements
+
+- Minor improvements to addon.xml, .nts-files reading capability (added escaping for double quotes) and settings.xml
+- Improved code to be less prone for errors when no results from TMDb were fetched
+- Improvements to Container.Scrolling detection
+- Slightly reduced code execution interval from 0.75 to 0.7 seconds
+
+[B]1.4.4[/B] (2024-05-16)
 
 Minor improvements to addon.xml and settings language strings
 
