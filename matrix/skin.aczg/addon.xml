@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="5.7.27" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="5.7.28" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.15.0" />
 		<import addon="service.listitem.helper" version="1.0.0" />
@@ -19,7 +19,43 @@ The useful lightweight features among countless carefully crafted usability opti
 		<forum>https://forum.kodi.tv/showthread.php?tid=242892</forum>
 		<website>https://axbmcuser.github.io</website>
 		<source>https://github.com/axbmcuser/_repo</source>
-		<news>[B]5.7.27[/B] (2024-06-19)
+		<news>[B]5.7.28[/B] (2024-06-21)
+
+- Reworked and improved Fullscreen Player time, seek time and duration/remaining time format (Showing "remaining time" is the new default)
+Added new Skin settings option "Show duration time instead of remaining time   (Default: Off)"
+
+- TV show Seasons: Improved Total Seasons info
+Internal notes: 
+Showing the Total Seasons info has always been achieved with a workaround to account for Kodi limitations
+Now another fallback workaround via simultaneously updated Add-on "Cinema Helper" is added to assist with this
+Both workarounds in combination should lead to near 100% coverage of the Total Seasons info always showing - even if a TV show is opened via Favorites (which is new)
+
+- Visual rework of "Modern" View (Improved, simplified and now supported to be used with the YouTube Add-on)
+
+- Visual improvements for "Text" View
+
+- Visual improvements for "List Wide" View
+
+- Further improved Music Videos album cover art variable code (Avoids poster art (if available) being used as mood background instead of album cover art)
+
+- Improvements for "Songs" View
+Year/Genre of Song-ListItem is not mixed up with the Albums Year/Genre on window-unload anymore
+
+- Fixed Scrolling letter indicator being faded out too early
+Internal notes: 
+Added pseudo time="5" attribute to Hidden slide animation because delay="X" only works with when combined with a time value of 5 or higher. 
+Delayed fade-out now works as originally intended.
+This animation was the only one who had a delay greater 0 combined with time being 0. (There shouldn't be any more similar instances to correct)
+
+- Misc changes and improvements
+Including, but not limited to:
+Disallow "Episodes" View for YouTube Add-on ("Modern" View should be used instead if needed)
+Changed some "String.Contains" to "String.StartsWith" (Code cosmetics)
+Changed some text strings in Skin settings Python helper scripts
+Updated new version welcome dialog
+Updated Debug Output strings
+
+[B]5.7.27[/B] (2024-06-19)
 
 - Improved Music Videos cover art variable code (Avoids showing wrongly set Poster art which is set by Kodi)
 

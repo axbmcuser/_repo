@@ -1,3 +1,7 @@
+[B]1.1.10[/B] (2024-06-21)
+
+Added TV shows seasons count (TvShowTotalSeasonsCalculated)
+
 [B]1.1.9[/B] (2024-06-19)
 
 Improvements to Container.Scrolling detection

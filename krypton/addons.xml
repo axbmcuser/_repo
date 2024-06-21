@@ -348,7 +348,7 @@ Version in sync for major rework of "A Confluence ZEITGEIST" 3.6.0 (Version numb
   </extension>
 </addon>
 
-<addon id="service.cinema.helper" name="Cinema Helper (Kodi 17-18)" version="1.1.9" provider-name="axbmcuser">
+<addon id="service.cinema.helper" name="Cinema Helper (Kodi 17-18)" version="1.1.10" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
 		<import addon="script.module.simplejson" version="3.16.1" />
@@ -362,7 +362,11 @@ Version in sync for major rework of "A Confluence ZEITGEIST" 3.6.0 (Version numb
 		<forum>https://forum.kodi.tv/showthread.php?tid=242892</forum>
 		<website>https://axbmcuser.github.io</website>
 		<source>https://github.com/axbmcuser/_repo</source>
-		<news>[B]1.1.9[/B] (2024-06-19)
+		<news>[B]1.1.10[/B] (2024-06-21)
+
+Added TV shows seasons count (TvShowTotalSeasonsCalculated)
+
+[B]1.1.9[/B] (2024-06-19)
 
 Improvements to Container.Scrolling detection
 
