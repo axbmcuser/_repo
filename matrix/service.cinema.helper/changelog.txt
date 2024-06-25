@@ -1,3 +1,7 @@
+[B]2.1.11[/B] (2024-06-25)
+
+Added lookandfeel.skinzoom detection
+
 [B]2.1.10[/B] (2024-06-21)
 
 Added TV shows seasons count (TvShowTotalSeasonsCalculated)

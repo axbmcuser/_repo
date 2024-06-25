@@ -1,3 +1,76 @@
+[B]5.7.29[/B] (2024-06-25)
+
+New feature (by popular demand):
+
+[B]Custom sub menus[/B]
+
+- Movies, TV shows and Music sub menus can now be customized
+- Every custom sub menu of this three sections can be enabled separately
+- Every custom sub menu of this three sections can use a custom node path of the users choice
+
+- Added new tab "Sub menus" to Skin settings
+
+(Some parts of the new code is adapted/reworked/improved on base of Confluence code, thx @ Hitcher)
+
+New features:
+
+[B]Improved support for negative Interface/Skin-Zoom values[/B]
+
+Including the addition of black "out of bounds" masking to black out elements which should not be visible to users of these use cases.
+(Especially useful for users with Cinemascope ultra wide projection situations)
+
+[B]Support for additional aspect ratios[/B]
+
+Added letterboxed support for common display aspect ratios: 16:10, 21:9
+(Primary target for almost-21:9 are 3440x1440 displays - slightly different aspect ratio of 2560x1080 displays also works well)
+
+
+- Restructured and improved Skin settings
+
+- Added new Skin settings Debugging options: "Reload Skin", "Debug out of bounds UI masks"
+
+- Added support for Music Videos album art when Fullscreen Video OSD is opened
+
+- Minor text string changes in Skin settings (Including: One string change to adapt to the above Music Videos album art changes)
+
+- Fixed wrongly displayed and overlapping TV show name when playing a PVR recording on later Kodi generations
+(should only be visible for TV show Episodes, never for LiveTV/PVR related playback)
+
+- Expanded universal support of "Modern" View for Video Add-ons like YouTube (Follow-up to recent change)
+
+- Corrected title width for "Modern" View (Prevents rare visual overlap. Too wide before)
+
+- Improved visuals for section headers: Removed header icon in "CommonWindowHeader" and "PVRHeader"
+
+- Added another "Special List": "In progress movies"
+
+- Fixed position of developer "24p" indicator position with non-default Home screen style
+
+- Improved Confirm Dialog to be used as 3 button variant (rare) while retaining a minium l/r-margins to the dialogs edges
+
+- Changed button label "Play recording" to "Play" for PVR Info Dialog
+
+- Improved SideBar hitbox for rare cases using negative Skin Zoom and Mouse control at the same time
+
+- Subtitle search dialog improvements:
+Hide "Manual search string" button if no subtitle services available
+Improved SideBar hitbox
+
+- Code cosmetics (Formatting; also removal of unnecessary spaces and tabs at line ends)
+
+Textures:
+
+- Added DefaultVideoVersions.png
+- Added dtsma.png audiocodec flag (fallback redundancy)
+- Deprecated header section icons have _not_ been removed since they are used in other situations like notifications and the custom search dialog
+
+Kodi 21+ only:
+
+- Added Video Versions/Extras Dialog [DialogVideoManager] (Adapted/reworked/improved on base of latest Confluence template, thx @ Hitcher)
+- Added support for Video Versions/Extras to Select Dialog [DialogSelect]
+- Added optional support for "Extras" and "Videos" buttons for Video Info Dialog
+- Added new Skin settings option "Show "Versions" and "Extras" buttons   (Default+Recommended: Off)"
+
 [B]5.7.28[/B] (2024-06-21)
 
 - Reworked and improved Fullscreen Player time, seek time and duration/remaining time format (Showing "remaining time" is the new default)
