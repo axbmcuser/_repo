@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="service.listitem.helper" name="ListItem Helper (Kodi 17-18)" version="0.4.5" provider-name="axbmcuser">
+<addon id="service.listitem.helper" name="ListItem Helper (Kodi 17-18)" version="0.4.6" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
 		<import addon="script.module.requests" version="2.3.0" />
@@ -116,7 +116,13 @@ Many thanks to the contributors of the listed projects and all users providing v
 		<forum>https://forum.kodi.tv/showthread.php?tid=370673</forum>
 		<website>https://axbmcuser.github.io</website>
 		<source>https://github.com/axbmcuser/_repo</source>
-		<news>[B]0.4.5[/B] (2024-06-19)
+		<news>[B]0.4.6[/B] (2024-07-05)
+
+- Added "suppressException" for TMDb/MDBList (OMDb already had this before)
+- Optimized retry parameters
+- Minor code improvements
+
+[B]0.4.5[/B] (2024-06-19)
 
 Misc improvements
 

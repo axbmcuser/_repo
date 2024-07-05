@@ -1,3 +1,9 @@
+[B]0.4.6[/B] (2024-07-05)
+
+- Added "suppressException" for TMDb/MDBList (OMDb already had this before)
+- Optimized retry parameters
+- Minor code improvements
+
 [B]0.4.5[/B] (2024-06-19)
 
 Misc improvements
