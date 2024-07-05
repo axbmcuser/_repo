@@ -684,7 +684,7 @@ Lite version of original script version 0.3.2 with better performance for minima
 	</extension>
 </addon>
 
-<addon id="service.listitem.helper" name="ListItem Helper (Kodi 17-18)" version="0.4.6" provider-name="axbmcuser">
+<addon id="service.listitem.helper" name="ListItem Helper (Kodi 17-18)" version="0.4.7" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
 		<import addon="script.module.requests" version="2.3.0" />
