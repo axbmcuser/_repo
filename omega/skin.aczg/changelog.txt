@@ -1,3 +1,97 @@
+[B]6.7.30[/B] (2024-07-08)
+
+[B]Video Info Dialog Rework[/B]
+Further visual refinements and UI simplification
+Also adapted changes to PVR Info Dialog
+Auto-suppress/close dialog for unwanted content like "years" (Workaround core bug)
+
+[B]Default Icons Rework[/B]
+Improved and simplified [B]31[/B] default icons + some more for a coherent look and feel
+
+[B]New View: "Wall View 5X"[/B]
+including some additonal Wall View refinements
+
+[B]Rework of main menu and sub menus[/B]
+Further visual and functional rework of main menu and sub menus
+
+[B]New Skin option for "Sub menus"[/B]:  "(Default)  Fade out when not focused"
+Also added helper dialog for this new default feature [Custom_SubMenuHelp], additionaly reworked old helper dialog for sidebar [Custom_SideMenuHelp]
+
+
+Refinements for Home screen Widgets including new fallback textures with coherent look to other fallback-posters/textures
+
+Reworked Multi Search dialog including updated textures
+
+[B]System/Settings and Skin settings Rework[/B]
+
+Further rework, refinements and restructuring of dialogs including some language string updates
+Custom language strings altering via "Cinema Helper" add-on to improve untouched Confluence language sources
+
+Added new, separate "Always force Preset Views" ID for "All Movie Sets" (Default: 500)
+The ID can be customized the same way as before under:  Settings – My Skin – Advanced
+
+
+Follow-up refinements for additional aspect ratio support
+
+Increased Slider Dialog top margin from 10 to 12 px to be in-line with recent changes to similar dialogs, also improved dialog animation
+
+Removed focus label for "Search" and "Power" buttons on Home screen
+
+
+Improved Kodi cross-generational code to avoid (harmless but still) log file warnings about missing window(s)
+
+Minor code clean-up
+Misc code improvement (case)
+Misc text string improvements (removed a . here and there where it looked wrong) (python helper script confirm dialogs)
+
+Code improvement for image blurring feature using listitem helper (expanded conditions)
+[DialogVideoInfo] [DialogAddonInfo]
+
+Refined and improved context menu and it's position
+
+Dialog Keyboard: Fixed slightly wrong onup click target of IP/Password button
+
+Created new poster textures including fallbacks, "folder back", "Sets" and "Versions" variants
+Additionally adapted these changes to all UI accent color schemes
+Updated and expanded variables code
+
+Added invisible header option for "DialogBackgroundCommons" to use with the new "fade out sub menus" helper-dialog
+
+Rework of Fanart View with new visual-scrollbar code (no visible change for the end user)
+(Preparation for cinemascope skin variant)
+
+Improvements for Music Videos support in Wall Views and Video Info Dialog
+
+Corrected dialog dimensions for GameOSD dialog
+(Most likely the only and final minor regression from the semi-recent dialogs rework)
+
+Updated language strings to latest Confluence GIT 
+Including:
+Added variable for "Recently added" string for cross generational skin use (Replaced Confluence string #31328 with Kodi string #20382 for Kodi 18+)
+(Internal note: Don't update Kodi 17 skin version language strings since it's missing Kodi language string #20382 which got introduced with Kodi 18)
+Minor change to deprecated Music View to account for now missing string #31310
+Minor change to Weather Views to account for now missing string #31909
+
+
+Textures:
+
+- Reworked very many default icons to for a more simplified, coherent look and feel (31 default icons + some more)
+
+DefaultAddonInfoProvider.png DefaultAddonInputstream.png DefaultAddonMusic.png DefaultAddonPeripheral.png DefaultAddonPicture.png DefaultAddonProgram.png DefaultAddonPVRClient.png DefaultAddonService.png DefaultAddonsSearch.png DefaultAddonTvInfo.png DefaultAddonUISounds.png DefaultAddonVfs.png DefaultAddonVideo.png DefaultAddonWeather.png DefaultInProgressShows.png DefaultMovieTitle.png DefaultMusicRecentlyAdded.png DefaultMusicRecentlyPlayed.png DefaultMusicSearch.png DefaultMusicVideoTitle.png DefaultPVRSearch.png DefaultPVRTimerRules.png DefaultRecentlyAddedEpisodes.png DefaultRecentlyAddedMovies.png DefaultRecentlyAddedMusicVideos.png DefaultSets.png DefaultTVShowTitle.png DefaultVideoPlugins.png
+
+DefaultFolderBack.png DefaultFolderBack_poster.png DefaultFolderBack_poster_solid.png
+
+GoFullscreen.png
+
+icon_search.png icon_search_large.png icon_search_large_uhd.png (newly) icon_search_uhd.png
+
+- Renamed poster border textures to be more neutral
+- Added poster border variants, diffuse masks and progress bar texture for new "Wall 5X"
+- Reworked CalibrateReset.png to be coherent with similar icons
+- Updated textures for Multi Search dialog changes
+- Updated submenu-focus-neutral.png to match sub menu refinements
+Additionally adapted these change to all UI accent color schemes
+
 [B]6.7.29[/B] (2024-06-25)
 
 New feature (by popular demand):
