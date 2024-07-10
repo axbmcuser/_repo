@@ -1,3 +1,11 @@
+[B]6.7.32[/B] (2024-07-10)
+
+Minor code improvements
+Minor improvements to addon.xml
+
+Internal notes:
+Kodi 18 needs to use ListItem.Icon instead of ListItem.Art(icon). Kodi 19+ seems fine with the latter. Code now covers both
+
 [B]6.7.31[/B] (2024-07-10)
 
 [B]Wall View improvements[/B]
@@ -213,7 +221,7 @@ Year/Genre of Song-ListItem is not mixed up with the Albums Year/Genre on window
 
 - Fixed Scrolling letter indicator being faded out too early
 Internal notes: 
-Added pseudo time="5" attribute to Hidden slide animation because delay="X" only works with when combined with a time value of 5 or higher. 
+Added pseudo time="5" attribute to Hidden slide animation because delay="X" only works when combined with a time value of 5 or higher. 
 Delayed fade-out now works as originally intended.
 This animation was the only one who had a delay greater 0 combined with time being 0. (There shouldn't be any more similar instances to correct)
 

@@ -605,7 +605,7 @@ Second Test Release:
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="5.7.31" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="5.7.32" name="Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.15.0" />
 		<import addon="service.listitem.helper" version="1.0.0" />
@@ -618,8 +618,10 @@ Second Test Release:
 		<res width="2580" height="1080" aspect="21:9"  folder="xml" default="false" />
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en_GB">A modern reimagination of Confluence</summary>
-		<description lang="en_GB">Confluence ZEITGEIST – a modern reimagination of Confluence, the beloved long-time default user interface of Kodi (formerly XBMC).
+		<summary lang="en_GB">intuitive UI for Kodi</summary>
+		<description lang="en_GB">Confluence ZEITGEIST – intuitive UI for Kodi
+
+A modern reimagination of Confluence, the beloved long-time default user interface of Kodi (formerly XBMC).
 
 Features include a complete graphical overhaul, an icon-based main menu without the need for scrolling and all new wall views.
 The useful lightweight features among countless carefully crafted usability optimizations make you enjoy an intuitive user experience you would expect from a retail media player with an awesome UI.</description>
@@ -627,7 +629,15 @@ The useful lightweight features among countless carefully crafted usability opti
 		<forum>https://forum.kodi.tv/showthread.php?tid=242892</forum>
 		<website>https://axbmcuser.github.io</website>
 		<source>https://github.com/axbmcuser/_repo</source>
-		<news>[B]5.7.31[/B] (2024-07-10)
+		<news>[B]5.7.32[/B] (2024-07-10)
+
+Minor code improvements
+Minor improvements to addon.xml
+
+Internal notes:
+Kodi 18 needs to use ListItem.Icon instead of ListItem.Art(icon). Kodi 19+ seems fine with the latter. Code now covers both
+
+[B]5.7.31[/B] (2024-07-10)
 
 [B]Wall View improvements[/B]
 
@@ -842,7 +852,7 @@ Year/Genre of Song-ListItem is not mixed up with the Albums Year/Genre on window
 
 - Fixed Scrolling letter indicator being faded out too early
 Internal notes:
-Added pseudo time="5" attribute to Hidden slide animation because delay="X" only works with when combined with a time value of 5 or higher.
+Added pseudo time="5" attribute to Hidden slide animation because delay="X" only works when combined with a time value of 5 or higher.
 Delayed fade-out now works as originally intended.
 This animation was the only one who had a delay greater 0 combined with time being 0. (There shouldn't be any more similar instances to correct)
 
