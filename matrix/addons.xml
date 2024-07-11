@@ -722,7 +722,7 @@ Second Test Release:
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="5.7.32" name="Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="5.7.33" name="Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.15.0" />
 		<import addon="service.listitem.helper" version="1.0.0" />
@@ -746,7 +746,17 @@ The useful lightweight features among countless carefully crafted usability opti
 		<forum>https://forum.kodi.tv/showthread.php?tid=242892</forum>
 		<website>https://axbmcuser.github.io</website>
 		<source>https://github.com/axbmcuser/_repo</source>
-		<news>[B]5.7.32[/B] (2024-07-10)
+		<news>[B]5.7.33[/B] (2024-07-11)
+
+Improved "Text" View focus animation (Text color change now transitions smoothly)
+Minor code improvements
+
+Kodi 17-20 only:
+
+Removed the "Show "Versions" and "Extras" buttons" option from My Skin settings since only Kodi 21+ has this feature
+(minor merging regression introduced with previous update)
+
+[B]5.7.32[/B] (2024-07-10)
 
 Minor code improvements
 Minor improvements to addon.xml

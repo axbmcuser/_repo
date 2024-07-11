@@ -985,7 +985,7 @@ Second Test Release:
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="3.7.14" name="A Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.7.33" name="Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0" />
 		<import addon="service.listitem.helper" version="0.3.4" />
@@ -994,11 +994,15 @@ Second Test Release:
 		<import addon="service.cinema.helper" version="1.0.0" />
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false" effectslowdown="0.22">
-		<res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
+		<res width="1920" height="1080" aspect="16:9"  folder="xml" default="true" />
+		<res width="1920" height="1200" aspect="16:10" folder="xml" default="false" />
+		<res width="2580" height="1080" aspect="21:9"  folder="xml" default="false" />
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en_GB">A modern reimagination of Confluence</summary>
-		<description lang="en_GB">A Confluence ZEITGEIST – a modern reimagination of Confluence, the beloved long-time default user interface of Kodi (formerly XBMC).
+		<summary lang="en_GB">intuitive UI for Kodi</summary>
+		<description lang="en_GB">Confluence ZEITGEIST – intuitive UI for Kodi
+
+A modern reimagination of Confluence, the beloved long-time default user interface of Kodi (formerly XBMC).
 
 Features include a complete graphical overhaul, an icon-based main menu without the need for scrolling and all new wall views.
 The useful lightweight features among countless carefully crafted usability optimizations make you enjoy an intuitive user experience you would expect from a retail media player with an awesome UI.</description>
@@ -1006,7 +1010,468 @@ The useful lightweight features among countless carefully crafted usability opti
 		<forum>https://forum.kodi.tv/showthread.php?tid=242892</forum>
 		<website>https://axbmcuser.github.io</website>
 		<source>https://github.com/axbmcuser/_repo</source>
-		<news>[B]3.7.14[/B] (2024-06-02)
+		<news>[B]3.7.33[/B] (2024-07-11)
+
+Improved "Text" View focus animation (Text color change now transitions smoothly)
+Minor code improvements
+
+Kodi 17-20 only:
+
+Removed the "Show "Versions" and "Extras" buttons" option from My Skin settings since only Kodi 21+ has this feature
+(minor merging regression introduced with previous update)
+
+[B]3.7.32[/B] (2024-07-10)
+
+Minor code improvements
+Minor improvements to addon.xml
+
+Internal notes:
+Kodi 18 needs to use ListItem.Icon instead of ListItem.Art(icon). Kodi 19+ seems fine with the latter. Code now covers both
+
+[B]3.7.31[/B] (2024-07-10)
+
+[B]Wall View improvements[/B]
+
+Wall 2X, 3X, 4X and recently added 5X now have dedicated visual variants for displaying add-ons
+This greatly improves the visual feel when browsing add-ons with Wall Views
+
+- Adapted Wall View changes to Add-on Info Dialog
+
+- Further improvements for context menu and visually related Game OSD menu
+
+- Minor x-position fix for Games section sidebar
+
+- Updated skin name and all icon variants
+
+- Minor code improvement for suppressed dialog [PlayerControls]
+
+Textures:
+
+- Updated 330x330-rounded.png and added white_border34.png for Add-on Info Dialog changes
+- Added 4 rounded diffuse masks for new Wall View add-on variants
+- Added 4 focus borders for new Wall View add-on variants
+- Slightly improved DefaultAddonsRecentlyUpdated.png and DefaultAddonsUpdates.png (smaller dots)
+
+[B]3.7.30[/B] (2024-07-08)
+
+[B]Video Info Dialog Rework[/B]
+Further visual refinements and UI simplification
+Also adapted changes to PVR Info Dialog
+Auto-suppress/close dialog for unwanted content like "years" (Workaround core bug)
+
+[B]Default Icons Rework[/B]
+Improved and simplified [B]31[/B] default icons + some more for a coherent look and feel
+
+[B]New View: "Wall View 5X"[/B]
+including some additonal Wall View refinements
+
+[B]Rework of main menu and sub menus[/B]
+Further visual and functional rework of main menu and sub menus
+
+[B]New Skin option for "Sub menus"[/B]:  "(Default)  Fade out when not focused"
+Also added helper dialog for this new default feature [Custom_SubMenuHelp], additionaly reworked old helper dialog for sidebar [Custom_SideMenuHelp]
+
+
+Refinements for Home screen Widgets including new fallback textures with coherent look to other fallback-posters/textures
+
+Reworked Multi Search dialog including updated textures
+
+[B]System/Settings and Skin settings Rework[/B]
+
+Further rework, refinements and restructuring of dialogs including some language string updates
+Custom language strings altering via "Cinema Helper" add-on to improve untouched Confluence language sources
+
+Added new, separate "Always force Preset Views" ID for "All Movie Sets" (Default: 500)
+The ID can be customized the same way as before under:  Settings – My Skin – Advanced
+
+
+Follow-up refinements for additional aspect ratio support
+
+Increased Slider Dialog top margin from 10 to 12 px to be in-line with recent changes to similar dialogs, also improved dialog animation
+
+Removed focus label for "Search" and "Power" buttons on Home screen
+
+
+Improved Kodi cross-generational code to avoid (harmless but still) log file warnings about missing window(s)
+
+Minor code clean-up
+Misc code improvement (case)
+Misc text string improvements (removed a . here and there where it looked wrong) (python helper script confirm dialogs)
+
+Code improvement for image blurring feature using listitem helper (expanded conditions)
+[DialogVideoInfo] [DialogAddonInfo]
+
+Refined and improved context menu and it's position
+
+Dialog Keyboard: Fixed slightly wrong onup click target of IP/Password button
+
+Created new poster textures including fallbacks, "folder back", "Sets" and "Versions" variants
+Additionally adapted these changes to all UI accent color schemes
+Updated and expanded variables code
+
+Added invisible header option for "DialogBackgroundCommons" to use with the new "fade out sub menus" helper-dialog
+
+Rework of Fanart View with new visual-scrollbar code (no visible change for the end user)
+(Preparation for cinemascope skin variant)
+
+Improvements for Music Videos support in Wall Views and Video Info Dialog
+
+Corrected dialog dimensions for GameOSD dialog
+(Most likely the only and final minor regression from the semi-recent dialogs rework)
+
+Updated language strings to latest Confluence GIT
+Including:
+Added variable for "Recently added" string for cross generational skin use (Replaced Confluence string #31328 with Kodi string #20382 for Kodi 18+)
+(Internal note: Don't update Kodi 17 skin version language strings since it's missing Kodi language string #20382 which got introduced with Kodi 18)
+Minor change to deprecated Music View to account for now missing string #31310
+Minor change to Weather Views to account for now missing string #31909
+
+
+Textures:
+
+- Reworked very many default icons to for a more simplified, coherent look and feel (31 default icons + some more)
+
+DefaultAddonInfoProvider.png DefaultAddonInputstream.png DefaultAddonMusic.png DefaultAddonPeripheral.png DefaultAddonPicture.png DefaultAddonProgram.png DefaultAddonPVRClient.png DefaultAddonService.png DefaultAddonsSearch.png DefaultAddonTvInfo.png DefaultAddonUISounds.png DefaultAddonVfs.png DefaultAddonVideo.png DefaultAddonWeather.png DefaultInProgressShows.png DefaultMovieTitle.png DefaultMusicRecentlyAdded.png DefaultMusicRecentlyPlayed.png DefaultMusicSearch.png DefaultMusicVideoTitle.png DefaultPVRSearch.png DefaultPVRTimerRules.png DefaultRecentlyAddedEpisodes.png DefaultRecentlyAddedMovies.png DefaultRecentlyAddedMusicVideos.png DefaultSets.png DefaultTVShowTitle.png DefaultVideoPlugins.png
+
+DefaultFolderBack.png DefaultFolderBack_poster.png DefaultFolderBack_poster_solid.png
+
+GoFullscreen.png
+
+icon_search.png icon_search_large.png icon_search_large_uhd.png (new) icon_search_uhd.png
+
+- Renamed poster border textures to be more neutral
+- Added poster border variants, diffuse masks and progress bar texture for new "Wall 5X"
+- Reworked CalibrateReset.png to be coherent with similar icons
+- Updated textures for Multi Search dialog changes
+- Updated submenu-focus-neutral.png to match sub menu refinements
+Additionally adapted these change to all UI accent color schemes
+
+[B]3.7.29[/B] (2024-06-25)
+
+New feature (by popular demand):
+
+[B]Custom sub menus[/B]
+
+- Movies, TV shows and Music sub menus can now be customized
+- Every custom sub menu of this three sections can be enabled separately
+- Every custom sub menu of this three sections can use a custom node path of the users choice
+
+- Added new tab "Sub menus" to Skin settings
+
+(Some parts of the new code is adapted/reworked/improved on base of Confluence code, thx @ Hitcher)
+
+New features:
+
+[B]Improved support for negative Interface/Skin-Zoom values[/B]
+
+Including the addition of black "out of bounds" masking to black out elements which should not be visible to users of these use cases.
+(Especially useful for users with Cinemascope ultra wide projection situations)
+
+[B]Support for additional aspect ratios[/B]
+
+Added letterboxed support for common display aspect ratios: 16:10, 21:9
+(Primary target for almost-21:9 are 3440x1440 displays - slightly different aspect ratio of 2560x1080 displays also works well)
+
+
+- Restructured and improved Skin settings
+
+- Added new Skin settings Debugging options: "Reload Skin", "Debug out of bounds UI masks"
+
+- Added support for Music Videos album art when Fullscreen Video OSD is opened
+
+- Minor text string changes in Skin settings (Including: One string change to adapt to the above Music Videos album art changes)
+
+- Fixed wrongly displayed and overlapping TV show name when playing a PVR recording on later Kodi generations
+(should only be visible for TV show Episodes, never for LiveTV/PVR related playback)
+
+- Expanded universal support of "Modern" View for Video Add-ons like YouTube (Follow-up to recent change)
+
+- Corrected title width for "Modern" View (Prevents rare visual overlap. Too wide before)
+
+- Improved visuals for section headers: Removed header icon in "CommonWindowHeader" and "PVRHeader"
+
+- Added another "Special List": "In progress movies"
+
+- Fixed position of developer "24p" indicator position with non-default Home screen style
+
+- Improved Confirm Dialog to be used as 3 button variant (rare) while retaining a minium l/r-margins to the dialogs edges
+
+- Changed button label "Play recording" to "Play" for PVR Info Dialog
+
+- Improved SideBar hitbox for rare cases using negative Skin Zoom and Mouse control at the same time
+
+- Subtitle search dialog improvements:
+Hide "Manual search string" button if no subtitle services available
+Improved SideBar hitbox
+
+- Code cosmetics (Formatting; also removal of unnecessary spaces and tabs at line ends)
+
+Textures:
+
+- Added DefaultVideoVersions.png
+- Added dtsma.png audiocodec flag (fallback redundancy)
+- Deprecated header section icons have _not_ been removed since they are used in other situations like notifications and the custom search dialog
+
+Kodi 21+ only:
+
+- Added Video Versions/Extras Dialog [DialogVideoManager] (Adapted/reworked/improved on base of latest Confluence template, thx @ Hitcher)
+- Added support for Video Versions/Extras to Select Dialog [DialogSelect]
+- Added optional support for "Extras" and "Videos" buttons for Video Info Dialog
+- Added new Skin settings option "Show "Versions" and "Extras" buttons   (Default+Recommended: Off)"
+
+[B]3.7.28[/B] (2024-06-21)
+
+- Reworked and improved Fullscreen Player time, seek time and duration/remaining time format (Showing "remaining time" is the new default)
+Added new Skin settings option "Show duration time instead of remaining time   (Default: Off)"
+
+- TV show Seasons: Improved Total Seasons info
+Internal notes:
+Showing the Total Seasons info has always been achieved with a workaround to account for Kodi limitations
+Now another fallback workaround via simultaneously updated Add-on "Cinema Helper" is added to assist with this
+Both workarounds in combination should lead to near 100% coverage of the Total Seasons info always showing - even if a TV show is opened via Favorites (which is new)
+
+- Visual rework of "Modern" View (Improved, simplified and now supported to be used with the YouTube Add-on)
+
+- Visual improvements for "Text" View
+
+- Visual improvements for "List Wide" View
+
+- Further improved Music Videos album cover art variable code (Avoids poster art (if available) being used as mood background instead of album cover art)
+
+- Improvements for "Songs" View
+Year/Genre of Song-ListItem is not mixed up with the Albums Year/Genre on window-unload anymore
+
+- Fixed Scrolling letter indicator being faded out too early
+Internal notes:
+Added pseudo time="5" attribute to Hidden slide animation because delay="X" only works when combined with a time value of 5 or higher.
+Delayed fade-out now works as originally intended.
+This animation was the only one who had a delay greater 0 combined with time being 0. (There shouldn't be any more similar instances to correct)
+
+- Misc changes and improvements
+Including, but not limited to:
+Disallow "Episodes" View for YouTube Add-on ("Modern" View should be used instead if needed)
+Changed some "String.Contains" to "String.StartsWith" (Code cosmetics)
+Changed some text strings in Skin settings Python helper scripts
+Updated new version welcome dialog
+Updated Debug Output strings
+
+[B]3.7.27[/B] (2024-06-19)
+
+- Improved Music Videos cover art variable code (Avoids showing wrongly set Poster art which is set by Kodi)
+
+- Improved Fanart View focus item code
+
+- Changed global SideBar IDs from 9000/8999 to 7000/7999
+This change ensures independent detection of SideBar focus since the IDs 9000/8999 are also used for other elements
+
+- Replaced "Container.Content(X)" with "String.IsEqual(Container.Content,X)" for windows with real content containers like "MyVideoNav.xml" (= more reliable on window load. Fixes condition issues)
+Windows like "DialogVideoInfo.xml" will keep using "Container.Content(X)" because the "Container.Content" string is empty there sometimes due to a bug in Kodi itself
+
+- Added Advanced Skin settings option "Enable Skin Debug Output" (not relevant for end users)
+- Improved warning related coloring/visuals for Advanced Skin settings developer options
+
+- Misc code improvements - including, but not limited to:
+PluginName detection conditions
+Removal of deprecated code in regards to deprecated Add-ons - code changed to a more universal approach
+Code case corrections (Corrected many property names to the identical Kodi-typical PascalCase)
+
+- The optional Subtitles mini sub-menu is now always hidden when it has no items [VideoOSD]
+
+[B]3.7.26[/B] (2024-06-17)
+
+- Moved up "Search" button in Music section sidebar so it matches the position of the same button in Videos section sidebar
+
+- Improved Text Viewer Dialog with increased textbox and scrollbar height
+(Also adapted this changes from Custom_1102_TextViewer to rarely used DialogTextViewer)
+
+- Improvements for AutoCompletion handling
+Especially automatically disabling AutoCompletion when entering input which is not suitable for AutoCompletion has been improved.
+Also updated "Cinema Helper" Add-on to assist with this and added an empty directory to the skins path "xml/empty/"
+
+- Further rework of Fanart View (Focus visuals are improved for both poster and squared variants)
+
+- Follow-up refinements of View header breadcrumbs visiblity-conditions
+
+- Improved default audio fallback code for music video and album cover art (Affects multiple Views like Fanart View, Wall Views, Songs View)
+
+- Updated "ON/OFF" Notification text for Dynamic Range Compression to "On/Off"
+
+- Follow-up work on top-right Home screen margin changes: Adapted recent changes to [SettingsProfile]
+
+- Added TvShowPoster variable to use with TV shows Episodes Widget and Modern View
+
+- Some minor code comment cosmetics and clean-up
+
+Textures:
+
+- Added fanart-view-focus-poster.png, fanart-view-focus-square.png for Fanart View rework
+- Deleted now unused poster_border_8px.png
+- Updated DefaultIconInfoDRC.png to match the recent Notification Dialog rework
+- Updated DefaultUser.png (grey background color correction)
+- Updated DefaultAddon_solid.png (grey background color correction. Removed wrongly dither background)
+- Updated DefaultAlbumCover.png, DefaultAudio.png with improved quality variants
+- Added new DefaultAlbumCover-infodialog.png variant based on newly created vector data
+Exception: Not added to Textures.xbt but to the skins media-folder so it can be accessed directly to generate a blurred mood background fallback via Python Add-on "ListItem Helper".
+Python seemingly can't access skin images from within Textures.xbt
+
+[B]3.7.25[/B] (2024-06-13)
+
+Misc improvements
+
+- Reworked multiple rounded edges to a slightly greater radius (~7 to 10/12) to be more consistent overall
+
+Including, but not limited to:
+
+Wall Views, Fanart View, Modern View, Episodes View, Home screen Widgets, Home screen Add-on Shortcuts, Video Bookmarks, Game Fullscreen Select Dialogs
+
+Further improvements
+
+- Reworked visuals of Home screen Add-on Shortcuts (Also added reference to fallback texture for Add-on Shortcuts)
+- Refined Search/Power button focus font
+- Reworked visuals of Notification Dialog
+- Improved left/right margins/spacing of top left and top right areas on Home screen and Video/Music FullScreen
+- Improved Volume Bar code, also added minor fix for rare situations
+- Increased top-margin of DialogExtendedProgressBar and DialogVolumeBar
+- Updated LiveTV guide to not dim it's dark background if used outside of Video/Music Fullscreen
+- Fixed slightly overlapping x-position of Actors panel in Video Info Dialog (Minor regression from recent rework)
+- Player status textures are now slightly transparent when used within DialogSeekBar and on Home screen
+- View header breadcrumbs are now always hidden for all content from video library on Wall Views and Fanart view
+- Corrected slightly wrong rounded corners radius for Fullscreen Music Album Cover Art
+- Increased focus border size of Fanart View (Looked too thin in comparison)
+- Minor changelog refinements (Also affects Skin settings text "Home screen" vs "Home Screen")
+- Corrected dialog dimensions for Settings Dialog [DialogSettings]
+(Most likely the only and final minor regression from the recent dialogs rework)
+
+Textures:
+
+- Updated focus_border_thick.png (Actors panel Video Info Dialog)
+- Updated Wall View Overlays "4K/8K/HFR" and poster_border_XXXpx-label.png to meet changes to rounded edges of Wall Views
+- Added poster_border_8px.png for updated Fanart View
+- Corrected wrongly named 90x135-rounded.png to 90x128-rounded.png (No issue. Internal code cosmetics)
+- Changed 75x75-rounded.png to 74x74-rounded.png to meet Notification Dialog changes
+- Updated many colors/diffuse textures to meet the changes to rounded edges of multiple elements
+- Updated four DefaultIconXXX textures to meet Notification Dialog changes (Also affects DialogSubtitles)
+- Added white_border12.png, focus_border_2px-rounded-neutral-new2.png and updated uni_border-label.png to meet changes to rounded edges of Video Bookmarks and Game Fullscreen Select Dialogs
+- Added non-colored variant of texture focus_border_2px-rounded-neutral-new2.png also to both UI color variant texture-packs
+
+[B]3.7.24[/B] (2024-06-11)
+
+Minor navigation hotfix for just released new "Home screen styles"
+
+[B]3.7.23[/B] (2024-06-11)
+
+Home screen styles
+
+- Added new Skin settings option: Home screen options - "Home screen style"
+
+Variants: Centered (Default+Recommended), Top, Bottom
+
+This options changes the vertical position of the main menu and adapts all other Home screen elements like Widgets and Add-on Shortcuts accordingly.
+
+Misc improvements
+
+- Corrected dialog dimensions for Settings Dialog [DialogSettings]
+(Most likely the only and final minor regression from the recent dialogs rework)
+- Further minor improvements for CommonNowPlaying indicator on Home screen
+- Font style: Removed forced uppercase header from "PVR manager is starting up" notification
+- Added some info regarding defaults to some Skin settings
+
+[B]3.7.22[/B] (2024-06-09)
+
+Home screen Rework (visual/functional)
+
+- Further updates to main menu
+
+- Added two new Skin settings options:
+
+ * Home screen options - "Main menu background style" (Default+Recommended: "Standard width")
+
+   "Standard width"  Background width stays at 10-items-width for 10+ items and 9-items-width for 1-9 items
+   "Reduce to item width"  Background width is reduced to the smallest possible size depending on the number of items
+   "Full width stripe"  Background width is expanded to a full screen width stripe
+
+ * Home screen options - "Show sub menus" (Default: On)
+   New option to hide all sub menus on Home screen without enabling Kiosk Mode (Kiosk Mode option remains intact and is mostly unchanged)
+
+- Improved Skin settings structure of "Home screen options"
+- Improved Skin settings "Kiosk Mode" option to consider the existence of the new "Show sub menus" option
+
+[B]3.7.20[/B] (2024-06-08)
+
+Home screen Rework (visual/functional)
+
+- Reworked main menu
+- Reworked sub menus
+- Reworked Home screen widgets (Movies, TV shows, Music, PVR, Favorites)
+(Includes, but not not limited to: Recently added TV shows widget now default to the recently added "group by show" instead of showing single episodes)
+- Reworked RSS feed support (improved, simplified and removal of rss icon)
+- Groundwork for a future support of Home screen styles
+
+Global visual improvements
+
+- Reworked dialog backgrounds
+(dialogs, notifications, volume, extended progress, fullscreen VideoOSD/MusicOSD sub menus)
+These elements are now cohesive with similar or identical shadows/glows
+
+- Reworked and simplified CommonNowPlaying indicator and it's occurence (only visible on Home screen)
+
+Video Info Dialog Rework
+
+- Reworked visuals for all media types of this dialog (Movie, TV show, Episode, Season, PVR) [DialogVideoInfo] [DialogPVRInfo]
+- Added seasons support (see "Kodi 21+ only" section below)
+- Music videos support improved
+- The Trailer search button is now also shown for TV shows
+- Groundwork for an adapted future cohesive "Music info dialog"
+
+Misc improvements
+
+- Added missing VisibleChange animation within MusicOSD for fullscreen darkening element
+
+- Improvements for Skin settings "main menu" section
+The functionality for moving the favorites menu item is now more noticeable and more intuitive to use due to the changes and an added up/down arrow.
+Also slightly affects the "power options" section
+
+- Added Skin settings option to separately hide the video rating stars ("Show stars (*****)")
+
+- Fixed missing audio passthrough volume icon in [DialogVolumeBar]
+
+- Changed some possibly invalid comment tags in [DialogSeekBar] (Just to be safe)
+
+- Slightly increased blue header label height for System/settings so it does not get so visually close to the below line/setting [SettingsCategory]
+
+- Changed [MyPVRChannels] scrollbar nav target when going from right to left
+
+- Corrected Player.Art(thumb) to Player.Art(icon) for TV channel icon in VideoFulllScreen (Fixes missing tv channel icon when playing recordings)
+
+- Changed variable name TvShowEpisodePlayerArt to TvShowEpisodeOrMoviePlayerPoster due to recent changes and it's use (For consistency only)
+
+- Improvements for "Fanart" view (movies/albums): "..." element is now hidden when unneeded (if description text is not shortened)
+Cohesive with latest Video Info Dialog changes
+
+- The very bright yellow rating stars (video/music/...) are now slightly dimmed so they don't visually stick out with their intese brightness
+Additional reasoning: Since fixating on media ratings is hugely escalated and overrated these days, the stars should not be the most bright and prominent visual element
+
+- Fix PVR channel manager dialogs dialog background width (Width was slightly off; most likely the last minor regression of a previous dialog rework)
+
+- Removed two empty fallback attribute for deprecated view MediaListView2
+
+- Minor code clean-up
+(Removed some unused code. Also fixed some very few invalid xml attributes or values which did no harm but should be fixed)
+
+Textures:
+
+- Corrected very slightly wrongly scaled "DefaultDVDxxx" disc icon textures (Middle of texture was slightly off center. Almost unnoticeable)
+- Renamed two existing diffuse textures for user account pictures (For consistency only)
+
+Kodi 21+ only:
+
+- Added compatibility improvement with Kodi 21+ by also considering "favouritesbrowser" in addition to "favourites" [Custom_1170_IdleScreenCheck] [_includes]
+
+Video Info Dialog
+
+- Added support for TV show seasons
+
+[B]3.7.14[/B] (2024-06-02)
 
 Info Dialog Reworks
 
@@ -1145,7 +1610,7 @@ Improved visuals and optimization rework of almost all dialogs, including, but n
 - Slightly improved visuals and click targets of Music Info Dialog (A full rework will will follow in a future update as previously stated)
 - Home screen: Improved look of main menu "left/right" indicator for edge cases with too many main menu items (including visible/hidden fade in/out animations)
 - File browser: Improved click targets for better and more predictable usability
-- Volume dialog: Move down mute icon by some pixels when profile icon is shown on home screen so both elements doesn't get too close to each other
+- Volume dialog: Move down mute icon by some pixels when profile icon is shown on Home screen so both elements doesn't get too close to each other
 - Video and PVR Info Dialogs: Removed autoscroll of plot (it has no business there). Also improved a spacing-condition for a very rare combination of displaying the disc and credits stinger icon when other flags are unavailable
 - Slightly improved visuals and usability for Subtitles Download dialog
 - Settings dialog: Fixed missing header when dialog is loaded for the first time (removed wrongly duplicated id). Improved fade in out transitions
@@ -1191,8 +1656,8 @@ Live TV / PVR section and dialogs
 - Improved visuals for all Live TV / PVR windows and dialogs (Also including group manager and channel manager)
 - New Dual-color darkened focus style for all elements which contain a channel logo (This improves contrast and avoids bad color/contrast combinations with some channel logos). Added two new custom diffuse textures for this (white_border11l_-10r.png, white_border11t_-10b.png)
 - Removed references to unused view "LiveTVView1" and ViewsLiveTV.xml
-- Updated visuals for "Recently watched" PVR home screen widget
-- Removed diffuse texture for "Recently watched" PVR home screen widget (no need to mask the channel logo with rounded corners since channel logos should be transparent (bright style))
+- Updated visuals for "Recently watched" PVR Home screen widget
+- Removed diffuse texture for "Recently watched" PVR Home screen widget (no need to mask the channel logo with rounded corners since channel logos should be transparent (bright style))
 
 Textures
 
@@ -1249,8 +1714,8 @@ Other improvements and visual changes:
 
 - Video Bookmarks dialog: Improved visuals
 - Wall Views: Improved x/y-positions for addon flags overlays and the disabled-radiobutton overlay (the icons were visually too close to the texture/focus-border before)
-- Add-on info dialog: Adapted the x/y-position change from above for disabled-radiobutton
-- Weather section and Home Screen weather info widget:
+- Add-on Info Dialog: Adapted the x/y-position change from above for disabled-radiobutton
+- Weather section and Home screen weather info widget:
 Improved current weather icon code and handling,
 fixed skinning engine grouplist loading flicker via workaround for a completely smooth fade-in
 Also: the "not available" weather icon is now hidden
@@ -1302,8 +1767,8 @@ Global visual rework of focus elements
 - This change affects all three UI accent color themes
 - Video/PVR Info dialog: Updated plot viewer and actors panel focus visuals to adapt the changes of the focus elements rework
 - Profiles dialog: Updated visuals and synchronized focus-visuals with login screen
-- Internal note: Home Screen superfolder focus texture now uses a brighter focus texture for better contrast (Only affects "Kodi Blue" default UI accent color theme. Other themes use the default way.)
-- Internal note: Home Screen favorites widget now uses brighter DefeaultFolder-bright.png textures for some states and better contrast (Affects all UI accent color themes)
+- Internal note: Home screen superfolder focus texture now uses a brighter focus texture for better contrast (Only affects "Kodi Blue" default UI accent color theme. Other themes use the default way.)
+- Internal note: Home screen favorites widget now uses brighter DefeaultFolder-bright.png textures for some states and better contrast (Affects all UI accent color themes)
 
 Login Screen
 
@@ -1336,7 +1801,7 @@ Improved Profiles support and Login Screen
 
 - Expanded visuals and UI elements for when Kodi is used with profiles
 - Improved visuals and usability for reworked Login Screen and Profiles dialog
-- New skin settings option within the "Home screen options" tab: "Show profile picture"
+- New Skin settings option within the "Home screen options" tab: "Show profile picture"
 
 UI accent color schemes
 
@@ -1351,10 +1816,10 @@ Changes:
 Other improvements and visual changes:
 
 - Removed minimal darkening of non-focused items for "Fanart" View (reduced in previous update. Now: Completely removed after some more testing)
-- Reduced darkening of non-focused items for home screen widgets and addon shortcuts
+- Reduced darkening of non-focused items for Home screen widgets and addon shortcuts
 - Slightly improved visuals and usability of the most used Weather Views (Daily/Hoursly/Maps)
 - Skin settings: Moved option "Make Favorites Button first main menu item" to main menu while replacing the old radiobutton with a new self explanatory button and a better usability concept
-- Updated _reset_skin_settings.py to also reset skin theme/colors selection to default when using "[RESET] all skin settings to default"
+- Updated _reset_skin_settings.py to also reset skin theme/colors selection to default when using "[RESET] all Skin settings to default"
 - Skin settings – power menu: "Exit" button is now disabled by default on a clean install
 - Kodi 18+ only: Changed position of main menu item "Games" one count to the left
 
@@ -1373,7 +1838,7 @@ Improved Login Screen
 
 Reworked First Run Dialog [Custom_SideMenuHelp]
 
-- Also improved left arrow texture with new 4k variant which also affects home screen and subtitle download dialog
+- Also improved left arrow texture with new 4k variant which also affects Home screen and subtitle download dialog
 - Created new hint-overlay texture (old one was too blurry)
 
 Video Info Dialog
@@ -1406,7 +1871,7 @@ Other improvements and visual changes:
 - Addon Browser sidebar: Changed "last updated" label to light font (regular before) and the above label color to grey instead of white
 - DialogKeyboard/Numeric: Changed/improved label colors
 - Picture info dialog: header text now light font and white colored (Regular24 "selected" before)
-- Deprecated/hide some more old views by default (can still be used when using the already known "old views" skin setting)
+- Deprecated/hide some more old views by default (can still be used when using the already known "old views" Skin setting)
 - System Settings entry page: Don't dim Kodi logo as much as before
 - DialogSlider: Changed label color from accent color ("blue") to white
 - Changed red dot color in OSDRecordOnFOXXX textures to white (non ideal color combination before)
@@ -1428,10 +1893,10 @@ Reworked "Wall" views
 - Improved visuals including new flagging/overlay indicators (Including: Movie set, 3D, (disc))
 - Overlays "4K/8K/HFR" have slightly rounded edges now (1px) which looks more fitting to overall visuals (Barely noticeable)
 - Overlays on posters are by default now only shown when the item is focused. This behaviour can be changed separately for overlays and the watched checkmark:
-Added two items to skin settings accordingly:
+Added two items to Skin settings accordingly:
 "Show Wall Views overlays 4K/HFR/3D/Set/Disc" and "Show Wall Views watched checkmarks"
 with the following selectable options: "(Default) Only on focus", "Always" and "Never"
-- This improvement also affects home screen widgets for recently added movies/episodes
+- This improvement also affects Home screen widgets for recently added movies/episodes
 - Optimized code to avoid redundancy and improve maintainability (itemlayouts/focuedlayouts)
 
 Reworked "Fanart" view
@@ -1452,7 +1917,7 @@ Reworked Video Info Dialog
 - Removed forced uppercase font style for ListItem.Country
 
 
-- Improved and expanded flagging indicators (Including: Movie set, 3D, disc, HFR). Affects multiple views and dialog: "Wall" views, Video Info dialog, "Fanart" view [IncludesCodecFlagging]
+- Improved and expanded flagging indicators (Including: Movie set, 3D, disc, HFR). Affects multiple views and dialog: "Wall" views, Video Info Dialog, "Fanart" view [IncludesCodecFlagging]
 Added new flagging textures accordingly and changed some existing one like "movie set"
 
 - Weather: Improved entry page of weather section (more simplified, thinner font styles, better positioning of presented available data)
@@ -1461,7 +1926,7 @@ Added new flagging textures accordingly and changed some existing one like "movi
 
 - Settings: Minor improvements to visuals
 - MyPVRChannels: Slightly corrected width of right progress bar to be visually aligned with text labels with no overlap (This has been a final leftover of the progress bar rework)
-- Skin Settings: Minor improvements to visuals/text labels and improved navigation usability
+- Skin settings: Minor improvements to visuals/text labels and improved navigation usability
 - Improved "preloaditems" include-conditions to also look for BetterGUI builds of Kodi (which already contain improvements regarding "preloaditems" and therefore don't need any (only partially-working) workarounds) [_ViewsFileMode_walls] [DialogVideoInfo]
 - Default focus improvements for Text Viewer dialogs [Custom_1102_TextViewer] [Custom_1103_TextViewerFS]
 
@@ -1471,7 +1936,7 @@ Added new flagging textures accordingly and changed some existing one like "movi
 - Home screen top right area:
 Reduced font size of clock/time, improved label alignments of optional date and weather icon+text
 
-- Improved home screen main menu focus and inactive-focus visuals
+- Improved Home screen main menu focus and inactive-focus visuals
 - Simplified some textures which included the typical accent color and changed them to full white+colordiffuse, improved file size (8bit png). Affects poster_borderXXX, settings_category_activeXXX, Also added variable for typical grey inactive colordiffuse
 
 - Corrected barely(!) different accent color "0078c3" to "0079c3" (Remaining textures will also follow this change accordingly in a future update)
@@ -1486,7 +1951,7 @@ Skin settings:
 The extra options are now hidden for regular users for more simplicity and fewer items within "Advanced Settings".
 (Also added red radiobutton-focus-warn.png texture for this)
 - Improved and/or shortened many text labels/headers
-- Added new skin setting option: "Enable AutoCompletion   (Default: On)"
+- Added new Skin settings option: "Enable AutoCompletion   (Default: On)"
 (You can now disable AutoCompletion suggestions even when the add-on "AutoCompletion for virtual keyboard" is installed and enabled)
 - (Kodi 19+ only) Auto-Enable "AutoCompletion for virtual keyboard" when trying to open settings dialog via shortcut (Only if add-on is installed, but disabled)
 - Improved usability for "main menu" and "power options" tabs
@@ -1497,7 +1962,7 @@ The extra options are now hidden for regular users for more simplicity and fewer
 - Busy dialog: Improved logo position being off center (barely visible, 1px). Also updated texture buffer-bg to be pixel perfect and added 4K variant
 - (Kodi 21+ only) If Kodi 21+ is detected, the main menu item "favorites" automatically opens the new "FavouritesBrowser" dialog instead of "Favourites" since the latter has been removed from Kodi 21+.
 Unfortunately "FavouritesBrowser" still seems to be feature incomplete:
-"favourites://" does not inherit the sorting preferences from the new dialog and therefore causes usability inconsistencies when displaying "favourites://" on home screen and switching to the new dialog afterwards. Hopefully this will be fixed before release of Kodi 21.
+"favourites://" does not inherit the sorting preferences from the new dialog and therefore causes usability inconsistencies when displaying "favourites://" on Home screen and switching to the new dialog afterwards. Hopefully this will be fixed before release of Kodi 21.
 - Improved main menu text labels (no more uppercase)
 Adapted changes to Skin settings labels accordingly (no more uppercase in similar situations, too)
 - (Kodi 20+ only) Minor improvements to ColorPicker dialog
@@ -1534,7 +1999,7 @@ Clean-up and other improvements:
 
 [B]3.6.13[/B] (2023-09-28)
 
-- Skin Settings: Small text change to one help label
+- Skin settings: Small text change to one help label
 
 Wall Views
 - Include different "preloaditems" counts to mitigate effects of too aggressive and functionally limited texture unload-handling of regular Kodi versions
@@ -1548,7 +2013,7 @@ Wall Views
 - Custom Search Dialog: Improved focus animations
 - Refined focus animation "EpisodesViewFocusAnimation" which is used for Episodes View, Songs View, Weather, Events and a few more occasions (zoom effect now a bit more noticeable and slightly slower)
 - Modern View, Episodes View, Songs View: Improved focus transitions for text elements. Now text color is transitioned smoothly between grey and white instead of just hard-changing the color
-- Skin Settings: Changed label for "Hide Video Ratings" to "Show video ratings" and moved element to another section
+- Skin settings: Changed label for "Hide Video Ratings" to "Show video ratings" and moved element to another section
 - Video SideBar: Removed section header "Actions" for simplicity and to create some more vertical space
 - Removed header icon "icon_events.png" for System sub section "Events" (Now this section is using the already existing "System" icon which is also used for similar sub sections)
 
@@ -1607,11 +2072,11 @@ Support for live rating scores via ListItem Helper using your API keys remains i
 Also updated DialogPVRInfo to match DialogVideoInfo more closely. (Affects PVR+PVR recordings)
 
 
-- Added focus animations on multiple home screen elements (sub menus, widgets, addon shortcuts) for a better feel while navigating without compromising on short animation speeds (which are always important for 24p framerate switch situations)
+- Added focus animations on multiple Home screen elements (sub menus, widgets, addon shortcuts) for a better feel while navigating without compromising on short animation speeds (which are always important for 24p framerate switch situations)
 
 - Slightly expanded height for Favorites Dialog panel (removes unnecessary few-px border at bottom) [DialogFavourites] and additionally for Kodi 20+ only: [MyFavourites]
 
-- Added support for 8K video resolution indicator overlay on posters (Wall View and Home Screen Widget)
+- Added support for 8K video resolution indicator overlay on posters (Wall View and Home screen Widget)
 
 - Adapted improved button focus animations from Video Info Dialog to power dialog (ShutDownButtonsFocusStyle) [Includes] [DialogButtonMenu]
 
@@ -1633,7 +2098,7 @@ Also updated DialogPVRInfo to match DialogVideoInfo more closely. (Affects PVR+P
 - Fixed very rare issue when Video Info Dialog is opened via Video OSD Info button and switching the displayed movie within this dialog afterwards (via actor panel search for example):
 Now the correct artwork will be displayed for the described situation. Also, the play button remains hidden and the close button will remain intact.
 
-- New settings icon (home screen and settings section header)
+- New settings icon (Home screen and settings section header)
 
 - Slightly decreased size of videos and tv shows header icons
 
@@ -1716,12 +2181,12 @@ Kodi 18+ only
 
 - Major rework of Fullscreen and OSD visuals (Affects both video and music variants)
 
-Expanded "Customize Reduced Fullscreen OSD" Skin Settings options with new defaults and recommendations
+Expanded "Customize Reduced Fullscreen OSD" Skin settings options with new defaults and recommendations
 
 The rework features a more simplistic and - finally - visually centered look.
 
 By default the new OSD is configured to be simplistic, focusing on what's important.
-You still can freely configurable it, if you need more information. (See Skin Settings "Customize Fullscreen OSD")
+You still can freely configurable it, if you need more information. (See Skin settings "Customize Fullscreen OSD")
 
 Added "_clear_fullscreen_osd_cfg.py" script for "[RESET] Fullscreen OSD settings to default" functionality
 
@@ -1751,7 +2216,7 @@ In context of the above rework, [VideoOSDBookmarks], [DialogSettings] and some o
 - Updated background simulation language string wording for SkinSettings
 
 Kodi 17 only
-- Restored home screen default focus code (needed exclusively on Kodi 17)
+- Restored Home screen default focus code (needed exclusively on Kodi 17)
 
 [B]3.6.2[/B] (2023-08-18)
 
@@ -1827,7 +2292,7 @@ Frosted Glass /Blue Sea
 Frosted Glass /Forest
 Cinema /Red Curtain
 
-- Added new Skin Settings option "[RESET] all skin settings to default"
+- Added new Skin settings option "[RESET] all Skin settings to default"
 
 - Added new Videos section sidebar feature "Hide Video Ratings" which hides all ratings from all modern views (Fanart + Wall Views)
 
@@ -1846,7 +2311,7 @@ Cinema /Red Curtain
 
 - Added "Total Seasons" below poster for "Seasons" view (based on workarounds to avoid some Kodi core issues which make this impossible using regular values)
 
-- Reworked home screen PVR indicators for existing tv recording and timers activity and fixed a rare issue where the open and closed visual variant would cause overlapping when window is not reopened after a change
+- Reworked Home screen PVR indicators for existing tv recording and timers activity and fixed a rare issue where the open and closed visual variant would cause overlapping when window is not reopened after a change
 
 - [VideoOSDBookmarks] Improved panel position when content item count is lower than the full amount
 
@@ -1862,7 +2327,7 @@ Cinema /Red Curtain
 - Resized all "colors/*" textures from 100x100 to 50x50
 - Resized "black-back.png" and "black-back2.png" textures from 64x64 to 50x50
 
-- Reworked and added special texture variants of the home screen playback control buttons "Play", "Pause" and "Stop". Before, especially the "Stop" button showed some unpleasent blurriness on focus.
+- Reworked and added special texture variants of the Home screen playback control buttons "Play", "Pause" and "Stop". Before, especially the "Stop" button showed some unpleasent blurriness on focus.
 (OSDPauseFO-full.png OSDPauseNF-full.png OSDPlayFO-full.png OSDPlayNF-full.png OSDStopFO-full.png OSDStopNF-full.png) [Home]
 
 - Fixed one of the two CoreELEC specific reboot buttons: Added missing Reset()-onclick for "Reboot eMMC/NAND" button [DialogButtonMenu]
@@ -1917,7 +2382,7 @@ Kodi 18+ only:
 - Fix for missing black dialog background: Replaced two rare instances of code referencing 100x100_black.png with colors/black.png which were missed during the recent texture structure changes of one of the previous updates.
 
 [DialogPVRGuideSearch]
-- Fix "Reset" button label localization within PVR Guide Search dialog. On Kodi 18+, this button wrongly showed "Skin Settings" as label instead of "Reset". Changed $LOCALIZE[10035] to 13007 to correct this.
+- Fix "Reset" button label localization within PVR Guide Search dialog. On Kodi 18+, this button wrongly showed "Skin settings" as label instead of "Reset". Changed $LOCALIZE[10035] to 13007 to correct this.
 (At the time of writing, this issue also exists on Original Confluence for Kodi 18+)
 
 [B]3.5.28[/B] (2023-03-26)
@@ -1932,13 +2397,13 @@ Kodi 18+ only:
 
 [B]3.5.27[/B] (2023-03-24)
 
-- Improve sort order for "Recently added" movies/albums widgets on home screen by removing the additional sort parameters (dateadded desc)
+- Improve sort order for "Recently added" movies/albums widgets on Home screen by removing the additional sort parameters (dateadded desc)
 The sorting is now identical to what you see when entering the "Recently added movies/albums" dialog windows itself. This is how it should be and would be expected by the user.
 (The "Recently added episodes" widget already had the correct code)
 
 [DialogButtonMenu]
 - Changed localization string from hard coded "Restart Kodi" to translated $LOCALIZE "Kodi Restart"
-- Changed CoreELEC specific reboot buttons. CoreELEC has now two Reboot buttons: The regular "Reboot" and "Reboot eMMC/NAND" which can be enabled/disabled separately via Skin Settings
+- Changed CoreELEC specific reboot buttons. CoreELEC has now two Reboot buttons: The regular "Reboot" and "Reboot eMMC/NAND" which can be enabled/disabled separately via Skin settings
 
 – Added sidebar buttons "Wall Density ++" buttons to MyPics, MyPrograms, MyMusicNav (MyVideos already had this button)
 
@@ -1953,7 +2418,7 @@ The sorting is now identical to what you see when entering the "Recently added m
 [Includes] Hide letter indicator while scrolling for Current Playlist window
 
 [VideoFullScreen] [VideoOSD] [MusicVisualisation]
-- Localized top left "Chapter" text is replaced by a new chapter icon for more simplicity. The same new icon is now also used for the VideoOSD "chapter/bookmarks" button which used the "favorites" icon from home screen before (which was not ideal to be used) [Textures] Changed OSDBookmarksFO.png OSDBookmarksNF.png
+- Localized top left "Chapter" text is replaced by a new chapter icon for more simplicity. The same new icon is now also used for the VideoOSD "chapter/bookmarks" button which used the "favorites" icon from Home screen before (which was not ideal to be used) [Textures] Changed OSDBookmarksFO.png OSDBookmarksNF.png
 - Chapter indicator is now only shown when VideoOSD is opened
 - Added a playlist icon and position indicator to the top left area which is shown when VideoOSD is opened. [Textures] Added "playlist_icon_large.png"
 - Removed top left LiveTV "Channel group" label+value for more simplicity. It wasn't a benefitial information for the user since it's only important to be shown when opening the [DialogPVRChannelsOSD] dialog where it acts like a "group-filter" indicator.
@@ -1967,23 +2432,23 @@ Kodi (19/)20+ only
 - Further optimized fake "progress" control bar mentioned in previous skin update to be more precise from 0-10% and 91-100%
 (Mostly noticeable in [MyPVRChannels], not that much for "EpisodesWatchedProgressZoomStates")
 
-- Removed and disabled new Skin Settings option introduced in previous update:
+- Removed and disabled new Skin settings option introduced in previous update:
 "Automatically set "Default select action" to "Show information"  (Default: On)"
 
 [B]3.5.25[/B] (2023-03-15)
 
-Reworked, improved and expanded section "Skin Settings – Background", including:
+Reworked, improved and expanded section "Skin settings – Background", including:
 
 - Added new background option/feature: "Hexagons Advanced" with many sub-variants (most of them Animated!)
 - Added new background options: "Hexagons Flat /Grey", "Hexagons Flat /Blue"
-- "Auto-Preview/Simulate Home Screen background result within this section" (Enabled by Default)
-This gives you a simulated preview on what your Home Screen background(s) will look while choosing them.
+- "Auto-Preview/Simulate Home screen background result within this section" (Enabled by Default)
+This gives you a simulated preview on what your Home screen background(s) will look while choosing them.
 Note: Simulation can be a bit darker compared to the real final result, but should be a good help nonetheless
 
 Note: Animated variants have higher idle GPU usage (Be aware for low end devices)
 
 
-- Added two new Skin Settings options:
+- Added two new Skin settings options:
 Skin settings – Advanced – Views and visual options
 - - "Automatically disable "Show parent folder items"   (Default: On)"
 - - "Automatically set "Default select action" to "Show information"  (Default: On)"
@@ -1991,7 +2456,7 @@ Skin settings – Advanced – Views and visual options
 Important: The Skin now automatically sets these two Kodi settings by default (supported by service.cinema.helper addon),
 since the skin is intended to have these options configured this way for the best overall user experience.
 
-! You absolutely can disable this behaviour by simply disabling the above described Skin Settings.
+! You absolutely can disable this behaviour by simply disabling the above described Skin settings.
 
 - Expanded feature "Always force Preset Views" (now also enabled by default)
 Including a new option "– Always force focus on first episode item on window load   (Default: On)"
@@ -2013,7 +2478,7 @@ This workarounds/fixes the long standing Kodi visual glitch of a short visual pr
 
 - Reworked [DialogKeyboard] to automatically turn off auto completion functionality if user is inputting a user name, password or API keys (script.module.autocompletion)
 
-- Reworked "scrolltime" tween types and durations (Including home screen "Recently added" widgets, which should be the most noticeable)
+- Reworked "scrolltime" tween types and durations (Including Home screen "Recently added" widgets, which should be the most noticeable)
 
 - Changed some dialog/window backgrounds from almost black to full black without transparency for a cleaner look (Avoids strange ghosting of some elements shining through which could have been irritating for the user.)
 
@@ -2026,12 +2491,12 @@ This workarounds/fixes the long standing Kodi visual glitch of a short visual pr
 [IncludesBackgroundBuilding] Replace old "MakeTransparentForVisualization" code with better variant for rare cases of using music fanart and visualization at the same time
 
 - Wall Views: Added new option "Make Wall Views higher density"
-(can be accessed through Videos Sidebar button "– Wall Density ++" or Skin Settings option "Make Wall Views higher density    (Default: Off)"
+(can be accessed through Videos Sidebar button "– Wall Density ++" or Skin settings option "Make Wall Views higher density    (Default: Off)"
 Wall Views by default are now less dense (Item count reduced by 1 column in all three Wall Views)
 This may be more suitable towards casual main stream users. The previous density is still available via the previous mentioned option.
 
 - Reworked login/logout/exit screen feature functionality.
-This feature is now enabled by default and has reworked Skin Settings options which you can find here:
+This feature is now enabled by default and has reworked Skin settings options which you can find here:
 Skin settings – Advanced settings – Kodi Startup/Exit
 Includes a new option "Startup / Exit Screen logo type"
 
@@ -2042,25 +2507,25 @@ Includes a new option "Startup / Exit Screen logo type"
 
 - Added CoreELEC settings addon button to system submenu (like Open/LibreELEC). Only shown if CoreELEC is detected.
 
-- Reworked Shutdown Menu including related Skin Settings, added RestartApp() button for android+CoreELEC,
-Exit button is now configurable via Skin Settings "power options menu" (Before: advancedsettings.xml - which was very uncomfortable/unintuitive)
+- Reworked Shutdown Menu including related Skin settings, added RestartApp() button for android+CoreELEC,
+Exit button is now configurable via Skin settings "power options menu" (Before: advancedsettings.xml - which was very uncomfortable/unintuitive)
 
-- Slightly reworked layout of home screen addons (Label styles, Focus texture had strange too wide dimensions which were visually unpleasing)
-- Slightly reworked visuals of home screen "Recently added" widgets, including:
+- Slightly reworked layout of Home screen addons (Label styles, Focus texture had strange too wide dimensions which were visually unpleasing)
+- Slightly reworked visuals of Home screen "Recently added" widgets, including:
 Focus texture dimensions+position, labels,
 "Recently added" texts are now hidden unless the corresponding widget is focused which makes for a more cleaner look
 
 [ViewsFileMode] [ViewsVideoLibrary] Changed some views "list" controls to "panel" with no further changes to fix/workaround a weird Kodi history focus scroll bug
 
 [Textures] Added some higher resolution textures: OverlayWatching_uhd.png OverlayWatched_large.png OverlayWatched_uhd.png which are used in some situations
-[Textures] Added OSDPauseFO-full.png OSDPlayFO-full.png OSDRecordOffFO-full.png OSDRecordOnFO-full.png OSDStopFO-full.png which are used for the Home Screen rework of the "Search" and "Power" buttons
+[Textures] Added OSDPauseFO-full.png OSDPlayFO-full.png OSDRecordOffFO-full.png OSDRecordOnFO-full.png OSDStopFO-full.png which are used for the Home screen rework of the "Search" and "Power" buttons
 
 [Settings] Changed settings.png and settings_uhd.png (Kodi logo is now smaller which should be more visually suitable)
 
 [DialogExtendedProgressBar] [DialogVolumeBar] Changed background opacity from 93% to 100% to avoid weird ghosting of background elements shining through.
 
 
-[Home] [Textures] Reworked top left Home Screen buttons "Search", "Power", "Play/Pause", "Stop" and "Record" for more simplified visuals
+[Home] [Textures] Reworked top left Home screen buttons "Search", "Power", "Play/Pause", "Stop" and "Record" for more simplified visuals
 
 [Textures] Reworked external live ratings icons (Rotten Tomatoes, Rotten Tomatoes Audience, Metacritic, IMDb)
 [Textures] Further improved 2K variant of _home_icon_videos_pseudolib.png due to very minor scaling inaccuracies
@@ -2078,7 +2543,7 @@ Fanart isn't really visible due to how the Wall View items are spaced and showin
 
 [DialogButtonMenu] [SkinSettings] Shutdown Menu entry "Hibernate" hidden by default (still can be enabled), added entry to explicitly enable "Custom Shutdown Timer" (Default: Disabled). Changed font style for text shown if ShutdownTimer is enabled
 
-Improved Skin Setting feature "Fade In Kodi UI on Startup": Preventing navigation as long as Startup fade in is in progress is now handled better resulting in visual main menu focus improvements.
+Improved Skin settings feature "Fade In Kodi UI on Startup": Preventing navigation as long as Startup fade in is in progress is now handled better resulting in visual main menu focus improvements.
 Added option "Logo Screen / Fade In Screen logo type" accordingly. Also affects option "Show Logo Screen while in progress of shutdown/reboot/logout"
 Changed "madVR" full logo text color from green to white
 Added new values for "Delay Fade In" (added 1 and 2 seconds)
@@ -2121,8 +2586,8 @@ Remark: RDS dialog support may be removed in the future due to it's highly depre
 
 [SettingsScreenCalibration] [Textures] Slight rework for all Kodi versions, moved corresponding textures to calibrate/ folder, changed texture CalibratePixelRatio.png
 
-- Added new Skin Settings feature/option:
-- - Skin settings – Advanced – Views and visual options – "Use alternative VIDEOS home screen icon (Pseudo library mode)   (Default: Off)"
+- Added new Skin settings feature/option:
+- - Skin settings – Advanced – Views and visual options – "Use alternative VIDEOS Home screen icon (Pseudo library mode)   (Default: Off)"
 
 Kodi 19+ only
 Updated language files
@@ -2143,7 +2608,7 @@ Added textures color-button-box.png and colors/white.png
 - Large visual rework and optimization of many visual items, including the following changes:
 
 Further rework of the already introduced Reduced Fullscreen Info OSD (It's now the default - deprecated option for the old variant has been removed)
-- Added/restructured the following Advanced Skin Settings accordingly:
+- Added/restructured the following Advanced Skin settings accordingly:
 - - Skin settings – Advanced - OSD + Dialogs – "Always show audio/sub language with Reduced Fullscreen OSD   (Default: On)"
 - - Skin settings – Advanced - OSD + Dialogs – "Show video resolution on opened Reduced Fullscreen OSD   (Default: Off)"
 - - Skin settings – Advanced - OSD + Dialogs – "Show audio codec on opened Reduced Fullscreen OSD   (Default: Off)"
@@ -2152,13 +2617,13 @@ The latter three settings are recommended to be set to "Off" because of the clea
 
 Reworked FullScreenVideo + VideoOSD with further improved and modern look adapting the graphical changes (codec icons and more)
 
-Reworked Dialog Video Info dialog with further improved and modern look adapting the graphical changes (codec icons and more)
+Reworked Dialog Video Info Dialog with further improved and modern look adapting the graphical changes (codec icons and more)
 
 Reworked MusicVisualisation + MusicOSD with further improved and modern look adapting the graphical changes (codec icons and more)
 
 Improved animation transitions when switching windows/dialogs (window open/close) and visible/hidden states
 
-Reworked "System/Settings" and sub-dialogs + "Skin Settings" visuals (Including new lighter left menu visuals for the following windows: Settings/Settings Category/Skin Settings)
+Reworked "System/Settings" and sub-dialogs + "Skin settings" visuals (Including new lighter left menu visuals for the following windows: Settings/Settings Category/Skin settings)
 
 Reworked settings items visuals (Including New modern Radio Button design including an inverted variant for special use cases, reworked spincontrol(ex) and more textures)
 
@@ -2191,10 +2656,10 @@ Reworked [DialogKeyboard] and [DialogNumeric] (The first more than the latter wi
 
 Improved DialogVolumeBar and Mute Icon placement (FadeIn/Out, added zorder the volume dialog is always on top. Fixes DialogPVRChannelsOSD being displayed on top of DialogVolumeBar)
 Improved VideoFullScreen Clock visible condition
-Changed left/right arrows for home screen "Recently [...]" widgets to be more consistent
+Changed left/right arrows for Home screen "Recently [...]" widgets to be more consistent
 Removed code references to unused old add-on script.skin.helper.service
 
-Removed Skin Settings option under General Settings: "Show mouse control buttons if mouse input enabled   (Default: Off)" and cleaned up the now deprecated code
+Removed Skin settings option under General Settings: "Show mouse control buttons if mouse input enabled   (Default: Off)" and cleaned up the now deprecated code
 
 "End time:" text in the Fullscreen Info is replaced with a small icon.
 Also: End time is now only shown if the video has a duration of 10+ minutes. Reason: Showing this info for a short 3 minute video makes no sense in regards to the purpose of this feature.
@@ -2272,7 +2737,7 @@ Remarks: Chapter markers are not visible yet for end users due to visual reserva
 
 Kodi 20+ only
 - Added new Favorites window "MyFavourites.xml" for Kodi 20+ and adapted identical visuals/usability/functionality to old DialogFavourites dialog
-Remarks: For now, the Skin version for KODI 19-21 by default does not use the new dialog yet - but you can map it to a remote/keyboard button action of course. (for testing purposes)
+Remarks: For now, the Skin version for Kodi 19-21 by default does not use the new dialog yet - but you can map it to a remote/keyboard button action of course. (for testing purposes)
 Reason: The new implementation of MyFavourites.xml is still missing consistency regarging the sort feature in the Kodi core at the time of writing:
 See: https://github.com/xbmc/xbmc/pull/22001#issuecomment-1383172046
 
@@ -2351,7 +2816,7 @@ also changed all other icons which used the old system/settings/gear symbol: OSD
 - [ViewsMusicLibrary] Minor cleanup of unused legacy Music Artwork view (Deprecated and will be replaced with a similar Artwork View similar to the one from VideoLibrary)
 - Renamed recently added DefaultTV.png to DefaultPVRChannels.png to be coherent with default PVR icon name of newer Kodi versions
 
-- Added 2 new Advanced Skin Settings:
+- Added 2 new Advanced Skin settings:
 - - Skin settings – Advanced - OSD + Dialogs – "Show video resolution on opened Reduced Fullscreen buttons OSD   (Default: Off)"
 - - Skin settings – Advanced - OSD + Dialogs – "Show audio channels on opened Reduced Fullscreen OSD   (Default: Off)"
 Both settings are recommended to be set to "Off" because of the cleaner OSD impression when opening VideoOSD.
@@ -2407,7 +2872,7 @@ Including the following changes:
 [B]3.5.14[/B] (2022-12-25)
 
 - Hotfix for label VAR "VideoPlayerStudioLabelOnlyFirst" (now depends on CinemaHelper.player.DBID)
-- Removed all type restrictions for "Skin Settings" – "Add-on shortcuts"
+- Removed all type restrictions for "Skin settings" – "Add-on Shortcuts"
 You can select addons of every type for every main menu category.
 
 [B]3.5.13[/B] (2022-12-24)
@@ -2420,7 +2885,7 @@ Hotfixes for 3.5.12
 
 [B]3.5.12[/B] (2022-12-24)
 
-- Expanded Skin Settings feature: When "Always force Preset Views" in "General Settings" is enabled, you can now customize the IDs in "Advanced Settings"
+- Expanded Skin settings feature: When "Always force Preset Views" in "General Settings" is enabled, you can now customize the IDs in "Advanced Settings"
 
 - New feature/Skin setting: "Use highest score for stars rating (*****)   (Default: On)" for DialogVideoInfo
 This option will automatically convert+compare all available ratings (local and external) and always render the stars rating according to the highest of all scores, so that movies don't look worse on first sight than they might are.
@@ -2433,18 +2898,18 @@ This option will automatically convert+compare all available ratings (local and 
 This feature now shows the (reworked) post credits scene "stinger" icon in [VideoFullscreen] when movie progress is within the final 30 minutes. Just open the VideoFullscreen Info or VideoOSD itself and look right besides "End time". Functioanlity depends on the common movie tags aftercreditsstinger/duringcreditsstinger and is enabled by default.
 Additionally, you can activate a corresponding new Skin setting: OSD + Dialogs – Video OSD / Fullscreen – "Show Post Credits Scene Icon (10min before movie ends)   (Default: Off)" which shows the same icon on top of the playing movie once for some seconds, exactly 10 minutes before movie ends. This additional setting is optional and disabled by default.
 
-- Skin Settings visually improved, reorganized and simplified (new tab "OSD + Dialogs", renamed "Experimental" to "Advanced settings")
+- Skin settings visually improved, reorganized and simplified (new tab "OSD + Dialogs", renamed "Experimental" to "Advanced settings")
 
-- New Skin Setting: OSD + Dialogs – Video Info Dialog – "Use highest score for stars rating (*****)   (Default: On)"
+- New Skin setting: OSD + Dialogs – Video Info Dialog – "Use highest score for stars rating (*****)   (Default: On)"
 (Service+skin will convert+compare all available ratings (local and external) and always render the stars rating according to the highest of all scores, so that movies don't look worse on first sight than they might are.)
 
-- New Skin Setting: OSD + Dialogs – Video OSD / Fullscreen – "Enable Post Credits Scene Icon (10min before movie end)   (Default: Off)"
+- New Skin setting: OSD + Dialogs – Video OSD / Fullscreen – "Enable Post Credits Scene Icon (10min before movie end)   (Default: Off)"
 
-- New Skin Setting: OSD + Dialogs – Video Info Dialog – "Enable Video Ratings   (Default: On)"
+- New Skin setting: OSD + Dialogs – Video Info Dialog – "Enable Video Ratings   (Default: On)"
 
 - [Textures] Reworked all movie and tv show certification rating graphics for: (US) MPAA, (GER) FSK, (UK) BBFC, (US) TV rating system
 
-- Improved Out Of The Box Experience: When loading a TV show Episodes dialog window, the first episode will always be selected. This workarounds/fixes the KODI selection-history bug which otherwise would result in poor user experience in this regard. (Supported by service.cinema.helper)
+- Improved Out Of The Box Experience: When loading a TV show Episodes dialog window, the first episode will always be selected. This workarounds/fixes the Kodi selection-history bug which otherwise would result in poor user experience in this regard. (Supported by service.cinema.helper)
 
 
 Additional changes:
@@ -2452,10 +2917,10 @@ Additional changes:
 - Keyboard/remote shortcuts on Video OSD: When focusing the buttons "subtitle" or "audio settings", pressing DOWN on your remote/keyboard triggers "NextSubtitle" and "NextAudioLanguage" for quick cycling.
 Opening the dialogs via regular pushing of the mentioned buttons is not affected and remains fully functional.
 
-- "Show Dialog after playing a single Movie from Kodi DB" Skin Setting option "Cinema Screen" is now animated and darker
+- "Show Dialog after playing a single Movie from Kodi DB" Skin settings option "Cinema Screen" is now animated and darker
 
-- Improved mood backgrounds conditions, removed disabling mood backgrounds in Skin Setting (pointless at this point)
-- Added new defaultcolor "selecteddark" (used in Skin Settings rework)
+- Improved mood backgrounds conditions, removed disabling mood backgrounds in Skin setting (pointless at this point)
+- Added new defaultcolor "selecteddark" (used in Skin settings rework)
 - Switched Wall View IDs: "Wall 3x9" now: 908 before: 909, "Wall 4x12" now: 909 before: 908
 
 - [VideoFullscreen] Year + Studio + Title now have a light font instead of regular, removed year label for simplicity
@@ -2473,8 +2938,8 @@ Opening the dialogs via regular pushing of the mentioned buttons is not affected
 - Cleanup/removal of unused video view "PosterWrapView"
 - Very slightly reworked some legacy video views regarding fonts, borders and separators
 
-- Skin Setting "Darken Home Screen Background": Corrected "Medium" value (before: 50 like "Minimal" now: 62 as originally itended)
-- Skin Setting "Enable Idle Timer for Home Screen UI Fade Out": Corrected darkening of background when in Idle state. Background is now a bit darker due to less fade out of the darkening layer.
+- Skin setting "Darken Home screen Background": Corrected "Medium" value (before: 50 like "Minimal" now: 62 as originally itended)
+- Skin setting "Enable Idle Timer for Home screen UI Fade Out": Corrected darkening of background when in Idle state. Background is now a bit darker due to less fade out of the darkening layer.
 
 - Removed many unnecessary label shadows (shadowcolor)
 - [Slideshow] Removed the "Music Info Overlay" in Slideshow when playing music in the background
@@ -2500,15 +2965,15 @@ Opening the dialogs via regular pushing of the mentioned buttons is not affected
 
 [B]3.5.11[/B] (2022-12-14)
 
-- Change VARS PosterThumb, PosterThumbInfoDialog, FanartThumbnail so that fanart values are correct in very specific situations (could not use VAR due to KODI restrictions)
+- Change VARS PosterThumb, PosterThumbInfoDialog, FanartThumbnail so that fanart values are correct in very specific situations (could not use VAR due to Kodi restrictions)
 - Re-added full mini sub-menu for subtitles above subtitles button within VideoOSD (Disabled by default - now has an option to Enable it. Read below.)
-- - Added new setting: Skin Settings – General Settings – Video OSD – [Video OSD]  Enable mini sub-menu above subtitle button (Default: Off)
-(KODI 17.6 has this option hidden since the menu is always enabled for that version which has no dedicated subtitle dialog compared to 17.7(DS)/18/19 and higher)
+- - Added new setting: Skin settings – General Settings – Video OSD – [Video OSD]  Enable mini sub-menu above subtitle button (Default: Off)
+(Kodi 17.6 has this option hidden since the menu is always enabled for that version which has no dedicated subtitle dialog compared to 17.7(DS)/18/19 and higher)
 
 [B]3.5.10[/B] (2022-12-12)
 
 - Added code for service.listitem.helper improved blurimg functionality in DialogVideoInfo
-- Added Experimental Skin Setting "Clear service.listitem.helper image cache"
+- Added Experimental Skin setting "Clear service.listitem.helper image cache"
 - [DialogVideoInfo] Multiple fixes to display correct poster in very different and very specific circumstances
 
 - Improved icons DefaultRemovableDisk and DefaultNetwork (removed LED on graphic)
@@ -2531,7 +2996,7 @@ Opening the dialogs via regular pushing of the mentioned buttons is not affected
 [B]3.5.7[/B] (2022-12-04)
 
 - Improved poster crop detection in Video Info Dialog
-- Fix/workaround for missing ListItem.Art(poster)) value when using "service.library.data.provider.lite" for KODI 19 (Dialog Video Info: opended by PostMovie feature)
+- Fix/workaround for missing ListItem.Art(poster)) value when using "service.library.data.provider.lite" for Kodi 19 (Dialog Video Info: opended by PostMovie feature)
 
 - Changed style of horizontal line in Dialog Addon Settings
 - Change remaining "Working..." language id/strings to "Loading..."
@@ -2545,7 +3010,7 @@ Opening the dialogs via regular pushing of the mentioned buttons is not affected
 - Refined "FileManager" scrollbar width
 - Fix "My List" wrong home menu item id (caused issues when moving focus to other items)
 - Added non-colored default mood background for Dialog Video Info which is shown if the feature is disabled or "service.listitem.helper" is missing (Kodi 19+ at the moment)
-- Added workaround for "PosterThumb": KODI 18+ has a bug where parent folder icon gets wrongly replaced with playlist icon after viewing a playlist window (workaround inactive for KODI 17)
+- Added workaround for "PosterThumb": Kodi 18+ has a bug where parent folder icon gets wrongly replaced with playlist icon after viewing a playlist window (workaround inactive for Kodi 17)
 - Re-enable VideoOSD buttons "Subtitles" and "Chapters/Bookmarks" for "IsInternetStream" media. Disable "Subtitle Download" for "IsInternetStream" media in subtitles sub menu.
 - Rename "Special Lists" playlist folders again for more simplicity (Android "–"/"-" workaround removed). "service.cinema.helper" had also to be changed accordingly. (Changed in versions 1.0.5 and 2.0.5)
 
@@ -2575,7 +3040,7 @@ Opening the dialogs via regular pushing of the mentioned buttons is not affected
 
 [B]3.5.0[/B] (2022-04-08)
 
-- Reduced logo size for Recently played LiveTV Widget on home screen for a cohesive visual experience between the Widgets
+- Reduced logo size for Recently played LiveTV Widget on Home screen for a cohesive visual experience between the Widgets
 
 [B]3.4.9[/B] (2022-04-07)
 
@@ -2606,11 +3071,11 @@ Changed font type and title size, reduced height scrollable items box by one ite
 You can add every movie, TV Show or TV Shows episode to your "My List" via Video Info Dialog (new button+icon);
 List can be accessed through the sub menu item "My List"
 In total, there are 3 separate "My List" categories: Movies, TV Shows, TV Show Episodes
-"My List (Movies)" and "My List (TV Shows)" can be accessed easily from the according Home Screen sub menus,
+"My List (Movies)" and "My List (TV Shows)" can be accessed easily from the according Home screen sub menus,
 "My List (Episodes)" is accessible using the "parent folder" item from withwin "My List (TV Shows)"
 Further remark: The "Special Playlists" which have existed in the past can also now be found when using the "parent folder" item from withwin any "My List"
 
-Feature is disabled by default: Can be enabled in Skin Settings – General – Video Info Dialog
+Feature is disabled by default: Can be enabled in Skin settings – General – Video Info Dialog
 
 - [New Features] Added a new small+lightweight addon called "Cinema Helper Service" which is used by the skin:
 Features:
@@ -2618,7 +3083,7 @@ Features:
 2) Show "Video Info Dialog" or "Cinema screen" after playback of a movie from Kodi DB is finished
 - "Cinema Screen" is a slightly animated "red curtain" Cinema Wallpaper which can be shown after the movie presentation is complete
 - Additionaly you can choose to add a fully custom single or multiline Text to this end screen like "THANKS FOR WATCHING"
-- "Cinema Screen" can be tested with or without the optional text from within Skin Settings (See Skin Setting – Experimental)
+- "Cinema Screen" can be tested with or without the optional text from within Skin settings (See Skin settings – Experimental)
 - Alternatively to the "Cinema Screen" you can choose to just Display the Video Info Dialog of the movie that has just completed
 Both variants avoid abruptly returning to the regular and maybe bright Kodi UI after movie presentation and therefore represent a much better all-around-cinema-mood experience
 3) "My List" functionality (see above)
@@ -2637,7 +3102,7 @@ This view is now the default view for episodes (both regular+recently added), bu
 
 - [New Feature] TV Show Episode thumbnail spoiler protection:
 If enabled, the episode thumbnail will be replaced by the TV Show Fanart
-This applies to both the Home Screen Widget and the new "Modern" Episodes view
+This applies to both the Home screen Widget and the new "Modern" Episodes view
 
 - [New view type] Added new additional "Wall View": 4x12 (existing variants are: 2x7, 3x9)
 
@@ -2650,7 +3115,7 @@ Improvements for Wall Views, including:
 - Reworked recently added Episodes Widget, added Season Poster
 - [New/repurposed view type] Added unified Seasons "Text" view to already existing "Text" View and reworked this view according to the new situational requirements
 
-- [Skin Settings] Reworked/optimized settings structure/gouping for better usability, also improved some wording/typo
+- [Skin settings] Reworked/optimized settings structure/gouping for better usability, also improved some wording/typo
 
 - Improvements for many LiveTV Dialogs including PVR group/channel manager and similar views
 
@@ -2658,9 +3123,9 @@ Improvements for Wall Views, including:
 
 - VideoOSD/MusicOSD: Reworked views and submenus
 
-- Improved Home Screen Widget "Recently added Albums" (Labels + Cover Art size)
+- Improved Home screen Widget "Recently added Albums" (Labels + Cover Art size)
 
-- [New Option] New option in Skin Settings – Home screen – Date/Time type:
+- [New Option] New option in Skin settings – Home screen – Date/Time type:
 You can now choose between showing "Date + Time" (Default), "Time only" and "Hidden"
 This option also affects the top right clock Video/Music Fullscreen
 
@@ -2675,7 +3140,7 @@ Other improvements
 
 - New lighter font type for some sections and elements:
 Favorites header, Date/Clock, breadcrumbs/title navigation for all sections
-Settings left navigation section, Skin Settings left navigation section
+Settings left navigation section, Skin settings left navigation section
 
 - Reworked Weather Widget + alignment for multiple temperature text sizes
 - Reworked Weather section, left sidebar navigation improvements + now showing active weather location
@@ -2707,7 +3172,7 @@ Settings left navigation section, Skin Settings left navigation section
 - Reworked FullScreen Text Viewer which is used for maximized Plot View and similar cases, improved navigation on Open/Close
 - Reworked Mouse Close Button Icon (These buttons are disabled by default, even if mouse support is enabled)
 - [VideoOSD] Changed/reworked new icon for "INFO" button
-- Reworked Wall view for Music and Home Screen Music Widget
+- Reworked Wall view for Music and Home screen Music Widget
 - [DialogNotification] Extended width of Dialog
 - [Mouse Control] Just for information: Although i always recommend completely disabling Mouse Control for serious Home Cinema use,
 this Skin still has very good Mouse Support while not showing any cluttered additional Mouse Buttons
@@ -2742,9 +3207,9 @@ Also forces "Sort by: Episode ASCENDING" for Episodes content on Window Load
 - Other improvements
 
 [B]3.4.1[/B] (2020-02-16)
-- Some more tweaking regarding larger fonts (home screen, select dialog, settings, skin settings and more)
-- Slightly increased size of home screen addon shortcut icons (home screen)
-- Slightly increased size of recently added movie posters (home screen)
+- Some more tweaking regarding larger fonts (Home screen, select dialog, settings, Skin settings and more)
+- Slightly increased size of Home screen addon shortcut icons (Home screen)
+- Slightly increased size of recently added movie posters (Home screen)
 - Tweaked some non-focus button textures and sizes (removed non-focus textures for some dialogs)
 - Other improvements
 
@@ -2753,7 +3218,7 @@ Also forces "Sort by: Episode ASCENDING" for Episodes content on Window Load
 
 [B]3.3.9[/B] (2020-02-13)
 - Reworked all main menu icons for higher quality (Now supporting native 2160p icons if 4K system resolution is detected)
-- Reworked font sizes for multiple sections (home screen, favorites dialog, shutdown dialog, search dialog, videoinfo dialog) (Improved/larger fonts)
+- Reworked font sizes for multiple sections (Home screen, favorites dialog, shutdown dialog, search dialog, videoinfo dialog) (Improved/larger fonts)
 - Added SkinSettings option to hide movie file name in DialogVideoInfo
 - Added new lightweight dependency for DialogVideoInfo mood backgrounds: service.listitem.helper
 - Other improvements
@@ -2766,10 +3231,10 @@ Also forces "Sort by: Episode ASCENDING" for Episodes content on Window Load
 - Other improvements
 
 [B]3.3.3[/B] (2020-01-28)
-- Added HFR overlay icon for 4k60 movie/episode content (WallViews, Home Screen Widgets)
+- Added HFR overlay icon for 4k60 movie/episode content (WallViews, Home screen Widgets)
 - Added some more options for "multiple images" background slideshow interval
-- Added option to change KODI logo on home screen (Kodi, hidden, madVR)
-- Added option to change search button action on home screen (search dialog, hidden, direct video library search)
+- Added option to change Kodi logo on Home screen (Kodi, hidden, madVR)
+- Added option to change search button action on Home screen (search dialog, hidden, direct video library search)
 - Added experimental option for showing a madVR logo while using the startup fade in function
 - Added option to disable "mood background" for DialogVideoInfo
 - Movie/episode end time now showing when VideoOSD buttons are visible
@@ -2799,24 +3264,24 @@ Also forces "Sort by: Episode ASCENDING" for Episodes content on Window Load
 - Other improvements
 
 [B]3.2.7[/B] (2019-11-18)
-- "Skin Settings":
-- - Added new home screen option "Enable Add-on Shortcuts" to globally hide all Add-on Shortcuts while keeping the already configured shortcuts
+- "Skin settings":
+- - Added new Home screen option "Enable Add-on Shortcuts" to globally hide all Add-on Shortcuts while keeping the already configured shortcuts
 - Other improvements
 
 [B]3.2.6[/B] (2019-11-17)
 - Additional checks for experimental function "Fade In Kodi UI on Startup"
-- "Skin Settings" now displays the skin version at the bottom of the left menu
+- "Skin settings" now displays the skin version at the bottom of the left menu
 - Other improvements
 
 [B]3.2.5[/B] (2019-11-15)
 - Global rework for more simplicity
-- Added home screen "Favorites" widget
-- Added possibility to add home screen "Favorites" Addons
+- Added Home screen "Favorites" widget
+- Added possibility to add Home screen "Favorites" Addons
 - Added support for music fanart - shown in background (while playing music)
-- Skin Settings:
+- Skin settings:
 - - Added new custom background system supporting: "Multiple Images" and (as before) a "Single Image"
 - - Added option to Darken background (Default: "Minimal")
-- - Added background misc option: "Enable Idle Timer for Home Screen UI Fade Out" (Fades out main menu if idle on home screen for X seconds
+- - Added background misc option: "Enable Idle Timer for Home screen UI Fade Out" (Fades out main menu if idle on Home screen for X seconds
 - - Added new Experimental function: "Fade In Kodi UI on Startup"
 - - Added new Experimental function: "Enable Kiosk Mode" (Hides: Sub menus, Sidebar menus)
 - - Added option to remove Kodi logo
@@ -2834,7 +3299,7 @@ Also forces "Sort by: Episode ASCENDING" for Episodes content on Window Load
 - - Changed dependency "Library Data Provider" to "Library Data Provider Lite"
 
 [B]3.2.2[/B] (2019-03-12)
-- Reworked Skin Settings menu
+- Reworked Skin settings menu
 - - Added:
 - - - Power menu options (You can now hide items from the power menu)
 - - - Option "Hide labels within Wall Views for video library content" (Recommended!)
@@ -2849,39 +3314,39 @@ Also forces "Sort by: Episode ASCENDING" for Episodes content on Window Load
 [B]3.2.0[/B] (2018-10-24)
 - Reworked VideoOSD
 - Added support for more ratings (TV-MA, ...)
-- Reworked and optimized video info dialog
+- Reworked and optimized Video Info Dialog
 - 2 new Special Lists (Recently played movies/episodes)
 - Other improvements
 
 [B]3.1.9[/B] (2018-09-14)
-- Reworked video/audio/codec/subtitle/language-flags images (video info dialog and fullscreen video osd)
-- Reworked and optimized video info dialog (Display of actors and more)
+- Reworked video/audio/codec/subtitle/language-flags images (Video Info Dialog and fullscreen video osd)
+- Reworked and optimized Video Info Dialog (Display of actors and more)
 - Other minor improvements
 
 [B]3.1.8[/B] (2018-08-30)
-- [Skin Settings] Added option to hide home screen widget for Live-TV (recently played TV channels)
+- [Skin settings] Added option to hide Home screen widget for Live-TV (recently played TV channels)
 - Other minor improvements
 
 [B]3.1.7[/B] (2018-08-29)
-- Added home screen widget for Live-TV (recently played TV channels)
+- Added Home screen widget for Live-TV (recently played TV channels)
 - Other minor improvements
 
 [B]3.1.6[/B] (2018-08-25)
 - Changed no-focus and focus textures and text colors for many buttons and ListItems (Great visual improvement)
 - Slightly changed Dynamic Range Compression feature main volume values
 - Improved and added some textures (rt/rt audience/mc/imdb rating icons)
-- Added some "Internal developer options"/features in Skin Settings (Not relevant for end users)
+- Added some "Internal developer options"/features in Skin settings (Not relevant for end users)
 - Other improvements and additions
 
 [B]3.1.5[/B] (2018-05-06)
-- Skin Settings: Added direct access shortcuts for easy use:
+- Skin settings: Added direct access shortcuts for easy use:
 - - "Open [COLOR=firebrick]Metadata and Artwork module[/COLOR] Settings Dialog  [Shortcut]"
 - - "Open [COLOR=firebrick]AutoCompletion for virtual keyboard[/COLOR] Settings Dialog  [Shortcut]"
 - Reworked Polygon background images (vector based with no noise)
 - Optimized Wall Views and Text View
 - Dialog Video Information: Added ListItem.Country for movies
 - List view: Optimized thumbnail position and diffuse reflection
-- Home: Removed Home Screen bottom gradient if RSS disabled
+- Home: Removed Home screen bottom gradient if RSS disabled
 - Home and global: Removed many borders and optimized visuals for a cleaner look
 - Reworked all default icons (based on some Estuary icons but with optimizations, some replacements and changes
 
@@ -2898,7 +3363,7 @@ Also forces "Sort by: Episode ASCENDING" for Episodes content on Window Load
 - Other minor improvements
 
 [B]3.1.1[/B] (2018-03-18)
-- Skin Settings: Option to hide the "Trailer" Button in Video Information Dialog for movies ("Trailer Search" Button remains visible!)
+- Skin settings: Option to hide the "Trailer" Button in Video Information Dialog for movies ("Trailer Search" Button remains visible!)
 - Other minor improvements
 
 [B]3.1.0[/B] (2018-03-18)
@@ -2908,7 +3373,7 @@ Also forces "Sort by: Episode ASCENDING" for Episodes content on Window Load
 - Other minor improvements
 
 [B]3.0.89[/B] (2018-03-11)
-- Added Trailer Search Feature in Video Information Dialog for movies (see "Skin Settings - General Settings" for regional setting) [Feature uses plugin.video.youtube]
+- Added Trailer Search Feature in Video Information Dialog for movies (see "Skin settings - General Settings" for regional setting) [Feature uses plugin.video.youtube]
 - Added video resolution fallback texture for VideoPlayer.VideoResolution being empty (when playing 1440p for example)
 - Other minor improvements
 
@@ -2921,9 +3386,9 @@ Also forces "Sort by: Episode ASCENDING" for Episodes content on Window Load
 - Other minor improvements
 
 [B]3.0.86[/B] (2018-01-07)
-- VideoFullScreen audio and subtitle language text improvements for use with external renderers like MadVR (Reason: External renderers might show too long ugly text instead of the correct 3 letter language code which KODI expects)
+- VideoFullScreen audio and subtitle language text improvements for use with external renderers like MadVR (Reason: External renderers might show too long ugly text instead of the correct 3 letter language code which Kodi expects)
 - [DialogSelect.xml] Fix Cancel button label (Bug in Original Confluence)
-- Added 4K mini overlay for home screen movie widget and also to the corresponding Wall View posters
+- Added 4K mini overlay for Home screen movie widget and also to the corresponding Wall View posters
 - Added some textures for audio codec flags (dts-hd, used by external renderer/MadVR)
 - Other minor improvements
 
@@ -2978,7 +3443,7 @@ Also forces "Sort by: Episode ASCENDING" for Episodes content on Window Load
 - Reworked Wall Views (Wall Views are now true Fullscreen and not cut off at the top)
 - 5 background types now included based on latest Official Estuary pattern look by phil65 (Reworked to 1080p with some banding reducing noise)
 - - Background types are: Black, Circles Blue, Circles Grey, Polygons Blue, Polygons Grey
-- Reworked "System/Settings", "Skin Settings", "Profiles", "System Info" and more areas. No more old "windowed look"
+- Reworked "System/Settings", "Skin settings", "Profiles", "System Info" and more areas. No more old "windowed look"
 - Reworked scrollbars (now all the same flat look)
 - Other minor improvements
 
@@ -2996,7 +3461,7 @@ Also forces "Sort by: Episode ASCENDING" for Episodes content on Window Load
 - Other minor improvements
 
 [B]3.0.71[/B] (2016-11-23)
-- New optional skin setting: Automatically pause/resume playback when using INFO button in VideoOSD
+- New optional Skin setting: Automatically pause/resume playback when using INFO button in VideoOSD
 - Other minor improvements, including:
 - - Added variable "GlobalFanartVar" for a dark LibreELEC settings background
 - - [DialogMediaSource.xml] Focus fix (Sync from Confluence and Estuary)
@@ -3006,20 +3471,20 @@ Also forces "Sort by: Episode ASCENDING" for Episodes content on Window Load
 - Other minor improvements
 
 [B]3.0.69[/B] (2016-11-14)
-- Added System Info Privacy Policy support (According to latest KODI core changes)
-- VideoOSD button "INFO" which leads to the video info dialog is now improved and based on "service.library.data.provider" (and automatically shown for movies and episodes VideoOSD)
+- Added System Info Privacy Policy support (According to latest Kodi core changes)
+- VideoOSD button "INFO" which leads to the Video Info Dialog is now improved and based on "service.library.data.provider" (and automatically shown for movies and episodes VideoOSD)
 
 [B]3.0.68[/B] (2016-10-25)
-- Changed "New smart playlist" dialog [SmartPlaylistEditor.xml] [SmartPlaylistRule.xml] according to latest KODI 17 core changes. The dialog will only work correctly, if you use an up to date version of KODI 17 from now on, of course.
-- [DialogSelect.xml] support latest KODI core changes regarding Video Information Dialog actor search results
-- New Skin Settings option: Hide Suspend / Hide Hibernate from Shutdown Dialog
+- Changed "New smart playlist" dialog [SmartPlaylistEditor.xml] [SmartPlaylistRule.xml] according to latest Kodi 17 core changes. The dialog will only work correctly, if you use an up to date version of Kodi 17 from now on, of course.
+- [DialogSelect.xml] support latest Kodi core changes regarding Video Information Dialog actor search results
+- New Skin settings option: Hide Suspend / Hide Hibernate from Shutdown Dialog
 - Added stinger scene tag support duringcreditsstinger/aftercreditsstinger (shows a dark small stinger icon in Video Information Dialog left to the movie title) icon based on great addon "service.stinger.notification" icon by rmrector
 - Reworked screen calibration graphics and dialog
 - Added system/kernel info to [SettingsSystemInfo.xml]
 - Many other improvements
 
 [B]3.0.67[/B] (2016-10-07)
-- New option: "Show logo-screen while in progress of shutdown/reboot/logout" (See "Skin Settings" experimental section)
+- New option: "Show logo-screen while in progress of shutdown/reboot/logout" (See "Skin settings" experimental section)
 - Many other minor improvements, including:
 - - Further visual optimizations in [MyWeather.xml] [ViewsWeather.xml]
 - - Changed behind dialog dark fadeout layer order in almost all files
@@ -3027,11 +3492,11 @@ Also forces "Sort by: Episode ASCENDING" for Episodes content on Window Load
 - - Textures cleanup for all language/country-flags (removed not needed shadow)
 
 [B]3.0.66[/B] (2016-10-02)
-- Updated support for adsp addons after recent KODI core changes (slider activation) including visual rework
+- Updated support for adsp addons after recent Kodi core changes (slider activation) including visual rework
 - Other minor improvements
 
 [B]3.0.65[/B] (2016-10-02)
-- New skin settings option: "Shorten plot text in Video Details Dialog to prevent spoilers (5 lines)" (disabled by default)
+- New Skin settings option: "Shorten plot text in Video Details Dialog to prevent spoilers (5 lines)" (disabled by default)
 - Added music playlist button to MusicOSD
 - Many other diverse improvements, including:
 - - Dialog header font size changes
@@ -3053,20 +3518,20 @@ Also forces "Sort by: Episode ASCENDING" for Episodes content on Window Load
 - Reworked Music OSD [MusicOSD.xml]
 - Add timer button to PVR info dialog
 - Many other minor improvements, including:
-- - Cleanup viewtypes in [ViewsPVRGuide.xml] for KODI v18
+- - Cleanup viewtypes in [ViewsPVRGuide.xml] for Kodi v18
 - - Improve button visibility-conditions in [DialogPVRInfo.xml]
 
 [B]3.0.62[/B] (2016-09-23)
-- Reworked "Recently added" widgets on home screen:
+- Reworked "Recently added" widgets on Home screen:
 - - They are now dynamic lists with the possibility of showing the context menu or opening the info dialog of the selected item
-- - Showing artwork for the selected recently added item while being on the home screen also works
+- - Showing artwork for the selected recently added item while being on the Home screen also works
 - Other minor improvements
 
 [B]3.0.61[/B] (2016-09-23)
 - Other minor improvements
 
 [B]3.0.60[/B] (2016-09-22)
-- Visual rework of home screen including PVR status widget, recently added items
+- Visual rework of Home screen including PVR status widget, recently added items
 - Other minor improvements
 
 [B]3.0.59[/B] (2016-09-20)
@@ -3081,7 +3546,7 @@ Also forces "Sort by: Episode ASCENDING" for Episodes content on Window Load
 
 [B]3.0.57[/B] (2016-09-14)
 - Added support for player speed controls (tempo) (Changes adapted from from Confluence 3.0.34) [DialogSeekBar.xml] [Includes.xml]
-- Added scrollbar for LiveTV guide timeline (matching latest KODI code changes) [MyPVRGuide.xml] [ViewsPVRGuide.xml]
+- Added scrollbar for LiveTV guide timeline (matching latest Kodi code changes) [MyPVRGuide.xml] [ViewsPVRGuide.xml]
 - Reworked Profiles Settings-Dialog [SettingsProfile.xml]
 - Added new View "Text" which is only used for displaying: Years, Genres, Tags
 - Other minor improvements
@@ -3093,7 +3558,7 @@ Also forces "Sort by: Episode ASCENDING" for Episodes content on Window Load
 - Reworked uniform search-selection dialog
 - Slightly reworked Favorites Dialog, including: Favorites now have 3 items per row instead of 2 [DialogFavourites.xml]
 - Login screen usability improvements [LoginScreen.xml]
-- Changed user profile default picture to match KODI standard/Estuary
+- Changed user profile default picture to match Kodi standard/Estuary
 - Other minor improvements
 
 [B]3.0.54[/B] (2016-09-01)
@@ -3139,7 +3604,7 @@ is now DISABLED by DEFAULT. Enable it to hide all views except both Wall Views (
 [B]3.0.43[/B] (2016-08-14)
 - Added experimental, TOTALLY OPTIONAL, BY DEFAULT DISABLED, automatic VolumeAmplification-DRC options
 (see http://forum.kodi.tv/showthread.php?tid=242892 for more information or questions)
-See: System - Skin Settings - General Settings - scroll all the way down to: EXPERIMENTAL section
+See: System - Skin settings - General Settings - scroll all the way down to: EXPERIMENTAL section
 WARNING: Please only enable this options if you are really really knowing what you are doing!
 
 [B]3.0.42[/B] (2016-08-09)
@@ -3160,11 +3625,11 @@ WARNING: Please only enable this options if you are really really knowing what y
 - Other minor improvements
 
 [B]3.0.38[/B] (2016-08-03)
-- Support for recent KODI Krypton changes regarding [DialogPlayerProcessInfo.xml] (replaces CodecInfo)
+- Support for recent Kodi Krypton changes regarding [DialogPlayerProcessInfo.xml] (replaces CodecInfo)
 - Reworked OSD player button graphics
-- Added all new uniform search-selection-dialog on home screen based on internal search functions (search button can be hidden in Skin Settings, workaround for broken youtube add-on search, dropped direct script.globalsearch add-on support (still can be used as widget!))
+- Added all new uniform search-selection-dialog on Home screen based on internal search functions (search button can be hidden in Skin settings, workaround for broken youtube add-on search, dropped direct script.globalsearch add-on support (still can be used as widget!))
 - Reworked footer area regarding item count and mouse buttons
-- Reworked home screen "player controls" including fullscreen button and search button position
+- Reworked Home screen "player controls" including fullscreen button and search button position
 - Floor graphics now plain color
 - Improved Option "Remove floor-graphics"
 - Reworked Bookmarks/Chapters-Dialog to timeline-style [VideoOSDBookmarks.xml]
@@ -3187,8 +3652,8 @@ WARNING: Please only enable this options if you are really really knowing what y
 - Added new Media Process Dialog (Open via keymap ActivateWindow(1100)) [Custom_1100_DialogMediaProcessInfo.xml]
 - Video OSD / Video FullScreen changes [VideoFullScreen.xml, VideoOSD.xml]
 - Reworked Seek Bar Dialog [DialogSeekBar.xml]
-- Notification Hack until fixed in KODI VideoPlayer [DialogNotification.xml]:
-Hide annoying and often faulty messages #21454 #21455 ("Source too slow", "Read rate too low for continuous playback") They don't appear very often because some fixes have been made in KODI, but it's still an existing (rare) problem.
+- Notification Hack until fixed in Kodi VideoPlayer [DialogNotification.xml]:
+Hide annoying and often faulty messages #21454 #21455 ("Source too slow", "Read rate too low for continuous playback") They don't appear very often because some fixes have been made in Kodi, but it's still an existing (rare) problem.
 - Other minor improvements
 - Fixes from Confluence 3.0.28/.29/(.30)
 
@@ -3204,12 +3669,12 @@ Hide annoying and often faulty messages #21454 #21455 ("Source too slow", "Read 
 - Reworked and cleaned Footer Page/Item Count for simplicity and less overcrowded usability
 - Reworked NowPlaying display (Home, CommonNowPlaying, VideoFullscreen)
 - Complete rework of "Favorites" Dialog
-- Skin Settings: Added Option "Make Favorites Button first main menu item"
+- Skin settings: Added Option "Make Favorites Button first main menu item"
 - DialogVideoInfo: Added Year to TV Show Title (Header)
 - Other minor improvements
 
 [B]3.0.32[/B] (2016-06-25)
-- Skin Setting cosmetics
+- Skin settings cosmetics
 - VideoFullScreen.xml: Display existing TV Show Name and Episode even if "VideoPlayer.Content(Episodes)" is false
 
 [B]3.0.31[/B] (2016-06-24)
@@ -3221,12 +3686,12 @@ Now you can choose a Special Folder which is displayed along the "Home Addon"-Wi
 Select up to 6 Addons + 1 Super Folder or a max. of 7 Addons and no Super Folder. (Note: Enabled "Super Folder" disables Addon No. 7)
 
 [B]3.0.29[/B] (2016-06-23)
-- VideoFulllScreen.xml: Change TV-Show Episode Format to match "Now Playing" on Home Screen (Season X - Episode X)
+- VideoFulllScreen.xml: Change TV-Show Episode Format to match "Now Playing" on Home screen (Season X - Episode X)
 - Moved Sidebar "Get more"-Buttons to match MyVideoNav.xml, added "Clean Library" to Music Sidebar like in Video Sidebar
 - Small usability ondown-change in "DialogSettings.xml"
 - Fix "Weather Settings" button
 - Remove deprecated window names + corrected window names for (visual) case sensitivity
-- Cleaned and simplified Skin Settings
+- Cleaned and simplified Skin settings
 
 [B]3.0.28[/B] (2016-06-21)
 - Home.xml: Shortened "Now Playing" labels (they were far too wide), Optimized "Now Playing" Music/Video/Movie/Episode Information display
@@ -3241,7 +3706,7 @@ Select up to 6 Addons + 1 Super Folder or a max. of 7 Addons and no Super Folder
 - Smaller "DialogVideoInfo" changes, including: View Plot in TextViewer Button,
 - Year/Studio display change in: "Home.xml", "VideoFulllScreen.xml", "DialogVideoInfo.xml"
 - "VideoOSDBookmarks.xml": Added scrollbar
-- Support for latest Addon "changelog becomes news" changes (ListItem.AddonNews - old changelogs won't be available anymore after this KODI 17 change)
+- Support for latest Addon "changelog becomes news" changes (ListItem.AddonNews - old changelogs won't be available anymore after this Kodi 17 change)
 - Added "Custom_1102_TextViewer.xml" (like Estuary) - used for AddonInfo "Changelog/What's new" and "Plot"
 - "MyVideoNav.xml": Moved "Hide Watched" from "Misc Options" to "View Options", Fixed "Playing" Label if only "Current Playlist is visible" (Confluence Bug), moved "Get more" (Video Addons) to "Actions"
 - "DialogTextViewer.xml": Removed Clock, text align changed from justify to left
@@ -3257,7 +3722,7 @@ VolumeIcon.png, GoFullscreen.png, PVR-IsRecording.png, PVR-HasTimerScheduleDisab
 
 [B]3.0.25[/B] (2016-06-16)
 - Moved Sidebar Action "Clean library..." to the top (where other Actions like "Update Library" are)
-- Fixed tiny Confluence KODI 17 bug in "DialogSelect.xml" (Chapters and runtime of DISC-Image playlists were not shown)
+- Fixed tiny Confluence Kodi 17 bug in "DialogSelect.xml" (Chapters and runtime of DISC-Image playlists were not shown)
 
 [B]3.0.24[/B] (2016-06-14)
 - Reworked almost all flagging-graphics (DD, DD+, THD, DTS, DTS-MA, DTS-HRA, aspect ratios, video formats, audio language)
@@ -3289,7 +3754,7 @@ Added "Extended Info" Button
 - Small changes in: DialogVideoInfo including rating, duration, poster-aspectratio fixes
 
 [B]3.0.17[/B] (2016-06-01)
-- Initial Skin version for KODI 17.x (Krypton)
+- Initial Skin version for Kodi 17.x (Krypton)
 - Restored old height for DialogSettings (way too small in height in Stock Krypton Confluence)
 - Added Skin-Settings Option to Hide TV main menu item (since there is no on/off option within TV-Settings anymore)
 - Small changes in: DialogVideoInfo including ratingstars fixes
@@ -3297,7 +3762,7 @@ Added "Extended Info" Button
 
 [B]2.8.73[/B] (2016-05-23)
 - Added small "disc-image"-indicator for ListItems within both WallView view types
-- Added support for LibreELEC (KODI exit helper script + LibreELEC-Settings submenu item)
+- Added support for LibreELEC (Kodi exit helper script + LibreELEC-Settings submenu item)
 - Removed redundant main-submenu items: SYSTEM -&gt; Settings, TV -&gt; Channels, Radio -&gt; Channels
 - Added Genre-Icons support/graphics for both WallView view types
 Reworked Genre Icons are based on the great work by the following authors:
@@ -3316,7 +3781,7 @@ http://addons.kodi.tv/show/resource.images.moviegenreicons.xzener-flat/
 - Visual changes in "DialogVideoInfo.xml" (Video Information Dialog)
 
 [B]2.8.70[/B] (2016-02-11)
-- Slightly cleaned up Settings area KODI logo graphic (no messy border anymore within the Skin)
+- Slightly cleaned up Settings area Kodi logo graphic (no messy border anymore within the Skin)
 - Cleaned up global dialog header background graphic (no gradient anymore)
 - Reworked standard main List view (50). Poster/thumb now left, list-Panel now wider (making more labels readable without scrolling)
 - Some changes in "DialogVideoInfo.xml" (Video Information Dialog) (visual changes + removed conditonal plot height for Windows Platform, slightly optimized cast view)
@@ -3324,10 +3789,10 @@ http://addons.kodi.tv/show/resource.images.moviegenreicons.xzener-flat/
 
 [B]2.8.69[/B] (2016-02-03)
 - Reworked floor graphics height and transparency
-- Added OPTIONAL setting for removal/replacement of floor-graphics (see Skin Settings)
-- Added clean KODI logo for SYSTEM area (native for 1080p)
+- Added OPTIONAL setting for removal/replacement of floor-graphics (see Skin settings)
+- Added clean Kodi logo for SYSTEM area (native for 1080p)
 - Reworked DialogCloseButton.png (now native for 1080p)
-- Removed RDS and ProgrammeInfo player control buttons outside of FullscreenVideo (because of inconsistency and problems with ActivateWindow(PVRGuideInfo) - known KODI Bug)
+- Removed RDS and ProgrammeInfo player control buttons outside of FullscreenVideo (because of inconsistency and problems with ActivateWindow(PVRGuideInfo) - known Kodi Bug)
 - Reworked standard folder icons like DefaultAddonLyrics.png etc. (just removed the strange border which was "hardcoded" within the graphics - icons itself untouched)
 
 [B]2.8.68[/B] (2016-01-31)
@@ -3346,10 +3811,10 @@ DialogBack slightly reworked
 
 [B]2.8.66[/B] (2016-01-24)
 - Minor fixes and improvements, including:
-Corrected KODI logo size on LoginScreen (now same as on home screen),
+Corrected Kodi logo size on LoginScreen (now same as on Home screen),
 Corrected Confluence CommonNowPlaying_Controls,
 Removed CommonBackground for LoginScreen and Startup,
-Changed OpenELEC "Exit KODI" helper script (now does a clean application restart instead of killing the app too aggressive),
+Changed OpenELEC "Exit Kodi" helper script (now does a clean application restart instead of killing the app too aggressive),
 Global animation duration increased by a very small amount (compared to last version)
 
 [B]2.8.65[/B] (2016-01-19)
@@ -3367,8 +3832,8 @@ Conditional plot height in DialogVideoInfo (Linux/Windows) due to different font
 - Minor fixes and improvements
 
 [B]2.8.61[/B] (2016-01-17)
-- First release for KODI 16 / Jarvis
-- New version based on clean KODI 16 / Jarvis Confluence 2.8.6 (GIT 2015-01-15 - no Isengard leftovers)
+- First release for Kodi 16 / Jarvis
+- New version based on clean Kodi 16 / Jarvis Confluence 2.8.6 (GIT 2015-01-15 - no Isengard leftovers)
 
 
 [B]2.7.88[/B] (2016-01-02)
@@ -3397,16 +3862,16 @@ If you really like the Original Confluence Default Background "Blue Bubbles" bet
 - Removed option for windowed trailer in "Video Information Dialog"
 
 [B]2.7.82[/B] (2015-12-29)
-- Increased maximum no. of home screen addons (from 5 to 7)
+- Increased maximum no. of Home screen addons (from 5 to 7)
 - Added movie release-year in VideoOSD &gt; BEFORE: StudioName NOW: StudioName (YYYY)
 
 [B]2.7.81[/B] (2015-12-28)
-- Visually optimized home screen addons
+- Visually optimized Home screen addons
 
 [B]2.7.80[/B] (2015-12-27)
-- Visually optimized home screen addons
-- Added home screen addons option for "TV/Radio"
-- Visually optimized home screen RSS Feed
+- Visually optimized Home screen addons
+- Added Home screen addons option for "TV/Radio"
+- Visually optimized Home screen RSS Feed
 - Reworked textures: PVR-EpgProgressIndicator.png
 
 [B]2.7.79[/B] (2015-12-26)
@@ -3421,8 +3886,8 @@ icon-mute.png
 - Reworked up/down left/right control graphics/arrows (type 1 + 2)
 
 [B]2.7.77[/B]
-- New MINI Weather Information for home screen:
-Reworked home screen option "Show weather information" (it does NOT replace the KODI logo with that large weather information anymore - mini info is added right to the KODI logo)
+- New MINI Weather Information for Home screen:
+Reworked Home screen option "Show weather information" (it does NOT replace the Kodi logo with that large weather information anymore - mini info is added right to the Kodi logo)
 - Fixed Video OSD Subtitle tooltip position (X-position slightly off because of the reworked OSD buttons)
 Textures:
 - Reworked "radio buttons" (AKA on/off button)
@@ -3444,11 +3909,11 @@ Textures:
 [B]2.7.73[/B]
 - Reworked Home main menu (items now have text labels)
 - Some home main menu icons now smaller (have been too bulky before)
-- Don't hide "recently added [...]" on home screen if favorites sidebar is open
+- Don't hide "recently added [...]" on Home screen if favorites sidebar is open
 - Small textures update (includes: removed strange 0.0 audio indicator like in Jarvis)
 
 [B]2.7.72[/B]
-- Added global home screen PVR recording/timer indicator
+- Added global Home screen PVR recording/timer indicator
 - Fixed Recording OSD Button togglebutton states
 - Minor improvements and optimizations (including):
 VideoOSD, MusicOSD: Dim disabled items more,
@@ -3456,7 +3921,7 @@ Home screen "Recently added ..." font size corrections,
 Small optimization in OSD Buttons: AudioSettings, VideoSettings, Record, EPG, TXT
 
 [B]2.7.71[/B]
-- Reworked home screen icons for Shutdown Menu and Favorites
+- Reworked Home screen icons for Shutdown Menu and Favorites
 - Minor improvements and optimizations
 
 [B]2.7.70[/B]
@@ -3472,12 +3937,12 @@ Small optimization in OSD Buttons: AudioSettings, VideoSettings, Record, EPG, TX
 - Minor improvements and optimizations
 
 [B]2.7.67[/B]
-- Some viewtypes a now hidden by default for more simplicity. (All stock-views can be simply re-activated in Skin Settings.)
+- Some viewtypes a now hidden by default for more simplicity. (All stock-views can be simply re-activated in Skin settings.)
 - Home: Switched Shutdown and Favorites Button
 - Minor improvements and optimizations
 
 [B]2.7.66[/B]
-- Wall Views now use a semi-transparent background like the other ViewsTypes to match Confluence typical background-video-style (Can be disabled in Skin Settings!)
+- Wall Views now use a semi-transparent background like the other ViewsTypes to match Confluence typical background-video-style (Can be disabled in Skin settings!)
 
 [B]2.7.65[/B]
 - Minor improvements and optimizations (including):
@@ -3564,7 +4029,7 @@ removed "HasSub.png" code+image,
 - Minor improvements
 
 [B]2.7.47[/B]
-- Reworked top left global KODI-Logo (now 1080p optimized)
+- Reworked top left global Kodi-Logo (now 1080p optimized)
 - Reworked DefaultFolderBack Icon (now 1080p optimized)
 - Reworked DefaultVideo and DefaultVideoCover Icon (now 1080p optimized)
 - Minor improvements
@@ -3583,13 +4048,11 @@ removed "HasSub.png" code+image,
 - Minor improvements
 
 [B]2.7.42[/B]
-- While in the wall view (Thumbnail view), the KODI sidebar can now be opened again by going all left.
-I had this disabled because i want to be able to jump to the most right object by going all left. Some ppl may have a dedicated key for the KODI sidebar on a remote. -&gt; SetFocus(9000) (remote.xml)
+- While in the wall view (Thumbnail view), the Kodi sidebar can now be opened again by going all left.
+I had this disabled because i want to be able to jump to the most right object by going all left. Some ppl may have a dedicated key for the Kodi sidebar on a remote. -&gt; SetFocus(9000) (remote.xml)
 
 [B]2.7.41[/B]
-- Initial Release based on Confluence 2.7.4
-
-		</news>
+- Initial Release based on Confluence 2.7.4</news>
 		<assets>
 			<icon>resources/icon.png</icon>
 			<fanart>resources/fanart.jpg</fanart>

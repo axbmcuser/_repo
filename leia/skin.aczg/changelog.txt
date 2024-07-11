@@ -1,3 +1,13 @@
+[B]4.7.33[/B] (2024-07-11)
+
+Improved "Text" View focus animation (Text color change now transitions smoothly)
+Minor code improvements
+
+Kodi 17-20 only:
+
+Removed the "Show "Versions" and "Extras" buttons" option from My Skin settings since only Kodi 21+ has this feature
+(minor merging regression introduced with previous update)
+
 [B]4.7.32[/B] (2024-07-10)
 
 Minor code improvements
