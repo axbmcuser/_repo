@@ -135,7 +135,7 @@
     </extension>
 </addon>
 
-<addon id="skin.aczg" version="4.7.33" name="Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="4.7.34" name="Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="service.listitem.helper" version="0.3.4" />
@@ -153,13 +153,28 @@
 
 A modern reimagination of Confluence, the beloved long-time default user interface of Kodi (formerly XBMC).
 
-Features include a complete graphical overhaul, an icon-based main menu without the need for scrolling and all new wall views.
-The useful lightweight features among countless carefully crafted usability optimizations make you enjoy an intuitive user experience you would expect from a retail media player with an awesome UI.</description>
+Useful lightweight features and countless carefully crafted usability refinements make you enjoy an intuitive user experience you would expect from a retail media player with an awesome UI.</description>
 		<platform>all</platform>
 		<forum>https://forum.kodi.tv/showthread.php?tid=242892</forum>
 		<website>https://axbmcuser.github.io</website>
 		<source>https://github.com/axbmcuser/_repo</source>
-		<news>[B]4.7.33[/B] (2024-07-11)
+		<news>[B]4.7.34[/B] (2024-07-14)
+
+Scrolling duration and easing type refinements for Wall Views and Fanart View
+
+Removed conceptionally questionable automatic scrolling letter indicator
+(Might be replaced by a manual scrolling letter button implementation in the future)
+
+Minor code improvements
+Minor improvements to addon.xml
+
+Kodi 20+ only:
+
+Textures:
+
+Further refinements to recently updated CalibrateReset.png (Fixed barely visible scaling inconsistency)
+
+[B]4.7.33[/B] (2024-07-11)
 
 Improved "Text" View focus animation (Text color change now transitions smoothly)
 Minor code improvements

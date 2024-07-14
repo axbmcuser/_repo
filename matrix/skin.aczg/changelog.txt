@@ -1,3 +1,19 @@
+[B]5.7.34[/B] (2024-07-14)
+
+Scrolling duration and easing type refinements for Wall Views and Fanart View
+
+Removed conceptionally questionable automatic scrolling letter indicator
+(Might be replaced by a manual scrolling letter button implementation in the future)
+
+Minor code improvements
+Minor improvements to addon.xml
+
+Kodi 20+ only:
+
+Textures:
+
+Further refinements to recently updated CalibrateReset.png (Fixed barely visible scaling inconsistency)
+
 [B]5.7.33[/B] (2024-07-11)
 
 Improved "Text" View focus animation (Text color change now transitions smoothly)
