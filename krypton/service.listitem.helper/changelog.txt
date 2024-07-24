@@ -1,3 +1,15 @@
+[B]0.4.8[/B] (2024-07-22)
+
+- Implemented automatic detection of custom "videolibrary.itemseparator" values from advancedsettings.xml
+- Removed the corresponding user setting for "videolibrary.itemseparator"
+- Further improvements to language strings and code
+
+[B]0.4.7[/B] (2024-07-05)
+
+Kodi 17-18 only:
+
+Hotfix: Removed backoff_max parameter (non existant in older urllib3 versions)
+
 [B]0.4.6[/B] (2024-07-05)
 
 - Added "suppressException" for TMDb/MDBList (OMDb already had this before)

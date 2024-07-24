@@ -153,7 +153,7 @@
   </extension>
 </addon>
 
-<addon id="service.cinema.helper" name="Cinema Helper (Kodi 19-22)" version="2.1.12" provider-name="axbmcuser">
+<addon id="service.cinema.helper" name="Cinema Helper (Kodi 19-22)" version="2.1.13" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.simplejson" version="3.16.1" />
@@ -167,7 +167,12 @@
 		<forum>https://forum.kodi.tv/showthread.php?tid=242892</forum>
 		<website>https://axbmcuser.github.io</website>
 		<source>https://github.com/axbmcuser/_repo</source>
-		<news>[B]2.1.12[/B] (2024-07-08)
+		<news>[B]2.1.13[/B] (2024-07-22)
+
+- Implemented automatic detection of custom "videolibrary.itemseparator" values from advancedsettings.xml
+- Code optimizations
+
+[B]2.1.12[/B] (2024-07-08)
 
 - Expanded force views functionality
 - Added custom language strings altering functionality
@@ -438,7 +443,7 @@ Lite version of original script version 0.3.2 with better performance for minima
 	</extension>
 </addon>
 
-<addon id="service.listitem.helper" name="ListItem Helper (Kodi 19-22)" version="1.4.6" provider-name="axbmcuser">
+<addon id="service.listitem.helper" name="ListItem Helper (Kodi 19-22)" version="1.4.8" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" version="2.3.0" />
@@ -499,10 +504,10 @@ ListItemHelper.TVDBID
 
 ListItemHelper.ageRating.commonsense
 
-ListItemHelper.studio.1 (up to .50)
-ListItemHelper.genre.1 (up to .50)
-ListItemHelper.writer.1 (up to .50)
-ListItemHelper.director.1 (up to .50)
+ListItemHelper.studio.1 (up to .10)
+ListItemHelper.genre.1 (up to .10)
+ListItemHelper.writer.1 (up to .10)
+ListItemHelper.director.1 (up to .10)
 
 Local ratings from Kodi database:
 
@@ -555,7 +560,19 @@ Many thanks to the contributors of the listed projects and all users providing v
 		<forum>https://forum.kodi.tv/showthread.php?tid=370673</forum>
 		<website>https://axbmcuser.github.io</website>
 		<source>https://github.com/axbmcuser/_repo</source>
-		<news>[B]1.4.6[/B] (2024-07-05)
+		<news>[B]1.4.8[/B] (2024-07-22)
+
+- Implemented automatic detection of custom "videolibrary.itemseparator" values from advancedsettings.xml
+- Removed the corresponding user setting for "videolibrary.itemseparator"
+- Further improvements to language strings and code
+
+[B]1.4.7[/B] (2024-07-05)
+
+Kodi 17-18 only:
+
+Hotfix: Removed backoff_max parameter (non existant in older urllib3 versions)
+
+[B]1.4.6[/B] (2024-07-05)
 
 - Added "suppressException" for TMDb/MDBList (OMDb already had this before)
 - Optimized retry parameters
@@ -722,7 +739,7 @@ Second Test Release:
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="5.7.34" name="Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="5.7.35" name="Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.15.0" />
 		<import addon="service.listitem.helper" version="1.0.0" />
@@ -745,7 +762,31 @@ Useful lightweight features and countless carefully crafted usability refinement
 		<forum>https://forum.kodi.tv/showthread.php?tid=242892</forum>
 		<website>https://axbmcuser.github.io</website>
 		<source>https://github.com/axbmcuser/_repo</source>
-		<news>[B]5.7.34[/B] (2024-07-14)
+		<news>[B]5.7.35[/B] (2024-07-24)
+
+Visual refinements for all Wall Views
+Improved spacing and positioning of Wall items and container
+
+Video Info Dialog
+Formatting simplification and improvements for multiple strings like genre, director, writer, budget/revenue
+This changes are supported by corresponding updates of the "ListItem Helper" and "Cinema Helper" add-ons
+
+My Skin settings language strings and text formatting improvements
+
+Misc improvements:
+
+Minor code improvements
+Fonts code changes without visual changes, added font for improved generic add-on compatibility
+
+Internal:
+
+Further preparation for a potential future cinemascope skin variant
+
+Kodi 18+ only:
+
+Games section improvements
+
+[B]5.7.34[/B] (2024-07-14)
 
 Scrolling duration and easing type refinements for Wall Views and Fanart View
 

@@ -1,3 +1,27 @@
+[B]4.7.35[/B] (2024-07-24)
+
+Visual refinements for all Wall Views
+Improved spacing and positioning of Wall items and container
+
+Video Info Dialog
+Formatting simplification and improvements for multiple strings like genre, director, writer, budget/revenue
+This changes are supported by corresponding updates of the "ListItem Helper" and "Cinema Helper" add-ons
+
+My Skin settings language strings and text formatting improvements
+
+Misc improvements:
+
+Minor code improvements
+Fonts code changes without visual changes, added font for improved generic add-on compatibility
+
+Internal:
+
+Further preparation for a potential future cinemascope skin variant
+
+Kodi 18+ only:
+
+Games section improvements
+
 [B]4.7.34[/B] (2024-07-14)
 
 Scrolling duration and easing type refinements for Wall Views and Fanart View
