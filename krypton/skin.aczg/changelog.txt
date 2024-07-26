@@ -1,3 +1,19 @@
+[B]3.7.36[/B] (2024-07-26)
+
+Improved context menu
+Minor code improvements
+
+Kodi 18+ only:
+
+[B]Games section improvements[/B]
+Improved GameOSD (games menu), Game windows and more
+
+Kodi 21+ only:
+
+[B]Games section improvements[/B]
+Added new "Ports + Players" window (Kodi PR #23548)
+Added non-hard-coded button combos (Kodi PR #24147)
+
 [B]3.7.35[/B] (2024-07-24)
 
 Visual refinements for all Wall Views

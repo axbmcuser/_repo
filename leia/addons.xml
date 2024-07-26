@@ -135,7 +135,7 @@
     </extension>
 </addon>
 
-<addon id="skin.aczg" version="4.7.35" name="Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="4.7.36" name="Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="service.listitem.helper" version="0.3.4" />
@@ -158,7 +158,23 @@ Useful lightweight features and countless carefully crafted usability refinement
 		<forum>https://forum.kodi.tv/showthread.php?tid=242892</forum>
 		<website>https://axbmcuser.github.io</website>
 		<source>https://github.com/axbmcuser/_repo</source>
-		<news>[B]4.7.35[/B] (2024-07-24)
+		<news>[B]4.7.36[/B] (2024-07-26)
+
+Improved context menu
+Minor code improvements
+
+Kodi 18+ only:
+
+[B]Games section improvements[/B]
+Improved GameOSD (games menu), Game windows and more
+
+Kodi 21+ only:
+
+[B]Games section improvements[/B]
+Added new "Ports + Players" window (Kodi PR #23548)
+Added non-hard-coded button combos (Kodi PR #24147)
+
+[B]4.7.35[/B] (2024-07-24)
 
 Visual refinements for all Wall Views
 Improved spacing and positioning of Wall items and container
