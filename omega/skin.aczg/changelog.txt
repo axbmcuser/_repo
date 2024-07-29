@@ -1,3 +1,14 @@
+[B]6.7.37[/B] (2024-07-29)
+
+[B]Reworked Add-on Info Dialog[/B]
+Improved visuals and usability for the Add-on Info Dialog
+
+Improved Custom Search Dialog
+Improved DialogKeyboard and DialogNumeric
+Improved usability and navigation in context of search, keyboard and numeric dialogs
+Improved GameOSD (games menu)
+Minor code and visual improvements
+
 [B]6.7.36[/B] (2024-07-26)
 
 Improved context menu
