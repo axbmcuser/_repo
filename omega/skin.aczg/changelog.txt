@@ -1,3 +1,8 @@
+[B]6.7.39[/B] (2024-07-31)
+
+[B]GameOSD (Game Menu) Rework[/B] follow-up refinements
+Shortened text strings within "Controls" sub-menu
+
 [B]6.7.38[/B] (2024-07-31)
 
 [B]GameOSD (Game Menu) Rework[/B]
