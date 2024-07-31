@@ -1,3 +1,13 @@
+[B]6.7.38[/B] (2024-07-31)
+
+[B]GameOSD (Game Menu) Rework[/B]
+
+Context menu improvements for "Seasons" View (Fixes minimal visual context menu cut-off at the top)
+
+Improvements for System Settings
+Reworked settings level indicator/button
+Added rarely used highly transparent scrollbar for edge-case scenarios where the left settings category count is very high (RetroPlayer build "Services" cat)
+
 [B]6.7.37[/B] (2024-07-29)
 
 [B]Reworked Add-on Info Dialog[/B]

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="6.7.37" name="Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="6.7.38" name="Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
 		<import addon="service.listitem.helper" version="1.0.0" />
@@ -22,7 +22,17 @@ Useful lightweight features and countless carefully crafted usability refinement
 		<forum>https://forum.kodi.tv/showthread.php?tid=242892</forum>
 		<website>https://axbmcuser.github.io</website>
 		<source>https://github.com/axbmcuser/_repo</source>
-		<news>[B]6.7.37[/B] (2024-07-29)
+		<news>[B]6.7.38[/B] (2024-07-31)
+
+[B]GameOSD (Game Menu) Rework[/B]
+
+Context menu improvements for "Seasons" View (Fixes minimal visual context menu cut-off at the top)
+
+Improvements for System Settings
+Reworked settings level indicator/button
+Added rarely used highly transparent scrollbar for edge-case scenarios where the left settings category count is very high (RetroPlayer build "Services" cat)
+
+[B]6.7.37[/B] (2024-07-29)
 
 [B]Reworked Add-on Info Dialog[/B]
 Improved visuals and usability for the Add-on Info Dialog
