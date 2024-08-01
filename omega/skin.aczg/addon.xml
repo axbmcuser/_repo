@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="6.7.40" name="Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="6.7.41" name="Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
 		<import addon="service.listitem.helper" version="1.0.0" />
@@ -22,7 +22,15 @@ Useful lightweight features and countless carefully crafted usability refinement
 		<forum>https://forum.kodi.tv/showthread.php?tid=242892</forum>
 		<website>https://axbmcuser.github.io</website>
 		<source>https://github.com/axbmcuser/_repo</source>
-		<news>[B]6.7.40[/B] (2024-08-01)
+		<news>[B]6.7.41[/B] (2024-08-02)
+
+Improved focus visuals of Custom Search Dialog
+
+Improved focus visuals of Game dialogs and Video Bookmarks dialog
+
+Improved scroll animations of Select dialogs (General, Game) and Video Bookmarks dialog
+
+[B]6.7.40[/B] (2024-08-01)
 
 Slightly increaed button spacing in Video Bookmarks dialog to match game dialogs (spacing being too narrow before)
 

@@ -1,3 +1,11 @@
+[B]6.7.41[/B] (2024-08-02)
+
+Improved focus visuals of Custom Search Dialog
+
+Improved focus visuals of Game dialogs and Video Bookmarks dialog
+
+Improved scroll animations of Select dialogs (General, Game) and Video Bookmarks dialog
+
 [B]6.7.40[/B] (2024-08-01)
 
 Slightly increaed button spacing in Video Bookmarks dialog to match game dialogs (spacing being too narrow before)
