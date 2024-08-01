@@ -1,3 +1,19 @@
+[B]6.7.40[/B] (2024-08-01)
+
+Slightly increaed button spacing in Video Bookmarks dialog to match game dialogs (spacing being too narrow before)
+
+Follow-up refinements:
+
+Improved settings level indicator/button navigation targets with a workaround to avoid a Kodi bug causing double grouplist focus in rare situations
+
+[B]Games section[/B]
+
+Added "First Run"-info for Game Menu
+
+Updated button combo help/info sheet
+
+Completed Pre-Game Savestates dialog with "New" button and "Saved with:" emulator info
+
 [B]6.7.39[/B] (2024-07-31)
 
 [B]GameOSD (Game Menu) Rework[/B] follow-up refinements
