@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="skin.aczg" version="6.7.43" name="Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="6.7.44" name="Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
 		<import addon="service.listitem.helper" version="1.0.0" />
@@ -23,9 +23,11 @@ Useful lightweight features and countless carefully crafted usability refinement
 		<forum>https://forum.kodi.tv/showthread.php?tid=242892</forum>
 		<website>https://axbmcuser.github.io</website>
 		<source>https://github.com/axbmcuser/_repo</source>
-		<news>[B]6.7.43[/B] (2024-11-04)
+		<news>[B]6.7.44[/B] (2024-11-07)
+[B]6.7.43[/B] (2024-11-04)
 
 Further refinements for "Trailer Search method" "Open in Web Browser" functionality (Mostly affects Android)
+Refinements for Add-ons sub menu entry "Android apps" which also affect Wall Views displaying said "Android apps"
 
 [B]6.7.42[/B] (2024-10-31)
 
@@ -36,7 +38,7 @@ My Skin:
 Reworked "Trailer" and "Trailer Search" button options
 "Trailer Search method" "Open in Web Browser" functionality has been reworked and is now supported on Android (Beta, tbc)
 
-Minor improvements for wall view label variables (Now identical for all wall views)
+Minor improvements for wall view label variables (Now identical for all Wall Views)
 
 Language strings and text formatting improvements
 

@@ -1,6 +1,8 @@
+[B]6.7.44[/B] (2024-11-07)
 [B]6.7.43[/B] (2024-11-04)
 
 Further refinements for "Trailer Search method" "Open in Web Browser" functionality (Mostly affects Android)
+Refinements for Add-ons sub menu entry "Android apps" which also affect Wall Views displaying said "Android apps"
 
 [B]6.7.42[/B] (2024-10-31)
 
@@ -11,7 +13,7 @@ My Skin:
 Reworked "Trailer" and "Trailer Search" button options
 "Trailer Search method" "Open in Web Browser" functionality has been reworked and is now supported on Android (Beta, tbc)
 
-Minor improvements for wall view label variables (Now identical for all wall views)
+Minor improvements for wall view label variables (Now identical for all Wall Views)
 
 Language strings and text formatting improvements
 

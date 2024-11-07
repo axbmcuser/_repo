@@ -1,3 +1,7 @@
+[B]2.1.14[/B] (2024-11-07)
+
+Improved content type detection for "Add-ons" type ("Android apps" section is now also considered)
+
 [B]2.1.13[/B] (2024-07-22)
 
 - Implemented automatic detection of custom "videolibrary.itemseparator" values from advancedsettings.xml
