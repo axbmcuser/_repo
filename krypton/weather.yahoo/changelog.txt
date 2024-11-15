@@ -1,8 +1,14 @@
+[B]5.3.7[/B] (2024-11-15)
+
+Updated add-on icon, removed deprecated fanart and banner
+Renamed add-on from "Yahoo! Weather" to "Yahoo Weather"
+Added Warning regarding mandatory old cookie data
+
 [B]5.3.6[/B] (2024-06-12)
 
-On fresh installs, the Add-on is broken as of today due to changes from Yahoo!
+On fresh installs, the add-on is broken as of today due to changes from Yahoo.
 
-- If you already have an old valid cookie in your settings.xml, you can still get weather data
+- If you have an old valid cookie in your settings.xml, you can still get weather data
 
 - Added a workaround so an existing valid cookie never expires
 
