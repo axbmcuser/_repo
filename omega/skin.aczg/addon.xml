@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="6.7.44" name="Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="6.7.45" name="Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
 		<import addon="service.listitem.helper" version="1.0.0" />
@@ -22,7 +22,52 @@ Useful lightweight features and countless carefully crafted usability refinement
 		<forum>https://forum.kodi.tv/showthread.php?tid=242892</forum>
 		<website>https://axbmcuser.github.io</website>
 		<source>https://github.com/axbmcuser/_repo</source>
-		<news>[B]6.7.44[/B] (2024-11-07)
+		<news>[B]6.7.45[/B] (2024-11-26)
+
+Video Info Dialog:
+
+Refined visuals and navigation handling (Improved navigation mostly affects upper info box)
+Implemented "More options" functionality for better usability and simplicity
+Slightly expanded "Extended Info" add-on functionality: When selecting the director name from within the upper info box, "Extended Info" is used (Affects: Movies; Note: Library search functionality of the dedicated "Director"-button remains unchanged)
+
+My Skin:
+
+Reworked, refined and simplified many options including, but not limited to: 
+Text color changes, tree restructuring and label improvements
+
+Added new options to "My Skin"
+
+(OSD, Dialogs + Views - Video Info Dialog)
+"Show button "Extended Info" for Movies"
+"Show button "My Rating""
+"Enable File Info + Release Notes for Movies and Episodes"
+
+(Advanced - Debugging)
+"Delete Kodi "userdata/Thumbnails/" folder"
+
+Misc improvements:
+
+Further preparation for a potential future cinemascope skin variant
+
+Home screen widgets: Slightly corrected "Recently X" widgets scrollbar y-position (barely noticeable)
+
+Custom Search Dialog: Improved usability by changing navigation target handling
+
+Subtitles Download Dialog: Visual refinements for left sources menu
+
+Reworked folder structure for python helper scripts
+
+Minor code improvements
+
+Textures:
+
+Added new icon textures for Video Info Dialog changes
+
+Refined folder structure for added icons
+
+Improved separator3.png for add-on settings and settings dialog [DialogAddonSettings.xml] [DialogSettings.xml]
+
+[B]6.7.44[/B] (2024-11-07)
 [B]6.7.43[/B] (2024-11-04)
 
 Further refinements for "Trailer Search method" "Open in Web Browser" functionality (Mostly affects Android)
@@ -759,7 +804,7 @@ Improved visuals and optimization rework of almost all dialogs, including, but n
 - File browser: Improved click targets for better and more predictable usability
 - Volume dialog: Move down mute icon by some pixels when profile icon is shown on Home screen so both elements doesn't get too close to each other
 - Video and PVR Info Dialogs: Removed autoscroll of plot (it has no business there). Also improved a spacing-condition for a very rare combination of displaying the disc and credits stinger icon when other flags are unavailable
-- Slightly improved visuals and usability for Subtitles Download dialog
+- Slightly improved visuals and usability for Subtitles Download Dialog
 - Settings dialog: Fixed missing header when dialog is loaded for the first time (removed wrongly duplicated id). Improved fade in out transitions
 - Process Info Dialog: Changed font weight of section headers from regular to light
 - Keyboard and Numeric Dialogs: Improved visuals for some non focused and focused elements
@@ -1815,7 +1860,7 @@ Improved main menu "VIDEOS" item onclick targets, removed/added/restructured sub
 Improved main menu "MUSIC" item onclick targets, removed/added/restructured sub-menu items, removed now deprecated MusicDirectLink property handling
 
 
-Improved "manual search" button hitrect in Subtitles Download dialog (Only affects mouse input)
+Improved "manual search" button hitrect in Subtitles Download Dialog (Only affects mouse input)
 
 [Includes_DialogSelect] Improved some image positions and sizes for consistency betweens dialog variants
 [_variables] Added rus audio language condition for DSPlayer/KodiDS conditions
@@ -3224,7 +3269,7 @@ removed "HasSub.png" code+image,
 - Minor fixes and improvements
 
 [B]2.7.50[/B]
-- Added another Wall View with more items (Now: Wall View 1 &amp; Wall View 2)
+- Added another Wall View with more items (Now: Wall View 1 + Wall View 2)
 - Added "Clean library" button in sidebar (below "Update Library")
 - Minor improvements and optimizations
 
