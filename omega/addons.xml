@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="skin.aczg" version="6.7.45" name="Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="6.7.46" name="Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
 		<import addon="service.listitem.helper" version="1.0.0" />
@@ -23,13 +23,49 @@ Useful lightweight features and countless carefully crafted usability refinement
 		<forum>https://forum.kodi.tv/showthread.php?tid=242892</forum>
 		<website>https://axbmcuser.github.io</website>
 		<source>https://github.com/axbmcuser/_repo</source>
-		<news>[B]6.7.45[/B] (2024-11-26)
+		<news>[B]6.7.46[/B] (2025-01-01)
+
+Global Font Rework
+
+- Changes and refinements to UI font styles
+
+- Added new font option "Accessibility:  Large text"
+(This option is intended exclusively for accessibility use in support of users with low vision.)
+
+- Extensive preparations for future "Other Languages Support"
+
+My Skin:
+
+Refinements to tree structure and group headers
+Added some horizontal separator lines for better visual grouping
+
+Misc improvements:
+
+- Updated language strings to latest Confluence GIT master
+- Refinements to System Info window including Privacy Policy UI changes
+- Code future proofing to detect Kodi versions above Kodi 22
+- Minor layout improvements for LiveTV/PVR views
+- DialogVideoInfo: Minor code improvements
+- Changed Newline to Unix and encoding to UTF-8 for consistency
+- GameOSD: Corrected slightly off white color of volume icon (Kodi 18+ only)
+- Added number of available updates to Notification Dialog (Kodi 19+ only)
+- Added additional line for Kodi Core System Info (PR #26034) (Kodi 21.2+ only)
+
+Textures:
+
+Updated icon for Confluence ZEITGEIST
+
+[B]6.7.45[/B] (2024-11-26)
 
 Video Info Dialog:
 
 Refined visuals and navigation handling (Improved navigation mostly affects upper info box)
 Implemented "More options" functionality for better usability and simplicity
-Slightly expanded "Extended Info" add-on functionality: When selecting the director name from within the upper info box, "Extended Info" is used (Affects: Movies; Note: Library search functionality of the dedicated "Director"-button remains unchanged)
+Added icon to "Trailer Search" button while shortening label string for improved joy of use
+
+Slightly expanded "Extended Info" add-on functionality:
+When selecting the director name from within the upper info box, "Extended Info" is used
+(Affects: Movies + Episodes; Note: Library search functionality of the dedicated "Director" button remains unchanged)
 
 My Skin:
 
