@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="6.7.49" name="Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="6.7.50" name="Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
 		<import addon="service.listitem.helper" version="1.0.0" />
@@ -22,7 +22,13 @@ Useful lightweight features and countless carefully crafted usability refinement
 		<forum>https://forum.kodi.tv/showthread.php?tid=242892</forum>
 		<website>https://axbmcuser.github.io</website>
 		<source>https://github.com/axbmcuser/_repo</source>
-		<news>[B]6.7.49[/B] (2025-01-05)
+		<news>[B]6.7.50[/B] (2025-01-05)
+
+Minor improvements for Video Info Dialog
+
+Code refinements for Font Rework (cross-generational code)
+
+[B]6.7.49[/B] (2025-01-05)
 
 Minor improvements for Add-on Info Dialog
 
