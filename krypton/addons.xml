@@ -950,7 +950,7 @@ Second Test Release:
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="3.7.37" name="Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.7.49" name="Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0" />
 		<import addon="service.listitem.helper" version="0.3.4" />
@@ -974,7 +974,175 @@ Useful lightweight features and countless carefully crafted usability refinement
 		<forum>https://forum.kodi.tv/showthread.php?tid=242892</forum>
 		<website>https://axbmcuser.github.io</website>
 		<source>https://github.com/axbmcuser/_repo</source>
-		<news>[B]3.7.37[/B] (2024-07-29)
+		<news>[B]3.7.49[/B] (2025-01-05)
+
+Minor improvements for Add-on Info Dialog
+
+Code refinements for Font Rework (cross-generational code)
+Added workaround for Kodi 17.6 (which does not support includes in Font.xml)
+
+[B]3.7.48[/B] (2025-01-05)
+
+Minor improvements for Add-on Info Dialog (cross-generational code)
+
+Kodi 18+ only:
+
+Minor Game OSD improvements (cross-generational code)
+
+[B]3.7.47[/B] (2025-01-04)
+
+Further refinements to UI font styles (Follow-up to recent Font Rework)
+
+[B]3.7.46[/B] (2025-01-01)
+
+Global Font Rework
+
+- Changes and refinements to UI font styles
+
+- Added new font option "Accessibility:  Large text"
+(This option is intended exclusively for accessibility use in support of users with low vision.)
+
+- Extensive preparations for future "Other Languages Support"
+
+My Skin:
+
+Refinements to tree structure and group headers
+Added some horizontal separator lines for better visual grouping
+
+Misc improvements:
+
+- Updated language strings to latest Confluence GIT master
+- Refinements to System Info window including Privacy Policy UI changes
+- Code future proofing to detect Kodi versions above Kodi 22
+- Minor layout improvements for LiveTV/PVR views
+- DialogVideoInfo: Minor code improvements
+- Changed Newline to Unix and encoding to UTF-8 for consistency
+- GameOSD: Corrected slightly off white color of volume icon (Kodi 18+ only)
+- Added number of available updates to Notification Dialog (Kodi 19+ only)
+- Added additional line for Kodi Core System Info (PR #26034) (Kodi 21.2+ only)
+
+Textures:
+
+Updated icon for Confluence ZEITGEIST
+
+[B]3.7.45[/B] (2024-11-26)
+
+Video Info Dialog:
+
+Refined visuals and navigation handling (Improved navigation mostly affects upper info box)
+Implemented "More options" functionality for better usability and simplicity
+Added icon to "Trailer Search" button while shortening label string for improved joy of use
+
+Slightly expanded "Extended Info" add-on functionality:
+When selecting the director name from within the upper info box, "Extended Info" is used
+(Affects: Movies + Episodes; Note: Library search functionality of the dedicated "Director" button remains unchanged)
+
+My Skin:
+
+Reworked, refined and simplified many options including, but not limited to:
+Text color changes, tree restructuring and label improvements
+
+Added new options to "My Skin"
+
+(OSD, Dialogs + Views - Video Info Dialog)
+"Show button "Extended Info" for Movies"
+"Show button "My Rating""
+"Enable File Info + Release Notes for Movies and Episodes"
+
+(Advanced - Debugging)
+"Delete Kodi "userdata/Thumbnails/" folder"
+
+Misc improvements:
+
+Further preparation for a potential future cinemascope skin variant
+
+Home screen widgets: Slightly corrected "Recently X" widgets scrollbar y-position (barely noticeable)
+
+Custom Search Dialog: Improved usability by changing navigation target handling
+
+Subtitles Download Dialog: Visual refinements for left sources menu
+
+Reworked folder structure for python helper scripts
+
+Minor code improvements
+
+Textures:
+
+Added new icon textures for Video Info Dialog changes
+
+Refined folder structure for added icons
+
+Improved separator3.png for add-on settings and settings dialog [DialogAddonSettings.xml] [DialogSettings.xml]
+
+[B]3.7.44[/B] (2024-11-07)
+[B]3.7.43[/B] (2024-11-04)
+
+Further refinements for "Trailer Search method" "Open in Web Browser" functionality (Mostly affects Android)
+Refinements for Add-ons sub menu entry "Android apps" which also affect Wall Views displaying said "Android apps"
+
+[B]3.7.42[/B] (2024-10-31)
+
+Optimized default scrolling duration for textbox (Increased duration. Mostly affects Text Viewer dialogs)
+
+My Skin:
+
+Reworked "Trailer" and "Trailer Search" button options
+"Trailer Search method" "Open in Web Browser" functionality has been reworked and is now supported on Android (Beta, tbc)
+
+Minor improvements for wall view label variables (Now identical for all Wall Views)
+
+Language strings and text formatting improvements
+
+Textures:
+
+Further refinements to DefaultAddonInputstream.png, DefaultAddSource.png, DefaultMusicRecentlyAdded.png, DefaultRecentlyAddedEpisodes.png, DefaultRecentlyAddedMovies.png, DefaultRecentlyAddedMusicVideos.png, GoFullscreen.png
+
+Slightly improved DefaultAddonsRecentlyUpdated.png and DefaultAddonsUpdates.png (smaller dots)
+
+[B]3.7.41[/B] (2024-08-02)
+
+Improved focus visuals of Custom Search Dialog
+
+Improved focus visuals of Game dialogs and Video Bookmarks dialog
+
+Improved scroll animations of Select dialogs (General, Game) and Video Bookmarks dialog
+
+[B]3.7.40[/B] (2024-08-01)
+
+Slightly increaed button spacing in Video Bookmarks dialog to match game dialogs (spacing being too narrow before)
+
+Follow-up refinements:
+
+Improved settings level indicator/button navigation targets with a workaround to avoid a Kodi bug causing double grouplist focus in rare situations
+
+Kodi 18+ only:
+
+[B]Games section[/B]
+
+Added "First Run"-info for Game Menu
+
+Updated button combo help/info sheet
+
+Completed Pre-Game Savestates dialog with "New" button and "Saved with:" emulator info
+
+[B]3.7.39[/B] (2024-07-31)
+
+Kodi 18+ only:
+
+[B]GameOSD (Game Menu) Rework[/B] follow-up refinements
+Shortened text strings within "Controls" sub-menu
+
+[B]3.7.38[/B] (2024-07-31)
+
+[B]GameOSD (Game Menu) Rework[/B] (Kodi 18+ only)
+
+Context menu improvements for "Seasons" View (Fixes minimal visual context menu cut-off at the top)
+
+Improvements for System Settings
+Reworked settings level indicator/button
+Added rarely used highly transparent scrollbar for edge-case scenarios where the left settings category count is very high (RetroPlayer build "Services" cat)
+
+[B]3.7.37[/B] (2024-07-29)
 
 [B]Reworked Add-on Info Dialog[/B]
 Improved visuals and usability for the Add-on Info Dialog
@@ -1643,7 +1811,7 @@ Improved visuals and optimization rework of almost all dialogs, including, but n
 - File browser: Improved click targets for better and more predictable usability
 - Volume dialog: Move down mute icon by some pixels when profile icon is shown on Home screen so both elements doesn't get too close to each other
 - Video and PVR Info Dialogs: Removed autoscroll of plot (it has no business there). Also improved a spacing-condition for a very rare combination of displaying the disc and credits stinger icon when other flags are unavailable
-- Slightly improved visuals and usability for Subtitles Download dialog
+- Slightly improved visuals and usability for Subtitles Download Dialog
 - Settings dialog: Fixed missing header when dialog is loaded for the first time (removed wrongly duplicated id). Improved fade in out transitions
 - Process Info Dialog: Changed font weight of section headers from regular to light
 - Keyboard and Numeric Dialogs: Improved visuals for some non focused and focused elements
@@ -2704,7 +2872,7 @@ Improved main menu "VIDEOS" item onclick targets, removed/added/restructured sub
 Improved main menu "MUSIC" item onclick targets, removed/added/restructured sub-menu items, removed now deprecated MusicDirectLink property handling
 
 
-Improved "manual search" button hitrect in Subtitles Download dialog (Only affects mouse input)
+Improved "manual search" button hitrect in Subtitles Download Dialog (Only affects mouse input)
 
 [Includes_DialogSelect] Improved some image positions and sizes for consistency betweens dialog variants
 [_variables] Added rus audio language condition for DSPlayer/KodiDS conditions
@@ -2793,7 +2961,7 @@ Affects [VideoOSD] [MusicOSD] [MusicVisualisation] [PlayerControls] [Includes]
 - Improved display of background Music Visualization + Fanart/Backgrounds at the same time
 - Improved fanart handling [IncludesBackgroundBuilding]
 - [VideoOSD] [MusicOSD] Improved mouse support for mini sub menus (Enabling/using a mouse is still never recommended though)
-- Improved visuals and changed font styles for for notification dialogs: DialogExtendedProgressBar, DialogNotification
+- Improved visuals and changed font styles for notification dialogs: DialogExtendedProgressBar, DialogNotification
 - [MusicVisualisation] Further UI refinements (Shortened track artist display to album artist)
 - [VideoFullScreen] [MusicVisualisation] Further UI refinements (Changed font colors and removed last remaining font shadows for more modern+clean look)
 - [Textures] Reworked arrow-big-left.png, arrow-big-right.png, arrow-white.png, DefaultTVShows.png, OSDPlay.png, icon_video_tvshows.png because of corresponding other texture changes
@@ -3326,8 +3494,8 @@ Also forces "Sort by: Episode ASCENDING" for Episodes content on Window Load
 - Other improvements
 
 [B]3.2.3[/B] (2019-05-11)
-- Other improvements:
-- - Changed dependency "Library Data Provider" to "Library Data Provider Lite"
+- Changed dependency "Library Data Provider" to "Library Data Provider Lite"
+- Other improvements
 
 [B]3.2.2[/B] (2019-03-12)
 - Reworked Skin settings menu
@@ -4051,7 +4219,7 @@ removed "HasSub.png" code+image,
 - Minor fixes and improvements
 
 [B]2.7.50[/B]
-- Added another Wall View with more items (Now: Wall View 1 &amp; Wall View 2)
+- Added another Wall View with more items (Now: Wall View 1 + Wall View 2)
 - Added "Clean library" button in sidebar (below "Update Library")
 - Minor improvements and optimizations
 

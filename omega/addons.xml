@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="skin.aczg" version="6.7.48" name="Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="6.7.49" name="Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
 		<import addon="service.listitem.helper" version="1.0.0" />
@@ -23,9 +23,16 @@ Useful lightweight features and countless carefully crafted usability refinement
 		<forum>https://forum.kodi.tv/showthread.php?tid=242892</forum>
 		<website>https://axbmcuser.github.io</website>
 		<source>https://github.com/axbmcuser/_repo</source>
-		<news>[B]6.7.48[/B] (2025-01-05)
+		<news>[B]6.7.49[/B] (2025-01-05)
 
-Minor code improvements for for Add-on Info Dialog (cross-generational code)
+Minor improvements for Add-on Info Dialog
+
+Code refinements for Font Rework (cross-generational code)
+Added workaround for Kodi 17.6 (which does not support includes in Font.xml)
+
+[B]6.7.48[/B] (2025-01-05)
+
+Minor improvements for Add-on Info Dialog (cross-generational code)
 
 Kodi 18+ only:
 
@@ -2002,7 +2009,7 @@ Affects [VideoOSD] [MusicOSD] [MusicVisualisation] [PlayerControls] [Includes]
 - Improved display of background Music Visualization + Fanart/Backgrounds at the same time
 - Improved fanart handling [IncludesBackgroundBuilding]
 - [VideoOSD] [MusicOSD] Improved mouse support for mini sub menus (Enabling/using a mouse is still never recommended though)
-- Improved visuals and changed font styles for for notification dialogs: DialogExtendedProgressBar, DialogNotification
+- Improved visuals and changed font styles for notification dialogs: DialogExtendedProgressBar, DialogNotification
 - [MusicVisualisation] Further UI refinements (Shortened track artist display to album artist)
 - [VideoFullScreen] [MusicVisualisation] Further UI refinements (Changed font colors and removed last remaining font shadows for more modern+clean look)
 - [Textures] Reworked arrow-big-left.png, arrow-big-right.png, arrow-white.png, DefaultTVShows.png, OSDPlay.png, icon_video_tvshows.png because of corresponding other texture changes

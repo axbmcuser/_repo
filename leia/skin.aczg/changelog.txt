@@ -1,6 +1,13 @@
+[B]4.7.49[/B] (2025-01-05)
+
+Minor improvements for Add-on Info Dialog
+
+Code refinements for Font Rework (cross-generational code)
+Added workaround for Kodi 17.6 (which does not support includes in Font.xml)
+
 [B]4.7.48[/B] (2025-01-05)
 
-Minor code improvements for for Add-on Info Dialog (cross-generational code)
+Minor improvements for Add-on Info Dialog (cross-generational code)
 
 Kodi 18+ only:
 
@@ -1977,7 +1984,7 @@ Affects [VideoOSD] [MusicOSD] [MusicVisualisation] [PlayerControls] [Includes]
 - Improved display of background Music Visualization + Fanart/Backgrounds at the same time
 - Improved fanart handling [IncludesBackgroundBuilding]
 - [VideoOSD] [MusicOSD] Improved mouse support for mini sub menus (Enabling/using a mouse is still never recommended though)
-- Improved visuals and changed font styles for for notification dialogs: DialogExtendedProgressBar, DialogNotification
+- Improved visuals and changed font styles for notification dialogs: DialogExtendedProgressBar, DialogNotification
 - [MusicVisualisation] Further UI refinements (Shortened track artist display to album artist)
 - [VideoFullScreen] [MusicVisualisation] Further UI refinements (Changed font colors and removed last remaining font shadows for more modern+clean look)
 - [Textures] Reworked arrow-big-left.png, arrow-big-right.png, arrow-white.png, DefaultTVShows.png, OSDPlay.png, icon_video_tvshows.png because of corresponding other texture changes
