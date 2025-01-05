@@ -1,3 +1,11 @@
+[B]5.7.48[/B] (2025-01-05)
+
+Minor code improvements for for Add-on Info Dialog (cross-generational code)
+
+Kodi 18+ only:
+
+Minor Game OSD improvements (cross-generational code)
+
 [B]5.7.47[/B] (2025-01-04)
 
 Further refinements to UI font styles (Follow-up to recent Font Rework)
