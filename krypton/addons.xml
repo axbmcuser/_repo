@@ -236,7 +236,7 @@ Changes for Kodi 17 (Krypton): Repo is multi-dir based again (for now)</news>
   </extension>
 </addon>
 
-<addon id="service.cinema.helper" name="Cinema Helper (Kodi 17-18)" version="1.1.15" provider-name="axbmcuser">
+<addon id="service.cinema.helper" name="Cinema Helper (Kodi 17-18)" version="1.1.16" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
 		<import addon="script.module.simplejson" version="3.16.1" />
@@ -250,7 +250,12 @@ Changes for Kodi 17 (Krypton): Repo is multi-dir based again (for now)</news>
 		<forum>https://forum.kodi.tv/showthread.php?tid=242892</forum>
 		<website>https://axbmcuser.github.io</website>
 		<source>https://github.com/axbmcuser/_repo</source>
-		<news>[B]1.1.15[/B] (2025-01-01)
+		<news>[B]1.1.16[/B] (2025-01-07)
+
+Added "LocalizeStringsPropertiesCheck" for Video Info Dialog label properties custom processing
+Code improvements
+
+[B]1.1.15[/B] (2025-01-01)
 
 Preparations for future "Other Languages Support"
 Code improvements
@@ -950,7 +955,7 @@ Second Test Release:
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="3.7.50" name="Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="3.7.51" name="Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0" />
 		<import addon="service.listitem.helper" version="0.3.4" />
@@ -974,7 +979,23 @@ Useful lightweight features and countless carefully crafted usability refinement
 		<forum>https://forum.kodi.tv/showthread.php?tid=242892</forum>
 		<website>https://axbmcuser.github.io</website>
 		<source>https://github.com/axbmcuser/_repo</source>
-		<news>[B]3.7.50[/B] (2025-01-05)
+		<news>[B]3.7.51[/B] (2025-01-07)
+
+Refinements for Video Info Dialog
+
+- "Movie Set" button is now icon based)
+- "My rating" button has been moved to "More options" section
+- Custom button label processing (This change is supported by a corresponding update of the "Cinema Helper" add-on)
+- Optimized button label dimensions and positioning, Also: Automatically adapting to shorter/longer word lengths of different Kodi languages
+- Also adapted changes to PVR Info Dialog
+
+Minor code improvements
+
+Textures:
+
+Added new icon textures for Video Info Dialog changes (set.png, ratingstar.png)
+
+[B]3.7.50[/B] (2025-01-05)
 
 Minor improvements for Video Info Dialog
 

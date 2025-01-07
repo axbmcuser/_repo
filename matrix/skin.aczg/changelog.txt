@@ -1,3 +1,19 @@
+[B]5.7.51[/B] (2025-01-07)
+
+Refinements for Video Info Dialog
+
+- "Movie Set" button is now icon based)
+- "My rating" button has been moved to "More options" section
+- Custom button label processing (This change is supported by a corresponding update of the "Cinema Helper" add-on)
+- Optimized button label dimensions and positioning, Also: Automatically adapting to shorter/longer word lengths of different Kodi languages
+- Also adapted changes to PVR Info Dialog
+
+Minor code improvements
+
+Textures:
+
+Added new icon textures for Video Info Dialog changes (set.png, ratingstar.png)
+
 [B]5.7.50[/B] (2025-01-05)
 
 Minor improvements for Video Info Dialog
