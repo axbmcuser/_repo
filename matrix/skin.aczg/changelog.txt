@@ -1,3 +1,16 @@
+[B]5.7.52[/B] (2025-01-07)
+
+Improvements for left SideBar
+Reworked and simplified "CommonNowPlaying_Controls" within Sidebar
+
+Further minor refinements for Video Info Dialog
+Minor code improvements
+My Skin: Minor tree restructuring and label improvements
+
+Textures:
+
+Added new icons for SideBar changes (OSDFullscreenFO.png, OSDFullscreenNF.png)
+
 [B]5.7.51[/B] (2025-01-07)
 
 Refinements for Video Info Dialog
@@ -12,7 +25,7 @@ Minor code improvements
 
 Textures:
 
-Added new icon textures for Video Info Dialog changes (set.png, ratingstar.png)
+Added new icons for Video Info Dialog changes (set.png, ratingstar.png)
 
 [B]5.7.50[/B] (2025-01-05)
 
