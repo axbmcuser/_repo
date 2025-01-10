@@ -755,9 +755,11 @@ Second Test Release:
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="5.7.52" name="Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="5.7.53" name="Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.15.0" />
+		<import addon="resource.font.aczg" version="0.1.0" />
+		<import addon="resource.images.aczg" version="0.1.0" />
 		<import addon="service.listitem.helper" version="1.0.0" />
 		<import addon="service.library.data.provider.lite" version="0.3.4" />
 		<import addon="service.cinema.helper" version="1.0.0" />
@@ -778,7 +780,34 @@ Useful lightweight features and countless carefully crafted usability refinement
 		<forum>https://forum.kodi.tv/showthread.php?tid=242892</forum>
 		<website>https://axbmcuser.github.io</website>
 		<source>https://github.com/axbmcuser/_repo</source>
-		<news>[B]5.7.52[/B] (2025-01-07)
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<news>[B]5.7.53[/B] (2025-01-10)
+
+Externalized Skin add-ons
+
+- Skin fonts and (large) textures have been moved to two separate add-ons
+- Updated Skin folder structure (Removed "backgrounds" and "resources" folders, kept empty "fonts" folder with dummy file)
+- Updated addon.xml accordingly
+
+(With these changes Skin .zip size could be reduced from ~48.1 MB to ~3.3 MB)
+
+Minor code improvements
+
+Backported upstream language strings to Kodi 17 skin version (Custom backport; Kodi 17 only)
+- Uncommented/re-added strings which have been removed for Kodi 18+ skin language
+- Re-added #31328 ("Recently added") which is needed for Kodi 17 skin version since it's only available on Kodi 18+ core language
+
+Textures:
+
+Moved noise00.png and posterwall_fadeout_new_dither_2.png from Textures.xbt to textures add-on
+(Renamed to noise00.jpg (png2jpg) and edge_fadeout_new_dither_2.png)
+
+Added new icons for recent SideBar changes (OSDFullscreenFO.png, OSDFullscreenNF.png) to both additional UI color schemes
+
+[B]5.7.52[/B] (2025-01-07)
 
 Improvements for left SideBar
 Reworked and simplified "CommonNowPlaying_Controls" within Sidebar
@@ -4148,10 +4177,6 @@ I had this disabled because i want to be able to jump to the most right object b
 
 [B]2.7.41[/B]
 - Initial Release based on Confluence 2.7.4</news>
-		<assets>
-			<icon>resources/icon.png</icon>
-			<fanart>resources/fanart.jpg</fanart>
-		</assets>
 	</extension>
 </addon>
 </addons>

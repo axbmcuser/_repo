@@ -1,3 +1,26 @@
+[B]5.7.53[/B] (2025-01-10)
+
+Externalized Skin add-ons
+
+- Skin fonts and (large) textures have been moved to two separate add-ons
+- Updated Skin folder structure (Removed "backgrounds" and "resources" folders, kept empty "fonts" folder with dummy file)
+- Updated addon.xml accordingly
+
+(With these changes Skin .zip size could be reduced from ~48.1 MB to ~3.3 MB)
+
+Minor code improvements
+
+Backported upstream language strings to Kodi 17 skin version (Custom backport; Kodi 17 only)
+- Uncommented/re-added strings which have been removed for Kodi 18+ skin language
+- Re-added #31328 ("Recently added") which is needed for Kodi 17 skin version since it's only available on Kodi 18+ core language
+
+Textures:
+
+Moved noise00.png and posterwall_fadeout_new_dither_2.png from Textures.xbt to textures add-on
+(Renamed to noise00.jpg (png2jpg) and edge_fadeout_new_dither_2.png)
+
+Added new icons for recent SideBar changes (OSDFullscreenFO.png, OSDFullscreenNF.png) to both additional UI color schemes
+
 [B]5.7.52[/B] (2025-01-07)
 
 Improvements for left SideBar

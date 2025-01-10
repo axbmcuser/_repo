@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="resource.font.aczg" name="Confluence ZEITGEIST Fonts" version="0.1.0" provider-name="axbmcuser">
+	<extension point="kodi.resource.font" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0" />
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">Confluence ZEITGEIST Fonts</summary>
+		<description lang="en_GB">This add-on contains required fonts for Confluence ZEITGEIST.</description>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+		</assets>
+	</extension>
+</addon>
