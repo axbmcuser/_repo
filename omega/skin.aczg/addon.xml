@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="6.7.53" name="Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="6.7.54" name="Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
 		<import addon="resource.font.aczg" version="0.1.0" />
@@ -28,7 +28,29 @@ Useful lightweight features and countless carefully crafted usability refinement
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B]6.7.53[/B] (2025-01-10)
+		<news>[B]6.7.54[/B] (2025-01-15)
+
+Reworked Player Process Info Dialog
+
+Add-on Browser: Minor code and rendering performance improvements while using "Wall Views" (Especially affects "Wall 3X" and higher)
+
+Video Info Dialog: Further minor follow-up refinement for "Watched" button while using certain languages with an extra short translation string
+
+Home screen: Header font size slightly increased for recording/timer info (PVR / Live TV)
+
+Changed language strings to "CPU" and "RAM" for Player Process Info Dialog and System Info Dialog
+Added CPU temperature to System Info Dialog bottom area (only shown if available)
+
+Removed all deprecated language fallback-strings #416 ("Not available") which have been used by some views (Replaced with "-")
+(Internal note: "Not available" aka #416 (Kodi 17) and #10005 (Kodi 18+) is still being used for a visible-condition in the Player Process Info Dialog and System Info Dialog)
+
+Translations
+
+- Updated language strings to latest Confluence GIT master
+- Uncommented/re-added language string #31328 ("Recently added") which is needed for Kodi 17 skin version since it's only available on Kodi 18+ core language
+- All 6 Kodi generations now use the identical skin language files with the latest available translations (Kodi 17 skin version is not held back anymore; Easier translations sync for future releases)
+
+[B]6.7.53[/B] (2025-01-10)
 
 Externalized Skin add-ons
 
