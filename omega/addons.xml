@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="skin.aczg" version="6.7.54" name="Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="6.7.55" name="Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
 		<import addon="resource.font.aczg" version="0.1.0" />
@@ -29,7 +29,33 @@ Useful lightweight features and countless carefully crafted usability refinement
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B]6.7.54[/B] (2025-01-15)
+		<news>[B]6.7.55[/B] (2025-01-19)
+
+Reworked Fullscreen Seek/Progress Bar
+
+- Reworked fullscreen seek/progress bar (Custom solution for better seek/progress sync as a workaround for inaccurate Kodi progressbar handling)
+This avoids the seek slider being shown to the left of the current progressbar-progress despite the seek step being forward, for example)
+- Increased formerly very low precision of fullscreen progress bar from 100 to 1000 steps for more fluid visuals (This change is supported by a corresponding update of the "Cinema Helper" add-on)
+This change is also highly noticeable when playing music tracks, which are typically much shorter in lengths than your 1-2 hour long video files
+- Additional Cache Progress Bar improvements and more similar refinements like an increased mouse-control hit area size for improved usability while mouse seeking
+- Code improvements and clean-up for better maintainability
+
+Reworked Video OSD and Music OSD
+
+- Moved "Disc menu" button to the end of the left side OSD buttons (Before: The button was placed at the very end of the right side OSD buttons)
+- Recording icon size slightly decreased for recording indicator (Live TV)
+- Code improvements and clean-up for better maintainability
+
+Home screen: Recording icon size slightly decreased for recording/timer info (PVR / Live TV)
+Slightly changed mouse pointer position
+General code improvements and clean-up for better maintainability
+Minor code improvements including description and (invisible) label changes
+
+Textures:
+
+Removed unused "GoFullscreen.png" (Due to recent SideBar changes)
+
+[B]6.7.54[/B] (2025-01-15)
 
 Reworked Player Process Info Dialog
 
