@@ -135,6 +135,231 @@
     </extension>
 </addon>
 
+<addon id="service.cinema.helper" name="Cinema Helper (Kodi 18)" version="1.2.17" provider-name="axbmcuser">
+	<requires>
+		<import addon="xbmc.python" version="2.25.0" />
+		<import addon="script.module.simplejson" version="3.16.1" />
+	</requires>
+	<extension point="xbmc.service" library="service.py" start="login" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">A Cinema Helper service</summary>
+		<description lang="en_GB">A Cinema Helper service which provides some lightweight skin functionality and properties.</description>
+		<platform>all</platform>
+		<license>GPL-2.0-only</license>
+		<forum>https://forum.kodi.tv/showthread.php?tid=242892</forum>
+		<website>https://axbmcuser.github.io</website>
+		<source>https://github.com/axbmcuser/_repo</source>
+		<assets>
+			<icon>icon.png</icon>
+		</assets>
+		<news>[B]1.2.17[/B] (2025-01-19)
+
+Added new 'CH.Player.Progress' functionality
+
+General code rework and optimizations
+Including:
+- Switched from using xbmc.executebuiltin(XxxProperty, XXX, XXX) to xbmcgui.Window(XXX).xxxProperty(XXX, XXX)
+- Cross-generational code: Use 'onPlayBackStarted' for Kodi 17 and 'onAVStarted' for Kodi 18+
+- Replaced all relevant double quotes with single quotes (exception exists)
+- Changed indentation to 4 spaces
+
+[B]1.1.16[/B] (2025-01-07)
+
+Added "LocalizeStringsPropertiesCheck" for Video Info Dialog label properties custom processing
+Code improvements
+
+[B]1.1.15[/B] (2025-01-01)
+
+Preparations for future "Other Languages Support"
+Code improvements
+Updated 24p check functionality
+Changed Newline to Unix and encoding to UTF-8 for consistency
+
+[B]1.1.14[/B] (2024-11-07)
+
+Improved content type detection for "Add-ons" type ("Android apps" section is now also considered)
+
+[B]1.1.13[/B] (2024-07-22)
+
+- Implemented automatic detection of custom "videolibrary.itemseparator" values from advancedsettings.xml
+- Code optimizations
+
+[B]1.1.12[/B] (2024-07-08)
+
+- Expanded force views functionality
+- Added custom language strings altering functionality
+- Minor improvement to changelog
+
+[B]1.1.11[/B] (2024-06-25)
+
+Added lookandfeel.skinzoom detection
+
+[B]1.1.10[/B] (2024-06-21)
+
+Added TV shows seasons count (TvShowTotalSeasonsCalculated)
+
+[B]1.1.9[/B] (2024-06-19)
+
+Improvements to Container.Scrolling detection
+
+[B]1.1.8[/B] (2024-06-17)
+
+- Added AutoComplete Helper code
+- Minor improvements to addon.xml and changelog
+
+[B]1.1.7[/B] (2024-05-17)
+
+Minor improvements
+
+[B]1.1.6[/B] (2024-05-16)
+
+- Minor improvements to addon.xml
+- Code optimizations
+
+[B]1.1.5[/B] (2023-11-16)
+
+- Added checking and synchronizing of UI accent color scheme with skin themes and skin colors
+- Code optimizations
+
+[B]1.1.4[/B] (2023-11-13)
+
+- Added support for "set_focus_now_child"
+- Minor performance improvements and optimizations
+- Updated Kodi version detection to also look for Kodi 22.x (future)
+
+Clean up:
+- Removed some Python 2 code (now using code which is compatible with both 2 and 3)
+
+[B]1.1.3[/B] (2023-09-16)
+
+- Updated addon for reworked and expanded post movie dialog feature
+
+Kodi 17 only
+- Improvements for FullScreen OSD auto-close functionality
+(same simplified code will be used for Kodi 18+ versions, but it does not affect these versions in regards of functionality)
+
+[B]1.1.2[/B] (2023-08-17)
+
+- Fixed a minor issue while loading user settings in context of force views
+(Global/Misc Preset IDs: Affecting the last two entries "Add-ons" and "Games" which were not read correctly before this fix)
+
+[B]1.1.1[/B] (2023-08-15)
+
+- Changed default value in context of force views
+- Added support for "Games" in context of force views
+
+[B]1.1.0[/B] (2023-08-12)
+
+Version in sync for major rework of "A Confluence ZEITGEIST" 3.6.0 (Version numbers vary on other Kodi generations)
+
+- Added values CinemaHelper.ListItem.TvShowDBID, TvShowTitle, TvShowTotalSeasons
+- Optimized and expanded force views functionality
+- Added "set_focus_now" functionality
+- Improved handling of videolibrary.flattentvshows value
+- New addon icon
+
+Internal changes (not relevant for end users):
+- Added 24p check functionality for KodiDS custom build
+- Added support for EnableSkinDebugOutput
+
+[B]1.0.16[/B] (2023-03-15)
+
+- Hotfix for minor bug with "Always force Preset Views" which caused not all custom IDs to be read from the user input string
+- Removed code for previously introduced option "Automatically set "Default select action" to "Show information"" since it's now unused
+
+[B]1.0.15[/B] (2023-03-15)
+
+"A Confluence ZEITGEIST" skin:
+- Expanded and improved support for "Always force Preset Views" option
+- Added support for two new Skin Settings options:
+- - "Automatically disable "Show parent folder items"   (Default: On)"
+- - "Automatically set "Default select action" to "Show information"  (Default: On)"
+- Added support for "Seasons" view (509) and "Episodes" view (510)
+
+[B]1.0.14[/B] (2023-01-15)
+
+- Code and performance optimizations
+
+[B]1.0.13[/B] (2022-12-31)
+
+- Removed unused code (Skin Reload functionality)
+- On Kodi 17, don't check for Window.IsVisible(OsdSubtitleSettings) since this dialog is non existant
+- Added multi-version check for upcoming Kodi 21
+
+[B]1.0.12[/B] (2022-12-30)
+
+- Hotfix for code merging issue
+
+[B]1.0.11[/B] (2022-12-30)
+
+- Improvements for FullScreen OSD auto-close functionality and skin detection
+
+[B]1.0.10[/B] (2022-12-25)
+[B]1.0.9[/B] (2022-12-25)
+
+[B]1.0.10[/B] (2022-12-25)
+[B]1.0.9[/B] (2022-12-25)
+
+- Backported dual python 2/3 code for post credits scene detection
+- Added new property (home) CinemaHelper.player.DBID
+
+[B]1.0.8[/B] (2022-12-24)
+
+- Added support for new service.listitem.helper setting "videolibrary.itemseparator" needed for value splitting if user has set a custom separator via advancedsettings.xml
+- Added PostCreditsScene detection mechanism
+- Added VideoPlayer.studio splitting support
+- Added support for custom view IDs via Skin Settings option "Customize View IDs for "Always force Preset Views""
+
+New properties:
+
+(home) CinemaHelper.player.studio.X (X=index no, starting at 1)
+(home) CinemaHelper.player.nearEndPreReached
+(home) CinemaHelper.player.nearEndReached
+(home) CinemaHelper.player.movieHasPostCreditsScene
+
+[B]1.0.7[/B] (2022-12-10)
+
+- TV show episodes now always focus first item after window open. Much better OOB experience, not only because Kodi 17 has a focus history bug for episodes view, but in general.
+
+[B]1.0.6[/B] (2022-12-04)
+
+- Set "ExperimentalPostMovieDialogOpensNow" property before opening post movie dialogs
+
+[B]1.0.5[/B] (2022-12-03)
+
+- Rename "Special Lists" playlist folders again for more simplicity (Android "–"/"-" workaround removed). "service.cinema.helper" had also to be changed accordingly.
+
+[B]1.0.4[/B] (2022-12-03)
+
+Added Kodi 19+20 (Python 3) compatibility code basis (Dual-addon: Python 2 still supported)
+- Python 2/3 versions still need separate addon version due to required addon.xml changes
+- Using unified code basis still makes things much easier
+
+[B]1.0.3[/B] (2022-12-02)
+
+- Change VideoOSD idle-auto-close handling for Kodi 18 or higher (Seemingly a "Window.IsTopMost" bug on Kodi 18)
+- Fix duplicate tmpKodiIdleTime check for VideoOSD idle-auto-close (did no harm, but fixed nonetheless)
+- Improve clearing of CinemaHelper.UserRating.PROCESS and CinemaHelper.WatchedState.PROCESS
+- Remove "True or IsVideoDb" debug condition (condition is now removed)
+- Fix unmatched parentheses for "IsSpecialList" definition
+
+[B]1.0.2[/B] (2022-04-06)
+
+- Fix "ExperimentalPostMovieInfoDialog" enabled-check
+
+[B]1.0.1[/B] (2022-04-06)
+
+- Added "ParentFolderItem skip for Fanart view" functionality
+- Added "Always force Preset Views" functionality
+- Added different code execution intervals for different actions
+- Code and performance improvements
+
+[B]1.0.0[/B] (2022-03-29)
+
+- Initial release</news>
+	</extension>
+</addon>
+
 <addon id="skin.aczg" version="4.7.54" name="Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />

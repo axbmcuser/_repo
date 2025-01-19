@@ -1,3 +1,14 @@
+[B]1.1.17[/B] (2025-01-19)
+
+Added new 'CH.Player.Progress' functionality
+
+General code rework and optimizations
+Including:
+- Switched from using xbmc.executebuiltin(XxxProperty, XXX, XXX) to xbmcgui.Window(XXX).xxxProperty(XXX, XXX)
+- Cross-generational code: Use 'onPlayBackStarted' for Kodi 17 and 'onAVStarted' for Kodi 18+
+- Replaced all relevant double quotes with single quotes (exception exists)
+- Changed indentation to 4 spaces
+
 [B]1.1.16[/B] (2025-01-07)
 
 Added "LocalizeStringsPropertiesCheck" for Video Info Dialog label properties custom processing

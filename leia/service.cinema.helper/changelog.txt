@@ -1,3 +1,45 @@
+[B]1.2.17[/B] (2025-01-19)
+
+Added new 'CH.Player.Progress' functionality
+
+General code rework and optimizations
+Including:
+- Switched from using xbmc.executebuiltin(XxxProperty, XXX, XXX) to xbmcgui.Window(XXX).xxxProperty(XXX, XXX)
+- Cross-generational code: Use 'onPlayBackStarted' for Kodi 17 and 'onAVStarted' for Kodi 18+
+- Replaced all relevant double quotes with single quotes (exception exists)
+- Changed indentation to 4 spaces
+
+[B]1.1.16[/B] (2025-01-07)
+
+Added "LocalizeStringsPropertiesCheck" for Video Info Dialog label properties custom processing
+Code improvements
+
+[B]1.1.15[/B] (2025-01-01)
+
+Preparations for future "Other Languages Support"
+Code improvements
+Updated 24p check functionality
+Changed Newline to Unix and encoding to UTF-8 for consistency
+
+[B]1.1.14[/B] (2024-11-07)
+
+Improved content type detection for "Add-ons" type ("Android apps" section is now also considered)
+
+[B]1.1.13[/B] (2024-07-22)
+
+- Implemented automatic detection of custom "videolibrary.itemseparator" values from advancedsettings.xml
+- Code optimizations
+
+[B]1.1.12[/B] (2024-07-08)
+
+- Expanded force views functionality
+- Added custom language strings altering functionality
+- Minor improvement to changelog
+
+[B]1.1.11[/B] (2024-06-25)
+
+Added lookandfeel.skinzoom detection
+
 [B]1.1.10[/B] (2024-06-21)
 
 Added TV shows seasons count (TvShowTotalSeasonsCalculated)
@@ -57,7 +99,7 @@ Kodi 17 only
 Version in sync for major rework of "A Confluence ZEITGEIST" 3.6.0 (Version numbers vary on other Kodi generations)
 
 - Added values CinemaHelper.ListItem.TvShowDBID, TvShowTitle, TvShowTotalSeasons
-- Opzimized and expanded force views functionality
+- Optimized and expanded force views functionality
 - Added "set_focus_now" functionality
 - Improved handling of videolibrary.flattentvshows value
 - New addon icon
