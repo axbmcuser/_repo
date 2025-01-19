@@ -153,7 +153,7 @@
   </extension>
 </addon>
 
-<addon id="service.cinema.helper" name="Cinema Helper (Kodi 19-22)" version="2.1.17" provider-name="axbmcuser">
+<addon id="service.cinema.helper" name="Cinema Helper (Kodi 19-22)" version="2.1.18" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.simplejson" version="3.16.1" />
@@ -170,7 +170,11 @@
 		<assets>
 			<icon>icon.png</icon>
 		</assets>
-		<news>[B]2.1.17[/B] (2025-01-19)
+		<news>[B]2.1.18[/B] (2025-01-19)
+
+Follow-up refinements for 'CH.Player.Progress' functionality
+
+[B]2.1.17[/B] (2025-01-19)
 
 Added new 'CH.Player.Progress' functionality
 
