@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="5.7.55" name="Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="5.7.56" name="Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.15.0" />
 		<import addon="resource.font.aczg" version="0.1.0" />
@@ -28,20 +28,49 @@ Useful lightweight features and countless carefully crafted usability refinement
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B]5.7.55[/B] (2025-01-19)
+		<news>[B]5.7.56[/B] (2025-01-21)
+
+Video OSD
+- Refinement of the 'Disc menu' icon
+(Adapted the disc icon changes to all other icon variants and color schemes)
+- Switched positions of 'Audio settings' and 'Video settings' OSD buttons
+
+Music OSD
+- Reworked and improved OSD buttons layout
+- Added new 'More options' menu button
+
+Added support for 4K Video/Music OSD player buttons; simplified code (Textures will be added in the future)
+
+Video Info Dialog: Title has been moved up by a small amount
+Fullscreen Video/Music OSD: "Next"-info below the seek/progress bar has been moved down by a small amount
+
+Improved movie disc detection
+Updated high resolution display detection
+SlideShow: Fixed 4K texture detection for play button
+Minor font type changes for first run helper dialogs
+Minor code improvements
+
+Textures:
+
+Added new 'More options' OSD button textures
+Updated 'Disc menu' OSD button textures
+Removed 'Vizualization' OSD button textures
+Updated all 'Disc' icon variants
+
+[B]5.7.55[/B] (2025-01-19)
 
 Reworked Fullscreen Seek/Progress Bar
 
 - Reworked fullscreen seek/progress bar (Custom solution for better seek/progress sync as a workaround for inaccurate Kodi progressbar handling)
 This avoids the seek slider being shown to the left of the current progressbar-progress despite the seek step being forward, for example)
-- Increased formerly very low precision of fullscreen progress bar from 100 to 1000 steps for more fluid visuals (This change is supported by a corresponding update of the "Cinema Helper" add-on)
+- Increased formerly very low precision of fullscreen progress bar from 100 to 1000 steps for more fluid visuals (This change is supported by a corresponding update of the 'Cinema Helper' add-on)
 This change is also highly noticeable when playing music tracks, which are typically much shorter in lengths than your 1-2 hour long video files
 - Additional Cache Progress Bar improvements and more similar refinements like an increased mouse-control hit area size for improved usability while mouse seeking
 - Code improvements and clean-up for better maintainability
 
 Reworked Video OSD and Music OSD
 
-- Moved "Disc menu" button to the end of the left side OSD buttons (Before: The button was placed at the very end of the right side OSD buttons)
+- Moved 'Disc menu' button to the end of the left side OSD buttons (Before: The button was placed at the very end of the right side OSD buttons)
 - Recording icon size slightly decreased for recording indicator (Live TV)
 - Code improvements and clean-up for better maintainability
 
@@ -52,7 +81,7 @@ Minor code improvements including description and (invisible) label changes
 
 Textures:
 
-Removed unused "GoFullscreen.png" (Due to recent SideBar changes)
+Removed unused 'GoFullscreen.png' (Due to recent SideBar changes)
 
 [B]5.7.54[/B] (2025-01-15)
 
