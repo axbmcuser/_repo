@@ -135,7 +135,7 @@
     </extension>
 </addon>
 
-<addon id="service.cinema.helper" name="Cinema Helper (Kodi 18)" version="1.2.18" provider-name="axbmcuser">
+<addon id="service.cinema.helper" name="Cinema Helper (Kodi 18)" version="1.2.19" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
 		<import addon="script.module.simplejson" version="3.16.1" />
@@ -152,7 +152,11 @@
 		<assets>
 			<icon>icon.png</icon>
 		</assets>
-		<news>[B]1.2.18[/B] (2025-01-19)
+		<news>[B]1.2.19[/B] (2025-01-22)
+
+Hotfix for minor code merging issue affecting 'Watched State' functionality
+
+[B]1.2.18[/B] (2025-01-19)
 
 Follow-up refinements for 'CH.Player.Progress' functionality
 

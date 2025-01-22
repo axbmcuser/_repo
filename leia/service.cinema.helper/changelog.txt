@@ -1,3 +1,7 @@
+[B]1.2.19[/B] (2025-01-22)
+
+Hotfix for minor code merging issue affecting 'Watched State' functionality
+
 [B]1.2.18[/B] (2025-01-19)
 
 Follow-up refinements for 'CH.Player.Progress' functionality
