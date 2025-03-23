@@ -153,7 +153,7 @@
   </extension>
 </addon>
 
-<addon id="service.cinema.helper" name="Cinema Helper (Kodi 19-22)" version="2.1.19" provider-name="axbmcuser">
+<addon id="service.cinema.helper" name="Cinema Helper (Kodi 19-22)" version="2.1.20" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.simplejson" version="3.16.1" />
@@ -170,7 +170,13 @@
 		<assets>
 			<icon>icon.png</icon>
 		</assets>
-		<news>[B]2.1.19[/B] (2025-01-22)
+		<news>[B]2.1.20[/B] (2025-03-23)
+
+- Added Kodi 22+ detection
+- Expanded 'CH.Player.Progress' functionality with current streams
+- Refinements for 'Auto Close VideoOSD/MusicOSD when Idle' functionality
+
+[B]2.1.19[/B] (2025-01-22)
 
 Hotfix for minor code merging issue affecting 'Watched State' functionality
 
