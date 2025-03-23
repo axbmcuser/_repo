@@ -780,7 +780,7 @@ Second Test Release:
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="5.7.56" name="Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="5.7.57" name="Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.15.0" />
 		<import addon="resource.font.aczg" version="0.1.0" />
@@ -809,7 +809,34 @@ Useful lightweight features and countless carefully crafted usability refinement
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B]5.7.56[/B] (2025-01-21)
+		<news>[B]5.7.57[/B] (2025-03-23)
+
+- Video/Music OSD: Minor code improvements
+- Settings profile, Kodi settings: Decreased description font size by -1, Increased section header height and changed aligny to center
+- Increased header font size of Extended Progress Bar (Used for 'Library scan' and similar scenarios)
+- Changed font type of 'Seasons' view season selector from light to regular-lightened
+- Settings dialog, Add-on settings dialog: Increased item heights
+
+My Skin:
+- Further refinements in form of improved visual spacing, layout and labels
+- Scrollbar dimensions/positions are now fully identical to Kodi settings section
+- Added new options: 'Normalize ratings scale to 100%' and 'Use new Trakt ratings logo (2024-10)' (both enabled by default)
+
+Video Info Dialog:
+- Updated Trakt ratings logo to latest revision (2024-10)
+- Minor improvements for the Trailer Search code and python helper scripts (Add-on/Browser)
+
+- Minor separator change in DialogPlayerProcessInfo
+- General: Minor code improvements
+
+Textures:
+
+Added DefaultPVRProvider.png DefaultPVRProviders.png (Seemingly used in Kodi 22+)
+Added new trakt ratings logo (2024-10)
+Audio codecs flags: Updated existing atmos flags to indicate just atmos instead of their exact container format
+Audio codecs flags: Added dtshd_ma_x.png dtshd_ma_x_imax.png eac3_ddp_atmos.png truehd_atmos.png
+
+[B]5.7.56[/B] (2025-01-21)
 
 Video OSD
 - Refinement of the 'Disc menu' icon
