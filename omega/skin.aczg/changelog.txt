@@ -1,3 +1,7 @@
+[B]6.7.58[/B] (2025-03-25)
+
+Refined SideBar font sizes (headers and buttons)
+
 [B]6.7.57[/B] (2025-03-23)
 
 - Video/Music OSD: Minor code improvements

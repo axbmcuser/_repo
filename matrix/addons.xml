@@ -780,7 +780,7 @@ Second Test Release:
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="5.7.57" name="Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="5.7.58" name="Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.15.0" />
 		<import addon="resource.font.aczg" version="0.1.0" />
@@ -809,7 +809,11 @@ Useful lightweight features and countless carefully crafted usability refinement
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B]5.7.57[/B] (2025-03-23)
+		<news>[B]5.7.58[/B] (2025-03-25)
+
+Refined SideBar font sizes (headers and buttons)
+
+[B]5.7.57[/B] (2025-03-23)
 
 - Video/Music OSD: Minor code improvements
 - Settings profile, Kodi settings: Decreased description font size by -1, Increased section header height and changed aligny to center
