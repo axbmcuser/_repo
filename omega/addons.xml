@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="skin.aczg" version="6.7.58" name="Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="6.7.59" name="Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
 		<import addon="resource.font.aczg" version="0.1.0" />
@@ -29,7 +29,18 @@ Useful lightweight features and countless carefully crafted usability refinement
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B]6.7.58[/B] (2025-03-25)
+		<news>[B]6.7.59[/B] (2025-12-27)
+
+Fixed missing OSD player buttons when high resolution screen is detected (Mostly affected 4K screens)
+Video Info Dialog: Title has been moved up by 1px
+
+Textures:
+
+Updated DefaultRemovableDisk.png to be neutral instead of USB focused
+Audio codecs flags: Added aac_lc.png aac_ltp.png aac_ssr.png he_aac.png he_aac_v2.png
+Removed unused remains: trakt---.png
+
+[B]6.7.58[/B] (2025-03-25)
 
 Refined SideBar font sizes (headers and buttons)
 

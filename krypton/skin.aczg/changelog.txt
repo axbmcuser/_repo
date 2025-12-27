@@ -1,3 +1,14 @@
+[B]3.7.59[/B] (2025-12-27)
+
+Fixed missing OSD player buttons when high resolution screen is detected (Mostly affected 4K screens)
+Video Info Dialog: Title has been moved up by 1px
+
+Textures:
+
+Updated DefaultRemovableDisk.png to be neutral instead of USB focused
+Audio codecs flags: Added aac_lc.png aac_ltp.png aac_ssr.png he_aac.png he_aac_v2.png
+Removed unused remains: trakt---.png
+
 [B]3.7.58[/B] (2025-03-25)
 
 Refined SideBar font sizes (headers and buttons)
