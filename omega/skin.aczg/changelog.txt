@@ -1,3 +1,9 @@
+[B]6.7.60[/B] (2026-01-01)
+
+Happy new year!
+
+Hotfix: Clear "ListItem Helper" image cache once
+
 [B]6.7.59[/B] (2025-12-27)
 
 Fixed missing OSD player buttons when high resolution screen is detected (Mostly affected 4K screens)
