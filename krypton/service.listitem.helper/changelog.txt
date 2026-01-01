@@ -1,3 +1,11 @@
+[B]0.4.10[/B] (2026-01-01)
+
+Minor code improvements
+
+[B]0.4.9[/B] (2026-01-01)
+
+Hotfix: Fixed image blurring function by changing Image.ANTIALIAS to Image.LANCZOS (Image.ANTIALIAS was removed in pillow 10)
+
 [B]0.4.8[/B] (2024-07-22)
 
 - Implemented automatic detection of custom "videolibrary.itemseparator" values from advancedsettings.xml
