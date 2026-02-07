@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="skin.aczg" version="6.7.60" name="Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="6.7.61" name="Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
 		<import addon="resource.font.aczg" version="0.1.0" />
@@ -29,7 +29,68 @@ Useful lightweight features and countless carefully crafted usability refinement
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B]6.7.60[/B] (2026-01-01)
+		<news>[B]6.7.61[/B] (2026-02-07)
+
+New Stream Selector Dialogs (Subtitles/Audio/Video)
+
+- Natively supported on Kodi 22+ and custom Kodi 21 builds /w backport of git #25762
+Note:
+You can therefore see the new select dialog buttons/indicators on both Kodi 21 and 22, but the dialogs itself only open when using Kodi 22 or Kodi 21 with a backport of git #25762
+(Hopefully we can get #25762 backport merged to the major CPM/avdvplus/pannal Kodi builds in the near future)
+
+Support for CPM/avdvplus/pannal Kodi builds (and alike)
+
+- Added new PlayerProcessInfo Dialog with DV/FEL info and more
+(Adapted and reworked from the great work of Jamal on the Confluence (CPM/Hybrid) Mod. Thanks!!)
+- Added new VS10 Selector Dialog
+
+Select Dialogs Rework
+
+- Reworked all Non-Game Select Dialogs while adding support for the New Stream Selector Dialogs
+- Moved Game Select Dialogs to different file to avoid code confusion
+
+
+Improved Kodi 22+ support
+
+Further reworked dialogs: Notification, Extended Progress Bar, Volume Bar
+
+Further simplified SideBars: Replaced too obvious header labels with separator line
+
+Improved UI for native movie/music/file/pictures filtering functionality
+
+Minor fixes and improvements, including, but not limited to:
+
+Variable name case fix (ListItem.Rating.letterboxd.scaleTo5 corrected to .ScaleTo5)
+Variable improvement for 'SongYearGenre'
+Video Info Dialog: Code improvements including play/browse buttons code
+Video Info Dialog: Changed flaggings code to be less error prone in certain weird Kodi situations
+Video OSD: Code improvements including play/browse buttons and MoreMenu code
+Music OSD: Code improvements including MoreMenu code
+Minor include name corrections for SkinOutOfBoundsBgDimensionsXXX includes code
+Context Menu: Moved menu down when max items reached (to prevent very minor top cutoff)
+
+Increased transparency of Audio/Video/Subtitle settings OSD
+
+Added some internal python helper scripts
+player_audio_delay_*.py, player_viewmode_*.py, movieset_opener.py
+
+My Skin:
+
+Dev/Experimental settings:
+
+- Reworked Experimental Dynamic Range Compression audio features
+- Reworked Debug Overlays and added System Load Overlay
+
+Textures:
+
+- Added icons for new stream selector dialogs
+- Added filter icon as filtering indicator
+- Added DV texture for new VS10 PlayerProcessInfo Dialog
+- Reworked DRC OSD player button textures
+- Reworked Video Settings OSD player button textures
+- Added MoreMenu OSD player button textures
+
+[B]6.7.60[/B] (2026-01-01)
 
 Happy new year!
 
