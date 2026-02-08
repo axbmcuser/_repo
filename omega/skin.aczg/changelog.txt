@@ -1,3 +1,7 @@
+[B]6.7.62[/B] (2026-02-08)
+
+Hotfix improvement for opening PlayerProcessInfo via onclick
+
 [B]6.7.61[/B] (2026-02-07)
 
 New Stream Selector Dialogs (Subtitles/Audio/Video)
