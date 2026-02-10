@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="6.7.62" name="Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="6.7.63" name="Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
 		<import addon="resource.font.aczg" version="0.1.0" />
@@ -28,7 +28,38 @@ Useful lightweight features and countless carefully crafted usability refinement
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B]6.7.62[/B] (2026-02-08)
+		<news>[B]6.7.63[/B] (2026-02-10)
+
+Select Dialogs | Rework Phase 2
+(Follow-up of the rework of all select dialogs)
+
+- Right button area is replaced with intutive icon buttons (OK, Add, Browse, More) and tooltips for rare special occasions
+
+- Reduced situations where a right button area is even needed (It's now automatically fully removed in such cases)
+(This finally avoids all the endless weird situations where only the huge "Cancel" button was shown on the right without having really a good need for having it there)
+
+- Overall more consistent look and feel of all select dialogs
+
+- Also added missing button with id 8 for rare cases where this third button is needed
+(Note: Button id 8 is also missing in Original Confluence)
+
+
+Follow-ups:
+Added filtering Indicator also to MyPVRChannels and removed unnecessary PVR sidebar header
+Minor improvements to new PlayerProcessInfo Dialog
+Removed unnecessary filtering indicator id to fix minor sidebar nav issue
+
+Changed scrollbar ids for "Fanart" and "Songs" view to avoid rare scrollbar id assignment issues [ViewsVideoLibrary] [ViewsMusicLibrary]
+Favorites Dialog improvements
+Minor fixes and code improvements
+
+Textures:
+
+Added new icons for Select Dialog Rework (OK, Add, Browse, More)
+Updated new version info emoji
+Updated 3 variants of DefaultVideo-brighter.png for Favorites Dialog improvements, renamed -bright to -brighter
+
+[B]6.7.62[/B] (2026-02-08)
 
 Hotfix improvement for opening PlayerProcessInfo via onclick
 
