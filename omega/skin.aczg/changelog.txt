@@ -1,9 +1,20 @@
+[B]6.7.64[/B] (2026-02-11)
+
+Select Dialogs: Minor follow-up code improvements
+
+Music OSD
+Improved Playlist button navigation handling (Fullscreen-and-back navigation path keeps on track now)
+Improved OSD button order with better visual spacing; moved Playlist button
+
+Video Info Dialog: Minor code improvements
+Volume Bar: Minor visual improvements when using passthrough mode
+
 [B]6.7.63[/B] (2026-02-10)
 
 Select Dialogs | Rework Phase 2
 (Follow-up of the rework of all select dialogs)
 
-- Right button area is replaced with intutive icon buttons (OK, Add, Browse, More)
+- Right button area is replaced with intutive icon buttons (OK, Add, Browse, More) and tooltips for rare special occasions
 
 - Reduced situations where a right button area is even needed (It's now automatically fully removed in such cases)
 (This finally avoids all the endless weird situations where only the huge "Cancel" button was shown on the right without having really a good need for having it there)
@@ -27,7 +38,7 @@ Textures:
 
 Added new icons for Select Dialog Rework (OK, Add, Browse, More)
 Updated new version info emoji
-Updated 3 variants of DefaultVideo-brighter.png for Favorites Dialog improvements, renamed -bright to -brighter
+Added 3 variants of DefaultVideo-brighter.png for Favorites Dialog improvements, renamed -bright to -brighter
 
 [B]6.7.62[/B] (2026-02-08)
 
