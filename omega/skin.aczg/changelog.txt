@@ -1,3 +1,24 @@
+[B]6.7.66[/B] (2026-02-15)
+
+VS10 Dialogs + Labels Rework
+
+Reworked all VS10 related dialogs and labels
+
+Video Processing path is now more clearly reflected in 3 increasingly detailed levels of information:
+Player OSD MoreMenu, "Video Processing" dialog (formerly "VS10 mode" dialog), "Player Process Info" dialog
+(short label/details, medium label length/details, maximum label length/details)
+
+A 3-step-conversion-path is now fully reflected in both "Video Processing" dialog (formerly "VS10 mode" dialog) and "Player Process Info" dialog
+Example
+"Player Process Info" dialog:  HDR10+ > Dolby Vision (8.1) > SDR
+"Video Processing" dialog:     HDR10+ > Dolby Vision > SDR
+Player OSD MoreMenu:           HDR10+ > SDR
+(Player OSD MoreMenu uses the most shortened variant for informational simplicity and due to space constraints)
+
+Added missing HLG conversion paths
+
+Minor code improvements
+
 [B]6.7.65[/B] (2026-02-13)
 
 Improvements for various dialogs/windows
