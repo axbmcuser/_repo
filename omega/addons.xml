@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="skin.aczg" version="6.7.66" name="Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="6.7.67" name="Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
 		<import addon="resource.font.aczg" version="0.1.0" />
@@ -29,24 +29,30 @@ Useful lightweight features and countless carefully crafted usability refinement
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B]6.7.66[/B] (2026-02-15)
+		<news>[B]6.7.67[/B] (2026-02-16)
+
+VS10 Dialogs + Labels Rework | Follow up improvements
+
+Minor code improvements
+
+[B]6.7.66[/B] (2026-02-15)
 
 VS10 Dialogs + Labels Rework
 
 Reworked all VS10 related dialogs and labels
 
-Video Processing path is now more clearly reflected in 3 increasingly detailed levels of information:
+Video Processing path is now more clearly reflected in three increasingly detailed levels of information:
 Player OSD MoreMenu, "Video Processing" dialog (formerly "VS10 mode" dialog), "Player Process Info" dialog
-(short label/details, medium label length/details, maximum label length/details)
+(short label length/details, medium label length/details, maximum label length/details)
 
-A 3-step-conversion-path is now fully reflected in both "Video Processing" dialog (formerly "VS10 mode" dialog) and "Player Process Info" dialog
+A 3-step-processing-path is now fully reflected in both "Video Processing" dialog (formerly "VS10 mode" dialog) and "Player Process Info" dialog
 Example
 "Player Process Info" dialog:  HDR10+ > Dolby Vision (8.1) > SDR
 "Video Processing" dialog:     HDR10+ > Dolby Vision > SDR
 Player OSD MoreMenu:           HDR10+ > SDR
 (Player OSD MoreMenu uses the most shortened variant for informational simplicity and due to space constraints)
 
-Added missing HLG conversion paths
+Added missing HLG processing paths
 
 Minor code improvements
 
