@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="6.7.67" name="Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="6.7.68" name="Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
 		<import addon="resource.font.aczg" version="0.1.0" />
@@ -28,7 +28,28 @@ Useful lightweight features and countless carefully crafted usability refinement
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B]6.7.67[/B] (2026-02-16)
+		<news>[B]6.7.68[/B] (2026-02-19)
+
+Hotfix | only affects non-default UI color schemes
+Right side OSD player buttons are now colored as expected from the selected scheme
+
+Additional improvements:
+
+Select Dialogs: Minor follow-up code improvements
+
+Add-on Browser Wall Views:
+Added visual indicator for add-ons which are set to repo-state "Manual"
+They now can be easily be identified while browsing - which is useful because the "Manual" repo-state of an add-on causes updates from repos not showing up for that add-on)
+Also adapted Add-on Info Dialog with this improvement
+
+Minor code improvements
+
+Textures:
+
+Added new add-on indicator for "Manual" repo-state
+Updated non-default UI color scheme OSD player buttons
+
+[B]6.7.67[/B] (2026-02-16)
 
 VS10 Dialogs + Labels Rework | Follow up improvements
 
