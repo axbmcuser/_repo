@@ -1,3 +1,11 @@
+[B]6.7.71[/B] (2026-02-21)
+
+Follow-up improvements:
+
+Improved Wall View row heights for 16:10, 4:3 and 3:2 displays
+
+Minor code improvements
+
 [B]6.7.70[/B] (2026-02-20)
 
 Follow-up improvements:
