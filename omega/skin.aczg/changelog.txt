@@ -1,3 +1,28 @@
+[B]6.7.69[/B] (2026-02-20)
+
+Support for CRT font sizes
+
+See: Skin Settings - Reworked/new "UI font size" option; Available options:
+- Normal Size (Default+Recommended)
+- Accessibility · Large Fonts
+- CRT Mode · Huge Fonts
+
+
+Support for 16:10 displays
+
+- Added native skin support for 16:10 display aspect ratio
+- This change removes the undesirable black bars at top/bottom when using a 16:10 display
+
+Support for 4:3 and 3:2 displays
+
+- Added skin support for 4:3 and 3:2 display aspect ratios
+- This change removes the undesirable black bars at top/bottom when using a 4:3 or 3:2 display
+
+
+Recently played TV/PVR Widget: Code improvements
+
+Minor code improvements and clean-up
+
 [B]6.7.68[/B] (2026-02-19)
 
 Hotfix | only affects non-default UI color schemes

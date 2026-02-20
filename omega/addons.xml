@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="skin.aczg" version="6.7.68" name="Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="6.7.69" name="Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
 		<import addon="resource.font.aczg" version="0.1.0" />
@@ -11,7 +11,7 @@
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false" effectslowdown="0.22">
 		<res width="1920" height="1080" aspect="16:9"  folder="xml" default="true" />
-		<res width="1920" height="1200" aspect="16:10" folder="xml" default="false" />
+		<res width="1920" height="1200" aspect="16:10" folder="xml" default="false" /><!-- 16:10 is also automatically used for 4:3 and 3:2 variants since it's the variant with the greatest height -->
 		<res width="2580" height="1080" aspect="21:9"  folder="xml" default="false" />
 	</extension>
 	<extension point="xbmc.addon.metadata">
@@ -29,7 +29,32 @@ Useful lightweight features and countless carefully crafted usability refinement
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B]6.7.68[/B] (2026-02-19)
+		<news>[B]6.7.69[/B] (2026-02-20)
+
+Support for CRT font sizes
+
+See: Skin Settings - Reworked/new "UI font size" option; Available options:
+- Normal Size (Default+Recommended)
+- Accessibility · Large Fonts
+- CRT Mode · Huge Fonts
+
+
+Support for 16:10 displays
+
+- Added native skin support for 16:10 display aspect ratio
+- This change removes the undesirable black bars at top/bottom when using a 16:10 display
+
+Support for 4:3 and 3:2 displays
+
+- Added skin support for 4:3 and 3:2 display aspect ratios
+- This change removes the undesirable black bars at top/bottom when using a 4:3 or 3:2 display
+
+
+Recently played TV/PVR Widget: Code improvements
+
+Minor code improvements and clean-up
+
+[B]6.7.68[/B] (2026-02-19)
 
 Hotfix | only affects non-default UI color schemes
 Right side OSD player buttons are now colored as expected from the selected scheme
