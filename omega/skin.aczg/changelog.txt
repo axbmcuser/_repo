@@ -1,3 +1,9 @@
+[B]6.7.73[/B] (2026-02-22)
+
+Follow-up improvements for CRT font sizes
+
+Additional minor code improvements
+
 [B]6.7.72[/B] (2026-02-21)
 
 Minor follow-up improvements for 16:10, 4:3 and 3:2 displays

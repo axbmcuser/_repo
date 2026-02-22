@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="skin.aczg" version="6.7.72" name="Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="6.7.73" name="Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
 		<import addon="resource.font.aczg" version="0.1.0" />
@@ -29,7 +29,13 @@ Useful lightweight features and countless carefully crafted usability refinement
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B]6.7.72[/B] (2026-02-21)
+		<news>[B]6.7.73[/B] (2026-02-22)
+
+Follow-up improvements for CRT font sizes
+
+Additional minor code improvements
+
+[B]6.7.72[/B] (2026-02-21)
 
 Minor follow-up improvements for 16:10, 4:3 and 3:2 displays
 
