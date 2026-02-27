@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="skin.aczg" version="6.7.74" name="Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="6.7.75" name="Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
 		<import addon="resource.font.aczg" version="0.1.0" />
@@ -29,13 +29,21 @@ Useful lightweight features and countless carefully crafted usability refinement
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B]6.7.74[/B] (2026-02-27)
+		<news>[B]6.7.75[/B] (2026-02-27)
+
+Changed font of label next to "Scope Mask" OSD Button from "Regular" to "Light"
+(so it's intuitively clear that the label does not represent another OSD Button. Also now consistant with end time "Light" font type and size.)
+
+Darken background behind new "updated to new version" dialog
+Minor code improvements
+
+[B]6.7.74[/B] (2026-02-27)
 
 New: Cinemascope Mode for projectors
 
 - Added new feature: Cinemascope Mode for projectors
 - Typically used by outputting a regular 16:9 resolution while restricting the visible area and user interface to an inner 21:9 space which projects on a 21:9 projector screen without any elements being cut off
-- Added multiple Fullscreen Video Masking variants
+- Added multiple Fullscreen Video Masking variants:  2.40:1, 2.35:1, 2.33:1, 2.00:1, 1.78:1 [16:9]
 - Added OSD Buttons for the new mode: Cinemascope Mode On/Off, Masking variants Cycle Toggle
 - See: My Skin – Advanced – Cinema – Cinemascope Mode for projectors
 
