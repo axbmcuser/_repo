@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="skin.aczg" version="6.7.73" name="Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="6.7.74" name="Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
 		<import addon="resource.font.aczg" version="0.1.0" />
@@ -11,7 +11,7 @@
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false" effectslowdown="0.22">
 		<res width="1920" height="1080" aspect="16:9"  folder="xml" default="true" />
-		<res width="1920" height="1200" aspect="16:10" folder="xml" default="false" /><!-- 16:10 is also automatically used for 4:3 and 3:2 variants since it's the variant with the greatest height -->
+		<res width="1920" height="1200" aspect="16:10" folder="xml" default="false" />
 		<res width="2580" height="1080" aspect="21:9"  folder="xml" default="false" />
 	</extension>
 	<extension point="xbmc.addon.metadata">
@@ -29,7 +29,71 @@ Useful lightweight features and countless carefully crafted usability refinement
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B]6.7.73[/B] (2026-02-22)
+		<news>[B]6.7.74[/B] (2026-02-27)
+
+New: Cinemascope Mode for projectors
+
+- Added new feature: Cinemascope Mode for projectors
+- Typically used by outputting a regular 16:9 resolution while restricting the visible area and user interface to an inner 21:9 space which projects on a 21:9 projector screen without any elements being cut off
+- Added multiple Fullscreen Video Masking variants
+- Added OSD Buttons for the new mode: Cinemascope Mode On/Off, Masking variants Cycle Toggle
+- See: My Skin – Advanced – Cinema – Cinemascope Mode for projectors
+
+New: Support for 21:9 displays
+
+- Added native skin support for 21:9 display aspect ratio (3440x1440, 2580x1080 etc.):
+- This change removes the undesirable black bars on left/right when using a 21:9 display
+
+Updated: Automatic Views
+
+- Reworked "Preset Views" to "Automatic Views" including many usability improvements
+- Reminder: By default, Confluence ZEITGEIST automatically and always sets all views based on an preset views configuration for improved comfort and usability
+- See: My Skin – Advanced – "Automatic Views"
+- In there, you can change and configure which exact view is automatically set for different content types and situations
+
+New: Added "Picture in Picture" background "Now playing" video options
+
+- Reworked the "Show background "Now playing" video" option
+- You can now choose between three options:
+1) Picture in Picture (PiP)  (Default)
+2) Fullscreen Video
+3) Disabled
+- Picture in Picture (PiP) is the new default
+- If you want to use the previous default, just select "Fullscreen Video"
+- See: My Skin – Background – Miscellaneous options - Show background "Now playing" video
+
+Updated: My Skin settings Rework
+
+- Extensively reworked and restructured My Skin settings including updated labels for improved ease of use
+- See: My Skin – Advanced – "Fullscreen OSD" and "Automatic Views"
+
+Updated: Improvements for larger font size options
+
+- CRT Mode · Huge Fonts
+- Accessibility · Large Fonts
+
+New: Added new Debugging option "Auto-reload skin on resolution change"
+
+- See: My Skin – Advanced – Debugging – Auto-reload skin on resolution change (Default: Disabled)
+
+Additional improvements, including but not limited to:
+
+- Improved fanart handling
+- Added static fanart for YouTube add-on to circumvent bad and unfitting fanart situations when using the add-on
+- Reworked all YouTube related icons and fanart to a simplified, modern and last but not least, consistent look
+- Changed default background from "Frosted Glass · Light Colors" to "Frosted Glass · Sunrise"
+- Added new "updated to new version" dialog with an additional version changelog window
+- Minor code improvements
+
+Textures:
+
+- Added static YouTube fanart variants
+- Added new OSD Buttons for Cinemascope Mode feature
+- Updated search/youtube.png search/youtube_uhd.png
+- Added arrow-tree-down.png arrow-tree-right.png for My Skin settings rework
+- Added pip_base.png pip_border.png for "Picture in Picture" background "Now playing" video
+
+[B]6.7.73[/B] (2026-02-22)
 
 Follow-up improvements for CRT font sizes
 
@@ -74,12 +138,12 @@ See: Skin Settings - Reworked/new "UI font size" option; Available options:
 Support for 16:10 displays
 
 - Added native skin support for 16:10 display aspect ratio
-- This change removes the undesirable black bars at top/bottom when using a 16:10 display
+- This change removes the undesirable black bars on top/bottom when using a 16:10 display
 
 Support for 4:3 and 3:2 displays
 
 - Added skin support for 4:3 and 3:2 display aspect ratios
-- This change removes the undesirable black bars at top/bottom when using a 4:3 or 3:2 display
+- This change removes the undesirable black bars on top/bottom when using a 4:3 or 3:2 display
 
 
 Recently played TV/PVR Widget: Code improvements
@@ -125,9 +189,9 @@ Player OSD MoreMenu, "Video Processing" dialog (formerly "VS10 mode" dialog), "P
 
 A 3-step-processing-path is now fully reflected in both "Video Processing" dialog (formerly "VS10 mode" dialog) and "Player Process Info" dialog
 Example
-"Player Process Info" dialog:  HDR10+ > Dolby Vision (8.1) > SDR
-"Video Processing" dialog:     HDR10+ > Dolby Vision > SDR
-Player OSD MoreMenu:           HDR10+ > SDR
+"Player Process Info" dialog:  HDR10+ &gt; Dolby Vision (8.1) &gt; SDR
+"Video Processing" dialog:     HDR10+ &gt; Dolby Vision &gt; SDR
+Player OSD MoreMenu:           HDR10+ &gt; SDR
 (Player OSD MoreMenu uses the most shortened variant for informational simplicity and due to space constraints)
 
 Added missing HLG processing paths
