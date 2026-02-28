@@ -1,3 +1,19 @@
+[B]6.7.76[/B] (2026-02-28)
+
+New: Video Info Dialog: HDR type icon
+
+- Added option for showing HDR type icon within Video Info Dialog
+(hdr10, hdr10plus, dolbyvision, hlg)
+See: My Skin – OSD, Dialogs &amp; Views – Video Info Dialog – Show icon · HDR type
+
+Minor fixes and improvements, including, but not limited to:
+- Slightly increased Picture in Picture (PiP) video size
+(mostly to work around a rare but very ugly Kodi rendering + flickering bug on Amlogic devices occuring when using a "videowindow" control with small width/height)
+
+Textures:
+- Added dolbyvision.png hdr10.png hdr10plus.png hlg.png
+- Updated pip_base.png pip_border.png
+
 [B]6.7.75[/B] (2026-02-27)
 
 Changed font of label next to "Scope Mask" OSD Button from "Regular" to "Light"
