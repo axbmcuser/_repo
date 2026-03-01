@@ -1,3 +1,4 @@
+[B]2.1.26[/B] (2026-03-01)
 [B]2.1.25[/B] (2026-03-01)
 
 Minor fixes and improvements
