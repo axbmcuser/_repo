@@ -1,3 +1,28 @@
+[B]6.7.77[/B] (2026-03-02)
+
+- Reworked, improved and simplified Startup/Exit Screen and the corresponding "fade in UI on startup" functionality
+(This also casually fixes a minor and barely noticeable visual issue when Kodi is performing some kind of initial profile/xml double-loading on Startup which caused the Startup Screens Kodi logo sometimes being faded in two times quickly in a row which was not intended)
+- Removed optional and deprecated Home screen Kodi logo options and simplified the option to a radiobutton
+
+Minor fixes and improvements, including, but not limited to:
+- Further performance optimizations, code improvements and fixes, mostly targeting common Amlogic devices running CoreELEC builds
+- Improved 4K skin textures detection. Now always using 2K textures on CPM/avdvplus/pannal Kodi builds because these devices are limited to a 2K GUI anyway
+(includes replacing Search/Power buttons on Home screen with a solution combining regular button controls with separate icon image controls instead of the previous radiobuttons with sometimes failing include conditions causing issues with Kodi not remembering focus of the main menu item correctly in very specific resolution-change situations)
+- Improvements and fixes for Wall Views, preparing for new upcoming option(s) for Cinemascope Mode
+- Added custom Main menu focus saving and restoring functionality (Kodis native one would fail sometimes in certain reoccurring situations due to complex causes)
+- Improved "What's new?" section and Special Changelog Viewer
+- Improved z-position of all "BehindDialogFadeOut"
+- Removed Picture in Picture (PiP) video slide-up-animation which were performed when some dialogs were visible (animation felt unnecessary and still too clunky, especially on lower refresh rates)
+- Improved UI color scheme change dialogs
+- Centralized BehindDialogFadeOut_PVR code to includes and ensured background darkening when openening PVRGroupManager or PVRChannelManager from within Kodi settings – PVR & Live TV – Channels
+- Phase 1 Update for Video Versions/Extras changes on Kodi 22+
+(Warning: It's generally strongly recommended _not_ to use the Kodi Video Versions/Extras feature yet.)
+- Simplified some labels within "Automatic Views" config
+
+Textures:
+- Removed some deprecated Home screen logo textures
+- Added DefaultVideo_Extras.png
+
 [B]6.7.76[/B] (2026-02-28)
 
 New: Video Info Dialog: HDR type icon
@@ -120,20 +145,23 @@ Added UI color scheme variants: submenu-focus-neutral_uifontsize_crt.png, submen
 
 [B]6.7.69[/B] (2026-02-20)
 
-Support for CRT font sizes
+New: Support for CRT font sizes
 
 See: Skin Settings - Reworked/new "UI font size" option; Available options:
 - Normal Size (Default+Recommended)
 - Accessibility · Large Fonts
 - CRT Mode · Huge Fonts
 
+New: Support for low resolutions (CRT)
 
-Support for 16:10 displays
+- While combining "CRT Mode · Huge Fonts" with the recently introduced "Support for 4:3 and 3:2 displays", low resolutions like 720x480, 720x576 are now well supported
+
+New: Support for 16:10 displays
 
 - Added native skin support for 16:10 display aspect ratio
 - This change removes the undesirable black bars on top/bottom when using a 16:10 display
 
-Support for 4:3 and 3:2 displays
+New: Support for 4:3 and 3:2 displays
 
 - Added skin support for 4:3 and 3:2 display aspect ratios
 - This change removes the undesirable black bars on top/bottom when using a 4:3 or 3:2 display

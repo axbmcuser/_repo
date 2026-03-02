@@ -1,3 +1,8 @@
+[B]2.1.27[/B] (2026-03-02)
+
+Added CheckIfHiResScreen, CheckIfRunningAmlogicBuild and CheckForHomeFocus
+Minor fixes and improvements
+
 [B]2.1.26[/B] (2026-03-01)
 [B]2.1.25[/B] (2026-03-01)
 
