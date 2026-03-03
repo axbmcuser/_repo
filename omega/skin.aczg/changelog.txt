@@ -1,3 +1,8 @@
+[B]6.7.78[/B] (2026-03-03)
+
+Minor fixes and improvements, including, but not limited to:
+- Move up Home screen player status (play, pause etc.) on 16:10 screens
+
 [B]6.7.77[/B] (2026-03-02)
 
 - Reworked, improved and simplified Startup/Exit Screen and the corresponding "fade in UI on startup" functionality

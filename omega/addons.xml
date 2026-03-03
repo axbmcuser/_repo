@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="skin.aczg" version="6.7.77" name="Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="6.7.78" name="Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
 		<import addon="resource.font.aczg" version="0.1.0" />
@@ -29,7 +29,12 @@ Useful lightweight features and countless carefully crafted usability refinement
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B]6.7.77[/B] (2026-03-02)
+		<news>[B]6.7.78[/B] (2026-03-03)
+
+Minor fixes and improvements, including, but not limited to:
+- Move up Home screen player status (play, pause etc.) on 16:10 screens
+
+[B]6.7.77[/B] (2026-03-02)
 
 - Reworked, improved and simplified Startup/Exit Screen and the corresponding "fade in UI on startup" functionality
 (This also casually fixes a minor and barely noticeable visual issue when Kodi is performing some kind of initial profile/xml double-loading on Startup which caused the Startup Screens Kodi logo sometimes being faded in two times quickly in a row which was not intended)
