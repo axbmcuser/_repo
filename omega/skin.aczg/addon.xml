@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="6.7.78" name="Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="6.7.79" name="Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
 		<import addon="resource.font.aczg" version="0.1.0" />
@@ -28,7 +28,16 @@ Useful lightweight features and countless carefully crafted usability refinement
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B]6.7.78[/B] (2026-03-03)
+		<news>[B]6.7.79[/B] (2026-03-05)
+
+Minor fixes and improvements, including, but not limited to:
+- Minor follow-up improvements for 16:10 screens
+- Code clean-up and comments
+- Simplified HomeScreenStyle/HomeScreenMainMenuStyle skin settings code
+- Added Kodi 22+ workarounds to mitigate issues with new Kodi 22 GUI scaling
+- Updated rarely used "Enable Idle Timer for Home screen UI Fade Out": On fade out, now only the background remains visible (clock etc. is now fully hidden. Looks better and is more OLED friendly)
+
+[B]6.7.78[/B] (2026-03-03)
 
 Minor fixes and improvements, including, but not limited to:
 - Move up Home screen player status (play, pause etc.) on 16:10 screens
@@ -49,7 +58,7 @@ Minor fixes and improvements, including, but not limited to:
 - Improved z-position of all "BehindDialogFadeOut"
 - Removed Picture in Picture (PiP) video slide-up-animation which were performed when some dialogs were visible (animation felt unnecessary and still too clunky, especially on lower refresh rates)
 - Improved UI color scheme change dialogs
-- Centralized BehindDialogFadeOut_PVR code to includes and ensured background darkening when openening PVRGroupManager or PVRChannelManager from within Kodi settings – PVR & Live TV – Channels
+- Centralized BehindDialogFadeOut_PVR code to includes and ensured background darkening when openening PVRGroupManager or PVRChannelManager from within Kodi settings – PVR &amp; Live TV – Channels
 - Phase 1 Update for Video Versions/Extras changes on Kodi 22+
 (Warning: It's generally strongly recommended _not_ to use the Kodi Video Versions/Extras feature yet.)
 - Simplified some labels within "Automatic Views" config
