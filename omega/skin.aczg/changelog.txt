@@ -1,3 +1,29 @@
+[B]6.7.80[/B] (2026-03-11)
+
+New: Home: Weather Widget
+- Added new Weather Widget on home screen. It can be disabled like all the other Home Widgets
+- Adapted from Original Confluence Weather Widget (Thanks @Hitcher)
+
+Updated: My skin settings: Add-on shortcuts Rework and more
+- Reworked and simplified "Add-on shortcuts" section to a new tree-tabs layout for much better usability
+- Minor improvements to usability for "Move Favorites to top/bottom" buttons
+- Replaced Cycle Buttons with native select dialogs for many settings
+- Removed unnecessary "Show artwork when OSD is open" option
+- Simplified some language strings
+
+Updated: Settings &amp; My Skin settings:
+- Reworked visuals and alignment of settings headers for better clarity
+
+Minor fixes and improvements, including, but not limited to:
+- More Kodi 22+ workarounds to mitigate issues with new Kodi 22 GUI scaling
+- VS10: Also allow buttons and labels for SDR &gt; SDR Output path
+- Added YouTube add-on icon blur fix workaround
+
+Updated: Languages
+- Updated language strings to latest Confluence Kodi 22 GIT master
+(made code backwards compatible with conditional fallbacks down to Kodi 17)
+- Language clean-up
+
 [B]6.7.79[/B] (2026-03-05)
 
 Minor fixes and improvements, including, but not limited to:
