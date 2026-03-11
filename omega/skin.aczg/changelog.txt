@@ -1,3 +1,7 @@
+[B]6.7.81[/B] (2026-03-11)
+
+Minor fixes and improvements
+
 [B]6.7.80[/B] (2026-03-11)
 
 New: Home: Weather Widget
