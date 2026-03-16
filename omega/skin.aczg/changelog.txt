@@ -1,3 +1,8 @@
+[B]6.7.83[/B] (2026-03-16)
+
+Follow-up improvements:
+Support for Game Disc Manager (Kodi 22+)
+
 [B]6.7.82[/B] (2026-03-16)
 
 New: Support for Game Disc Manager (Kodi 22+)
