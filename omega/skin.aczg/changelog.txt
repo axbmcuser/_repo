@@ -1,3 +1,13 @@
+[B]6.7.89[/B] (2026-03-24)
+
+New: Add-on settings Rework
+- Full Rework of Add-on settings dialog with improved navigation, visuals and usability
+- Added missing settings level button coherent with the regular settings section
+
+Follow-up improvements: Support for Game Disc Manager (Kodi 22+)
+
+Minor fixes and improvements
+
 [B]6.7.88[/B] (2026-03-17)
 [B]6.7.87[/B] (2026-03-17)
 [B]6.7.86[/B] (2026-03-16)
@@ -2442,7 +2452,7 @@ Reworked font style/weight of almost all window/dialogs - all of which weren't a
 Reworked Custom Search Dialog
 Reworked Parent Folder Item visuals with coherent new icon with sub variants (bg transparent/solid/innersquare)
 
-Reworked rarely used [DialogTextViewer] to be coherent to [Custom_1102_TextViewer]
+Reworked rarely used [DialogTextViewer] to be coherent with [Custom_1102_TextViewer]
 Added VolumeIcon_low.png texture: If volume is 40% or lower, the VolumeIcon now shows this different VolumeIcon for a better feel when changing volume (Like on most modern UI)
 Fruther reworked all OSD button icons including new adapted 3D icon from above
 Reworked and reduced all separator textures, optimized all heights to be max 1px (Fixes inconsistent partly blurry old separators)
