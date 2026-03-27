@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="6.7.89" name="Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="6.7.90" name="Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
 		<import addon="resource.font.aczg" version="0.1.0" />
@@ -28,7 +28,15 @@ Useful lightweight features and countless carefully crafted usability refinement
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B]6.7.89[/B] (2026-03-24)
+		<news>[B]6.7.90[/B] (2026-03-27)
+
+New: Weather Rework
+- Reworked Weather section with improved usability and new location selection dialog
+- The Weather section might receive an additional visual rework in an upcoming update
+
+Minor fixes and improvements
+
+[B]6.7.89[/B] (2026-03-24)
 
 New: Add-on settings Rework
 - Full Rework of Add-on settings dialog with improved navigation, visuals and usability

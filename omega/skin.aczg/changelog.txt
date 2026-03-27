@@ -1,3 +1,11 @@
+[B]6.7.90[/B] (2026-03-27)
+
+New: Weather Rework
+- Reworked Weather section with improved usability and new location selection dialog
+- The Weather section might receive an additional visual rework in an upcoming update
+
+Minor fixes and improvements
+
 [B]6.7.89[/B] (2026-03-24)
 
 New: Add-on settings Rework
