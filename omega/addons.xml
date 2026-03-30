@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="skin.aczg" version="6.7.90" name="Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="6.7.91" name="Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
 		<import addon="resource.font.aczg" version="0.1.0" />
@@ -29,7 +29,25 @@ Useful lightweight features and countless carefully crafted usability refinement
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B]6.7.90[/B] (2026-03-27)
+		<news>[B]6.7.91[/B] (2026-03-30)
+
+New: Library stats
+- Added library stats (total movies, tv shows, music albums, music videos) to "System" section
+(Visible when focusing "Media" in "System" section)
+
+Updated: "My Skin" settings
+- Simplified and improved usability; Minor visual improvements
+- Improved languages support for some languages
+- Added new option: "Show ratings/stars toggles in SideBar" (Default: Off)
+See: My Skin – OSD, Dialogs &amp; Views – Views
+(Note: "Show ratings" and "Show stars" is now hidden by default in the sliding SideBar menu)
+
+Minor fixes and improvements, including, but not limited to:
+- Improved sliding SideBar label widths and improved language support for some labels; Added separator above "Show ratings"
+- Inverted "Hide watched" toggle to be a clearer (show) "Watched" toggle
+- Removed header on "System" section root level
+
+[B]6.7.90[/B] (2026-03-27)
 
 New: Weather Rework
 - Reworked Weather section with improved usability and new location selection dialog
