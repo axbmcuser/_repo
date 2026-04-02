@@ -1,3 +1,17 @@
+[B]6.7.92[/B] (2026-04-02)
+
+New: All-new "Weather" section
+- Fully reworked "Weather" section with simplified usability and improved visuals
+
+Updated: Game OSD: Navigation usablity improvements
+- Pressing "back" while having the "Controls" or "Video settings" sub menus opened does not close GameOSD anymore
+- You now just jump back to the corresponding button while closing the sub menu - as intuitively expected.
+
+Minor fixes and improvements
+
+Textures:
+- Added weather icons
+
 [B]6.7.91[/B] (2026-03-30)
 
 New: Library stats

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="6.7.91" name="Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="6.7.92" name="Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
 		<import addon="resource.font.aczg" version="0.1.0" />
@@ -28,7 +28,21 @@ Useful lightweight features and countless carefully crafted usability refinement
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B]6.7.91[/B] (2026-03-30)
+		<news>[B]6.7.92[/B] (2026-04-02)
+
+New: All-new "Weather" section
+- Fully reworked "Weather" section with simplified usability and improved visuals
+
+Updated: Game OSD: Navigation usablity improvements
+- Pressing "back" while having the "Controls" or "Video settings" sub menus opened does not close GameOSD anymore
+- You now just jump back to the corresponding button while closing the sub menu - as intuitively expected.
+
+Minor fixes and improvements
+
+Textures:
+- Added weather icons
+
+[B]6.7.91[/B] (2026-03-30)
 
 New: Library stats
 - Added library stats (total movies, tv shows, music albums, music videos) to "System" section
