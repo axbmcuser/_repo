@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="6.7.92" name="Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="6.7.93" name="Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
 		<import addon="resource.font.aczg" version="0.1.0" />
@@ -28,7 +28,13 @@ Useful lightweight features and countless carefully crafted usability refinement
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B]6.7.92[/B] (2026-04-02)
+		<news>[B]6.7.93[/B] (2026-04-03)
+
+Updated: Support for Amlogic Kodi builds (CPM, avdvplus, pannal/p3i)
+- Added CMv4 conversion and Video Processor status indicators for p3i builds (T4+)
+- Minor visual and usability improvements for Amlogic "Player Process Info" dialog and Video OSD (Status indicators)
+
+[B]6.7.92[/B] (2026-04-02)
 
 New: All-new "Weather" section
 - Fully reworked "Weather" section with simplified usability and improved visuals

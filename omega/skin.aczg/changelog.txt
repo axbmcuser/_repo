@@ -1,3 +1,11 @@
+[B]6.7.93[/B] (2026-04-03)
+
+Updated: Support for Amlogic Kodi builds (CPM, avdvplus, pannal/p3i)
+- Added CMv4 conversion and Video Processor status indicators for p3i builds (T4+)
+- Minor visual and usability improvements for Amlogic "Player Process Info" dialog and Video OSD (Status indicators)
+
+Minor fixes and improvements
+
 [B]6.7.92[/B] (2026-04-02)
 
 New: All-new "Weather" section
