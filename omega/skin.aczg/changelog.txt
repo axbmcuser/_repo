@@ -1,3 +1,4 @@
+[B]6.7.94[/B] (2026-04-04)
 [B]6.7.93[/B] (2026-04-03)
 
 Updated: Support for Amlogic Kodi builds (CPM, avdvplus, pannal/p3i)
