@@ -1,3 +1,19 @@
+[B]6.7.99[/B] (2026-04-09)
+
+New: Non-library info flags on Wall Views
+- Wall Views now show a few info flags similar to it's library "Video Info Dialog" counterpart
+
+Updated: "My Skin" settings
+- Existing option "Show icon · HDR type" is now enabled by default
+- New option: "[Reset] background to default"
+- Improved languages support for some languages
+
+Minor fixes and improvements, including, but not limited to:
+- Game OSD: Volume button now shows an intuitive indicator on focus
+
+Textures:
+- Added helper texture for Game OSD volume button
+
 [B]6.7.98[/B] (2026-04-06)
 
 Minor fixes and improvements
