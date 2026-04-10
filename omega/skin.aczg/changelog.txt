@@ -1,3 +1,8 @@
+[B]6.8.0[/B] (2026-04-10)
+
+Updated: Non-library info flags on Wall Views
+Minor fixes and improvements
+
 [B]6.7.99[/B] (2026-04-09)
 
 New: Non-library info flags on Wall Views

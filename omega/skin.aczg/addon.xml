@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="6.7.99" name="Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="6.8.0" name="Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
 		<import addon="resource.font.aczg" version="0.1.0" />
@@ -28,7 +28,12 @@ Useful lightweight features and countless carefully crafted usability refinement
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B]6.7.99[/B] (2026-04-09)
+		<news>[B]6.8.0[/B] (2026-04-10)
+
+Updated: Non-library info flags on Wall Views
+Minor fixes and improvements
+
+[B]6.7.99[/B] (2026-04-09)
 
 New: Non-library info flags on Wall Views
 - Wall Views now show a few info flags similar to it's library "Video Info Dialog" counterpart
