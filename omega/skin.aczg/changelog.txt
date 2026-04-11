@@ -1,13 +1,14 @@
+[B]6.8.2[/B] (2026-04-11)
 [B]6.8.1[/B] (2026-04-10)
 [B]6.8.0[/B] (2026-04-10)
 
-Updated: Non-library info flags on Wall Views
+Updated: Non-library media flags on Wall Views
 Minor fixes and improvements
 
 [B]6.7.99[/B] (2026-04-09)
 
-New: Non-library info flags on Wall Views
-- Wall Views now show a few info flags similar to it's library "Video Info Dialog" counterpart
+New: Non-library media flags on Wall Views
+- Wall Views now show a few media flags similar to it's library "Video Info Dialog" counterpart
 
 Updated: "My Skin" settings
 - Existing option "Show icon · HDR type" is now enabled by default
