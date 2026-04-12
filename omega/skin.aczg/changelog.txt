@@ -1,3 +1,13 @@
+[B]6.8.4[/B] (2026-04-12)
+
+Minor fixes and improvements, including, but not limited to:
+
+- Stream Selector Dialog (Audio): Further simplified labels (avoid redundant audio channels info)
+- Player Process Info (Amlogic): Further simplified labels (audio/subtitle language), updated L5 offsets support for p3i
+- Player Process Info: Further simplified labels (player video/audio)
+- Added hidden "Full Changelog" toggle to "What's new?" dialog
+(Press RIGHT to toggle between "What's new?" and "Full Changelog")
+
 [B]6.8.3[/B] (2026-04-11)
 [B]6.8.2[/B] (2026-04-11)
 [B]6.8.1[/B] (2026-04-10)
