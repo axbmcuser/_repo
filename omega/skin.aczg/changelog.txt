@@ -1,3 +1,12 @@
+[B]6.8.6[/B] (2026-04-13)
+
+Updated: "System" section
+- Improved usability and navigation logic
+- Added buttons for "System info", "File manager", "Profiles" and "Event log"
+- Added Home screen Add-on shortcuts for "System" section
+
+Minor fixes and improvements
+
 [B]6.8.5[/B] (2026-04-12)
 [B]6.8.4[/B] (2026-04-12)
 
