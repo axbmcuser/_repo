@@ -1,3 +1,10 @@
+[B]6.8.7[/B] (2026-04-14)
+
+Updated: "System info"
+- Simplified visuals and improved readability
+
+Minor fixes and improvements
+
 [B]6.8.6[/B] (2026-04-13)
 
 Updated: "System" section
