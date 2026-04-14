@@ -1,3 +1,17 @@
+[B]6.8.8[/B] (2026-04-14)
+
+Updated: "List" View
+- Improved visuals
+- Show non-library media flags
+- New option: [List View] Thumbnail (Default: On)
+See: My Skin – OSD, Dialogs &amp; Views – Views
+Also see: New Sidebar button
+
+My skin settings
+- Improved My Skin – OSD, Dialogs &amp; Views – Views
+
+Minor fixes and improvements
+
 [B]6.8.7[/B] (2026-04-14)
 
 Updated: "System info"
