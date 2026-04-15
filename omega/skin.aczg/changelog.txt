@@ -1,3 +1,13 @@
+[B]6.8.9[/B] (2026-04-15)
+
+Updated: "List Wide" &amp; "List" View
+- Improved visuals, labels and code
+- New option: [List Wide View] Fanart (Default: On)
+- New option: [List View] Fanart (Default: On)
+See: My Skin – OSD, Dialogs &amp; Views – Views
+
+Minor fixes and improvements
+
 [B]6.8.8[/B] (2026-04-14)
 
 Updated: "List" View
