@@ -1,3 +1,13 @@
+[B]6.8.10[/B] (2026-04-17)
+
+Updated: "My Skin" settings
+- Reworked and simplified "Debugging" and "Experimental &amp; Developer" sections to a new tree-tabs layout for much better usability
+See: My Skin – Advanced
+
+Updated: "List Wide" View: Show non-library media flags
+
+Minor fixes and improvements
+
 [B]6.8.9[/B] (2026-04-15)
 
 Updated: "List Wide" &amp; "List" View
@@ -17,7 +27,7 @@ Updated: "List" View
 See: My Skin – OSD, Dialogs &amp; Views – Views
 Also see: New Sidebar button
 
-My skin settings
+Updated: "My Skin" settings
 - Improved My Skin – OSD, Dialogs &amp; Views – Views
 
 Minor fixes and improvements

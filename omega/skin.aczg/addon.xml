@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="6.8.9" name="Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="6.8.10" name="Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
 		<import addon="resource.font.aczg" version="0.1.0" />
@@ -28,7 +28,17 @@ Useful lightweight features and countless carefully crafted usability refinement
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B]6.8.9[/B] (2026-04-15)
+		<news>[B]6.8.10[/B] (2026-04-17)
+
+Updated: "My Skin" settings
+- Reworked and simplified "Debugging" and "Experimental &amp; Developer" sections to a new tree-tabs layout for much better usability
+See: My Skin – Advanced
+
+Updated: "List Wide" View: Show non-library media flags
+
+Minor fixes and improvements
+
+[B]6.8.9[/B] (2026-04-15)
 
 Updated: "List Wide" &amp; "List" View
 - Improved visuals, labels and code
@@ -47,7 +57,7 @@ Updated: "List" View
 See: My Skin – OSD, Dialogs &amp; Views – Views
 Also see: New Sidebar button
 
-My skin settings
+Updated: "My Skin" settings
 - Improved My Skin – OSD, Dialogs &amp; Views – Views
 
 Minor fixes and improvements
