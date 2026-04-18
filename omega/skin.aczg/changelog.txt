@@ -1,3 +1,4 @@
+[B]6.8.12[/B] (2026-04-18)
 [B]6.8.11[/B] (2026-04-18)
 
 Updated: Settings: Improved visuals
