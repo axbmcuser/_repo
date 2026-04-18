@@ -1,3 +1,9 @@
+[B]6.8.11[/B] (2026-04-18)
+
+Updated: Settings: Improved visuals
+
+Minor fixes and improvements
+
 [B]6.8.10[/B] (2026-04-17)
 
 Updated: "My Skin" settings
