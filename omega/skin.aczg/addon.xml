@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="6.8.13" name="Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="6.8.14" name="Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
 		<import addon="resource.font.aczg" version="0.1.0" />
@@ -28,7 +28,29 @@ Useful lightweight features and countless carefully crafted usability refinement
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B]6.8.13[/B] (2026-04-18)
+		<news>[B]6.8.14[/B] (2026-04-25)
+
+Updated: Sidebars
+- Extensive usability rework of all PVR sidebars
+- Improved Add-on Browser sidebar and multiple other sidebars
+
+Updated: Controls
+- Refined all controls (including radiobutton, button, colorbutton etc.) with increased and coherent spacing
+- Improved visuals of radiobutton (all variants), spincontrol and colorbutton
+
+Updated: Settings &amp; "My Skin" settings:
+- Improved usability
+- Extensive code clean-up
+
+Minor fixes and improvements
+
+Textures:
+
+- Updated all UI color schemes textures to match the updated controls code
+- Moved many controls textures to new /controls folder
+- Moved some textures to sub folders
+
+[B]6.8.13[/B] (2026-04-18)
 
 Minor fixes and improvements
 
