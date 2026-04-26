@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="skin.aczg" version="6.8.15" name="Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="6.8.16" name="Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
 		<import addon="resource.font.aczg" version="0.1.0" />
@@ -29,7 +29,19 @@ Useful lightweight features and countless carefully crafted usability refinement
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B]6.8.15[/B] (2026-04-25)
+		<news>[B]6.8.16[/B] (2026-04-26)
+
+New: Added PVR ranges controls (WIP)
+Minor fixes and improvements
+
+[B]6.8.15[/B] (2026-04-25)
+
+Updated: "Background Video"
+- Code improvements for the "Background Video" implementation
+("Picture in Picure (PiP)" (Default), "Fullscreen Video", "Disabled")
+- Kodi is seemingly very sensitive to using (and also not using) the "videowindow" control in diverse regards
+- All three modes should work smoother now in multiple situations
+
 [B]6.8.14[/B] (2026-04-25)
 
 Updated: Sidebars
