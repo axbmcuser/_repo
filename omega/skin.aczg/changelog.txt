@@ -1,6 +1,7 @@
+[B]6.8.18[/B] (2026-04-29)
 [B]6.8.17[/B] (2026-04-27)
 
-New: Added option "Show Chapter markers/EDL" 
+New: Added option "Show Chapter/EDL markers" 
 See: My Skin – OSD, Dialogs &amp; Views – Fullscreen &amp; OSD
 
 [B]6.8.16[/B] (2026-04-26)
