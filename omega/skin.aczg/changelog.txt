@@ -1,3 +1,11 @@
+[B]6.8.20[/B] (2026-05-04)
+
+Reduced dimensions of Home Weather Widget items
+Added PlayerDebug/PlayerDebugVideo ondown-actions to Video OSD (When focusing "Player" and "Video settings" buttons)
+Player Process Info (Amlogic): Minor improvements
+
+Minor fixes and improvements
+
 [B]6.8.19[/B] (2026-04-30)
 [B]6.8.18[/B] (2026-04-29)
 [B]6.8.17[/B] (2026-04-27)
