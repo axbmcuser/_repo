@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="skin.aczg" version="6.8.20" name="Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="6.8.21" name="Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
 		<import addon="resource.font.aczg" version="0.1.0" />
@@ -29,7 +29,20 @@ Useful lightweight features and countless carefully crafted usability refinement
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B]6.8.20[/B] (2026-05-04)
+		<news>[B]6.8.21[/B] (2026-05-07)
+
+Minor fixes and improvements, including, but not limited to:
+- Simplified code for Wall Views
+- Minor fixes for Game OSD / Disc Manager
+- Updated language strings to latest Confluence GIT master
+
+New: Added new options: RSS feed
+- Feed scroll speed
+- Feed font size
+See: My Skin – Home
+(only visible if RSS feed is enabled in Kodi)
+
+[B]6.8.20[/B] (2026-05-04)
 
 Reduced dimensions of Home Weather Widget items
 Added PlayerDebug/PlayerDebugVideo ondown-actions to Video OSD (When focusing "Player" and "Video settings" buttons)

@@ -1,3 +1,16 @@
+[B]6.8.21[/B] (2026-05-07)
+
+Minor fixes and improvements, including, but not limited to:
+- Simplified code for Wall Views
+- Minor fixes for Game OSD / Disc Manager
+- Updated language strings to latest Confluence GIT master
+
+New: Added new options: RSS feed
+- Feed scroll speed
+- Feed font size
+See: My Skin – Home
+(only visible if RSS feed is enabled in Kodi)
+
 [B]6.8.20[/B] (2026-05-04)
 
 Reduced dimensions of Home Weather Widget items
