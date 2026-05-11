@@ -1,3 +1,22 @@
+[B]6.8.22[/B] (2026-05-11)
+
+New: Languages &amp; Fonts: Chinese, Japanese, Korean, Arabic, Persian
+
+The UI can now display characters of the following languages:
+(without any manual user interaction/font-changes required)
+
+- Chinese, Japanese, Korean
+(Simplified Chinese is prioritized for overlap characters)
+- Arabic
+- Persian
+
+Updated: Game OSD
+- Improved volume control button (icon now dynamic)
+- Removed background &amp; header for "Video filters", "Stretch mode", "Rotation"
+- Video filters: Add icon for "Get more..." item
+
+Minor fixes and improvements
+
 [B]6.8.21[/B] (2026-05-07)
 
 Minor fixes and improvements, including, but not limited to:
