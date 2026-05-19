@@ -1,3 +1,7 @@
+[B]6.8.24[/B] (2026-05-19)
+
+Minor fixes and improvements
+
 [B]6.8.23[/B] (2026-05-18)
 
 Updated: Add-on settings: Added help textbox
