@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="6.8.22" name="Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="6.8.23" name="Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
 		<import addon="resource.font.aczg" version="0.1.2" />
@@ -28,7 +28,20 @@ Useful lightweight features and countless carefully crafted usability refinement
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B]6.8.22[/B] (2026-05-11)
+		<news>[B]6.8.23[/B] (2026-05-18)
+
+Updated: Add-on settings: Added help textbox
+Updated: Video Info Dialog: Improved button icon textures (Play, Browse, ...)
+
+Minor fixes and improvements, including, but not limited to:
+- Fullscreen OSD: Hide Video OSD when Audio/Video/Subtitle settings are visible
+- Player Process Info (Amlogic): Re-ordered some rows, improved some label strings
+- Fullscreen OSD/Seek bar: Minor visual visibility tweaks for seek bar while OSD is closed
+
+Textures:
+Video Info Dialog: Improved button icon textures
+
+[B]6.8.22[/B] (2026-05-11)
 
 New: Languages &amp; Fonts: Chinese, Japanese, Korean, Arabic, Persian
 
