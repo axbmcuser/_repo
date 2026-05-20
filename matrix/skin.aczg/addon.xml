@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="5.7.60" name="Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="5.7.61" name="Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.15.0" />
-		<import addon="resource.font.aczg" version="0.1.0" />
+		<import addon="resource.font.aczg" version="0.1.2" />
 		<import addon="resource.images.aczg" version="0.1.0" />
 		<import addon="service.listitem.helper" version="1.0.0" />
 		<import addon="service.library.data.provider.lite" version="0.3.4" />
@@ -28,7 +28,19 @@ Useful lightweight features and countless carefully crafted usability refinement
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B]5.7.60[/B] (2026-01-01)
+		<news>[B]5.7.61[/B] (2026-05-20)
+
+New: Languages &amp; Fonts: Chinese, Japanese, Korean, Arabic, Persian
+
+The UI can now display characters of the following languages:
+(without any manual user interaction/font-changes required)
+
+- Chinese, Japanese, Korean
+(Simplified Chinese is prioritized for overlap characters)
+- Arabic
+- Persian
+
+[B]5.7.60[/B] (2026-01-01)
 
 Happy new year!
 

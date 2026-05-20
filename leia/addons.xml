@@ -378,10 +378,10 @@ Added Kodi 19+20 (Python 3) compatibility code basis (Dual-addon: Python 2 still
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="4.7.59" name="Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="4.7.60" name="Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
-		<import addon="resource.font.aczg" version="0.1.0" />
+		<import addon="resource.font.aczg" version="0.1.2" />
 		<import addon="resource.images.aczg" version="0.1.0" />
 		<import addon="service.listitem.helper" version="0.3.4" />
 		<import addon="service.library.data.provider.lite" version="0.3.4" />
@@ -407,7 +407,19 @@ Useful lightweight features and countless carefully crafted usability refinement
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B]4.7.59[/B] (2025-12-27)
+		<news>[B]4.7.60[/B] (2026-05-20)
+
+New: Languages &amp; Fonts: Chinese, Japanese, Korean, Arabic, Persian
+
+The UI can now display characters of the following languages:
+(without any manual user interaction/font-changes required)
+
+- Chinese, Japanese, Korean
+(Simplified Chinese is prioritized for overlap characters)
+- Arabic
+- Persian
+
+[B]4.7.59[/B] (2025-12-27)
 
 Fixed missing OSD player buttons when high resolution screen is detected (Mostly affected 4K screens)
 Video Info Dialog: Title has been moved up by 1px

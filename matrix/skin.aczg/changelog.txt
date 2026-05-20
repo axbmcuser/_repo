@@ -1,3 +1,15 @@
+[B]5.7.61[/B] (2026-05-20)
+
+New: Languages &amp; Fonts: Chinese, Japanese, Korean, Arabic, Persian
+
+The UI can now display characters of the following languages:
+(without any manual user interaction/font-changes required)
+
+- Chinese, Japanese, Korean
+(Simplified Chinese is prioritized for overlap characters)
+- Arabic
+- Persian
+
 [B]5.7.60[/B] (2026-01-01)
 
 Happy new year!
