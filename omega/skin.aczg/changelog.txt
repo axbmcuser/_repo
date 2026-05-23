@@ -1,3 +1,9 @@
+[B]6.8.26[/B] (2026-05-23)
+
+Minor fixes and improvements, including, but not limited to:
+- Wall Views: Further code rework as preparation for future Wall View updates
+- Fullscreen OSD: Improved code for Tempo control; Always reset Tempo on PlayPause
+
 [B]6.8.25[/B] (2026-05-20)
 [B]6.8.24[/B] (2026-05-19)
 
