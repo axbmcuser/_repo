@@ -1,3 +1,7 @@
+[B]2.4.14[/B] (2026-05-24)
+
+Minor code improvements
+
 [B]2.4.13[/B] (2026-05-24)
 
 Split release to new version for Kodi 21-22
