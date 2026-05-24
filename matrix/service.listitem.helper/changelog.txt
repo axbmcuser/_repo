@@ -1,3 +1,10 @@
+[B]1.4.13[/B] (2026-05-24)
+
+Split release to new version for Kodi 19-20
+settings.xml is now initially saved with default values for easier editing
+Updated language strings
+Minor code improvements
+
 [B]1.4.12[/B] (2026-03-24)
 [B]1.4.11[/B] (2026-02-07)
 
