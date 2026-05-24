@@ -1,0 +1,193 @@
+[B]2.4.13[/B] (2026-05-24)
+
+Split release to new version for Kodi 21-22
+settings.xml is now initially saved with default values for easier editing
+Updated language strings
+Minor code improvements
+
+[B]1.4.12[/B] (2026-03-24)
+[B]1.4.11[/B] (2026-02-07)
+
+Minor code improvements
+
+[B]1.4.10[/B] (2026-01-01)
+
+Minor code improvements
+
+[B]1.4.9[/B] (2026-01-01)
+
+Hotfix: Fixed image blurring function by changing Image.ANTIALIAS to Image.LANCZOS (Image.ANTIALIAS was removed in pillow 10)
+
+[B]1.4.8[/B] (2024-07-22)
+
+- Implemented automatic detection of custom "videolibrary.itemseparator" values from advancedsettings.xml
+- Removed the corresponding user setting for "videolibrary.itemseparator"
+- Further improvements to language strings and code
+
+[B]1.4.7[/B] (2024-07-05)
+
+Kodi 17-18 only:
+
+Hotfix: Removed backoff_max parameter (non existant in older urllib3 versions)
+
+[B]1.4.6[/B] (2024-07-05)
+
+- Added "suppressException" for TMDb/MDBList (OMDb already had this before)
+- Optimized retry parameters
+- Minor code improvements
+
+[B]1.4.5[/B] (2024-06-19)
+
+Misc improvements
+
+- Minor improvements to addon.xml, .nts-files reading capability (added escaping for double quotes) and settings.xml
+- Improved code to be less prone for errors when no results from TMDb were fetched
+- Improvements to Container.Scrolling detection
+- Slightly reduced code execution interval from 0.75 to 0.7 seconds
+
+[B]1.4.4[/B] (2024-05-16)
+
+Minor improvements to addon.xml and settings language strings
+
+[B]1.4.3[/B] (2023-11-07)
+
+- Added "suppressException" option for get_json (get_xml already had this added in a previous update)
+- Improved exception handling for time outs and similar status
+- Slightly updated settings window language strings (visual font changes)
+
+[B]1.4.2[/B] (2023-10-12)
+
+- Added API support for MDBList
+- Added support for local ratings from the Kodi database and new properties
+- Minor performance improvements and optimizations
+
+Clean up:
+- Removed some Python 2 code (now using code which is compatible with both 2 and 3)
+
+[B]1.4.1[/B] (2023-09-23)
+
+Version in sync with "A Confluence ZEITGEIST" 3.6.11 (4.6.11, 5.6.11)
+
+- Added support and expanded functionality for local ratings ListItem.Rating(xxx)
+- Added ListItemHelper.rating.highestScaleTo5 and highestScaleTo100
+
+[B]1.4.0[/B] (2023-08-16)
+
+Version in sync for major rework of "A Confluence ZEITGEIST" 3.6.0 (Version numbers vary on other Kodi generations)
+
+- Code and performance optimizations (shorter cache values, optimized retry-handling, fixed file loading for python 3 addon variant)
+- Language strings changed
+- Minor code improvement for settings.xml
+- New addon icon
+
+[B]1.3.15[/B] (2022-12-24)
+
+- Added functionality for new Skin setting "Use highest score for stars rating (*****)"
+
+- Added new setting "videolibrary.itemseparator" needed for value splitting if user has set a custom separator via advancedsettings.xml
+- Added ListItem.studio   splitting support
+- Added ListItem.genre    splitting support
+- Added ListItem.director splitting support
+- Added ListItem.writer   splitting support
+
+New properties:
+
+(home) ListItemHelper.rating.highestScaleTo10
+
+(home) ListItemHelper.studio.X   (X=index no, starting at 1)
+(home) ListItemHelper.genre.X    (X=index no, starting at 1)
+(home) ListItemHelper.director.X (X=index no, starting at 1)
+(home) ListItemHelper.writer.X   (X=index no, starting at 1)
+
+[B]1.3.14[/B] (2022-12-12)
+
+- Changed settings.xml format and added language strings
+
+[B]1.3.13[/B] (2022-12-12)
+
+- Improved Addon settings: Added descriptive text and new debug tab+option "Clear image cache"
+- Added functionality to force generation of blurimg image even if it exists in the cache (important when image changes in certain situations)
+
+[B]1.3.12[/B] (2022-12-05)
+
+- Added property (home) ListItemHelper.IMDBNumber.isValid
+- Added property (home) ListItemHelper.IMDBNumber.corrected
+- Added property (home) ListItemHelper.IMDBNumber.corrected.isValid
+- Added property (home) ListItemHelper.TMDBID
+- Added property (home) ListItemHelper.TVDBID
+- Changed addon settings dialog tab name to "API keys"
+- Improved data validation
+- Expanded Python 2/3 dual code base
+
+[B]1.3.11[/B] (2022-12-05)
+
+Change addon.xml so that the addon is visibly placed into the "Services" category of the Kodi addon manager and the repo
+Note: In addon.xml, extension point="xbmc.service" tag has to be placed _above_ extension point="xbmc.python.script" tag for this to happen
+
+[B]1.3.10[/B] (2022-12-04)
+
+Added Kodi 19+20 (Python 3) compatibility code basis (Dual-addon: Python 2 still supported)
+- Python 2/3 versions still need separate addon version due to required addon.xml changes
+- Using unified code basis still makes things much easier
+- Exception: lib/img/*.py scripts are Python 3 only
+
+[B]0.3.10[/B] (2022-12-04)
+
+- Improve external ratings (rotten tomatoes, metacritic, ...) processing for wrongly scraped ListItem.IMDBNumber (The "The Movie Database" scraper wrongly puts the tmdb-id into ListItem.IMDBNumber)
+(Now "service.listitem.helper" always gets the real imdb-id via a json query)
+
+[B]0.3.9[/B] (2022-03-19)
+- Minor performance improvements and optimizations
+
+[B]0.3.8[/B] (2020-02-14)
+- Internal improvements
+
+[B]0.3.7[/B] (2019-12-12)
+- Internal improvements
+
+[B]0.3.6[/B] (2019-12-05)
+- Internal improvements
+
+[B]0.3.5[/B] (2019-12-04)
+- Internal improvements
+
+[B]0.3.4[/B] (2019-11-23)
+- Other minor improvements
+
+[B]0.3.3[/B] (2019-11-21)
+- Other minor improvements
+
+[B]0.3.2[/B] (2019-11-17)
+- Other minor improvements
+
+[B]0.3.1[/B] (2019-03-12)
+- Ensure unique caching identifier for SimpleCache Addon
+- Other minor improvements
+
+[B]0.3.0[/B] (2018-12-03)
+- Support for OMDb/TMDb without using "script.module.metadatautils"
+- Added settings dialog for required OMDb/TMDb API keys
+
+[B]0.2.5[/B] (2018-08-19)
+- Other minor improvements
+
+[B]0.2.4[/B] (2018-08-29)
+- Other minor improvements
+
+[B]0.2.3[/B] (2018-08-25)
+- Improvements and internal additions
+
+[B]0.2.2[/B] (2018-04-02)
+- Other minor improvements
+
+[B]0.2.1[/B] (2018-03-18)
+- Other minor improvements
+
+[B]0.2.0[/B] (2018-03-11)
+Second Test Release:
+- OMDB: Added value "boxoffice"
+- TMDB: Added multiple values
+- Other minor improvements
+
+[B]0.1.0[/B] (2018-03-06)
+- Initial test release

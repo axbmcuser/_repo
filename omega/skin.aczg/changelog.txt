@@ -1,3 +1,10 @@
+[B]6.8.27[/B] (2026-05-24)
+
+Updated: Add-on settings &amp; Settings: Improved visuals &amp; usability
+Added help instructions for easy API keys editing
+
+Minor fixes and improvements
+
 [B]6.8.26[/B] (2026-05-23)
 
 Minor fixes and improvements, including, but not limited to:
