@@ -1,3 +1,7 @@
+[B]6.8.28[/B] (2026-05-24)
+
+Minor fixes and improvements
+
 [B]6.8.27[/B] (2026-05-24)
 
 Updated: Add-on settings &amp; Settings: Improved visuals &amp; usability
