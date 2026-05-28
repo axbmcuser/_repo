@@ -1,3 +1,9 @@
+[B]6.8.29[/B] (2026-05-28)
+
+Minor fixes and improvements, including, but not limited to:
+- Fix very minor right on-focus cut-off on 16:9 "Wall 5X" (high density, last row item)
+- My Skin: Improved indenting of items within opened settings trees
+
 [B]6.8.28[/B] (2026-05-24)
 
 Minor fixes and improvements
