@@ -1,3 +1,11 @@
+[B]6.8.30[/B] (2026-06-04)
+
+Music OSD
+- Improved usability of Visualization &amp; Lyrics add-on related elements
+- Prevent lyrics add-on from automatically displaying lyrics when skin hasn't chosen the lyrics add-on to be enabled (this felt wrong and confusing before)
+
+Minor fixes and improvements
+
 [B]6.8.29[/B] (2026-05-28)
 
 Minor fixes and improvements, including, but not limited to:
