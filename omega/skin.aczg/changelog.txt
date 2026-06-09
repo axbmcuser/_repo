@@ -1,3 +1,17 @@
+[B]6.8.31[/B] (2026-06-09)
+
+Updated language strings to latest Confluence GIT master
+Preparations for future Cinemascope Mode expansion update
+
+Main menu: System: Added sub menu entries "CoreELEC add-on", "CoreELEC settings"
+Add-on Info Dialog: "Internal ID" is now shown if add-on size is not available (which is the default)
+CoreELEC: Improved code for Kodi "Exit"-button
+
+Minor fixes and improvements
+
+Textures:
+Added/updated Scope Mode textures
+
 [B]6.8.30[/B] (2026-06-04)
 
 Music OSD

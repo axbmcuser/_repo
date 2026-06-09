@@ -320,7 +320,7 @@ Second Test Release:
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="6.8.30" name="Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="6.8.31" name="Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
 		<import addon="resource.font.aczg" version="0.1.2" />
@@ -349,7 +349,21 @@ Useful lightweight features and countless carefully crafted usability refinement
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B]6.8.30[/B] (2026-06-04)
+		<news>[B]6.8.31[/B] (2026-06-09)
+
+Updated language strings to latest Confluence GIT master
+Preparations for future Cinemascope Mode expansion update
+
+Main menu: System: Added sub menu entries "CoreELEC add-on", "CoreELEC settings"
+Add-on Info Dialog: "Internal ID" is now shown if add-on size is not available (which is the default)
+CoreELEC: Improved code for Kodi "Exit"-button
+
+Minor fixes and improvements
+
+Textures:
+Added/updated Scope Mode textures
+
+[B]6.8.30[/B] (2026-06-04)
 
 Music OSD
 - Improved usability of Visualization &amp; Lyrics add-on related elements
