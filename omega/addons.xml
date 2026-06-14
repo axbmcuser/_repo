@@ -320,7 +320,7 @@ Second Test Release:
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="6.8.31" name="Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="6.8.32" name="Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
 		<import addon="resource.font.aczg" version="0.1.2" />
@@ -349,7 +349,19 @@ Useful lightweight features and countless carefully crafted usability refinement
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B]6.8.31[/B] (2026-06-09)
+		<news>[B]6.8.32[/B] (2026-06-14)
+
+New option: [Wall View] Show focus labels (Movies &amp; TV shows)
+(Simplified focus visuals by selectively hiding labels)
+
+My Skin: Improved usability of multiple tabs by adding new trees and refining settings structure
+
+Minor fixes and improvements, including, but not limited to:
+- Fix "Full width stripe" main menu type for Scope Mode
+- Home: Kodi logo of UI color schemes are now a bit brighter in color
+- Game: Minor visual refinements for Controls/Ports/Players dialogs
+
+[B]6.8.31[/B] (2026-06-09)
 
 Updated language strings to latest Confluence GIT master
 Preparations for future Cinemascope Mode expansion update
