@@ -1,6 +1,10 @@
+[B]6.8.33[/B] (2026-06-15)
+
+Minor fixes and improvements
+
 [B]6.8.32[/B] (2026-06-14)
 
-New option: [Wall View] Show focus labels (Movies &amp; TV shows)
+New option: [Wall View] Show focus labels (Movies / TV shows)
 (Simplified focus visuals by selectively hiding labels)
 
 My Skin: Improved usability of multiple tabs by adding new trees and refining settings structure
