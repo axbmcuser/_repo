@@ -1,3 +1,7 @@
+[B]6.8.34[/B] (2026-06-18)
+
+Minor fixes and improvements
+
 [B]6.8.33[/B] (2026-06-15)
 
 Minor fixes and improvements
@@ -11,7 +15,7 @@ My Skin: Improved usability of multiple tabs by adding new trees and refining se
 
 Minor fixes and improvements, including, but not limited to:
 - Fix "Full width stripe" main menu type for Scope Mode
-- Home: Kodi logo of UI color schemes are now a bit brighter in color
+- Home: Kodi logo of UI color schemes is now a bit brighter in color
 - Game: Minor visual refinements for Controls/Ports/Players dialogs
 
 [B]6.8.31[/B] (2026-06-09)

@@ -1,3 +1,8 @@
+[B]2.1.40[/B] (2026-06-18)
+
+Removed deprecated code
+Minor fixes and improvements
+
 [B]2.1.39[/B] (2026-06-04)
 
 Lyrics add-on usability helper code
