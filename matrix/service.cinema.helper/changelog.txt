@@ -1,3 +1,7 @@
+[B]2.1.41[/B] (2026-06-28)
+
+Added code for new option "[Kodi] Videos "Select default action""
+
 [B]2.1.40[/B] (2026-06-18)
 
 Removed deprecated code

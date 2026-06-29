@@ -320,7 +320,7 @@ Second Test Release:
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="6.8.34" name="Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="6.8.35" name="Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
 		<import addon="resource.font.aczg" version="0.1.2" />
@@ -349,7 +349,21 @@ Useful lightweight features and countless carefully crafted usability refinement
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B]6.8.34[/B] (2026-06-18)
+		<news>[B]6.8.35[/B] (2026-06-28)
+
+My Skin: Added option "[Kodi] Videos "Default select action""
+(Set to "Show information" by default on first install)
+
+Select Dialog: Changed control style from "list" to "fixedlist" for better dialog usability
+(Inspired by recent optional fixedlist additions to Kodi 22 by CrystalP. Went with a backwards compatible approach for Kodi 21+)
+
+Minor fixes and improvements
+
+Textures:
+
+Added dts_96_24.png dts_es.png dts_express.png
+
+[B]6.8.34[/B] (2026-06-18)
 
 Minor fixes and improvements
 
