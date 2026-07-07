@@ -1,4 +1,6 @@
-[B]2.1.42[/B] (2026-07-07)
+[B]2.2.42[/B] (2026-07-07)
+
+Automatic Views Rework
 
 Split versions for Kodi 19-20 and 21-22
 

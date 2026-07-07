@@ -1,4 +1,24 @@
-[B]2.1.42[/B] (2026-07-07)
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="service.cinema.helper" name="Cinema Helper (Kodi 21-22)" version="2.2.42" provider-name="axbmcuser">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0" />
+		<import addon="script.module.simplejson" version="3.16.1" />
+	</requires>
+	<extension point="xbmc.service" library="service.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">A Cinema Helper service</summary>
+		<description lang="en_GB">A Cinema Helper service which provides some lightweight skin functionality and properties.</description>
+		<platform>all</platform>
+		<license>GPL-2.0-only</license>
+		<forum>https://forum.kodi.tv/showthread.php?tid=242892</forum>
+		<website>https://axbmcuser.github.io</website>
+		<source>https://github.com/axbmcuser/_repo</source>
+		<assets>
+			<icon>icon.png</icon>
+		</assets>
+		<news>[B]2.2.42[/B] (2026-07-07)
+
+Automatic Views Rework
 
 Split versions for Kodi 19-20 and 21-22
 
@@ -287,4 +307,6 @@ Added Kodi 19+20 (Python 3) compatibility code basis (Dual-addon: Python 2 still
 
 [B]1.0.0[/B] (2022-03-29)
 
-- Initial release
+- Initial release</news>
+	</extension>
+</addon>
