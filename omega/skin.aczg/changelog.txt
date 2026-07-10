@@ -1,3 +1,13 @@
+[B]6.8.38[/B] (2026-07-10)
+
+Virtual Keyboard &amp; Numeric Keyboard: Usability Rework
+
+Minor fixes and improvements
+
+Textures:
+Added shift and capslock textures
+Removed now unused KeyboardDoneKey.png
+
 [B]6.8.37[/B] (2026-07-07)
 [B]6.8.36[/B] (2026-07-07)
 
