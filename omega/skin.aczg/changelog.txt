@@ -1,3 +1,4 @@
+[B]6.8.39[/B] (2026-07-12)
 [B]6.8.38[/B] (2026-07-10)
 
 Virtual Keyboard &amp; Numeric Keyboard: Usability Rework
