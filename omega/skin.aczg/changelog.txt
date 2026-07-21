@@ -1,3 +1,24 @@
+[B]6.8.40[/B] (2026-07-21)
+
+New: Home: Widgets Expansion Update
+
+- There are now multiple brand new home widget types to choose from for Movies, TV shows and Music
+- Simplistic and intuitive Widget UI
+- 3 to 4 slots are available per section
+See: My Skin: Home
+
+New: Home: Sub Menu Rework
+
+- All home sub menus have been reworked to support up to 12 items distributed to two pages (6 per page)
+- Simplistic and intuitive new two page sub menu integration
+- Custom sub menus also now support those identical 2x6=12 items on two pages
+- Some out-of-the-box sub menu items have been added or improved making use of the new max item count of 12
+
+Minor fixes and improvements
+
+Textures:
+Added textures for new Home Widgets and Sub Menu Rework
+
 [B]6.8.39[/B] (2026-07-12)
 [B]6.8.38[/B] (2026-07-10)
 
