@@ -1,8 +1,16 @@
+[B]6.8.42[/B] (2026-07-21)
+
+Updated: Home: Widgets Expansion Update
+
+- Added new option "Auto-activate widget slots on focus" (Default: On)
+See: My Skin – Home – Widgets · Misc
+
 [B]6.8.41[/B] (2026-07-21)
 
 Updated: Home: Widgets Expansion Update
 
 - Added new option "Auto-reveal all widget slots on initial focus" (Default: On)
+See: My Skin – Home – Widgets · Misc
 
 Minor fixes and improvements
 
@@ -13,7 +21,7 @@ New: Home: Widgets Expansion Update
 - There are now multiple brand new home widget types to choose from for Movies, TV shows and Music
 - Simplistic and intuitive Widget UI
 - 3 to 4 slots are available per section
-See: My Skin: Home
+See: My Skin – Home
 
 New: Home: Sub Menu Rework
 
