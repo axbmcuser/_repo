@@ -632,7 +632,7 @@ Second Test Release:
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="6.8.40" name="Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="6.8.41" name="Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
 		<import addon="resource.font.aczg" version="0.1.2" />
@@ -661,7 +661,15 @@ Useful lightweight features and countless carefully crafted usability refinement
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B]6.8.40[/B] (2026-07-21)
+		<news>[B]6.8.41[/B] (2026-07-21)
+
+Updated: Home: Widgets Expansion Update
+
+- Added new option "Auto-reveal all widget slots on initial focus" (Default: On)
+
+Minor fixes and improvements
+
+[B]6.8.40[/B] (2026-07-21)
 
 New: Home: Widgets Expansion Update
 

@@ -1,3 +1,11 @@
+[B]6.8.41[/B] (2026-07-21)
+
+Updated: Home: Widgets Expansion Update
+
+- Added new option "Auto-reveal all widget slots on initial focus" (Default: On)
+
+Minor fixes and improvements
+
 [B]6.8.40[/B] (2026-07-21)
 
 New: Home: Widgets Expansion Update
