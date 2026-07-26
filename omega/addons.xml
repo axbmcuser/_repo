@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="service.cinema.helper" name="Cinema Helper (Kodi 21-22)" version="2.2.42" provider-name="axbmcuser">
+<addon id="service.cinema.helper" name="Cinema Helper (Kodi 21-22)" version="2.2.43" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.simplejson" version="3.16.1" />
@@ -17,7 +17,11 @@
 		<assets>
 			<icon>icon.png</icon>
 		</assets>
-		<news>[B]2.2.42[/B] (2026-07-07)
+		<news>[B]2.2.43[/B] (2026-07-27)
+
+Minor fixes and improvements
+
+[B]2.2.42[/B] (2026-07-07)
 
 Automatic Views Rework
 
@@ -632,7 +636,7 @@ Second Test Release:
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="6.8.48" name="Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="6.8.49" name="Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
 		<import addon="resource.font.aczg" version="0.1.2" />
@@ -661,7 +665,11 @@ Useful lightweight features and countless carefully crafted usability refinement
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B]6.8.48[/B] (2026-07-26)
+		<news>[B]6.8.49[/B] (2026-07-27)
+
+Minor fixes and improvements
+
+[B]6.8.48[/B] (2026-07-26)
 [B]6.8.47[/B] (2026-07-26)
 
 Updated: Home: Widgets Expansion Update
