@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aczg" version="6.8.46" name="Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="6.8.47" name="Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
 		<import addon="resource.font.aczg" version="0.1.2" />
@@ -28,7 +28,25 @@ Useful lightweight features and countless carefully crafted usability refinement
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B]6.8.46[/B] (2026-07-22)
+		<news>[B]6.8.47[/B] (2026-07-26)
+
+Updated: Home: Widgets Expansion Update
+
+- Now up to 5 slots per section
+- 3 New Widget Types
+
+(TMDb Helper)  News · Now streaming · Movies
+(TMDb Helper)  News · Now in Theaters · Movies
+(TMDb Helper)  News · Now streaming · TV shows
+
+- All new TMDb Widget Types come with multi-page-support showing 3x20 items
+
+- Added new option: "TMDb Widgets Language &amp; Region"
+See: My Skin – Home – Widgets · Misc &amp; Options
+
+Minor fixes and improvements
+
+[B]6.8.46[/B] (2026-07-22)
 [B]6.8.45[/B] (2026-07-22)
 [B]6.8.44[/B] (2026-07-22)
 [B]6.8.43[/B] (2026-07-21)
