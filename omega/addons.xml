@@ -316,7 +316,7 @@ Added Kodi 19+20 (Python 3) compatibility code basis (Dual-addon: Python 2 still
 	</extension>
 </addon>
 
-<addon id="service.listitem.helper" name="ListItem Helper (Kodi 21-22)" version="2.4.14" provider-name="axbmcuser">
+<addon id="service.listitem.helper" name="ListItem Helper (Kodi 21-22)" version="2.4.15" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" version="2.3.0" />
@@ -433,7 +433,12 @@ Many thanks to the contributors of the listed projects and all users providing v
 		<forum>https://forum.kodi.tv/showthread.php?tid=370673</forum>
 		<website>https://axbmcuser.github.io</website>
 		<source>https://github.com/axbmcuser/_repo</source>
-		<news>[B]2.4.14[/B] (2026-05-24)
+		<news>[B]2.4.15[/B] (2026-07-27)
+
+Added ListItemHelper.UID
+Minor fixes and improvements
+
+[B]2.4.14[/B] (2026-05-24)
 
 Minor code improvements
 
@@ -636,7 +641,7 @@ Second Test Release:
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="6.8.50" name="Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="6.8.51" name="Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
 		<import addon="resource.font.aczg" version="0.1.2" />
@@ -665,7 +670,17 @@ Useful lightweight features and countless carefully crafted usability refinement
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B]6.8.50[/B] (2026-07-27)
+		<news>[B]6.8.51[/B] (2026-07-27)
+
+Improved "ListItem Helper" code including support for working in conjunction with "TMDb Helper"
+This adds support for live movie ratings of the new "TMDb Widgets" (fetched by "ListItem Helper")
+
+Improved mouse-support for new "TMDb Widgets"
+Added one item to TV shows sub menu for some situations
+Added WPATH DEV Code (internal)
+Minor fixes and improvements
+
+[B]6.8.50[/B] (2026-07-27)
 [B]6.8.49[/B] (2026-07-27)
 
 Minor fixes and improvements

@@ -1,3 +1,13 @@
+[B]6.8.51[/B] (2026-07-27)
+
+Improved "ListItem Helper" code including support for working in conjunction with "TMDb Helper"
+This adds support for live movie ratings of the new "TMDb Widgets" (fetched by "ListItem Helper")
+
+Improved mouse-support for new "TMDb Widgets"
+Added one item to TV shows sub menu for some situations
+Added WPATH DEV Code (internal)
+Minor fixes and improvements
+
 [B]6.8.50[/B] (2026-07-27)
 [B]6.8.49[/B] (2026-07-27)
 
