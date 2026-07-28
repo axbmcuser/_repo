@@ -1,3 +1,7 @@
+[B]6.8.52[/B] (2026-07-28)
+
+Minor fixes and improvements
+
 [B]6.8.51[/B] (2026-07-27)
 
 Improved "ListItem Helper" code including support for working in conjunction with "TMDb Helper"
