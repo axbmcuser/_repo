@@ -1,3 +1,4 @@
+[B]6.8.53[/B] (2026-07-28)
 [B]6.8.52[/B] (2026-07-28)
 
 Minor fixes and improvements
