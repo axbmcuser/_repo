@@ -7,7 +7,7 @@ Updated: Home: Widgets Expansion Update
 - Removed deprecated option: "Auto-reveal all widget slots on initial focus"
 - 2 New Widget Types
 
-(TMDb Helper)  News · Trending· Movies
+(TMDb Helper)  News · Trending · Movies
 (TMDb Helper)  News · Trending · TV shows
 
 Minor fixes and improvements
