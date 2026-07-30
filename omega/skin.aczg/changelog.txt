@@ -1,3 +1,10 @@
+[B]6.8.60[/B] (2026-07-30)
+
+Updated: Home: Widgets Expansion Update
+
+Performance optimizations
+Minor fixes and improvements
+
 [B]6.8.59[/B] (2026-07-30)
 [B]6.8.58[/B] (2026-07-30)
 [B]6.8.57[/B] (2026-07-29)
