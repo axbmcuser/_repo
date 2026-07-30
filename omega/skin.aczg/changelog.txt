@@ -1,3 +1,4 @@
+[B]6.8.61[/B] (2026-07-30)
 [B]6.8.60[/B] (2026-07-30)
 
 Updated: Home: Widgets Expansion Update
