@@ -1,3 +1,9 @@
+[B]2.4.16[/B] (2026-08-02)
+
+Performance improvements
+Removed Python 2 fallback-code
+Minor fixes and improvements
+
 [B]2.4.15[/B] (2026-07-27)
 
 Added ListItemHelper.UID

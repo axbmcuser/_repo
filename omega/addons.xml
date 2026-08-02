@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="service.cinema.helper" name="Cinema Helper (Kodi 21-22)" version="2.2.43" provider-name="axbmcuser">
+<addon id="service.cinema.helper" name="Cinema Helper (Kodi 21-22)" version="2.2.44" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.simplejson" version="3.16.1" />
@@ -17,7 +17,13 @@
 		<assets>
 			<icon>icon.png</icon>
 		</assets>
-		<news>[B]2.2.43[/B] (2026-07-27)
+		<news>[B]2.2.44[/B] (2026-08-02)
+
+Performance improvements
+Removed Python 2 fallback-code
+Minor fixes and improvements
+
+[B]2.2.43[/B] (2026-07-27)
 
 Minor fixes and improvements
 
@@ -316,7 +322,7 @@ Added Kodi 19+20 (Python 3) compatibility code basis (Dual-addon: Python 2 still
 	</extension>
 </addon>
 
-<addon id="service.listitem.helper" name="ListItem Helper (Kodi 21-22)" version="2.4.15" provider-name="axbmcuser">
+<addon id="service.listitem.helper" name="ListItem Helper (Kodi 21-22)" version="2.4.16" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" version="2.3.0" />
@@ -433,7 +439,13 @@ Many thanks to the contributors of the listed projects and all users providing v
 		<forum>https://forum.kodi.tv/showthread.php?tid=370673</forum>
 		<website>https://axbmcuser.github.io</website>
 		<source>https://github.com/axbmcuser/_repo</source>
-		<news>[B]2.4.15[/B] (2026-07-27)
+		<news>[B]2.4.16[/B] (2026-08-02)
+
+Performance improvements
+Removed Python 2 fallback-code
+Minor fixes and improvements
+
+[B]2.4.15[/B] (2026-07-27)
 
 Added ListItemHelper.UID
 Minor fixes and improvements
