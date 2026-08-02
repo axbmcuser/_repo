@@ -322,7 +322,7 @@ Added Kodi 19+20 (Python 3) compatibility code basis (Dual-addon: Python 2 still
 	</extension>
 </addon>
 
-<addon id="service.listitem.helper" name="ListItem Helper (Kodi 21-22)" version="2.4.16" provider-name="axbmcuser">
+<addon id="service.listitem.helper" name="ListItem Helper (Kodi 21-22)" version="2.4.17" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" version="2.3.0" />
@@ -439,7 +439,8 @@ Many thanks to the contributors of the listed projects and all users providing v
 		<forum>https://forum.kodi.tv/showthread.php?tid=370673</forum>
 		<website>https://axbmcuser.github.io</website>
 		<source>https://github.com/axbmcuser/_repo</source>
-		<news>[B]2.4.16[/B] (2026-08-02)
+		<news>[B]2.4.17[/B] (2026-08-02)
+[B]2.4.16[/B] (2026-08-02)
 
 Performance improvements
 Removed Python 2 fallback-code
@@ -653,7 +654,7 @@ Second Test Release:
 	</extension>
 </addon>
 
-<addon id="skin.aczg" version="6.8.64" name="Confluence ZEITGEIST" provider-name="axbmcuser">
+<addon id="skin.aczg" version="6.8.65" name="Confluence ZEITGEIST" provider-name="axbmcuser">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
 		<import addon="resource.font.aczg" version="0.1.2" />
@@ -682,7 +683,8 @@ Useful lightweight features and countless carefully crafted usability refinement
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B]6.8.64[/B] (2026-08-01)
+		<news>[B]6.8.65[/B] (2026-08-02)
+[B]6.8.64[/B] (2026-08-01)
 [B]6.8.63[/B] (2026-07-31)
 
 Minor fixes and improvements
