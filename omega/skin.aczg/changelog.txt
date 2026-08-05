@@ -1,3 +1,17 @@
+[B]6.8.66[/B] (2026-08-05)
+
+Home Widgets now support 21:9 displays &amp; Scope Mode (+1 item)
+Added Home Widget "Radio · Recently played" (PVR)
+
+Minor fixes and improvements
+Removed unused old "DialogFavourites.xml" (Fully removed in Kodi 21)
+Updated language strings to latest Confluence GIT master
+
+Textures:
+Improved and separated TV/Radio channel fallback textures
+Updated OSD player button for "TV/Radio channels" (new icon)
+Updated all TV/Radio channels icons
+
 [B]6.8.65[/B] (2026-08-02)
 [B]6.8.64[/B] (2026-08-01)
 [B]6.8.63[/B] (2026-07-31)
