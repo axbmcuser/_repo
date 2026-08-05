@@ -1,3 +1,10 @@
+[B]6.8.67[/B] (2026-08-05)
+
+Minor fixes and improvements:
+- Improved various scaling situations for non-library media flags
+- Textures: Refined non-library media flags textures
+- Improved Home PVR Widgets focus visuals
+
 [B]6.8.66[/B] (2026-08-05)
 
 Home Widgets now support 21:9 displays &amp; Scope Mode (+1 item)
